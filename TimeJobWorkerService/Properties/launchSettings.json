@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "TimeJobWorkerService": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      },
+      "remoteDebugEnabled": false,
+      "dotnetRunMessages": "true"
+    }
+  }
+}

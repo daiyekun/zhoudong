@@ -1,0 +1,12 @@
+D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\bin\Release\net5.0\SignalR.Client.deps.json
+D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\bin\Release\net5.0\SignalR.Client.dll
+D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\bin\Release\net5.0\ref\SignalR.Client.dll
+D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\bin\Release\net5.0\SignalR.Client.pdb
+D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\obj\Release\net5.0\SignalR.Client.csproj.AssemblyReference.cache
+D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\obj\Release\net5.0\SignalR.Client.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\obj\Release\net5.0\SignalR.Client.AssemblyInfoInputs.cache
+D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\obj\Release\net5.0\SignalR.Client.AssemblyInfo.cs
+D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\obj\Release\net5.0\SignalR.Client.csproj.CoreCompileInputs.cache
+D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\obj\Release\net5.0\SignalR.Client.dll
+D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\obj\Release\net5.0\ref\SignalR.Client.dll
+D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\obj\Release\net5.0\SignalR.Client.pdb

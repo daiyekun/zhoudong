@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "128d65e1-0eb6-4fc0-9dae-9cc1935c425d": {
+      "ProjectGuid": "128d65e1-0eb6-4fc0-9dae-9cc1935c425d",
+      "DisplayName": "NF.Web",
+      "ColorIndex": 0
+    },
+    "8958de3a-f51a-4a8a-995e-c96b0c60e70d": {
+      "ProjectGuid": "8958de3a-f51a-4a8a-995e-c96b0c60e70d",
+      "DisplayName": "NF.WebAPI",
+      "ColorIndex": 1
+    },
+    "06f219c3-e02a-4f94-9f6e-8b1063126ef3": {
+      "ProjectGuid": "06f219c3-e02a-4f94-9f6e-8b1063126ef3",
+      "DisplayName": "NF.WeiXinApp",
+      "ColorIndex": 2
+    },
+    "2b520b9e-98a2-46a1-84e6-1e88d56b5dd8": {
+      "ProjectGuid": "2b520b9e-98a2-46a1-84e6-1e88d56b5dd8",
+      "DisplayName": "NF.WeiXin.Lib",
+      "ColorIndex": 3
+    },
+    "55720a6b-8dac-49ac-9bbc-defeec155294": {
+      "ProjectGuid": "55720a6b-8dac-49ac-9bbc-defeec155294",
+      "DisplayName": "NF.Model",
+      "ColorIndex": 4
+    },
+    "e18367de-f260-4c25-856f-0b7b50c00523": {
+      "ProjectGuid": "e18367de-f260-4c25-856f-0b7b50c00523",
+      "DisplayName": "NF.BLL",
+      "ColorIndex": 5
+    },
+    "0ba4cf35-4f08-409e-87f1-6ca00969eac6": {
+      "ProjectGuid": "0ba4cf35-4f08-409e-87f1-6ca00969eac6",
+      "DisplayName": "NF.ViewModel",
+      "ColorIndex": 6
+    },
+    "9910abb0-b735-4c0f-a293-4a26492e0a02": {
+      "ProjectGuid": "9910abb0-b735-4c0f-a293-4a26492e0a02",
+      "DisplayName": "NF.IBLL",
+      "ColorIndex": 7
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "杂项文件",
+      "ColorIndex": -1
+    },
+    "5dad6e6a-cd13-407b-bf8e-283105c9d4c9": {
+      "ProjectGuid": "5dad6e6a-cd13-407b-bf8e-283105c9d4c9",
+      "DisplayName": "NF.Common",
+      "ColorIndex": 8
+    }
+  },
+  "NextColorIndex": 9
+}

@@ -1,0 +1,17 @@
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\bin\Release\net5.0\NF.OfficeComm.deps.json
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\bin\Release\net5.0\NF.OfficeComm.dll
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\bin\Release\net5.0\ref\NF.OfficeComm.dll
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\bin\Release\net5.0\NF.OfficeComm.pdb
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\bin\Release\net5.0\Interop.Microsoft.Office.Core.dll
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\bin\Release\net5.0\Interop.Microsoft.Office.Interop.Word.dll
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\bin\Release\net5.0\NF.Common.dll
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\bin\Release\net5.0\NF.Common.pdb
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\obj\Release\net5.0\NF.OfficeComm.csproj.AssemblyReference.cache
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\obj\Release\net5.0\NF.OfficeComm.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\obj\Release\net5.0\NF.OfficeComm.AssemblyInfoInputs.cache
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\obj\Release\net5.0\NF.OfficeComm.AssemblyInfo.cs
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\obj\Release\net5.0\NF.OfficeComm.csproj.CoreCompileInputs.cache
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\obj\Release\net5.0\NF.OfficeComm.csproj.CopyComplete
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\obj\Release\net5.0\NF.OfficeComm.dll
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\obj\Release\net5.0\ref\NF.OfficeComm.dll
+D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\obj\Release\net5.0\NF.OfficeComm.pdb
