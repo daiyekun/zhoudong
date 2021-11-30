@@ -36,7 +36,7 @@ namespace NF.ViewModel
 
         public string   CompanyTypeClass {get;set;}
 
-       public string FirstContact { get; set; }
+        public string FirstContact { get; set; }
         public string FirstContactMobile { get; set; }
         public string FirstContactTel { get; set; }
         public string Address { get; set; }
