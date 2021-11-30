@@ -51,32 +51,32 @@
                         <input class="weui-input" name="Code" id="Code" disabled />
                     </div>
                 </div>
-                <div class="weui-cell weui-cell_active weui-cell_disabled">
+               @* <div class="weui-cell weui-cell_active weui-cell_disabled">
                     <div class="weui-cell__hd"><label class="weui-label">类别</label></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" name="CompanyTypeClass" id="CompanyTypeClass" disabled />
                     </div>
-                </div>
-                <div class="weui-cell weui-cell_active weui-cell_disabled">
+                </div>*@
+               @* <div class="weui-cell weui-cell_active weui-cell_disabled">
                     <div class="weui-cell__hd"><label class="weui-label">级别</label></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" name="LevelName" id="LevelName" disabled />
                     </div>
-                </div>
-                <div class="weui-cell weui-cell_active weui-cell_disabled">
+                </div>*@
+               @* <div class="weui-cell weui-cell_active weui-cell_disabled">
                     <div class="weui-cell__hd"><label class="weui-label">信用等级</label></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" name="CareditName" id="CareditName" disabled />
                     </div>
-                </div>
-                <div class="weui-cell weui-cell_active weui-cell_disabled">
+                </div>*@
+                @*<div class="weui-cell weui-cell_active weui-cell_disabled">
                     <div class="weui-cell__hd"><label class="weui-label">状态</label></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" name="CstateDic" id="CstateDic" disabled />
                     </div>
-                </div>
+                </div>*@
 
-                <div class="weui-cell weui-cell_active weui-cell_disabled">
+               @* <div class="weui-cell weui-cell_active weui-cell_disabled">
                     <div class="weui-cell__hd"><label class="weui-label">建立人</label></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" name="CreateUserDisplayName" id="CreateUserDisplayName" disabled />
@@ -87,39 +87,45 @@
                     <div class="weui-cell__bd">
                         <input class="weui-input" name="PrincipalUserDisplayName" id="PrincipalUserDisplayName" disabled />
                     </div>
-                </div>
+                </div>*@
                 <div class="weui-cell weui-cell_active weui-cell_disabled">
                     <div class="weui-cell__hd"><label class="weui-label">联系人姓名</label></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" name="FirstContact" id="FirstContact" disabled />
                     </div>
                 </div>
-                <div class="weui-cell weui-cell_active weui-cell_disabled">
+                @*<div class="weui-cell weui-cell_active weui-cell_disabled">
                     <div class="weui-cell__hd"><label class="weui-label">职位</label></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" name="FirstContactPosition" id="FirstContactPosition" disabled />
                     </div>
-                </div>
-                <div class="weui-cell weui-cell_active weui-cell_disabled">
+                </div>*@
+              @*  <div class="weui-cell weui-cell_active weui-cell_disabled">
                     <div class="weui-cell__hd"><label class="weui-label">办公电话</label></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" name="FirstContactTel" id="FirstContactTel" disabled />
                     </div>
-                </div>
+                </div>*@
                 <div class="weui-cell weui-cell_active weui-cell_disabled">
-                    <div class="weui-cell__hd"><label class="weui-label">移动电话</label></div>
+                    <div class="weui-cell__hd"><label class="weui-label">联系电话</label></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" name="FirstContactMobile" id="FirstContactMobile" disabled />
                     </div>
                 </div>
                 <div class="weui-cell weui-cell_active weui-cell_disabled">
+                    <div class="weui-cell__hd"><label class="weui-label">地址</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" name="Address" id="Address" disabled />
+                    </div>
+                </div>
+               @* <div class="weui-cell weui-cell_active weui-cell_disabled">
                     <div class="weui-cell__hd"><label class="weui-label">邮箱</label></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" name="FirstContactEmail" id="FirstContactEmail" disabled />
                     </div>
-                </div>
+                </div>*@
             </div>
-            <div class="page__bd">
+           @* <div class="page__bd">
                 <div class="weui-cells__title bd  weui-panel_access">其他联系人</div>
                 <div class="weui-cells">
                     <a class="weui-cell  weui-cell_access weui-cell_example" href="Lxr?Id=@ViewData["contId"]&Wxzh=@ViewData["WxCurrUserId"]">
@@ -131,12 +137,12 @@
                     </a>
 
                 </div>
-            </div>
+            </div>*@
         </div>
         @*基本信息----end*@
         @*合同文本----begin*@
         <div class="weui-panel weui-panel_access">
-            <div class="weui-panel__hd">附件</div>
+            <div class="weui-panel__hd">服务记录</div>
             <div class="weui-panel__bd" id="ShowFile">
 
             </div>

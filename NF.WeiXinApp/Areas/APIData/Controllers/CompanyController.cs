@@ -3,14 +3,17 @@ using Microsoft.AspNetCore.Mvc;
 using NF.Common.Models;
 using NF.Common.Utility;
 using NF.IBLL;
+using NF.Model.Models;
 using NF.ViewModel.Extend.Enums;
 using NF.ViewModel.Models;
 using NF.ViewModel.Models.Common;
+using NF.ViewModel.Models.WeiXinModels;
 using NF.WeiXin.Lib.Common;
 using NF.WeiXin.Lib.Utility;
 using NF.WeiXinApp.Extend;
 using NF.WeiXinApp.Utility;
 using NF.WeiXinApp.Utility.Common;
+using NF.WeiXinApp.Utility.Filters;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -18,6 +21,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
 using System.Threading.Tasks;
+using Log4netHelper = NF.WeiXin.Lib.Utility.Log4netHelper;
 
 namespace NF.WeiXinApp.Areas.APIData.Controllers
 {
@@ -213,6 +217,60 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }
+
+
+        /// <summary>
+        /// 添加客户
+        /// </summary>
+        /// <param name="info">添加客户</param>
+        /// <returns></returns>
+        [CustomAction2CommitFilter]
+        [HttpPost("CustomerAdd")]
+        public async Task<string> CustomerAdd([FromBody] WxCustomerInfo info)
+        {
+            try
+            {
+                var uinfo = _IUserInforService.GetWxUserById(info.WxCode);
+                var compinfo = new Company();
+                if (info.Id>0)
+                {
+                    compinfo = _ICompanyService.Find(info.Id);
+                    compinfo.Code = info.Code;
+                    compinfo.Name = info.Name;
+                    compinfo.FirstContact = info.FirstContact;
+                    compinfo.FirstContactMobile = info.FirstContactMobile;
+                    compinfo.Address = info.Address;
+                    compinfo.ModifyDateTime = DateTime.Now;
+                    compinfo.ModifyUserId =uinfo !=null? uinfo.UserId:1;
+                    _ICompanyService.Update(compinfo);
+                }
+                else
+                {
+                    compinfo.Code = info.Code;
+                    compinfo.Name = info.Name;
+                    compinfo.FirstContact = info.FirstContact;
+                    compinfo.FirstContactMobile = info.FirstContactMobile;
+                    compinfo.Address = info.Address;
+                    compinfo.ModifyDateTime = DateTime.Now;
+                    compinfo.ModifyUserId = uinfo != null ? uinfo.UserId : 1;
+                    compinfo.CreateDateTime = DateTime.Now;
+                    compinfo.CreateUserId = 1;
+                    compinfo.CreateUserId = uinfo != null ? uinfo.UserId : 1;
+                    compinfo.CompClassId = 49;
+                    compinfo.Ctype = 0;//客户
+                    _ICompanyService.Add(compinfo);
+                }
+                
+                
+
+                return new RequestData().ToWxJson();
+            }
+            catch (Exception ex)
+            {
+                Log4netHelper.Error(ex.Message);
+                return new RequestData(code: 1).ToWxJson();
+            }
         }
 
     }

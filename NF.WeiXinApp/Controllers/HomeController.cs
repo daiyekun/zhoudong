@@ -178,29 +178,31 @@ namespace NF.WeiXinApp.Controllers
                     type="view",
                     name="菜单",
                     url=WxQYHOAuth2Utility.GetAuthorizeURL(Constant.CorpId,AuthUrl,agentid:Constant.Agentid,state:"NFCaiDan")//$"{AuthUrl}?state=NFCaiDan"//,//
-              },
-                new WxMenus(){
-                   name="审批",
-                  sub_button={
-                   new WxMenus(){
-                  type="view",
-                  name="待处理",
-                  url=WxQYHOAuth2Utility.GetAuthorizeURL(Constant.CorpId,AuthUrl,agentid:Constant.Agentid,state:"NFDaiChuLi")
-
-                  },
-                  new WxMenus(){
-                  type="view",
-                  name="我通过",
-                  url=WxQYHOAuth2Utility.GetAuthorizeURL(Constant.CorpId,AuthUrl,agentid:Constant.Agentid,state:"WoTongGuo")
-                  },
-                   new WxMenus(){
-                  type="view",
-                  name="我打回",
-                  url=WxQYHOAuth2Utility.GetAuthorizeURL(Constant.CorpId,AuthUrl,agentid:Constant.Agentid,state:"WoDaHui")
-                  }
-                  }
-
               }
+               
+              // ,
+              //  new WxMenus(){
+              //     name="审批",
+              //    sub_button={
+              //     new WxMenus(){
+              //    type="view",
+              //    name="待处理",
+              //    url=WxQYHOAuth2Utility.GetAuthorizeURL(Constant.CorpId,AuthUrl,agentid:Constant.Agentid,state:"NFDaiChuLi")
+
+              //    },
+              //    new WxMenus(){
+              //    type="view",
+              //    name="我通过",
+              //    url=WxQYHOAuth2Utility.GetAuthorizeURL(Constant.CorpId,AuthUrl,agentid:Constant.Agentid,state:"WoTongGuo")
+              //    },
+              //     new WxMenus(){
+              //    type="view",
+              //    name="我打回",
+              //    url=WxQYHOAuth2Utility.GetAuthorizeURL(Constant.CorpId,AuthUrl,agentid:Constant.Agentid,state:"WoDaHui")
+              //    }
+              //    }
+
+              //}
               // new WxMenus(){
               //      type="view",
               //      name="审批",

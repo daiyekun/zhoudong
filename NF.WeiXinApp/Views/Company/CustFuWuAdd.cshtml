@@ -1,0 +1,126 @@
+﻿@{
+    ViewData["Title"] = "售后服务记录";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page">
+    @* 审批框不用了 用下面的图标 *@
+    @*<div class="page__hd">
+        <div class="weui-btn_primary weui-header hide" id="shenpi">
+        <div class="weui-header-left"> <a class="icon icon-109 f-white"></a>  </div>
+        <h1 class="weui-header-title">审批</h1>
+        <div class="weui-header-right"><a class="icon icon-115 f-white"></a></div>
+        </div>
+        </div>*@
+    <div class="page__bd">
+        @*审批事项用于判断是否有审批按钮*@
+
+        @*合同金额*@
+        <input type="hidden" id="FinanceType" name="FinanceType" value="@ViewData["FinanceType"]" />
+        <input hidden id="contId" name="contId" value="@ViewData["contId"]" />
+        <input hidden id="CurrWxUserId" name="CurrWxUserId" value="@ViewData["WxCurrUserId"]" />
+        @*签约信息----begin*@
+        @*<div class="weui-panel weui-panel_access weui-cells">
+            <span class="right f-orange"><a class="open-popup" href="javascript:;" data-target="#full">审批详情</a></span>
+            </div>*@
+
+        @*签约方信息-----end*@
+        @*基本信息----begin*@
+        <div class="weui-panel weui-panel_access">
+
+            <div class="weui-panel__hd">基本信息</div>
+            <div class="weui-panel__bd">
+               @* <div class="weui-cell weui-cell_active weui-cell_disabled">
+                    <div class="weui-cell__hd"><label class="weui-label">服务描述</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" name="Name" id="Name" placeholder="请输入名称" />
+                    </div>
+                </div>*@
+                 <div class="weui-cell weui-cell_active weui-cell_disabled">
+                    <div class="weui-cell__hd"><label class="weui-label">提醒时间</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" name="TxDate" id="TxDate"  placeholder="请输入提醒时间" type="date">
+                    </div>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <textarea class="weui-textarea" name="Remark" id="Remark" placeholder="请输入服务描述" rows="3" onkeyup="textarea(this);"></textarea>
+                        <div class="weui-textarea-counter"><span>0</span>/<i>10</i></div>
+                    </div>
+                    <i class="weui-icon-clear" onclick="cleararea(this)"></i>
+                </div>
+
+               
+                <div class="weui-uploader">
+        <div class="weui-uploader__hd">
+            <p class="weui-uploader__title">上传图片</p>
+            <div class="weui-uploader__info">0/2</div>
+        </div>
+        <div class="weui-uploader__bd">
+            <ul class="weui-uploader__files">
+            </ul>
+            <div class="weui-uploader__input-box">
+                <input class="weui-uploader__input" accept="image/*" multiple="" type="file"  onchange="previewImage(this)">
+            </div>
+        </div>
+ <script>
+     function previewImage(file) {
+         var MAXWIDTH = 1000;
+         var MAXHEIGHT = 1200;
+         if (file.files && file.files[0]) {
+             var reader = new FileReader();
+             reader.onload = function (evt) {
+
+                 $.post("/upimg",{imgbase64: evt.target.result},function(rs){
+                     $(file).parent().prev().html('<li  onclick="removeimg(this)" class="weui-uploader__file" style="background-image:url('+evt.target.result+')"><input value="'+rs.src+'"  type="hidden"  name="files" /></li>');
+                 },'json');
+             };
+             reader.readAsDataURL(file.files[0]);
+             console.log(file.files[0]);
+         }
+     }
+    </script>
+    </div>
+
+
+               
+               
+
+            </div>
+
+        </div>
+        @*基本信息----end*@
+
+    </div>
+
+</div>
+<script type="text/javascript">
+    function textarea(input) {
+            var content = $(input);
+              var max =  content.next().find('i') .text();
+            var value = content.val();
+            if (value.length>0) {
+
+                value = value.replace(/\n|\r/gi,"");
+                var len = value.length;
+                content.next().find('span').text(len) ;
+                 if(len>max){
+                     content.next().addClass('f-red');
+                 }else{
+                     content.next().removeClass('f-red');
+                 }
+            }
+        }
+
+        function cleartxt(obj){
+            $(obj).prev().find('.weui-input').val("");
+            return false;
+        }
+
+        function cleararea(obj){
+            $(obj).prev().find('.weui-textarea').val("").next().find("span").text(0);
+            return false;
+        }
+
+</script>
+

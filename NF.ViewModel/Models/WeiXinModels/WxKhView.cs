@@ -46,6 +46,13 @@ namespace NF.ViewModel
         /// </summary>
         public string WfItemDic { get; set; }
         public int? WfItem { get; set; }
+        /// <summary>
+        /// 联系地址
+        /// </summary>
+
+        public string Address { get; set; }
+
+
 
 
     }

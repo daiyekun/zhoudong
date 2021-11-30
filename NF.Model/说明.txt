@@ -13,4 +13,8 @@ Scaffold-DbContext -?  查看命名帮助
 dotnet NF.Web.dll --urls="http://*:5188" --ip="127.0.0.1" --port=5188 
 dotnet NF.WeiXinApp.dll --urls="http://*:5178" --ip="127.0.0.1" --port=5178
 
-dotnet NF.WeiXinApp.dll --urls="http://*:8029" --ip="127.0.0.1" --port=8029 
+dotnet NF.WeiXinApp.dll --urls="http://*:8079" --ip="127.0.0.1" --port=8079 
+
+http://localhost:8079/Company/Detail?Id=995&FinanceType=0
+
+ZhouDong

@@ -28,6 +28,9 @@ namespace NF.BLL
                             CategoryName = a.Category.Name, //Wx
                             
                             FileName = a.FileName,//Wx
+                            TxDate=a.TxDate,
+                            Remark= a.Remark,
+                            CreateDateTime=a.CreateDateTime
                           
 
                         };
@@ -35,11 +38,12 @@ namespace NF.BLL
                         select new WxkhFile
                         {
                             Id = a.Id,
-                          
                             CategoryName = a.CategoryName,
-                            
                             FileName = a.FileName,
-                          
+                            Remark = a.Remark,
+                            CreateDate = a.CreateDateTime,
+                            TxDate = a.TxDate,
+
                         };
             var  filelist= local.ToList();
             return filelist;

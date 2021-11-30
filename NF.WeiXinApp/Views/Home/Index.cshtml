@@ -8,38 +8,45 @@
     <input type="hidden" id="Wxid" value="@ViewData["WxCurrUserId"]" />
     <a href="/Home/Eees" type="hidden" id="wxnamenull"></a>
     <div class="page__hd menu_hd">
-        <h2 class="page__title menu_hd_Title1">欢迎使用合同管理系统</h2>
-        <p class="page__desc menu_hd_Title2">罗合（北京）科技有限公司</p>
+        <h2 class="page__title menu_hd_Title1">欢迎使用CRM管理系统</h2>
+        <p class="page__desc menu_hd_Title2">盘州市康泉净水设备有限公司</p>
     </div>
     <div class="page__bd">
 
         <div class="weui-grids">
+             <a href="/Company/CustomerAdd?wxzh=@ViewData["WxCurrUserId"]&FinanceType=0&Id=0" class="weui-grid index-menubtn">
+                <div class="weui-grid__icon">
+                    <img src="~/lib/weui/images/add_kh.png" alt="新增客户">
+                </div>
+                <p class="weui-grid__label menu_font">新增客户</p>
+            </a>
             <a href="/Company/CustomerIndex?wxzh=@ViewData["WxCurrUserId"]&FinanceType=0" class="weui-grid index-menubtn">
                 <div class="weui-grid__icon">
-                    <img src="~/lib/weui/images/icon_kf.png" alt="客户">
+                    <img src="~/lib/weui/images/icon_kf.png" alt="客户列表">
                 </div>
-                <p class="weui-grid__label menu_font">客户</p>
+                <p class="weui-grid__label menu_font">客户列表</p>
             </a>
-            <a href="/Company/SupplierIndex?wxzh=@ViewData["WxCurrUserId"]&FinanceType=1" class="weui-grid index-menubtn">
+            
+           @* <a href="/Company/SupplierIndex?wxzh=@ViewData["WxCurrUserId"]&FinanceType=1" class="weui-grid index-menubtn">
                 <div class="weui-grid__icon">
                     <img src="~/lib/weui/images/icon_gys.png" alt="供应商">
                 </div>
                 <p class="weui-grid__label menu_font">供应商</p>
-            </a>
-            <a href="/Company/OtherIndex?wxzh=@ViewData["WxCurrUserId"]&FinanceType=2" class="weui-grid index-menubtn">
+            </a>*@
+           @* <a href="/Company/OtherIndex?wxzh=@ViewData["WxCurrUserId"]&FinanceType=2" class="weui-grid index-menubtn">
                 <div class="weui-grid__icon">
                     <img src="~/lib/weui/images/icon_qtdf.png" alt="其他对方">
                 </div>
                 <p class="weui-grid__label menu_font">其他对方</p>
-            </a>
-            <a href="/Project/ProjectIndex?wxzh=@ViewData["WxCurrUserId"]" class="weui-grid index-menubtn">
+            </a>*@
+         @*   <a href="/Project/ProjectIndex?wxzh=@ViewData["WxCurrUserId"]" class="weui-grid index-menubtn">
                 <div class="weui-grid__icon">
                     <img src="~/lib/weui/images/icon_xm.png" alt="项目">
                 </div>
                 <p class="weui-grid__label menu_font">项目</p>
-            </a>
-            @*//  <a href="Company/CustomerIndex" class="weui-grid">*@
-            <a href="/Contract/SIndex?wxzh=@ViewData["WxCurrUserId"]&FinanceType=0" class="weui-grid index-menubtn">
+            </a>*@
+           
+            @*<a href="/Contract/SIndex?wxzh=@ViewData["WxCurrUserId"]&FinanceType=0" class="weui-grid index-menubtn">
                 <div class="weui-grid__icon">
                     <img src="~/lib/weui/images/icon_skht.png" alt="收款合同">
                 </div>
@@ -74,7 +81,7 @@
                     <img src="~/lib/weui/images/icon_kp.png" alt="开票">
                 </div>
                 <p class="weui-grid__label menu_font">开票</p>
-            </a>
+            </a>*@
 
         </div>
 

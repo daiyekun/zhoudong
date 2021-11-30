@@ -25,12 +25,13 @@ function LoadMainFormData(currId) {
 
                 $.each($data.Data, function (key, value) {
                   
-                    if (key == "HtXmnr") {
-                        $("#" + key).text(value);
-                    } else {
-                        $("#" + key).val(value);
+                    //if (key == "HtXmnr") {
+                    //    $("#" + key).text(value);
+                    //} else {
+                    //    $("#" + key).val(value);
 
-                    }
+                    //}
+                    $("#" + key).val(value);
                 });
                 
                 CheckWflow(currId);

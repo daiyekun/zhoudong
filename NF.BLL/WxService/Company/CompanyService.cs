@@ -50,10 +50,14 @@ namespace NF.BLL
                             Code = a.Code,//Wx
                             Cstate = a.Cstate,//Wx
                             Ctype = a.Ctype,//Wx
-                            CompClassId = a.CompClassId,//Wx//公司类别
-                            WfState = a.WfState,
-                            WfItem = a.WfItem,
-                            WfCurrNodeName = a.WfCurrNodeName,
+                                            // CompClassId = a.CompClassId,//Wx//公司类别
+                                            // WfState = a.WfState,
+                                            // WfItem = a.WfItem,
+                                            // WfCurrNodeName = a.WfCurrNodeName,
+                            FirstContact = a.FirstContact,//Wx//首要联系人
+                            FirstContactMobile = a.FirstContactMobile,//Wx//首要联系人移动电话
+                            FirstContactTel = a.FirstContactTel,//Wx//首要联系人办公电话
+                            Address = a.Address
 
                         };
             var local = from a in query.AsEnumerable()
@@ -64,13 +68,17 @@ namespace NF.BLL
                             Code = a.Code,
                             Cstate = a.Cstate,
                             CstateDic = EmunUtility.GetDesc(typeof(CompStateEnum), a.Cstate),
-                            CompanyTypeClass = CompanyUtility.CompanyTypeClass(a.CompClassId, a.Ctype ?? -1), //tempInfo.CompClass.Name,//公司类别
-                            CompClassId = a.CompClassId,
-                            WfState = a.WfState,
-                            WfCurrNodeName = a.WfCurrNodeName,
-                            WfItem = a.WfItem ?? -2,
-                            WfItemDic = FlowUtility.GetMessionDic(a.WfItem ?? -1, 0),
-                            WfStateDic = EmunUtility.GetDesc(typeof(WfStateEnum), a.WfState ?? -1),
+                            //CompanyTypeClass = CompanyUtility.CompanyTypeClass(a.CompClassId, a.Ctype ?? -1), //tempInfo.CompClass.Name,//公司类别
+                            //CompClassId = a.CompClassId,
+                            //WfState = a.WfState,
+                            //WfCurrNodeName = a.WfCurrNodeName,
+                            //WfItem = a.WfItem ?? -2,
+                            //WfItemDic = FlowUtility.GetMessionDic(a.WfItem ?? -1, 0),
+                            //WfStateDic = EmunUtility.GetDesc(typeof(WfStateEnum), a.WfState ?? -1),
+                            FirstContact = a.FirstContact,//Wx//首要联系人
+                            FirstContactMobile = a.FirstContactMobile,//Wx//首要联系人移动电话
+                            FirstContactTel = a.FirstContactTel,//Wx//首要联系人办公电话
+                            Address = a.Address
                         };
             return new LayPageInfo<WxKhlist>()
             {
@@ -102,20 +110,21 @@ namespace NF.BLL
                             FirstContact = a.FirstContact,//Wx//首要联系人
                             FirstContactMobile = a.FirstContactMobile,//Wx//首要联系人移动电话
                             FirstContactTel = a.FirstContactTel,//Wx//首要联系人办公电话
-                            FirstContactPosition = a.FirstContactPosition,//Wx//职位
-                            CareditId = a.CareditId,//Wx
-                            LevelId = a.LevelId,//Wx
-                            CompClassId = a.CompClassId,//Wx
+                           // FirstContactPosition = a.FirstContactPosition,//Wx//职位
+                            //CareditId = a.CareditId,//Wx
+                           // LevelId = a.LevelId,//Wx
+                           // CompClassId = a.CompClassId,//Wx
 
-                            PrincipalUserId = a.PrincipalUserId,//Wx
+                           // PrincipalUserId = a.PrincipalUserId,//Wx
 
 
-                            FirstContactEmail = a.FirstContactEmail,//Wx//Email
+                           // FirstContactEmail = a.FirstContactEmail,//Wx//Email
 
                             Ctype = a.Ctype,//Wx//标识是不是客户
-                            WfState = a.WfState,
-                            WfItem = a.WfItem,
-                            WfCurrNodeName = a.WfCurrNodeName,
+                            //WfState = a.WfState,
+                           // WfItem = a.WfItem,
+                            //WfCurrNodeName = a.WfCurrNodeName,
+                            Address = a.Address
 
                         };
             var local = from tempInfo in query.AsEnumerable()
@@ -134,27 +143,28 @@ namespace NF.BLL
                             FirstContact = tempInfo.FirstContact,//首要联系人
                             FirstContactMobile = tempInfo.FirstContactMobile,//首要联系人移动电话
                             FirstContactTel = tempInfo.FirstContactTel,//首要联系人办公电话
-                            FirstContactPosition = tempInfo.FirstContactPosition,//职位
-                            CareditName = GetCareditName(tempInfo.CareditId),//tempInfo.Caredit.Name,//信用等级
-                            CareditId = tempInfo.CareditId,
-                            LevelName = GetLevelName(tempInfo.LevelId, tempInfo.Ctype ?? -1),//Wx //tempInfo.Level.Name,//单位级别
-                            LevelId = tempInfo.LevelId,
-                            CompanyTypeClass = CompanyUtility.CompanyTypeClass(tempInfo.CompClassId, tempInfo.Ctype ?? -1), //tempInfo.CompClass.Name,//公司类别
-                            CompClassId = tempInfo.CompClassId,
+                           // FirstContactPosition = tempInfo.FirstContactPosition,//职位
+                           // CareditName = GetCareditName(tempInfo.CareditId),//tempInfo.Caredit.Name,//信用等级
+                           // CareditId = tempInfo.CareditId,
+                           // LevelName = GetLevelName(tempInfo.LevelId, tempInfo.Ctype ?? -1),//Wx //tempInfo.Level.Name,//单位级别
+                           // LevelId = tempInfo.LevelId,
+                          //  CompanyTypeClass = CompanyUtility.CompanyTypeClass(tempInfo.CompClassId, tempInfo.Ctype ?? -1), //tempInfo.CompClass.Name,//公司类别
+                           // CompClassId = tempInfo.CompClassId,
 
-                            PrincipalUserDisplayName = (tempInfo.PrincipalUserId ?? 0) == 0 ? "" : RedisHelper.HashGet($"{StaticData.RedisUserKey}:{tempInfo.PrincipalUserId}", "DisplyName").ToString(),//负责人
-                            PrincipalUserId = tempInfo.PrincipalUserId,
+                           // PrincipalUserDisplayName = (tempInfo.PrincipalUserId ?? 0) == 0 ? "" : RedisHelper.HashGet($"{StaticData.RedisUserKey}:{tempInfo.PrincipalUserId}", "DisplyName").ToString(),//负责人
+                            //PrincipalUserId = tempInfo.PrincipalUserId,
 
 
 
-                            FirstContactEmail = tempInfo.FirstContactEmail,//Wx//Email
+                          //  FirstContactEmail = tempInfo.FirstContactEmail,//Wx//Email
 
                             Ctype = tempInfo.Ctype,//标识是不是客户
-                            WfState = tempInfo.WfState,
-                            WfCurrNodeName = tempInfo.WfCurrNodeName,
-                            WfItem = tempInfo.WfItem ?? -2,
-                            WfItemDic = FlowUtility.GetMessionDic(tempInfo.WfItem ?? -1, 0),
-                            WfStateDic = EmunUtility.GetDesc(typeof(WfStateEnum), tempInfo.WfState ?? -1),
+                            //WfState = tempInfo.WfState,
+                           // WfCurrNodeName = tempInfo.WfCurrNodeName,
+                           // WfItem = tempInfo.WfItem ?? -2,
+                            //WfItemDic = FlowUtility.GetMessionDic(tempInfo.WfItem ?? -1, 0),
+                            //WfStateDic = EmunUtility.GetDesc(typeof(WfStateEnum), tempInfo.WfState ?? -1),
+                            Address = tempInfo.Address
 
                         };
             return local.FirstOrDefault();
