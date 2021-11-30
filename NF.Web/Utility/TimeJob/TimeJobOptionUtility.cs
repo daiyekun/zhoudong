@@ -28,7 +28,7 @@ namespace NF.Web.Utility.TimeJob
         public static void GetQueueWriteDb()
         {
             //获取队列数据，添加到日志
-            OpLogRedisListToDb();
+           // OpLogRedisListToDb();
             //删除缓存在Redis数据字典
             //DelRedisHashDic();
             ////删除用户Redis

@@ -237,8 +237,9 @@ layui.define(['table', 'form', 'viewPageEdit', 'tableSelect', 'selectnfitem'], f
                ,{ type: 'checkbox', fixed: 'left' }
                , { field: 'Id', title: 'Id', width: 50, hide: true }
                , { field: 'Name', title: '附件名称', width: 180, fixed: 'left' }
-               , { field: 'CategoryName', title: '附件类别', width: 140 }
-               , { field: 'Remark', title: '文件说明', width: 200 }
+               , { field: 'CategoryName', title: '服务事项', width: 140 }
+               , { field: 'TxDate', title: '提醒时间', width: 140 }
+               , { field: 'Remark', title: '服务清单', width: 200 }
                , { field: 'FileName', title: '文件名', width: 180 }
                , { field: 'CreateDateTime', title: '上传日期', width: 120 }
                , { field: 'CreateUserDisplyName', title: '上传人', width: 120, hide: true }
@@ -263,7 +264,7 @@ layui.define(['table', 'form', 'viewPageEdit', 'tableSelect', 'selectnfitem'], f
             /// <summary>列表头部-新增按钮</summary>
             layer.open({
                 type: 2
-            , title: '新建附件'
+            , title: '新建服务记录'
             , content: '/Company/CompAttachment/Build?Ctype=0'
                 // , maxmin: false
                 , area: ['800px', '80%']
@@ -321,7 +322,7 @@ layui.define(['table', 'form', 'viewPageEdit', 'tableSelect', 'selectnfitem'], f
             ///<param name='obj'>修改数据对象</param>
             layer.open({
                 type: 2
-          , title: '修改附件'
+          , title: '修改服务记录'
           , content: '/Company/CompAttachment/Build?Id=' + obj.data.Id + "&Ctype=0&rand=" + wooutil.getRandom()
                 //, maxmin: true
                 , area: ['800px', '80%']

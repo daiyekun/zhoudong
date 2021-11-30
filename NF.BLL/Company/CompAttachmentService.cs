@@ -46,6 +46,7 @@ namespace NF.BLL
                             Path = a.Path,
                             FileName = a.FileName,
                             GuidFileName = a.GuidFileName,
+                            TxDate=a.TxDate,
 
                         };
 
@@ -58,10 +59,10 @@ namespace NF.BLL
                             CreateDateTime = a.CreateDateTime,
                             CreateUserDisplyName = RedisHelper.HashGet($"{StaticData.RedisUserKey}:{a.CreateUserId}", "DisplyName"),//a.CreateUserDisplyName,
                             CategoryName = Type(a.CategoryId ?? 0),// DataDicUtility.GetDicValueToRedis(a.CategoryId, DataDictionaryEnum.customerAttachmentType),
-
                             Path = a.Path,
                             FileName = a.FileName,
-                            GuidFileName = a.GuidFileName
+                            GuidFileName = a.GuidFileName,
+                            TxDate = a.TxDate,
                         };
             return new LayPageInfo<CompAttachmentViewDTO>()
             {
@@ -128,7 +129,8 @@ namespace NF.BLL
                             FileName = a.FileName,
                             GuidFileName = a.GuidFileName,
                             FolderName = a.FolderName,
-                            CategoryId = a.CategoryId
+                            CategoryId = a.CategoryId,
+                            TxDate=a.TxDate,
 
                         };
             var local = from a in query.AsEnumerable()
@@ -144,7 +146,8 @@ namespace NF.BLL
                             FileName = a.FileName,
                             GuidFileName = a.GuidFileName,
                             FolderName = a.FolderName,
-                            CategoryId = a.CategoryId
+                            CategoryId = a.CategoryId,
+                            TxDate = a.TxDate,
                         };
             return local.FirstOrDefault();
         }

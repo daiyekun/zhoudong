@@ -16,6 +16,7 @@ namespace NF.Model.Models
         public int ModifyUserId { get; set; }
         public DateTime ModifyDateTime { get; set; }
         public byte IsDelete { get; set; }
+        public DateTime? TxDate { get; set; }
 
         public virtual UserInfor CreateUser { get; set; }
         public virtual UserInfor ModifyUser { get; set; }

@@ -73,7 +73,7 @@ namespace NF.Web
             //依赖注入
             ServicesDIUtility.ServicesDI(services);
             //定时器
-            services.AddTimedJob();
+          //  services.AddTimedJob();
             //注册AutoMapper文件
             Mappings.RegisterMappings();
             //AutoMapper
@@ -83,9 +83,9 @@ namespace NF.Web
           
             services.AddSignalR();
             #region 定时任务
-           QuartzDaoqiUtility.QuarztInit(Configuration["ConnectionStrings:QuartzWxCron"]);
+           //QuartzDaoqiUtility.QuarztInit(Configuration["ConnectionStrings:QuartzWxCron"]);
             ////到了周5发送待处理条数给相关领导
-            QuartzDaoqiUtility.QuarztIniAppRows(Configuration["ConnectionStrings:QuartzRowsWxCron"]);
+            //QuartzDaoqiUtility.QuarztIniAppRows(Configuration["ConnectionStrings:QuartzRowsWxCron"]);
 
             #endregion
             #region 目前不需要
@@ -152,7 +152,7 @@ namespace NF.Web
             app.UseCookiePolicy();
             app.UseSession();
             //定时任务
-             app.UseTimedJob();
+           //  app.UseTimedJob();
 
 
             //服务承载类

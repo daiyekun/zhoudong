@@ -7,7 +7,7 @@ Scaffold-DbContext "Server=.;Database=NFDB;Persist Security Info=True;User ID=sa
 3.如果模型已经生产可以使用下面命令
  Scaffold-DbContext "Server=.;Database=NFDB;Persist Security Info=True;User ID=sa;password=Sasa123;" Microsoft.EntityFrameworkCore.SqlServer  -OutputDir Models -Force
  Scaffold-DbContext "Server=192.168.0.189;Database=NFDBV283_New;Persist Security Info=True;User ID=sa;password=Sasa123;" Microsoft.EntityFrameworkCore.SqlServer  -OutputDir Models -Force
- Scaffold-DbContext "Server=192.168.0.189;Database=NFNew5;Persist Security Info=True;User ID=sa;password=Sasa123;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context "NFDbContext"  -Force
+ Scaffold-DbContext "Server=.;Database=ZHOU_DONG;Persist Security Info=True;User ID=sa;password=Sasa123;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context "NFDbContext"  -Force
 Scaffold-DbContext -?  查看命名帮助
 
 dotnet NF.Web.dll --urls="http://*:5188" --ip="127.0.0.1" --port=5188 

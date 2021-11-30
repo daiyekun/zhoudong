@@ -42,14 +42,14 @@ layui.define(['laytpl', 'layer', 'element', 'util'], function(exports){
             userName: 'userName',
             disName: 'disName',
             detpId: 'detpId',
-            sysTitle: '合同管理系统',
-            sysGs: '罗合V6.3'
-            , dlname: '登录合同管理系统'
+            sysTitle: 'CRM管理系统',
+            sysGs: 'DEV２０２１'
+            , dlname: '登录CRM管理系统'
             , superadmin:'SuperAdministrator'//超级管理员登录名称
 
         },
         Addin:{
-            wordAddInVer: 'VSTO272.STD.20170905',//插件版本
+            wordAddInVer: 'VSTO272.STD.20210905',//插件版本
         },
         //自己自定义-升级需注意
         table: {
@@ -70,7 +70,7 @@ layui.define(['laytpl', 'layer', 'element', 'util'], function(exports){
             , uploadIp: 'http://localhost:5188'
         },
         sysinfo: {//系统信息
-            seversion: 'SE',
+            seversion: 'NSE',
             lhvs: 'SE',//SE审批,Sing
             Mb:'Mb',//Mb 模板起草
 
@@ -89,11 +89,11 @@ layui.define(['laytpl', 'layer', 'element', 'util'], function(exports){
             }
         },
         LCMB: {//流程
-            Ksyj: "科室意见2",
-            Sjks: "审计科意见",
-            Fgld: "分管领导意见2",
-            Zyld: "主要领导意见",
-            YBgs: "院办公室登记备案",
+            Ksyj: "",
+            Sjks: "",
+            Fgld: "",
+            Zyld: "",
+            YBgs: "",
         }
     
     //扩展的第三方模块

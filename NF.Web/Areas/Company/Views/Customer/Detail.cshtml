@@ -342,7 +342,7 @@
     </div>
     <!--客户基本信息end-->
     <!--其他联系人begin-->
-    <div class="layui-card " id="customContact">
+    <div class="layui-card layui-hide" id="customContact">
         <div class="layui-card-header">其他联系人</div>
         <div class="layui-card-body" style="padding: 15px;">
             <table id="NF-customer-detail-otherContact" lay-filter="NF-customer-detail-otherContact"></table>
@@ -362,7 +362,7 @@
     <!--其他联系人end-->
     <!--客户附件begin-->
     <div class="layui-card " id="customAttachment">
-        <div class="layui-card-header">客户附件</div>
+        <div class="layui-card-header">售后服务记录</div>
         <div class="layui-card-body" style="padding: 15px;">
             <table id="NF-customer-detail-CompAttachment" lay-filter="NF-customer-detail-CompAttachment"></table>
             <!--表格工具栏-->
@@ -382,7 +382,7 @@
     </div>
     <!--客户附件end-->
     <!--备忘录begin-->
-    <div class="layui-card " id="customDesc">
+    <div class="layui-card layui-hide" id="customDesc">
         <div class="layui-card-header">备忘录</div>
         <div class="layui-card-body" style="padding: 15px;">
             <table id="NF-customer-detail-CompDescription" lay-filter="NF-customer-detail-CompDescription"></table>
@@ -402,7 +402,7 @@
     </div>
     <!--备忘录end-->
     <!--签约合同begin-->
-    <div class="layui-card " id="contracts">
+    <div class="layui-card layui-hide" id="contracts">
         <div class="layui-card-header">签约合同</div>
         <div class="layui-card-body" style="padding: 15px;">
             <table id="NF-customer-detail-Contracts" lay-filter="NF-customer-detail-Contracts"></table>
@@ -416,7 +416,7 @@
     </div>
     <!--签约合同end-->
     <!--资金统计begin-->
-    <div class="layui-card " id="zijingtongji">
+    <div class="layui-card layui-hide" id="zijingtongji">
         <div class="layui-card-header">资金统计</div>
         <div class="layui-card-body" style="padding: 15px;">
             <div class="layui-form" lay-filter="Nf-Company-TongJiForm">
@@ -483,7 +483,7 @@
     </div>
     <!--资金统计end-->
     <!--相关项目begin-->
-    <div class="layui-card " id="projctlist">
+    <div class="layui-card  layui-hide" id="projctlist">
         <div class="layui-card-header">相关项目</div>
         <div class="layui-card-body" style="padding: 15px;">
             <table id="NF-detail-projctlist" lay-filter="NF-detail-projctlist"></table>
@@ -496,7 +496,7 @@
     </div>
     <!--相关项目end-->
     <!--相关标的begin-->
-    <div class="layui-card " id="submitlist">
+    <div class="layui-card layui-hide" id="submitlist">
         <div class="layui-card-header">相关标的</div>
         <div class="layui-card-body" style="padding: 15px;">
             <table id="NF-detail-submitlist" lay-filter="NF-detail-submitlist"></table>
@@ -509,7 +509,7 @@
     </div>
     <!--相关标的end-->
     <!--审批历史begin-->
-    <div class="layui-card " id="approveHist">
+    <div class="layui-card layui-hide " id="approveHist">
         <div class="layui-card-header">审批历史</div>
         <div class="layui-card-body" style="padding: 15px;">
             <table id="NF-workFlow-approveList" lay-filter="NF-workFlow-approveList"></table>
@@ -526,14 +526,14 @@
 <!--目录-->
 <ul class="site-dir layui-layer-wrap nf-ml-ul layui-hide" id="customernva">
     <li><a href="#customInfo" rel="external nofollow" class="current">基本信息</a></li>
-    <li><a href="#customContact" rel="external nofollow">其他联系人</a></li>
-    <li><a href="#customAttachment" rel="external nofollow">客户附件</a></li>
-    <li><a href="#customDesc" rel="external nofollow">备忘录</a></li>
-    <li><a href="#contracts" rel="external nofollow">签约合同</a></li>
+  @*  <li><a href="#customContact" rel="external nofollow">其他联系人</a></li>*@
+    <li><a href="#customAttachment" rel="external nofollow">售后服务记录</a></li>
+   @* <li><a href="#customDesc" rel="external nofollow">备忘录</a></li>*@
+@*    <li><a href="#contracts" rel="external nofollow">签约合同</a></li>
     <li><a href="#zijingtongji" rel="external nofollow">资金统计</a></li>
     <li><a href="#projctlist" rel="external nofollow">相关项目</a></li>
     <li><a href="#submitlist" rel="external nofollow">相关标的</a></li>
-    <li><a href="#approveHist" rel="external nofollow">审批历史</a></li>
+    <li><a href="#approveHist" rel="external nofollow">审批历史</a></li>*@
 </ul>
 @{
     Html.RenderPartial("_LayuiScriptsPartial");

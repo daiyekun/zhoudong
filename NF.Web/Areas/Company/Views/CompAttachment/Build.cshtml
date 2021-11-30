@@ -21,6 +21,32 @@
             <div class="layui-card-header">基本信息</div>
             <div class="layui-card-body" style="padding: 15px;">
                 <div class="layui-row layui-col-space10 layui-form-item layui-col-lg12">
+                      <div class="layui-col-lg4 layui-col-md4 layui-col-xs12 layui-col-sm12">
+                        <label class="layui-form-label">服务事项</label>
+                        <div class="layui-input-block">
+                            <select name="CategoryId" id="CategoryId" lay-verify="required" lay-search>
+                                <option value="">请选择..</option>
+
+                            </select>
+                        </div>
+                    </div>
+                  <div class="layui-col-lg4 layui-col-md4 layui-col-xs12 layui-col-sm12">
+                        <label class="layui-form-label">提醒时间</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="TxDate" id="TxDate" lay-verify="required" class="layui-input pen" />
+                        </div>
+                    </div>
+                     </div>
+                <div class="layui-row layui-col-space10 layui-form-item layui-col-lg12">
+
+                    <div class="layui-col-lg12 layui-col-md12 layui-col-xs12 layui-col-sm12">
+                        <label class="layui-form-label">服务清单</label>
+                        <div class="layui-input-block">
+                            <textarea name="Remark" class="layui-textarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-row layui-col-space10 layui-form-item layui-col-lg12">
                     <div class="layui-col-lg4 layui-col-md4 layui-col-xs12 layui-col-sm12">
                         <label class="layui-form-label">文件名</label>
                         @*<div class="layui-input-block">*@
@@ -37,26 +63,9 @@
                             <input type="text" name="Name" lay-verify="required" placeholder="请输入" autocomplete="off" class="layui-input pen" />
                         </div>
                     </div>
-                    <div class="layui-col-lg4 layui-col-md4 layui-col-xs12 layui-col-sm12">
-                        <label class="layui-form-label">附件类别</label>
-                        <div class="layui-input-block">
-                            <select name="CategoryId" id="CategoryId" lay-verify="required" lay-search>
-                                <option value="">请选择..</option>
-
-                            </select>
-                        </div>
-                    </div>
+                   
                 </div>
-
-                <div class="layui-row layui-col-space10 layui-form-item layui-col-lg12">
-
-                    <div class="layui-col-lg12 layui-col-md12 layui-col-xs12 layui-col-sm12">
-                        <label class="layui-form-label">附件说明</label>
-                        <div class="layui-input-block">
-                            <textarea name="Remark" class="layui-textarea"></textarea>
-                        </div>
-                    </div>
-                </div>
+                 
                 <!--需要在最后加这个或者没有也加一个 <div class="layui-form-item">，这样不会导致隐藏菜单是显示问题-->
                 <div class="layui-form-item">
 
@@ -85,7 +94,7 @@
     }).extend({
         index: 'lib/index',
         commonnf: 'common-nf/commonnf',
-    }).use(['index', 'form', 'commonnf', 'upload'], function () {
+    }).use(['index', 'form', 'commonnf', 'upload','laydate'], function () {
         
         var $ = layui.$
             , admin = layui.admin
@@ -93,7 +102,9 @@
           , commonnf = layui.commonnf
           , upload = layui.upload
          , setter = layui.setter
+         ,laydate=layui.laydate
            ;
+             laydate.render({ elem: '#TxDate',trigger: 'click'  });//提醒时间
         var _objId = wooutil.getQueryString('Id');
         //0:客户，1：供应商，2：其他对方
         var ctype = wooutil.getQueryString('Ctype');

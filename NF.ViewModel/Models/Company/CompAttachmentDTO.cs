@@ -24,6 +24,10 @@ namespace NF.ViewModel.Models
         public byte IsDelete { get; set; }
         public string FolderName { get; set; }
         public string GuidFileName { get; set; }
+        /// <summary>
+        /// 提醒时间
+        /// </summary>
+        public DateTime? TxDate { get; set; }
 
     }
     /// <summary>
@@ -39,5 +43,6 @@ namespace NF.ViewModel.Models
         /// 附件类别
         /// </summary>
         public string CategoryName { get; set; }
+       
     }
 }

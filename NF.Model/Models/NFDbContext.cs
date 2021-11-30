@@ -129,14 +129,14 @@ namespace NF.Model.Models
         public virtual DbSet<WinningItem> WinningItems { get; set; }
         public virtual DbSet<WinningQue> WinningQues { get; set; }
 
-//        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//        {
-//            if (!optionsBuilder.IsConfigured)
-//            {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-//                optionsBuilder.UseSqlServer("Server=192.168.0.189;Database=SkyyDb20211118;Persist Security Info=True;User ID=sa;password=Sasa123;");
-//            }
-//        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                optionsBuilder.UseSqlServer("Server=.;Database=ZHOU_DONG;Persist Security Info=True;User ID=sa;password=Sasa123;");
+            }
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -503,6 +503,8 @@ namespace NF.Model.Models
 
                 entity.Property(e => e.FolderName).HasMaxLength(100);
 
+                entity.Property(e => e.FwTitle).HasMaxLength(500);
+
                 entity.Property(e => e.GuidFileName).HasMaxLength(500);
 
                 entity.Property(e => e.ModifyDateTime).HasColumnType("datetime");
@@ -516,6 +518,8 @@ namespace NF.Model.Models
                     .HasMaxLength(1000);
 
                 entity.Property(e => e.Remark).HasMaxLength(2000);
+
+                entity.Property(e => e.TxDate).HasColumnType("datetime");
 
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.CompAttachments)
@@ -583,6 +587,8 @@ namespace NF.Model.Models
                     .HasMaxLength(200);
 
                 entity.Property(e => e.ModifyDateTime).HasColumnType("datetime");
+
+                entity.Property(e => e.TxDate).HasColumnType("datetime");
 
                 entity.HasOne(d => d.CreateUser)
                     .WithMany(p => p.CompDescriptionCreateUsers)
@@ -1427,7 +1433,9 @@ namespace NF.Model.Models
 
                 entity.Property(e => e.FinanceTerms).HasMaxLength(4000);
 
-                entity.Property(e => e.HtXmnr).HasMaxLength(4000);
+                entity.Property(e => e.HtXmnr)
+                    .HasMaxLength(4000)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.IsWxmsgDate)
                     .HasColumnType("datetime")
@@ -1563,7 +1571,9 @@ namespace NF.Model.Models
 
                 entity.Property(e => e.FinanceTerms).HasMaxLength(4000);
 
-                entity.Property(e => e.HtXmnr).HasMaxLength(4000);
+                entity.Property(e => e.HtXmnr)
+                    .HasMaxLength(4000)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.IsWxmsgDate)
                     .HasColumnType("datetime")

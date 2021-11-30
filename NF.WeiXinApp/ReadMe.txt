@@ -1,5 +1,5 @@
 ﻿作用：对外数据接口WEBAPI
-dotnet Dev.WooNet.WebAPI.dll --urls="http://*:8059" --ip="127.0.0.1" --port=8059
+dotnet NF.WeiXinApp.dll --urls="http://*:8069" --ip="127.0.0.1" --port=8069
 redis 初始化   http://localhost:8059/api/DevCommon/InitRedisData
 
 提交代码命令：
@@ -18,7 +18,7 @@ git push origin master       # 将本地提交，推送到远程仓库
 
 1. 初始化仓库、连接远程仓库、将远程仓库代码拉取到本地
 git init   
-git remote add origin https://gitee.com/DYKCode/dev.-net.git    
+git remote add origin https://gitee.com/DYKCode/dev.-zd.git    
 
 git pull origin master
 

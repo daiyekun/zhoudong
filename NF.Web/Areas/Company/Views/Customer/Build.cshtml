@@ -333,7 +333,7 @@
     </div>
     <!--客户基本信息end-->
     <!--其他联系人begin-->
-    <div class="layui-card " id="customContact">
+    <div class="layui-card layui-hide" id="customContact">
         <div class="layui-card-header">其他联系人</div>
         <div class="layui-card-body" style="padding: 15px;">
             <table id="NF-customer-build-otherContact" lay-filter="NF-customer-build-otherContact"></table>
@@ -353,7 +353,7 @@
     <!--其他联系人end-->
     <!--客户附件begin-->
     <div class="layui-card " id="customAttachment">
-        <div class="layui-card-header">客户附件</div>
+        <div class="layui-card-header">售后服务记录</div>
         <div class="layui-card-body" style="padding: 15px;">
             <table id="NF-customer-build-CompAttachment" lay-filter="NF-customer-build-CompAttachment"></table>
             <!--表格工具栏-->
@@ -373,8 +373,8 @@
     </div>
     <!--客户附件end-->
     <!--备忘录begin-->
-    <div class="layui-card " id="customDesc">
-        <div class="layui-card-header">备忘录</div>
+    <div class="layui-card layui-hide" id="customDesc">
+        <div class="layui-card-header">售后服务记录</div>
         <div class="layui-card-body" style="padding: 15px;">
             <table id="NF-customer-build-CompDescription" lay-filter="NF-customer-build-CompDescription"></table>
             <!--表格工具栏-->
@@ -398,9 +398,9 @@
         <!--目录-->
         <ul class="site-dir layui-layer-wrap nf-ml-ul layui-hide" id="customernva">
             <li><a href="#customInfo" rel="external nofollow" class="current">基本信息</a></li>
-            <li><a href="#customContact" rel="external nofollow">其他联系人</a></li>
-            <li><a href="#customAttachment" rel="external nofollow">客户附件</a></li>
-            <li><a href="#customDesc" rel="external nofollow">备忘录</a></li>
+            @*<li><a href="#customContact" rel="external nofollow">其他联系人</a></li>*@
+            <li><a href="#customAttachment" rel="external nofollow">售后服务记录</a></li>
+           @* <li><a href="#customDesc" rel="external nofollow">备忘录</a></li>*@
         </ul>
 
        
