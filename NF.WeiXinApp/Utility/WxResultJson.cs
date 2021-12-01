@@ -27,6 +27,8 @@ namespace NF.WeiXinApp.Utility
         {
             context.HttpContext.Response.ContentType = "application/json";
             byte[] bytes = Encoding.UTF8.GetBytes(JsonUtility.SerializeObject(this._Data));
+            context.HttpContext.Response.Headers.Add("Access-Control-Allow-Origin", "*");
+            context.HttpContext.Response.Headers.Add("Access-Control-Allow-Methods", "POST,PUT,OPTIONS,GET");
             return context.HttpContext.Response.Body.WriteAsync(bytes, 0, bytes.Count());
 
 

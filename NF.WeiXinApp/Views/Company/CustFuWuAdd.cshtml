@@ -16,9 +16,15 @@
         @*审批事项用于判断是否有审批按钮*@
 
         @*合同金额*@
-        <input type="hidden" id="FinanceType" name="FinanceType" value="@ViewData["FinanceType"]" />
-        <input hidden id="contId" name="contId" value="@ViewData["contId"]" />
-        <input hidden id="CurrWxUserId" name="CurrWxUserId" value="@ViewData["WxCurrUserId"]" />
+       
+        <input type="hidden"  id="CompanyId" name="CompanyId" value="@ViewData["CompanyId"]" />
+        <input  type="hidden"  id="CurrWxUserId" name="CurrWxUserId" value="@ViewData["WxCurrUserId"]" />
+        <input type="hidden"  id="GuidFileName" name="GuidFileName" />
+        <input type="hidden"  id="Extension" name="Extension" />
+        <input type="hidden"  id="FolderName" name="FolderName" />
+         <input type="hidden"  id="Name" name="Name" />
+         <input type="hidden"  id="Id" name="Id" value="0" />
+        
         @*签约信息----begin*@
         @*<div class="weui-panel weui-panel_access weui-cells">
             <span class="right f-orange"><a class="open-popup" href="javascript:;" data-target="#full">审批详情</a></span>
@@ -44,8 +50,8 @@
                 </div>
                 <div class="weui-cell">
                     <div class="weui-cell__bd">
-                        <textarea class="weui-textarea" name="Remark" id="Remark" placeholder="请输入服务描述" rows="3" onkeyup="textarea(this);"></textarea>
-                        <div class="weui-textarea-counter"><span>0</span>/<i>10</i></div>
+                        <textarea class="weui-textarea" name="Remark" id="Remark" placeholder="请输入服务描述" rows="4" onkeyup="textarea(this);"></textarea>
+                        <div class="weui-textarea-counter"><span>0</span>/<i>1000</i></div>
                     </div>
                     <i class="weui-icon-clear" onclick="cleararea(this)"></i>
                 </div>
@@ -63,6 +69,8 @@
                 <input class="weui-uploader__input" accept="image/*" multiple="" type="file"  onchange="previewImage(this)">
             </div>
         </div>
+
+       
  <script>
      function previewImage(file) {
          var MAXWIDTH = 1000;
@@ -71,12 +79,20 @@
              var reader = new FileReader();
              reader.onload = function (evt) {
 
-                 $.post("/upimg",{imgbase64: evt.target.result},function(rs){
-                     $(file).parent().prev().html('<li  onclick="removeimg(this)" class="weui-uploader__file" style="background-image:url('+evt.target.result+')"><input value="'+rs.src+'"  type="hidden"  name="files" /></li>');
+                 $.post("/NfCommon/WxFile/WxUpload1",{imgbase64: evt.target.result},function(rs){
+
+                          $("#GuidFileName").val(rs.Data.GuidFileName);
+                         $("#Extension").val(rs.Data.Extension);
+                         $("#FolderName").val(rs.Data.FolderName)
+                        var pgsrc="/Uploads/"+rs.Data.SourceFileName;
+                     $(file).parent().prev().html('<li  onclick="removeimg(this)" class="weui-uploader__file" style="background-image:url('+evt.target.result+')"><input value="'+pgsrc+'"  type="hidden"  name="files" /></li>');
                  },'json');
              };
+             
+             
              reader.readAsDataURL(file.files[0]);
-             console.log(file.files[0]);
+             $("#Name").val(file.files[0].name);
+            // console.log(file.files[0]);
          }
      }
     </script>
@@ -90,7 +106,7 @@
 
         </div>
         @*基本信息----end*@
-
+         <a href="javascript:;" onclick="savecustomerFw()" class="weui-btn bg-green"><i class="icon icon-103" id="savecustomerFw"></i>保存</a>
     </div>
 
 </div>
@@ -120,6 +136,54 @@
         function cleararea(obj){
             $(obj).prev().find('.weui-textarea').val("").next().find("span").text(0);
             return false;
+        }
+        
+
+        //保存
+         function savecustomerFw(){
+           // $.toast("我是文本",'text');
+             var otion = {
+            Id: $("#Id").val(),//Id
+            WxCode:$("#CurrWxUserId").val(),//微信账号
+            GuidFileName: $("#GuidFileName").val(),
+            FolderName: $("#FolderName").val(),
+            TxDate: $("#TxDate").val(),
+            CompanyId: $("#CompanyId").val(),
+            Remark: $("#Remark").val(),
+              Name: $("#Name").text()
+            
+            
+
+
+        };
+        debugger;
+
+         var poststr = JSON.stringify(otion);
+         var $url = woowx.constant.APIBaseURL + "/api/Company/CustomerFwAdd";
+               $.ajax({
+            type: 'POST',
+            url: $url,
+            data: poststr,
+            dataType: 'json',
+            contentType: 'application/json;charset=UTF-8',
+            timeout: 10000,
+            success: function (data) {
+                var $data = JSON.parse(data);
+                if ($data.Code === 0) {
+
+                    window.location.href = "/Common/SuccMag";
+
+
+
+                } else {
+                    window.location.href = "/Common/FailMsg";
+                }
+            }, error: function (xhr, type) {
+                var errmsg = "错误类型：" + type + ",xhr.status:" + xhr.status
+                window.location.href = "/Common/FailMsg?errmsg=" + errmsg;
+
+            }
+        });
         }
 
 </script>

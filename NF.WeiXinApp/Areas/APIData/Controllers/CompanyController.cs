@@ -183,22 +183,52 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         /// <param name="txtId">合同文本ID</param>
         /// <returns></returns>
         [HttpGet("DownLoadFile")]
-        public IActionResult DownLoadFile(int txtId)
+        public IActionResult DownLoadFile(int txtId,int loadtype=0)
         {
             // var txtId = 1;
             var httxinfo = _ICompAttachmentService.Find(txtId);
             DownLoadAndUploadRequestInfo downLoad = new DownLoadAndUploadRequestInfo();
             downLoad.Id = txtId;
             downLoad.folderIndex = 0;
-            var txturl = $"{Constant.WxDownloadurl}/{httxinfo.Path}";
-            //本地保存路径
-            var pathf = Path.Combine(
-                            Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), downLoad.folderIndex)
-                            , httxinfo.FileName);
-            RequestUtility.Download(txturl, pathf);//下载到wxapp
-            var downInfo = FileStreamingHelper.Download(pathf);//下载到微信客户端
+            if (loadtype == 0)
+            {
+                var txturl = $"{Constant.WxDownloadurl}/{httxinfo.Path}";
+                //本地保存路径
+                var pathf = Path.Combine(
+                                Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), downLoad.folderIndex)
+                                , httxinfo.FileName);
+                RequestUtility.Download(txturl, pathf);//下载到wxapp
+                var downInfo = FileStreamingHelper.Download(pathf);//下载到微信客户端
+                return File(downInfo.NfFileStream, downInfo.Memi, downInfo.FileName);
+            }
+            else
+            {
 
-            return File(downInfo.NfFileStream, downInfo.Memi, downInfo.FileName);
+                string guidFileName = httxinfo.GuidFileName;
+               
+
+                if (guidFileName.StartsWith('~'))
+                {
+                    var filearr = StringHelper.Strint2ArrayString(guidFileName, "/");
+
+                    guidFileName = filearr.LastOrDefault();
+                }
+                //var pathf = Path.Combine(
+                //                 Directory.GetCurrentDirectory(), "wwwroot", "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), downLoadAndUploadRequestInfo.folderIndex),
+                //                 guidFileName);
+                var pathf = Path.Combine(
+                                 Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 0),
+                                 guidFileName);
+
+                var downInfo = FileStreamingHelper.Download(pathf);
+                //var s = ToBase64String(downInfo.NfFileStream);
+
+                return File(downInfo.NfFileStream, downInfo.Memi, downInfo.FileName);
+
+            }
+           
+
+            
 
         }
         // POST api/<UserController>
@@ -263,6 +293,72 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                 }
                 
                 
+
+                return new RequestData().ToWxJson();
+            }
+            catch (Exception ex)
+            {
+                Log4netHelper.Error(ex.Message);
+                return new RequestData(code: 1).ToWxJson();
+            }
+        }
+
+        /// <summary>
+        /// 添加客户
+        /// </summary>
+        /// <param name="info">添加客户</param>
+        /// <returns></returns>
+        [CustomAction2CommitFilter]
+        [HttpPost("CustomerFwAdd")]
+        public async Task<string> CustomerFwAdd([FromBody] WxCustomerFwInfo info)
+        {
+            try
+            {
+                var uinfo = _IUserInforService.GetWxUserById(info.WxCode);
+                var compinfo = new CompAttachment();
+                if (info.Id > 0)
+                {
+                    compinfo = _ICompAttachmentService.Find(info.Id);
+                  
+                    compinfo.Name = info.Name;
+                    compinfo.DownloadTimes = 0;
+                    compinfo.FileName = info.Name;
+                    compinfo.FolderName = info.FolderName;
+                    compinfo.FwTitle ="";
+                    compinfo.ModifyDateTime = DateTime.Now;
+                    compinfo.ModifyUserId = uinfo != null ? uinfo.UserId : 1;
+                    compinfo.GuidFileName = info.GuidFileName;
+                    compinfo.IsDelete = 0;
+                    compinfo.TxDate = info.TxDate;
+                    compinfo.Remark = info.Remark;
+                    compinfo.Path = $"{info.FolderName}/{info.GuidFileName}";
+                    compinfo.CompanyId=info.CompanyId;
+                    compinfo.CategoryId = 1067;
+                    _ICompAttachmentService.Update(compinfo);
+                }
+                else
+                {
+                    compinfo.Name = info.Name;
+                  
+                    compinfo.DownloadTimes = 0;
+                    compinfo.FileName = info.Name;
+                    compinfo.FolderName = info.FolderName;
+                    compinfo.FwTitle = "";
+                    compinfo.ModifyDateTime = DateTime.Now;
+                    compinfo.ModifyUserId = uinfo != null ? uinfo.UserId : 1;
+                    compinfo.GuidFileName = info.GuidFileName;
+                    compinfo.IsDelete = 0;
+                    compinfo.TxDate = info.TxDate;
+                    compinfo.Remark = info.Remark;
+                    compinfo.Path = $"{info.FolderName}/{info.GuidFileName}";
+                    compinfo.CompanyId = info.CompanyId;
+                    compinfo.CategoryId = 1067;
+                    compinfo.CreateDateTime = DateTime.Now;
+                    compinfo.CreateUserId= uinfo != null ? uinfo.UserId : 1;
+                    _ICompAttachmentService.Add(compinfo);
+                }
+
+
 
                 return new RequestData().ToWxJson();
             }

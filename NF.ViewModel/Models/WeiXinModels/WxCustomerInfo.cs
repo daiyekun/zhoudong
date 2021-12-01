@@ -43,4 +43,22 @@ namespace NF.ViewModel.Models.WeiXinModels
 
 
     }
+
+    /// <summary>
+    /// 服务
+    /// </summary>
+    public class WxCustomerFwInfo
+    {
+        public int Id { get; set; }
+        public string WxCode { get; set; }
+        public string GuidFileName { get; set; }
+        public string FolderName { get; set; }
+        public DateTime? TxDate { get; set; }
+        public int CompanyId { get; set; }
+        public string Remark { get; set; }
+        public string Name { get; set; }
+     
+
+    }
+
 }

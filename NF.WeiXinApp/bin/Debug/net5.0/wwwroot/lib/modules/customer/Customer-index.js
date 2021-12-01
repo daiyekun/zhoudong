@@ -359,6 +359,6 @@ function upcustomer(custId) {
 }
 //新增服务
 function addfuwu(custId) {
-    window.location.href = "/Company/CustFuWuAdd?Wxzh=" + Wxz + "&Id=" + custId;
+    window.location.href = "/Company/CustFuWuAdd?Wxzh=" + Wxz + "&compId=" + custId;
 
 }

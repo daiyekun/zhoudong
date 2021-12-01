@@ -86,12 +86,13 @@ namespace NF.WeiXinApp.Controllers
         /// 新增客户
         /// </summary>
         /// <param name="Wxzh">账号</param>
-        /// <param name="FinanceType"></param>
+        /// <param name="compId">客户ID</param>
         /// <returns></returns>
-        public IActionResult CustFuWuAdd(string Wxzh,int Id)
+        public IActionResult CustFuWuAdd(string Wxzh,int compId)
         {
             ViewData["WxCurrUserId"] = "daiyekun";//Wxzh;// HttpContext.Session.GetString("WxUserId");
-           
+            ViewData["CompanyId"] = compId;
+            
             return View();
 
         }

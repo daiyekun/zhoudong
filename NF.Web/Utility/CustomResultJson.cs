@@ -67,11 +67,17 @@ namespace NF.Web.Utility
             if (_func != null) {
               var strjson=  JsonUtility.SerializeObject(this._Data,this._logdate);
               byte[] bytes = Encoding.UTF8.GetBytes(this._func.Invoke(strjson));
-              return context.HttpContext.Response.Body.WriteAsync(bytes, 0, bytes.Count());
+
+                context.HttpContext.Response.Headers.Add("Access-Control-Allow-Origin", "*");
+                context.HttpContext.Response.Headers.Add("Access-Control-Allow-Methods", "POST,PUT,OPTIONS,GET");
+                return context.HttpContext.Response.Body.WriteAsync(bytes, 0, bytes.Count());
             }
             else
             {
                 byte[] bytes = Encoding.UTF8.GetBytes(JsonUtility.SerializeObject(this._Data, this._logdate, _jsonKeylower));
+                context.HttpContext.Response.Headers.Add("Access-Control-Allow-Origin","*") ;
+                context.HttpContext.Response.Headers.Add("Access-Control-Allow-Methods", "POST,PUT,OPTIONS,GET");
+             
                 return context.HttpContext.Response.Body.WriteAsync(bytes, 0, bytes.Count());
 
             }

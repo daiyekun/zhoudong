@@ -69,7 +69,7 @@ namespace NF.WeiXinApp
             //AutoMapper
             services.AddAutoMapper();
             //×¢²á¿çÓò
-            //CorsHelper.SetCorsOrigins(services, Configuration);
+            CorsHelper.SetCorsOrigins(services, Configuration);
             //×¢ÈëHttpContext
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
@@ -136,7 +136,7 @@ namespace NF.WeiXinApp
             app.UseAuthorization();
             //Ê¹ÓÃSession
             app.UseSession();
-            //app.UseCors("AllowSpecificOrigin");
+            app.UseCors("AllowSpecificOrigin");
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
