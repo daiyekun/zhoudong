@@ -680,5 +680,77 @@ namespace NF.WeiXin.Lib.Utility
 
         }
         #endregion
+
+
+
+        #region 周东到期
+        /// <summary>
+        /// 到期提醒
+        /// </summary>
+        /// <param name="wxMsgInfo"></param>
+        /// <returns></returns>
+        public static string WxZhouDongDaoQi(WxTxTongZhi wxMsgInfo)
+        {
+
+          
+            try
+            {
+
+                StringBuilder strb = new StringBuilder();
+                string SpTitle = string.Empty;
+
+                    var Utl = "/Company/Detail?Id=" + wxMsgInfo.Id + "&FinanceType=0&T=6";
+                
+               
+
+                var urlId = Constant.WxAppBaseURL + Utl;
+                // Constant.WxAppBaseURL + "?OBJID=" + OBJ_ID;
+                article articleInfo = null;
+                List<article> _articles = new List<article>();
+
+                strb.Append($"<div class=\"gray\">{DateTime.Now.ToString("yyyy年MM月dd日")}</div>");
+                strb.Append($"<div class=\"normal\">客户名称：{wxMsgInfo.Name}</div>");
+                strb.Append($"<div class=\"normal\">客户编号：{wxMsgInfo.Code}</div>");
+                strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
+
+                SpTitle = $"您有一个客户服务到期";
+
+
+                articleInfo = new article()
+                {
+
+                    description = strb.ToString(),
+                    title = SpTitle,
+                    url = WxQYHOAuth2Utility.GetAuthorizeUrl(Constant.CorpId, urlId, state: "2017kfdetail"), //"www.baidu.com"
+
+                };
+                _articles.Add(articleInfo);
+               
+               
+                var _news = new news();
+                _news.articles = _articles;
+
+                var MsgNewsInfo = new WxQYHMsgNewsInfo()
+                {
+                    touser = wxMsgInfo.WxCode,
+                    msgtype = "news",
+                    agentid = Constant.Agentid,//企业应用ID：1
+                    news = _news
+
+                };
+                var PostData = JsonUtility.SerializeObject(MsgNewsInfo).Replace("\\u0026", "&"); ;
+                WxQYHMsgManager.WxMsgSend(PostData);
+
+                return "OK";
+            }
+            catch (Exception ex)
+            {
+                RedisHelper.ListRightPush("WxZhouDongTx", wxMsgInfo);
+                Log4netHelper.Error(ex.Message);
+
+                return "NO";
+            }
+        }
+        #endregion
     }
 }

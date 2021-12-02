@@ -83,9 +83,8 @@ namespace NF.Web
           
             services.AddSignalR();
             #region 定时任务
-           //QuartzDaoqiUtility.QuarztInit(Configuration["ConnectionStrings:QuartzWxCron"]);
-            ////到了周5发送待处理条数给相关领导
-            //QuartzDaoqiUtility.QuarztIniAppRows(Configuration["ConnectionStrings:QuartzRowsWxCron"]);
+            //到期提醒
+            QuartzDaoqiUtility.QuarztIniDaoQi(Configuration["ConnectionStrings:QuartzRowsWxCron"]);
 
             #endregion
             #region 目前不需要

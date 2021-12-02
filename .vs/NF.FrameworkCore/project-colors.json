@@ -50,7 +50,12 @@
       "ProjectGuid": "5dad6e6a-cd13-407b-bf8e-283105c9d4c9",
       "DisplayName": "NF.Common",
       "ColorIndex": 8
+    },
+    "9b36c5cf-963f-4cd0-8aba-3baa0b732580": {
+      "ProjectGuid": "9b36c5cf-963f-4cd0-8aba-3baa0b732580",
+      "DisplayName": "LhCode",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 10
 }

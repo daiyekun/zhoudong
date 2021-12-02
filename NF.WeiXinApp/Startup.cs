@@ -80,9 +80,8 @@ namespace NF.WeiXinApp
             });
 
             #region 定时任务
-           // QuartzUtility.QuarztInit(Configuration["ConnectionStrings:QuartzWxCron"]);
-            //到了周5就统一发送待处理条数
-           // QuartzUtility.QuarzAppRowMsg(Configuration["ConnectionStrings:QuartzRowsWxCron"]);
+            QuartzUtility.QuarztInit(Configuration["ConnectionStrings:QuartzWxCron"]);
+           
             #endregion
 
             #region 目前不需要

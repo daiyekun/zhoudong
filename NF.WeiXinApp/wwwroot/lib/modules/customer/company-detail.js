@@ -73,7 +73,9 @@ function ShowContText(currId) {
                             //+ '</a>'
                             + '<a class="weui-cell"  style="color:#000" href="javascript:">'
                             + '<div class="weui-cell__bd"><p>服务描述</p></div>'
-                            + '<div class="weui-cell__ft"><span>' + $data.Data[i].Remark+ '</span></div >'
+                           // + '<div class="weui-cell__ft"><span>' + $data.Data[i].Remark+ '</span></div >'
+                            + '<div class="weui-cell__ft"><textarea class="weui-textarea"  rows="4">' + $data.Data[i].Remark + '</textarea></div >'
+                            
                             + '</a>'
                             + '<a class="weui-cell " style="color:#000"  href="javascript:">'
                             + '<div class="weui-cell__bd"><p>提醒时间</p></div>'
@@ -92,7 +94,8 @@ function ShowContText(currId) {
                             //+ '</a>'
                             + '<a class="weui-cell" style="color:#000" href="javascript:">'
                             + '<div class="weui-cell__bd"><p>服务描述</p></div>'
-                            + '<div class="weui-cell__ft"><span>' + $data.Data[i].Remark + '</span></div >'
+                        /* + '<div class="weui-cell__ft"><span>' + $data.Data[i].Remark + '</span></div >'*/
+                            + '<div class="weui-cell__ft"><textarea class="weui-textarea"  rows="4">' + $data.Data[i].Remark + '</textarea></div >'
                             + '</a>'
                             + '<a class="weui-cell " style="color:#000"  href="javascript:">'
                             + '<div class="weui-cell__bd"><p>提醒时间</p></div>'

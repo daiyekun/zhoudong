@@ -42,21 +42,21 @@ namespace NF.WeiXinApp.Controllers
         public IActionResult Detail(int Id, int FinanceType)
         {
 
-            //if (string.IsNullOrWhiteSpace(HttpContext.Session.GetString("WxUserId")))
-            //{
+            if (string.IsNullOrWhiteSpace(HttpContext.Session.GetString("WxUserId")))
+            {
 
-            //    var httpcontext = _accessor.HttpContext;
-            //    var code = httpcontext.Request.Query["Code"];
+                var httpcontext = _accessor.HttpContext;
+                var code = httpcontext.Request.Query["Code"];
 
-            //    var accessToken = WeixinUtiliy.GetAccessTokenStr();
-            //    var wxUser = WxQYHOAuth2Utility.SetSessionUser(accessToken, code);
+                var accessToken = WeixinUtiliy.GetAccessTokenStr();
+                var wxUser = WxQYHOAuth2Utility.SetSessionUser(accessToken, code);
 
-            //    HttpContext.Session.SetString("WxUserId", wxUser.UserId);
-            //    //var userwx = HttpContext.Session.GetString("WxUserId");
-            //}
+                HttpContext.Session.SetString("WxUserId", wxUser.UserId);
+                //var userwx = HttpContext.Session.GetString("WxUserId");
+            }
             ViewData["contId"] = Id;
-            //var d = HttpContext.Session.GetString("WxUserId");
-            ViewData["WxCurrUserId"] = "daiyekun";//d;// HttpContext.Session.GetString("WxUserId");
+            var d = HttpContext.Session.GetString("WxUserId");
+            ViewData["WxCurrUserId"] = d;// HttpContext.Session.GetString("WxUserId");
             ViewData["FinanceType"] = FinanceType;
             return View();
         }
@@ -76,7 +76,7 @@ namespace NF.WeiXinApp.Controllers
         /// <returns></returns>
         public IActionResult CustomerAdd(string Wxzh,int FinanceType,int Id)
         {
-            ViewData["WxCurrUserId"] = "daiyekun";//Wxzh;// HttpContext.Session.GetString("WxUserId");
+            ViewData["WxCurrUserId"] = Wxzh;// HttpContext.Session.GetString("WxUserId");
             ViewData["FinanceType"] = FinanceType;
             ViewData["customerId"] = Id;
             return View();
@@ -90,7 +90,7 @@ namespace NF.WeiXinApp.Controllers
         /// <returns></returns>
         public IActionResult CustFuWuAdd(string Wxzh,int compId)
         {
-            ViewData["WxCurrUserId"] = "daiyekun";//Wxzh;// HttpContext.Session.GetString("WxUserId");
+            ViewData["WxCurrUserId"] =Wxzh;// HttpContext.Session.GetString("WxUserId");
             ViewData["CompanyId"] = compId;
             
             return View();

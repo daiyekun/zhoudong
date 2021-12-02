@@ -31,5 +31,9 @@ namespace NF.IBLL
         /// <param name="id">对方id</param>
         /// <returns></returns>
         List<CompContact> WxQtlxr(int id);
+        /// <summary>
+        /// 到期提醒
+        /// </summary>
+        void DaoQiTx();
     }
 }

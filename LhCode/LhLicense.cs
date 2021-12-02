@@ -57,5 +57,10 @@ namespace LhCode
         /// 是否开启微信应用(0:关闭，1：开启)
         /// </summary>
         public static readonly int WxKaiQi = 1;
+        /// <summary>
+        /// 微信提醒账号
+        /// daiyekun|daiyekun
+        /// </summary>
+        public static readonly string WxTxCode = "ZhouDong";
     }
 }

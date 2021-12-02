@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.WeiXinApp\\NF.WeiXinApp.csproj": {}
+    "E:\\Zhoudong\\NF.WeiXinApp\\NF.WeiXinApp.csproj": {}
   },
   "projects": {
-    "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\LhCode\\LhCode.csproj": {
+    "E:\\Zhoudong\\LhCode\\LhCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\LhCode\\LhCode.csproj",
+        "projectUniqueName": "E:\\Zhoudong\\LhCode\\LhCode.csproj",
         "projectName": "LhCode",
-        "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\LhCode\\LhCode.csproj",
+        "projectPath": "E:\\Zhoudong\\LhCode\\LhCode.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\LhCode\\obj\\",
+        "outputPath": "E:\\Zhoudong\\LhCode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.AutoMapper\\NF.AutoMapper.csproj": {
+    "E:\\Zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.AutoMapper\\NF.AutoMapper.csproj",
+        "projectUniqueName": "E:\\Zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj",
         "projectName": "NF.AutoMapper",
-        "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.AutoMapper\\NF.AutoMapper.csproj",
+        "projectPath": "E:\\Zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.AutoMapper\\obj\\",
+        "outputPath": "E:\\Zhoudong\\NF.AutoMapper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,11 +89,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\NF.Model.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\NF.Model.csproj"
+              "E:\\Zhoudong\\NF.Model\\NF.Model.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj"
               },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\NF.ViewModel.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\NF.ViewModel.csproj"
+              "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
               }
             }
           }
@@ -141,14 +141,14 @@
         }
       }
     },
-    "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.BLL\\NF.BLL.csproj": {
+    "E:\\Zhoudong\\NF.BLL\\NF.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.BLL\\NF.BLL.csproj",
+        "projectUniqueName": "E:\\Zhoudong\\NF.BLL\\NF.BLL.csproj",
         "projectName": "NF.BLL",
-        "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.BLL\\NF.BLL.csproj",
+        "projectPath": "E:\\Zhoudong\\NF.BLL\\NF.BLL.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.BLL\\obj\\",
+        "outputPath": "E:\\Zhoudong\\NF.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -166,26 +166,23 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\LhCode\\LhCode.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\LhCode\\LhCode.csproj"
+              "E:\\Zhoudong\\LhCode\\LhCode.csproj": {
+                "projectPath": "E:\\Zhoudong\\LhCode\\LhCode.csproj"
               },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.AutoMapper\\NF.AutoMapper.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.AutoMapper\\NF.AutoMapper.csproj"
+              "E:\\Zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj"
               },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Common\\NF.Common.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Common\\NF.Common.csproj"
+              "E:\\Zhoudong\\NF.Common\\NF.Common.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.Common\\NF.Common.csproj"
               },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.IBLL\\NF.IBLL.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.IBLL\\NF.IBLL.csproj"
+              "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj"
               },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\NF.Model.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\NF.Model.csproj"
+              "E:\\Zhoudong\\NF.Model\\NF.Model.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj"
               },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\NF.ViewModel.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\NF.ViewModel.csproj"
-              },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\OraclData\\OraclData.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\OraclData\\OraclData.csproj"
+              "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
               }
             }
           }
@@ -223,14 +220,14 @@
         }
       }
     },
-    "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Common\\NF.Common.csproj": {
+    "E:\\Zhoudong\\NF.Common\\NF.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Common\\NF.Common.csproj",
+        "projectUniqueName": "E:\\Zhoudong\\NF.Common\\NF.Common.csproj",
         "projectName": "NF.Common",
-        "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Common\\NF.Common.csproj",
+        "projectPath": "E:\\Zhoudong\\NF.Common\\NF.Common.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Common\\obj\\",
+        "outputPath": "E:\\Zhoudong\\NF.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -329,14 +326,14 @@
         }
       }
     },
-    "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.IBLL\\NF.IBLL.csproj": {
+    "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.IBLL\\NF.IBLL.csproj",
+        "projectUniqueName": "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj",
         "projectName": "NF.IBLL",
-        "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.IBLL\\NF.IBLL.csproj",
+        "projectPath": "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.IBLL\\obj\\",
+        "outputPath": "E:\\Zhoudong\\NF.IBLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -354,14 +351,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Common\\NF.Common.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Common\\NF.Common.csproj"
+              "E:\\Zhoudong\\NF.Common\\NF.Common.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.Common\\NF.Common.csproj"
               },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\NF.Model.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\NF.Model.csproj"
+              "E:\\Zhoudong\\NF.Model\\NF.Model.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj"
               },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\NF.ViewModel.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\NF.ViewModel.csproj"
+              "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
               }
             }
           }
@@ -399,14 +396,14 @@
         }
       }
     },
-    "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\NF.Model.csproj": {
+    "E:\\Zhoudong\\NF.Model\\NF.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\NF.Model.csproj",
+        "projectUniqueName": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj",
         "projectName": "NF.Model",
-        "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\NF.Model.csproj",
+        "projectPath": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\obj\\",
+        "outputPath": "E:\\Zhoudong\\NF.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -485,14 +482,14 @@
         }
       }
     },
-    "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\NF.ViewModel.csproj": {
+    "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\NF.ViewModel.csproj",
+        "projectUniqueName": "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj",
         "projectName": "NF.ViewModel",
-        "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\NF.ViewModel.csproj",
+        "projectPath": "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\obj\\",
+        "outputPath": "E:\\Zhoudong\\NF.ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -510,11 +507,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Common\\NF.Common.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Common\\NF.Common.csproj"
+              "E:\\Zhoudong\\NF.Common\\NF.Common.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.Common\\NF.Common.csproj"
               },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\NF.Model.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\NF.Model.csproj"
+              "E:\\Zhoudong\\NF.Model\\NF.Model.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj"
               }
             }
           }
@@ -558,14 +555,14 @@
         }
       }
     },
-    "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj": {
+    "E:\\Zhoudong\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj",
+        "projectUniqueName": "E:\\Zhoudong\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj",
         "projectName": "NF.WeiXin.Lib",
-        "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj",
+        "projectPath": "E:\\Zhoudong\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.WeiXin.Lib\\obj\\",
+        "outputPath": "E:\\Zhoudong\\NF.WeiXin.Lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -583,8 +580,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\NF.ViewModel.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\NF.ViewModel.csproj"
+              "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
               }
             }
           }
@@ -656,14 +653,14 @@
         }
       }
     },
-    "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.WeiXinApp\\NF.WeiXinApp.csproj": {
+    "E:\\Zhoudong\\NF.WeiXinApp\\NF.WeiXinApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.WeiXinApp\\NF.WeiXinApp.csproj",
+        "projectUniqueName": "E:\\Zhoudong\\NF.WeiXinApp\\NF.WeiXinApp.csproj",
         "projectName": "NF.WeiXinApp",
-        "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.WeiXinApp\\NF.WeiXinApp.csproj",
+        "projectPath": "E:\\Zhoudong\\NF.WeiXinApp\\NF.WeiXinApp.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.WeiXinApp\\obj\\publish\\win-x64\\",
+        "outputPath": "E:\\Zhoudong\\NF.WeiXinApp\\obj\\publish\\win-x64\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -681,20 +678,20 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.BLL\\NF.BLL.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.BLL\\NF.BLL.csproj"
+              "E:\\Zhoudong\\NF.BLL\\NF.BLL.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.BLL\\NF.BLL.csproj"
               },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.IBLL\\NF.IBLL.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.IBLL\\NF.IBLL.csproj"
+              "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj"
               },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\NF.Model.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.Model\\NF.Model.csproj"
+              "E:\\Zhoudong\\NF.Model\\NF.Model.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj"
               },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\NF.ViewModel.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.ViewModel\\NF.ViewModel.csproj"
+              "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
               },
-              "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj": {
-                "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj"
+              "E:\\Zhoudong\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj": {
+                "projectPath": "E:\\Zhoudong\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj"
               }
             }
           }
@@ -752,76 +749,6 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
-        }
-      }
-    },
-    "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\OraclData\\OraclData.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\OraclData\\OraclData.csproj",
-        "projectName": "OraclData",
-        "projectPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\OraclData\\OraclData.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\MyCode\\Devs\\V3.0\\SZSKYY\\OraclData\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://packages.nuget.org/v1/FeedService.svc/": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "Oracle.ManagedDataAccess.Core": {
-              "target": "Package",
-              "version": "[3.21.1, )"
-            },
-            "TimedJob": {
-              "target": "Package",
-              "version": "[2.0.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

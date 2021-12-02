@@ -20,10 +20,12 @@ namespace NF.Web.Areas.WeiXin.Controllers
     {
         private IContractInfoService _IContractInfoService;
         private IAppInstService _IAppInstService;
-        public DaoQiController(IContractInfoService iContractInfoService, IAppInstService iAppInstService)
+        private ICompanyService _ICompanyService;
+        public DaoQiController(IContractInfoService iContractInfoService, IAppInstService iAppInstService, ICompanyService iCompanyService)
         {
             _IContractInfoService = iContractInfoService;
             _IAppInstService = iAppInstService;
+            _ICompanyService = iCompanyService;
         }
 
         public IActionResult Index()
@@ -58,43 +60,61 @@ namespace NF.Web.Areas.WeiXin.Controllers
         /// 
         /// </summary>
         /// <returns></returns>
-        public IActionResult DaoQiJh()
-        {
-            return new CustomResultJson(new RequstResult()
-            {
+        //public IActionResult DaoQiJh()
+        //{
+        //    return new CustomResultJson(new RequstResult()
+        //    {
 
-                Code = 0,
-                Data = _IContractInfoService.DaoQqJhToRedisList()
-
-
-            });
-
-        }
-        /// <summary>
-        /// 超过两天再次发送
-        /// </summary>
-        /// <returns></returns>
-        public IActionResult AppDaoQi()
-        {
-            _IAppInstService.SearchAppMsg();
-            return new CustomResultJson(new RequstResult()
-            {
-
-                Code = 0,
-                Data ="ok"
+        //        Code = 0,
+        //        Data = _IContractInfoService.DaoQqJhToRedisList()
 
 
-            });
+        //    });
 
-        }
+        //}
+        ///// <summary>
+        ///// 超过两天再次发送
+        ///// </summary>
+        ///// <returns></returns>
+        //public IActionResult AppDaoQi()
+        //{
+        //    _IAppInstService.SearchAppMsg();
+        //    return new CustomResultJson(new RequstResult()
+        //    {
+
+        //        Code = 0,
+        //        Data ="ok"
+
+
+        //    });
+
+        //}
+
+        ///// <summary>
+        ///// 到期提醒条数
+        ///// </summary>
+        ///// <returns></returns>
+        //public IActionResult AppRows()
+        //{
+        //    _IAppInstService.PubMsgRowsToList();
+        //    return new CustomResultJson(new RequstResult()
+        //    {
+
+        //        Code = 0,
+        //        Data = "ok"
+
+
+        //    });
+
+        //}
 
         /// <summary>
         /// 到期提醒条数
         /// </summary>
         /// <returns></returns>
-        public IActionResult AppRows()
+        public IActionResult WxZhouDongTx()
         {
-            _IAppInstService.PubMsgRowsToList();
+            _ICompanyService.DaoQiTx();
             return new CustomResultJson(new RequstResult()
             {
 

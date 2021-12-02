@@ -289,16 +289,32 @@ function ajaxpage1(spage) {
                     + '</div>'
                     + '<div class="weui-cell  " >'
                     + '<div class="weui-cell__bd">'
-                    + '<p>类别</p>'
+                    + '<p>联系人</p>'
                     + '</div>'
-                    + '<div class="weui-cell__ft">' + datas.data[i].CompanyTypeClass + '</div>'
+                    + '<div class="weui-cell__ft">' + datas.data[i].FirstContact + '</div>'
                     + '</div>'
                     + '<div class="weui-cell  " >'
                     + '<div class="weui-cell__bd">'
-                    + ' <p>状态</p>'
+                    + '<p>联系电话</p>'
                     + '</div>'
-                    + '<div class="weui-cell__ft">' + datas.data[i].CstateDic + '</div>'
+                    + '<div class="weui-cell__ft">' + datas.data[i].FirstContactMobile + '</div>'
                     + '</div>'
+                    + '<div class="weui-cell  " >'
+                   
+                    + '<div class="weui-cell__bd">'
+                    + ' <a href="javascript:;" onclick=upcustomer(' + datas.data[i].Id + ') class="weui-btn weui-btn_mini bg-green"><i class="icon icon-115"></i>修改</a>'
+                    + '</div>'
+                    + '<div class="weui-cell__ft">'
+                    + ' <a href="javascript:;" onclick=addfuwu(' + datas.data[i].Id + ')  class="weui-btn weui-btn_mini bg-blue"><i class="icon icon-115"></i>新增服务记录</a>'
+                    + '</div>'
+                    + '</div>'
+                   
+                    //+ '<div class="weui-cell  " >'
+                    //+ '<div class="weui-cell__bd">'
+                    //+ ' <p>状态</p>'
+                    //+ '</div>'
+                    //+ '<div class="weui-cell__ft">' + datas.data[i].CstateDic + '</div>'
+                    //+ '</div>'
                     + '</div>'
 
             }
@@ -336,3 +352,13 @@ $("#btnsearch").on("click", function () {
     page = 1;
     ajaxpage1(page);
 })
+//修改用户
+function upcustomer(custId) {
+    window.location.href = "/Company/CustomerAdd?Wxzh=" + Wxz + "&Id=" + custId;
+
+}
+//新增服务
+function addfuwu(custId) {
+    window.location.href = "/Company/CustFuWuAdd?Wxzh=" + Wxz + "&compId=" + custId;
+
+}

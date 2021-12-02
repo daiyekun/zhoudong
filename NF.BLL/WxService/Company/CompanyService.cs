@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using LhCode;
+using Microsoft.EntityFrameworkCore;
 using NF.BLL.Common;
 using NF.Common.Utility;
 using NF.Model.Models;
@@ -190,6 +191,37 @@ namespace NF.BLL
             }
 
         }
+        /// <summary>
+        /// 到期提醒
+        /// </summary>
+        public void DaoQiTx()
+        {
+            var noyear = DateTime.Now.Year;
+            var moth = DateTime.Now.Month;
+            var day = DateTime.Now.Day;
+            var list = Db.Set<CompAttachment>()
+                .Where(a =>a.TxDate.HasValue
+                &&a.TxDate.Value.Year== noyear&&a.TxDate.Value.Month== moth&&a.TxDate.Value.Day== day).ToList();
+
+            foreach (var item in list)
+            {
+                var commp = Db.Set<Company>().Where(a => a.Id == item.CompanyId).FirstOrDefault();
+                if (commp!=null)
+                {
+                    var tx = new WxTxTongZhi();
+                    tx.WxCode = LhLicense.WxTxCode;
+                    tx.Name = commp.Name;
+                    tx.Code = commp.Code;
+                    tx.Id = commp.Id;
+                    RedisHelper.ListRightPush("WxZhouDongTx", tx);
+
+                }
+               
+            }
+
+        }
+
+       
 
 
 
