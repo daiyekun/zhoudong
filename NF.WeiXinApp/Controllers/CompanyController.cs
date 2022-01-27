@@ -55,8 +55,8 @@ namespace NF.WeiXinApp.Controllers
                 //var userwx = HttpContext.Session.GetString("WxUserId");
             }
             ViewData["contId"] = Id;
-            var d = HttpContext.Session.GetString("WxUserId");
-            ViewData["WxCurrUserId"] = d;// HttpContext.Session.GetString("WxUserId");
+            var d =  HttpContext.Session.GetString("WxUserId");
+            ViewData["WxCurrUserId"] =d;// HttpContext.Session.GetString("WxUserId");
             ViewData["FinanceType"] = FinanceType;
             return View();
         }

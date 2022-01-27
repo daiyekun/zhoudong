@@ -17,4 +17,6 @@ dotnet NF.WeiXinApp.dll --urls="http://*:8079" --ip="127.0.0.1" --port=8079
 
 http://localhost:8079/Company/Detail?Id=995&FinanceType=0
 
+http://localhost:8079/Company/CustomerIndex?Wxzh=daiyekun&FinanceType=0 列表
+
 ZhouDong

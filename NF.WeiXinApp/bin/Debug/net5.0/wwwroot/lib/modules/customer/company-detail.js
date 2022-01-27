@@ -26,8 +26,7 @@ function LoadMainFormData(currId) {
                 $.each($data.Data, function (key, value) {
                     $("#" + key).val(value);
                 });
-                //CheckWflow(currId);
-                //GetOptions(currId);//意见
+                
             }
         }, error: function (xhr, type) {
            
@@ -41,6 +40,38 @@ function LoadMainFormData(currId) {
 function downloadtxt(txtId) {
 
     window.open(woowx.constant.APIBaseURL + "/api/company/DownLoadFile?txtId=" + txtId +"&loadtype=1");
+
+}
+
+//删除服务记录
+function delcustomerfw(custId) {
+
+    var $url = woowx.constant.APIBaseURL + "/api/company/DeleteFwRows";
+    $.ajax({
+        type: 'GET',
+        url: $url,
+        data:
+        {
+            Id: custId
+        },
+        dataType: 'json',
+        timeout: 10000,
+        success: function (data) {
+            var $data = JSON.parse(data);
+            if ($data.Code === 0) {
+
+                window.location.href = "/Common/SuccMag";
+
+            } else {
+                window.location.href = "/Common/FailMsg";
+            }
+
+        }, error: function (xhr, type) {
+
+            alert('LoadMainFormData系统异常' + xhr + ":" + type + ":" + xhr.status);
+        }
+    });
+
 
 }
 /***合同文本**/
@@ -72,15 +103,29 @@ function ShowContText(currId) {
                             //+ '<div class="weui-cell__bd"><p>服务事项</p></div>'
                             //+ '<div class="weui-cell__ft">' + $data.Data[i].CategoryName + '</div>'
                             //+ '</a>'
-                            + '<a class="weui-cell"  style="color:#000" href="javascript:">'
+                            + '<div class="weui-cell"  style="color:#000" href="javascript:">'
                             + '<div class="weui-cell__bd"><p>服务描述</p></div>'
-                            + '<div class="weui-cell__ft"><span>' + $data.Data[i].Remark+ '</span></div >'
-                            + '</a>'
-                            + '<a class="weui-cell " style="color:#000"  href="javascript:">'
+                           // + '<div class="weui-cell__ft"><span>' + $data.Data[i].Remark+ '</span></div >'
+                            + '<div class="weui-cell__ft"><textarea class="weui-textarea"  rows="4">' + $data.Data[i].Remark + '</textarea></div >'
+                            + '</div>'
+
+                            + '<div class="weui-cell " style="color:#000"  href="javascript:">'
                             + '<div class="weui-cell__bd"><p>提醒时间</p></div>'
                             + '<div class="weui-cell__ft">' + $data.Data[i].TxDate + '</div>'
-                            + '</a>'
-                            + '<a href="javascript:;" onclick=downloadtxt(' + $data.Data[i].Id + ') class="weui-btn weui-btn_primary">下载图片</a>'
+                            + '</div>'
+
+
+                            + '<div class="weui-cell  " >'
+                            + '<div class="weui-cell__bd">'
+                            + '<a href="javascript:;" onclick=delcustomerfw(' + $data.Data[i].Id + ') class="weui-btn weui-btn_mini bg-red"><i class="icon icon-115"></i>删除</a>'
+                            + '</div>'
+                            + '<div class="weui-cell__ft">'
+                            + ' <a href="javascript:;" onclick=downloadtxt(' + $data.Data[i].Id + ')  class="weui-btn weui-btn_mini bg-blue"><i class="icon icon-115"></i>下载图片</a>'
+                            + '</div>'
+                            + '</div>'
+
+
+                           // + '<a href="javascript:;" onclick=downloadtxt(' + $data.Data[i].Id + ') class="weui-btn weui-btn_primary">下载图片</a>'
                             + '</div>'
                             + '</div>'
                     } else {
@@ -91,16 +136,28 @@ function ShowContText(currId) {
                             //+ '<div class="weui-cell__bd"><p>服务事项</p></div>'
                             //+ '<div class="weui-cell__ft">' + $data.Data[i].CategoryName + '</div>'
                             //+ '</a>'
-                            + '<a class="weui-cell" style="color:#000" href="javascript:">'
+                            + '<div class="weui-cell" style="color:#000" href="javascript:">'
                             + '<div class="weui-cell__bd"><p>服务描述</p></div>'
-                            + '<div class="weui-cell__ft"><span>' + $data.Data[i].Remark + '</span></div >'
-                            + '</a>'
-                            + '<a class="weui-cell " style="color:#000"  href="javascript:">'
+                        /* + '<div class="weui-cell__ft"><span>' + $data.Data[i].Remark + '</span></div >'*/
+                            + '<div class="weui-cell__ft"><textarea class="weui-textarea"  rows="4">' + $data.Data[i].Remark + '</textarea></div >'
+                            + '</div>'
+                            + '<div class="weui-cell " style="color:#000"  href="javascript:">'
                             + '<div class="weui-cell__bd"><p>提醒时间</p></div>'
                             + '<div class="weui-cell__ft">' + $data.Data[i].TxDate + '</div>'
-                            + '</a>'
+                            + '</div>'
                             //+ '<a href="' + downloadurl + '" class="weui-btn weui-btn_primary">下载</a>'
-                            + '<a href="javascript:;" onclick=downloadtxt(' + $data.Data[i].Id + ') class="weui-btn weui-btn_primary">下载图片</a>'
+                           // + '<a href="javascript:;" onclick=downloadtxt(' + $data.Data[i].Id + ') class="weui-btn weui-btn_primary">下载图片</a>'
+                            + '<div class="weui-cell  " >'
+                            + '<div class="weui-cell__bd">'
+                            + '<a href="javascript:;" onclick=delcustomerfw(' + $data.Data[i].Id + ') class="weui-btn weui-btn_mini bg-red"><i class="icon icon-115"></i>删除</a>'
+                            + '</div>'
+                            + '<div class="weui-cell__ft">'
+                            + ' <a href="javascript:;" onclick=downloadtxt(' + $data.Data[i].Id + ')  class="weui-btn weui-btn_mini bg-blue"><i class="icon icon-115"></i>下载图片</a>'
+                            + '</div>'
+                            + '</div>'
+
+
+
                             + '</div>'
                             + '</div>'
 
@@ -125,7 +182,7 @@ $(function () {
     var currId = $("#contId").val();//'@ViewData["contId"]'
     LoadMainFormData(currId);
     ShowContText(currId);
-    // CheckWflow(currId);
+    
     
     
    

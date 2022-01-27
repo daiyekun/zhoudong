@@ -304,6 +304,59 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         }
 
         /// <summary>
+        /// 删除客户
+        /// </summary>
+        /// <param name="info">删除客户</param>
+        /// <returns></returns>
+        [CustomAction2CommitFilter]
+        [HttpPost("CustomerDel")]
+        public async Task<string> CustomerDel([FromBody] WxCustomerInfo info)
+        {
+            try
+            {
+                var uinfo = _IUserInforService.GetWxUserById(info.WxCode);
+                var compinfo = new Company();
+                if (info.Id > 0)
+                {
+                    compinfo = _ICompanyService.Find(info.Id);
+                    compinfo.Code = info.Code;
+                    compinfo.Name = info.Name;
+                    compinfo.FirstContact = info.FirstContact;
+                    compinfo.FirstContactMobile = info.FirstContactMobile;
+                    compinfo.Address = info.Address;
+                    compinfo.ModifyDateTime = DateTime.Now;
+                    compinfo.ModifyUserId = uinfo != null ? uinfo.UserId : 1;
+                    _ICompanyService.Update(compinfo);
+                }
+                else
+                {
+                    compinfo.Code = info.Code;
+                    compinfo.Name = info.Name;
+                    compinfo.FirstContact = info.FirstContact;
+                    compinfo.FirstContactMobile = info.FirstContactMobile;
+                    compinfo.Address = info.Address;
+                    compinfo.ModifyDateTime = DateTime.Now;
+                    compinfo.ModifyUserId = uinfo != null ? uinfo.UserId : 1;
+                    compinfo.CreateDateTime = DateTime.Now;
+                    compinfo.CreateUserId = 1;
+                    compinfo.CreateUserId = uinfo != null ? uinfo.UserId : 1;
+                    compinfo.CompClassId = 49;
+                    compinfo.Ctype = 0;//客户
+                    _ICompanyService.Add(compinfo);
+                }
+
+
+
+                return new RequestData().ToWxJson();
+            }
+            catch (Exception ex)
+            {
+                Log4netHelper.Error(ex.Message);
+                return new RequestData(code: 1).ToWxJson();
+            }
+        }
+
+        /// <summary>
         /// 添加客户
         /// </summary>
         /// <param name="info">添加客户</param>
@@ -368,6 +421,49 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                 return new RequestData(code: 1).ToWxJson();
             }
         }
+        /// <summary>
+        /// 删除客户
+        /// </summary>
+        /// <param name="Id">客户ID</param>
+        /// <returns></returns>
+        [HttpGet("DeleteCustomer")]
+        public string DeleteCustomer(int Id)
+        {
+            try
+            {
+                var Kh = _ICompanyService.Delete($"{Id}");
+                return new RequestData().ToWxJson();
+            }
+            catch (Exception ex)
+            {
+
+                Log4netHelper.Error(ex.Message);
+                return new RequestData(code: 1).ToWxJson();
+            }
+        }
+
+        /// <summary>
+        /// 删除服务记录
+        /// </summary>
+        /// <param name="Id">客户ID</param>
+        /// <returns></returns>
+        [HttpGet("DeleteFwRows")]
+        public string DeleteFwRows(int Id)
+        {
+            try
+            {
+                var Kh = _ICompAttachmentService.Delete(a => a.Id == Id);  // .Delete($"{Id}");
+                return new RequestData().ToWxJson();
+            }
+            catch (Exception ex)
+            {
+
+                Log4netHelper.Error(ex.Message);
+                return new RequestData(code: 1).ToWxJson();
+            }
+        }
+
+        
 
     }
 }

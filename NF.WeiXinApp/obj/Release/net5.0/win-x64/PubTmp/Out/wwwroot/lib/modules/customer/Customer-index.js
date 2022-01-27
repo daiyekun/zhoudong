@@ -303,6 +303,7 @@ function ajaxpage1(spage) {
                    
                     + '<div class="weui-cell__bd">'
                     + ' <a href="javascript:;" onclick=upcustomer(' + datas.data[i].Id + ') class="weui-btn weui-btn_mini bg-green"><i class="icon icon-115"></i>修改</a>'
+                    + ' &nbsp;&nbsp;<a href="javascript:;" onclick=delcustomer(' + datas.data[i].Id + ') class="weui-btn weui-btn_mini bg-red"><i class="icon icon-115"></i>删除</a>'
                     + '</div>'
                     + '<div class="weui-cell__ft">'
                     + ' <a href="javascript:;" onclick=addfuwu(' + datas.data[i].Id + ')  class="weui-btn weui-btn_mini bg-blue"><i class="icon icon-115"></i>新增服务记录</a>'
@@ -357,8 +358,41 @@ function upcustomer(custId) {
     window.location.href = "/Company/CustomerAdd?Wxzh=" + Wxz + "&Id=" + custId;
 
 }
+
 //新增服务
 function addfuwu(custId) {
     window.location.href = "/Company/CustFuWuAdd?Wxzh=" + Wxz + "&compId=" + custId;
+
+}
+
+//删除客户
+function delcustomer(custId) {
+
+    var $url = woowx.constant.APIBaseURL + "/api/company/DeleteCustomer";
+    $.ajax({
+        type: 'GET',
+        url: $url,
+        data:
+        {
+            Id: custId
+        },
+        dataType: 'json',
+        timeout: 10000,
+        success: function (data) {
+            var $data = JSON.parse(data);
+            if ($data.Code === 0) {
+
+                window.location.href = "/Common/SuccMag";
+
+            } else {
+                window.location.href = "/Common/FailMsg";
+            }
+           
+        }, error: function (xhr, type) {
+
+            alert('LoadMainFormData系统异常' + xhr + ":" + type + ":" + xhr.status);
+        }
+    });
+
 
 }
