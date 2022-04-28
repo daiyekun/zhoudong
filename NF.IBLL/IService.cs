@@ -435,6 +435,11 @@ public partial interface IContTextArchiveService : IBaseService<ContTextArchive>
     
    
      
+public partial interface IContAttacFileService : IBaseService<ContAttacFile>
+{ }
+    
+   
+     
 public partial interface IUserRoleService : IBaseService<UserRole>
 { }
     

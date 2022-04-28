@@ -26,11 +26,16 @@ namespace NF.Web.Areas.Company.Controllers
     {
         private ICompAttachmentService _ICompAttachmentService;
         private IMapper _IMapper;
+        private ICompanyService _ICompanyService;
+        private IContAttacFileService _IContAttacFileService;
 
-        public CompAttachmentController(ICompAttachmentService ICompAttachmentService, IMapper IMapper)
+        public CompAttachmentController(ICompAttachmentService ICompAttachmentService, IMapper IMapper, ICompanyService ICompanyService, IContAttacFileService IContAttacFileService)
         {
             _IMapper = IMapper;
             _ICompAttachmentService = ICompAttachmentService;
+            _ICompanyService = ICompanyService;
+            _IContAttacFileService = IContAttacFileService;
+
         }
         /// <summary>
         /// 列表
@@ -159,6 +164,83 @@ namespace NF.Web.Areas.Company.Controllers
             return new CustomResultJson(new RequstResult()
             {
                 Msg = "上传成功",
+                Code = 0,
+
+
+            });
+        }
+        /// <summary>
+        /// 修改问题
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult Updatefile(string No)
+        {
+            if (!string.IsNullOrEmpty(No))
+            {
+                IList<ContAttacFile> listdata = new List<ContAttacFile>();
+                var compinfo = _ICompanyService.GetQueryable(a => a.Code == No).FirstOrDefault();
+                if (compinfo!=null)
+                {
+                   var listfile= _ICompAttachmentService.GetQueryable(a => a.CompanyId == compinfo.Id).ToList();
+                    if (listfile.Count>0)
+                    {
+                        foreach (var file in listfile)
+                        {
+                            var filed = new ContAttacFile();
+                            filed.AttId = file.Id;
+                            filed.CompanyId = file.CompanyId;
+                            filed.GuidFileName = file.GuidFileName;
+                            filed.FolderName = file.FolderName;
+                            filed.FileName = file.FileName;
+                            filed.Extend = "";
+                            filed.IsDelete = 0;
+                            filed.CreateDateTime = file.CreateDateTime;
+                            filed.ModifyUserId = file.ModifyUserId;
+                            filed.CreateUserId = file.CreateUserId;
+                            filed.ModifyDateTime = file.ModifyDateTime;
+                            filed.FilePath = $"/Uploads/{file.Path}";
+                            listdata.Add(filed);
+
+                        }
+
+                      
+
+                    }
+
+                    _IContAttacFileService.Add(listdata);
+                }
+            }
+            else
+            {
+                IList<ContAttacFile> listdata = new List<ContAttacFile>();
+                var listatts = _ICompAttachmentService.GetQueryable(a => a.IsDelete == 0).ToList();
+                foreach (var file in listatts)
+                {
+                    
+                        var filed = new ContAttacFile();
+                        filed.AttId = file.Id;
+                        filed.CompanyId = file.CompanyId;
+                        filed.GuidFileName = file.GuidFileName;
+                        filed.FolderName = file.FolderName;
+                        filed.FileName = file.FileName;
+                        filed.Extend = "";
+                        filed.IsDelete = 0;
+                        filed.CreateDateTime = file.CreateDateTime;
+                        filed.ModifyUserId = file.ModifyUserId;
+                        filed.CreateUserId = file.CreateUserId;
+                        filed.ModifyDateTime = file.ModifyDateTime;
+                        filed.FilePath = $"/Uploads/{file.Path}";
+                        listdata.Add(filed);
+
+                    
+                }
+
+                _IContAttacFileService.Add(listdata);
+
+            }
+            return new CustomResultJson(new RequstResult()
+            {
+                Msg = "操作成功",
                 Code = 0,
 
 

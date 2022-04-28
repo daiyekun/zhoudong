@@ -439,3 +439,4 @@ E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.csproj.CopyComplete
 E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.genruntimeconfig.cache
 E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\Razor\Views\Company\CustomerAdd.cshtml.g.cs
 E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\Razor\Views\Company\CustFuWuAdd.cshtml.g.cs
+E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\Razor\Views\Company\DowloadPic.cshtml.g.cs

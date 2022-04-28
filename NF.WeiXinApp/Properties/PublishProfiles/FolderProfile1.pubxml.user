@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>E:\Zhoudong\NF.WeiXinApp\bin\Release\net5.0\publish\</_PublishTargetUrl>
-    <History>True|2022-01-27T03:11:39.5326497Z;True|2022-01-27T10:38:21.3002217+08:00;True|2022-01-27T10:35:13.2148369+08:00;True|2022-01-26T09:32:01.9339238+08:00;True|2021-12-01T15:36:11.9092411+08:00;True|2021-12-01T15:28:10.1691374+08:00;</History>
+    <History>True|2022-04-28T09:40:58.1914974Z;True|2022-01-27T11:11:39.5326497+08:00;True|2022-01-27T10:38:21.3002217+08:00;True|2022-01-27T10:35:13.2148369+08:00;True|2022-01-26T09:32:01.9339238+08:00;True|2021-12-01T15:36:11.9092411+08:00;True|2021-12-01T15:28:10.1691374+08:00;</History>
   </PropertyGroup>
 </Project>

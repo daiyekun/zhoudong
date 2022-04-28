@@ -1206,6 +1206,20 @@ namespace NF.BLL
     
    
      
+ public partial class ContAttacFileService : BaseService<ContAttacFile>, IContAttacFileService
+    {
+        private DbSet<ContAttacFile> _ContAttacFileSet = null;
+        public ContAttacFileService(DbContext dbContext)
+           : base(dbContext)
+        {
+            _ContAttacFileSet = base.Db.Set<ContAttacFile>();
+        }
+		
+		public ContAttacFileService(){}
+    }
+    
+   
+     
  public partial class UserRoleService : BaseService<UserRole>, IUserRoleService
     {
         private DbSet<UserRole> _UserRoleSet = null;

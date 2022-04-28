@@ -231,23 +231,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             
 
         }
-        // POST api/<UserController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<UserController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<UserController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+       
 
 
         /// <summary>
@@ -388,6 +372,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.CompanyId=info.CompanyId;
                     compinfo.CategoryId = 1067;
                     _ICompAttachmentService.Update(compinfo);
+                    string sqlstr = $"update ContAttacFile set AttId={compinfo.Id} where AttId=-188";
+                    _ICompAttachmentService.ExecuteSqlCommand(sqlstr);
                 }
                 else
                 {
@@ -408,7 +394,9 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.CategoryId = 1067;
                     compinfo.CreateDateTime = DateTime.Now;
                     compinfo.CreateUserId= uinfo != null ? uinfo.UserId : 1;
-                    _ICompAttachmentService.Add(compinfo);
+                    var reinfo=_ICompAttachmentService.Add(compinfo);
+                    string sqlstr = $"update ContAttacFile set AttId={reinfo.Id} where AttId=-188";
+                    _ICompAttachmentService.ExecuteSqlCommand(sqlstr);
                 }
 
 

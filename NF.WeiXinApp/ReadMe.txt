@@ -1,6 +1,11 @@
 ﻿作用：对外数据接口WEBAPI
 dotnet NF.WeiXinApp.dll --urls="http://*:8069" --ip="127.0.0.1" --port=8069
 redis 初始化   http://localhost:8059/api/DevCommon/InitRedisData
+服务新增测试
+
+http://localhost:8069/Company/CustFuWuAdd?Wxzh=daiyekun&compId=995
+//客户详情测试，记得注释控制器里的判断
+http://localhost:8069/Company/Detail?Id=995&FinanceType=0
 
 提交代码命令：
 方法1：

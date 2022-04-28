@@ -55,7 +55,7 @@ namespace NF.WeiXinApp.Controllers
                 //var userwx = HttpContext.Session.GetString("WxUserId");
             }
             ViewData["contId"] = Id;
-            var d =  HttpContext.Session.GetString("WxUserId");
+            var d = HttpContext.Session.GetString("WxUserId"); //"daiyekun"; ////
             ViewData["WxCurrUserId"] =d;// HttpContext.Session.GetString("WxUserId");
             ViewData["FinanceType"] = FinanceType;
             return View();
@@ -83,7 +83,7 @@ namespace NF.WeiXinApp.Controllers
 
         }
         /// <summary>
-        /// 新增客户
+        /// 新增客户服务
         /// </summary>
         /// <param name="Wxzh">账号</param>
         /// <param name="compId">客户ID</param>
@@ -92,7 +92,11 @@ namespace NF.WeiXinApp.Controllers
         {
             ViewData["WxCurrUserId"] =Wxzh;// HttpContext.Session.GetString("WxUserId");
             ViewData["CompanyId"] = compId;
-            
+            //清除垃圾数据
+            string sqlstr = "delete ContAttacFile where AttId=-188";
+            _ICompAttachmentService.ExecuteSqlCommand(sqlstr);
+
+
             return View();
 
         }
@@ -140,6 +144,21 @@ namespace NF.WeiXinApp.Controllers
             var downInfo = FileStreamingHelper.Download(pathf);//下载到微信客户端
 
             return File(downInfo.NfFileStream, downInfo.Memi, downInfo.FileName);
+
+        }
+
+        /// <summary>
+        /// 新增客户
+        /// </summary>
+        /// <param name="compId">客户ID</param>
+        /// <param name="acctId">服务ID</param>
+        /// <returns></returns>
+        public IActionResult DowloadPic(int compId,int acctId)
+        {
+            ViewData["compId"] = compId;// HttpContext.Session.GetString("WxUserId");
+            ViewData["acctId"] = acctId;
+           
+            return View();
 
         }
     }

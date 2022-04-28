@@ -1,18 +1,23 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "客户详情";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+ <script>
+
+        
+
+    </script>
 <a href="/Home/Eees" type="hidden" id="wxnamenull"></a>
-<div class="page">
+
+<div class="weui-gallery" style="display: none">
+    <span class="weui-gallery__img"></span>
+    <div class="weui-gallery__opr">
+    </div>
+</div>
+
+<div class="page page-bg">
     @* 审批框不用了 用下面的图标 *@
-    @*<div class="page__hd">
-            <div class="weui-btn_primary weui-header hide" id="shenpi">
-                <div class="weui-header-left"> <a class="icon icon-109 f-white"></a>  </div>
-                <h1 class="weui-header-title">审批</h1>
-                <div class="weui-header-right"><a class="icon icon-115 f-white"></a></div>
-            </div>
-        </div>*@
+
     <div class="page__bd">
         @*审批事项用于判断是否有审批按钮*@
         <input type="hidden" id="WfItem" name="WfItem" />
@@ -28,12 +33,7 @@
         <input type="hidden" id="FinanceType" name="FinanceType" value="@ViewData["FinanceType"]" />
         <input hidden id="contId" name="contId" value="@ViewData["contId"]" />
         <input hidden id="CurrWxUserId" name="CurrWxUserId" value="@ViewData["WxCurrUserId"]" />
-        @*签约信息----begin*@
-        @*<div class="weui-panel weui-panel_access weui-cells">
-                <span class="right f-orange"><a class="open-popup" href="javascript:;" data-target="#full">审批详情</a></span>
-            </div>*@
 
-        @*签约方信息-----end*@
         @*基本信息----begin*@
         <div class="weui-panel weui-panel_access">
 
@@ -51,61 +51,13 @@
                         <input class="weui-input" name="Code" id="Code" disabled />
                     </div>
                 </div>
-               @* <div class="weui-cell weui-cell_active weui-cell_disabled">
-                    <div class="weui-cell__hd"><label class="weui-label">类别</label></div>
-                    <div class="weui-cell__bd">
-                        <input class="weui-input" name="CompanyTypeClass" id="CompanyTypeClass" disabled />
-                    </div>
-                </div>*@
-               @* <div class="weui-cell weui-cell_active weui-cell_disabled">
-                    <div class="weui-cell__hd"><label class="weui-label">级别</label></div>
-                    <div class="weui-cell__bd">
-                        <input class="weui-input" name="LevelName" id="LevelName" disabled />
-                    </div>
-                </div>*@
-               @* <div class="weui-cell weui-cell_active weui-cell_disabled">
-                    <div class="weui-cell__hd"><label class="weui-label">信用等级</label></div>
-                    <div class="weui-cell__bd">
-                        <input class="weui-input" name="CareditName" id="CareditName" disabled />
-                    </div>
-                </div>*@
-                @*<div class="weui-cell weui-cell_active weui-cell_disabled">
-                    <div class="weui-cell__hd"><label class="weui-label">状态</label></div>
-                    <div class="weui-cell__bd">
-                        <input class="weui-input" name="CstateDic" id="CstateDic" disabled />
-                    </div>
-                </div>*@
-
-               @* <div class="weui-cell weui-cell_active weui-cell_disabled">
-                    <div class="weui-cell__hd"><label class="weui-label">建立人</label></div>
-                    <div class="weui-cell__bd">
-                        <input class="weui-input" name="CreateUserDisplayName" id="CreateUserDisplayName" disabled />
-                    </div>
-                </div>
-                <div class="weui-cell weui-cell_active weui-cell_disabled">
-                    <div class="weui-cell__hd"><label class="weui-label">负责人</label></div>
-                    <div class="weui-cell__bd">
-                        <input class="weui-input" name="PrincipalUserDisplayName" id="PrincipalUserDisplayName" disabled />
-                    </div>
-                </div>*@
                 <div class="weui-cell weui-cell_active weui-cell_disabled">
                     <div class="weui-cell__hd"><label class="weui-label">联系人姓名</label></div>
                     <div class="weui-cell__bd">
                         <input class="weui-input" name="FirstContact" id="FirstContact" disabled />
                     </div>
                 </div>
-                @*<div class="weui-cell weui-cell_active weui-cell_disabled">
-                    <div class="weui-cell__hd"><label class="weui-label">职位</label></div>
-                    <div class="weui-cell__bd">
-                        <input class="weui-input" name="FirstContactPosition" id="FirstContactPosition" disabled />
-                    </div>
-                </div>*@
-              @*  <div class="weui-cell weui-cell_active weui-cell_disabled">
-                    <div class="weui-cell__hd"><label class="weui-label">办公电话</label></div>
-                    <div class="weui-cell__bd">
-                        <input class="weui-input" name="FirstContactTel" id="FirstContactTel" disabled />
-                    </div>
-                </div>*@
+
                 <div class="weui-cell weui-cell_active weui-cell_disabled">
                     <div class="weui-cell__hd"><label class="weui-label">联系电话</label></div>
                     <div class="weui-cell__bd">
@@ -118,50 +70,81 @@
                         <input class="weui-input" name="Address" id="Address" disabled />
                     </div>
                 </div>
-               @* <div class="weui-cell weui-cell_active weui-cell_disabled">
-                    <div class="weui-cell__hd"><label class="weui-label">邮箱</label></div>
-                    <div class="weui-cell__bd">
-                        <input class="weui-input" name="FirstContactEmail" id="FirstContactEmail" disabled />
-                    </div>
-                </div>*@
-            </div>
-           @* <div class="page__bd">
-                <div class="weui-cells__title bd  weui-panel_access">其他联系人</div>
-                <div class="weui-cells">
-                    <a class="weui-cell  weui-cell_access weui-cell_example" href="Lxr?Id=@ViewData["contId"]&Wxzh=@ViewData["WxCurrUserId"]">
-                        <div class="weui-cell__hd"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAVFBMVEXx8fHMzMzr6+vn5+fv7+/t7e3d3d2+vr7W1tbHx8eysrKdnZ3p6enk5OTR0dG7u7u3t7ejo6PY2Njh4eHf39/T09PExMSvr6+goKCqqqqnp6e4uLgcLY/OAAAAnklEQVRIx+3RSRLDIAxE0QYhAbGZPNu5/z0zrXHiqiz5W72FqhqtVuuXAl3iOV7iPV/iSsAqZa9BS7YOmMXnNNX4TWGxRMn3R6SxRNgy0bzXOW8EBO8SAClsPdB3psqlvG+Lw7ONXg/pTld52BjgSSkA3PV2OOemjIDcZQWgVvONw60q7sIpR38EnHPSMDQ4MjDjLPozhAkGrVbr/z0ANjAF4AcbXmYAAAAASUVORK5CYII=" alt="" style="width: 20px; margin-right: 16px; display: block;"></div>
-                        <div class="weui-cell__bd">
-                            <p>其他联系人</p>
-                        </div>
-                        <div class="weui-cell__ft"></div>
-                    </a>
 
-                </div>
-            </div>*@
+            </div>
+
         </div>
         @*基本信息----end*@
-        @*合同文本----begin*@
+
+        @*服务记录-begin*@
         <div class="weui-panel weui-panel_access">
             <div class="weui-panel__hd">服务记录</div>
-            <div class="weui-panel__bd" id="ShowFile">
+            <div class="weui-panel__bd page-bd" style="padding-bottom:60px;" id="ShowFile">
+
+                @*<div class="weui-form-preview weui-panel_access">
+                    <div class="weui-form-preview__hd">
+                        <label class="weui-form-preview__label">提醒时间</label>
+                        <em class="weui-form-preview__value">2022-4-8</em>
+                    </div>
+                    <div class="weui-form-preview__bd">
+
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">服务描述</label>
+                            <span class="weui-form-preview__value">很长很长的名字很长很长的名字很长很长的名字很长很长的名字很长很长的名字</span>
+                        </div>
+                    </div>
+
+                    <div class="weui-form-preview__bd">
+                        <div class="weui-form-preview__item">
+                        <ul class="weui-uploader__files" id="uploaderFiles">
+                            <li class="weui-uploader__file" style="background-image:url(/Uploads/CustomerFile/00c24432-4c00-44d8-a97b-1ab022cf1268.jpeg)"></li>
+                            <li class="weui-uploader__file" style="background-image:url(/Uploads/CustomerFile/3ce02b38-3e8c-4236-9a81-cdd46d641b94.jpeg)"></li>
+                            <li class="weui-uploader__file" style="background-image:url(/Uploads/CustomerFile/5f38ba75-3189-412e-8d1a-2500fe78fa85.jpeg)"></li>
+                         
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="weui-form-preview__ft" >
+                        <a class="weui-form-preview__btn weui-form-preview__btn_primary"href="javascript:">删除</a>
+                    </div>
+                </div>*@
+
+
+               @* <div class="weui-form-preview weui-panel_access">
+                    <div class="weui-form-preview__hd">
+                        <label class="weui-form-preview__label">提醒时间</label>
+                        <em class="weui-form-preview__value">2022-6-18</em>
+                    </div>
+                    <div class="weui-form-preview__bd">
+
+                        <div class="weui-form-preview__item">
+                            <label class="weui-form-preview__label">服务描述</label>
+                            <span class="weui-form-preview__value">换个东西</span>
+                        </div>
+                    </div>
+                    <div class="weui-form-preview__ft" >
+                        <a class="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:">删除</a>
+                    </div>
+                  
+                </div>*@
 
             </div>
         </div>
-        @*合同文本-----end*@
-    </div>
-    @*漂浮图片*@
-    <img src="~/lib/weui/images/icon_shenpi.png" class="shenpibtn hide" id="shenpi" />
-</div>
+        @*服务记录-end*@
 
-<div id="full" class='weui-popup__container'>
-    <div class="weui-popup__overlay"></div>
-    <div class="weui-popup__modal">
-        <a href="javascript:;" class="weui-btn weui-btn_primary close-popup">关闭</a>
-        <div class="timeline">
-            <ul id="timelineui">
-            </ul>
-        </div>
-    </div>
-</div>
-<script type="text/javascript" src="~/lib/modules/customer/company-detail.js"></script>
 
+
+
+
+
+
+    </div>
+    <script type="text/javascript" src="~/lib/modules/customer/company-detail.js"></script>
+
+        
+   
+    <div class="weui-loadmore weui-loadmore_line">
+    <span class="weui-loadmore__tips">已经见底,别再翻了</span>
+    </div>
+
+</div>

@@ -253,6 +253,9 @@ namespace NF.Web.Utility.DI
             services.AddTransient<IScheduleDetailAttachmentService, ScheduleDetailAttachmentService>();
             #endregion
 
+            services.AddTransient<IContAttacFileService, ContAttacFileService>();
+            
+
         }
         /// <summary>
         /// 手动获取

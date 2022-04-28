@@ -21,4 +21,3 @@ E:\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.csproj.CoreCompileInputs.cache
 E:\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.dll
 E:\Zhoudong\NF.Common\obj\Debug\net5.0\ref\NF.Common.dll
 E:\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.pdb
-E:\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.csproj.AssemblyReference.cache

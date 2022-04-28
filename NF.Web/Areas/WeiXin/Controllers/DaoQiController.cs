@@ -113,7 +113,7 @@ namespace NF.Web.Areas.WeiXin.Controllers
         /// </summary>
         /// <returns></returns>
         public IActionResult WxZhouDongTx()
-        {
+         {
             _ICompanyService.DaoQiTx();
             return new CustomResultJson(new RequstResult()
             {

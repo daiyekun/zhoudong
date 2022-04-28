@@ -252,6 +252,8 @@ namespace NF.WeiXinApp.Utility.DI
             services.AddTransient<IScheduleDetailService, ScheduleDetailService>();
             services.AddTransient<IScheduleDetailAttachmentService, ScheduleDetailAttachmentService>();
             #endregion
+            services.AddTransient<IContAttacFileService, ContAttacFileService>();
+
 
         }
         /// <summary>

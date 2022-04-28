@@ -439,3 +439,4 @@ E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\NF.WeiXinApp.dll
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\ref\NF.WeiXinApp.dll
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\NF.WeiXinApp.pdb
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\NF.WeiXinApp.genruntimeconfig.cache
+E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\Razor\Views\Company\DowloadPic.cshtml.g.cs

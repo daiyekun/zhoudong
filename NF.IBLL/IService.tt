@@ -8,7 +8,7 @@
 <#@ import namespace="System.Data.SqlClient" #>
 <#@ output extension=".cs" #>
 <#
- var builder = new T4Builder("Server=192.168.0.189;Database=SkyyDb20211118;Persist Security Info=True;User ID=sa;password=Sasa123;");
+ var builder = new T4Builder("Server=.;Database=ZHOU_DONG;Persist Security Info=True;User ID=sa;password=Sasa123;");
 
 #>
 using NF.Model.Models;

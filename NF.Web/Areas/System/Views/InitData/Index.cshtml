@@ -39,6 +39,9 @@
                     <div class="layui-inline">
                         <button class="layui-btn layuiadmin-btn-inidata" data-type="stataicdata">导入数据统计初始化</button>
                     </div>
+                     <div class="layui-inline">
+                        <button class="layui-btn layuiadmin-btn-inidata" data-type="updatefile">校正图片信息</button>
+                    </div>
                 </div>
             </fieldset>
             <fieldset class="layui-elem-field layui-field-title">
@@ -113,6 +116,10 @@
                 subwxmsg: function () {
                     var InstId = $("#InstId").val();
                     UrlRequst("/WorkFlow/AppInst/SubmitWxMsg?instId=" + htno, "发送消息到消息队列")
+                },
+                updatefile: function () {
+                    var htno = $("#No").val();
+                    UrlRequst("/Company/CompAttachment/Updatefile?No=" + htno, "操作完毕")
                 }
 
             };

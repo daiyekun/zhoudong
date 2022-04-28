@@ -464,6 +464,7 @@ E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\weui\
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\weui\images\icon_xm.png
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\weui\js\iscroll.js
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\weui\js\lazyimg.js
+E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\weui\js\lrz.min.js
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\weui\js\updown.js
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\weui\js\zepto.min.js
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\WW_verify_LUCja19IrqMsXn0S.txt

@@ -42,6 +42,7 @@ namespace NF.Model.Models
         public virtual DbSet<CompDescription> CompDescriptions { get; set; }
         public virtual DbSet<Company> Companies { get; set; }
         public virtual DbSet<ContActualFinance> ContActualFinances { get; set; }
+        public virtual DbSet<ContAttacFile> ContAttacFiles { get; set; }
         public virtual DbSet<ContAttachment> ContAttachments { get; set; }
         public virtual DbSet<ContConsult> ContConsults { get; set; }
         public virtual DbSet<ContDescription> ContDescriptions { get; set; }
@@ -768,6 +769,27 @@ namespace NF.Model.Models
                     .HasForeignKey(d => d.CreateUserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_ContActualFinance_UserInfor");
+            });
+
+            modelBuilder.Entity<ContAttacFile>(entity =>
+            {
+                entity.ToTable("ContAttacFile");
+
+                entity.Property(e => e.CreateDateTime).HasColumnType("datetime");
+
+                entity.Property(e => e.Extend).HasMaxLength(20);
+
+                entity.Property(e => e.FileName).HasMaxLength(100);
+
+                entity.Property(e => e.FilePath).HasMaxLength(500);
+
+                entity.Property(e => e.FolderName).HasMaxLength(50);
+
+                entity.Property(e => e.GuidFileName).HasMaxLength(50);
+
+                entity.Property(e => e.ModifyDateTime).HasColumnType("datetime");
+
+                entity.Property(e => e.Name).HasMaxLength(100);
             });
 
             modelBuilder.Entity<ContAttachment>(entity =>
