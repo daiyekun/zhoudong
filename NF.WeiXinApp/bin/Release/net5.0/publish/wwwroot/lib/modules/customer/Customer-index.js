@@ -3,7 +3,7 @@ if (ddr == null || ddr == "") {
     $("#wxnamenull").click();
 }
 
-var $url = woowx.constant.APIBaseURL + "/api/Company/Khlist";
+var $url = woowx.constant.APIBaseURL + "/api/Company/WooKhlist";
 var pagesize = woowx.constant.page;//每页数据条数
 var page = 1;
 var maxpage;

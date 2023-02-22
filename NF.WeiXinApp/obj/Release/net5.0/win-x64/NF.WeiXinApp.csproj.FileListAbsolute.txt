@@ -214,7 +214,6 @@ E:\Zhoudong\NF.WeiXinApp\bin\Release\net5.0\win-x64\NF.WeiXinApp.deps.json
 E:\Zhoudong\NF.WeiXinApp\bin\Release\net5.0\win-x64\NF.WeiXinApp.runtimeconfig.json
 E:\Zhoudong\NF.WeiXinApp\bin\Release\net5.0\win-x64\NF.WeiXinApp.runtimeconfig.dev.json
 E:\Zhoudong\NF.WeiXinApp\bin\Release\net5.0\win-x64\NF.WeiXinApp.dll
-E:\Zhoudong\NF.WeiXinApp\bin\Release\net5.0\win-x64\ref\NF.WeiXinApp.dll
 E:\Zhoudong\NF.WeiXinApp\bin\Release\net5.0\win-x64\NF.WeiXinApp.pdb
 E:\Zhoudong\NF.WeiXinApp\bin\Release\net5.0\win-x64\NF.WeiXinApp.Views.dll
 E:\Zhoudong\NF.WeiXinApp\bin\Release\net5.0\win-x64\NF.WeiXinApp.Views.pdb
@@ -404,3 +403,4 @@ E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\ref\NF.WeiXinApp.dll
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\NF.WeiXinApp.pdb
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\NF.WeiXinApp.genruntimeconfig.cache
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\Razor\Views\Company\DowloadPic.cshtml.g.cs
+E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\refint\NF.WeiXinApp.dll

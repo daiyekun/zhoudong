@@ -35,7 +35,6 @@ E:\Zhoudong\NF.BLL\obj\Debug\net5.0\ref\NF.BLL.dll
 E:\Zhoudong\NF.BLL\obj\Debug\net5.0\NF.BLL.pdb
 E:\Zhoudong\NF.BLL\bin\Debug\net5.0\NF.BLL.deps.json
 E:\Zhoudong\NF.BLL\bin\Debug\net5.0\NF.BLL.dll
-E:\Zhoudong\NF.BLL\bin\Debug\net5.0\ref\NF.BLL.dll
 E:\Zhoudong\NF.BLL\bin\Debug\net5.0\NF.BLL.pdb
 E:\Zhoudong\NF.BLL\bin\Debug\net5.0\LhCode.dll
 E:\Zhoudong\NF.BLL\bin\Debug\net5.0\NF.AutoMapper.dll
@@ -50,3 +49,4 @@ E:\Zhoudong\NF.BLL\bin\Debug\net5.0\NF.IBLL.pdb
 E:\Zhoudong\NF.BLL\bin\Debug\net5.0\NF.Model.pdb
 E:\Zhoudong\NF.BLL\bin\Debug\net5.0\NF.ViewModel.pdb
 E:\Zhoudong\NF.BLL\obj\Debug\net5.0\NF.BLL.csproj.CopyComplete
+E:\Zhoudong\NF.BLL\obj\Debug\net5.0\refint\NF.BLL.dll

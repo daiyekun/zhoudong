@@ -19,7 +19,6 @@ D:\MyCode\Devs\V3.0\SZSKYY\NF.IBLL\obj\Release\net5.0\ref\NF.IBLL.dll
 D:\MyCode\Devs\V3.0\SZSKYY\NF.IBLL\obj\Release\net5.0\NF.IBLL.pdb
 E:\Zhoudong\NF.IBLL\bin\Release\net5.0\NF.IBLL.deps.json
 E:\Zhoudong\NF.IBLL\bin\Release\net5.0\NF.IBLL.dll
-E:\Zhoudong\NF.IBLL\bin\Release\net5.0\ref\NF.IBLL.dll
 E:\Zhoudong\NF.IBLL\bin\Release\net5.0\NF.IBLL.pdb
 E:\Zhoudong\NF.IBLL\bin\Release\net5.0\NF.Common.dll
 E:\Zhoudong\NF.IBLL\bin\Release\net5.0\NF.Model.dll
@@ -36,3 +35,4 @@ E:\Zhoudong\NF.IBLL\obj\Release\net5.0\NF.IBLL.csproj.CopyComplete
 E:\Zhoudong\NF.IBLL\obj\Release\net5.0\NF.IBLL.dll
 E:\Zhoudong\NF.IBLL\obj\Release\net5.0\ref\NF.IBLL.dll
 E:\Zhoudong\NF.IBLL\obj\Release\net5.0\NF.IBLL.pdb
+E:\Zhoudong\NF.IBLL\obj\Release\net5.0\refint\NF.IBLL.dll

@@ -12,7 +12,6 @@ D:\MyCode\Devs\V3.0\SZSKYY\NF.Common\obj\Debug\net5.0\NF.Common.pdb
 D:\MyCode\Devs\V3.0\SZSKYY\NF.Common\obj\Debug\net5.0\NF.Common.csproj.AssemblyReference.cache
 E:\Zhoudong\NF.Common\bin\Debug\net5.0\NF.Common.deps.json
 E:\Zhoudong\NF.Common\bin\Debug\net5.0\NF.Common.dll
-E:\Zhoudong\NF.Common\bin\Debug\net5.0\ref\NF.Common.dll
 E:\Zhoudong\NF.Common\bin\Debug\net5.0\NF.Common.pdb
 E:\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.GeneratedMSBuildEditorConfig.editorconfig
 E:\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.AssemblyInfoInputs.cache
@@ -21,3 +20,5 @@ E:\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.csproj.CoreCompileInputs.cache
 E:\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.dll
 E:\Zhoudong\NF.Common\obj\Debug\net5.0\ref\NF.Common.dll
 E:\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.pdb
+E:\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.csproj.AssemblyReference.cache
+E:\Zhoudong\NF.Common\obj\Debug\net5.0\refint\NF.Common.dll

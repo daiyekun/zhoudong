@@ -19,7 +19,6 @@ D:\MyCode\Devs\V3.0\SZSKYY\NF.AutoMapper\obj\Debug\net5.0\NF.AutoMapper.pdb
 D:\MyCode\Devs\V3.0\SZSKYY\NF.AutoMapper\obj\Debug\net5.0\NF.AutoMapper.csproj.AssemblyReference.cache
 E:\Zhoudong\NF.AutoMapper\bin\Debug\net5.0\NF.AutoMapper.deps.json
 E:\Zhoudong\NF.AutoMapper\bin\Debug\net5.0\NF.AutoMapper.dll
-E:\Zhoudong\NF.AutoMapper\bin\Debug\net5.0\ref\NF.AutoMapper.dll
 E:\Zhoudong\NF.AutoMapper\bin\Debug\net5.0\NF.AutoMapper.pdb
 E:\Zhoudong\NF.AutoMapper\bin\Debug\net5.0\NF.Common.dll
 E:\Zhoudong\NF.AutoMapper\bin\Debug\net5.0\NF.Model.dll
@@ -36,3 +35,4 @@ E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\NF.AutoMapper.csproj.CopyComplete
 E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\NF.AutoMapper.dll
 E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\ref\NF.AutoMapper.dll
 E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\NF.AutoMapper.pdb
+E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\refint\NF.AutoMapper.dll

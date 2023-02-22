@@ -76,7 +76,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             _IProjectManagerService = IProjectManagerService;
         }
         // GET: api/<UserController>
-        [HttpGet("Khlist")]
+        [HttpGet("WooKhlist")]
         public string Get(int page, int limit, string keyWord, string Wxzh, int FinanceType)
         {
             PageparamInfo pageParam = new PageparamInfo();
@@ -104,7 +104,9 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             if (pageParam.orderType == "asc")
                 IsAsc = true;
             var layPage = _ICompanyService.GetWxCompList(pageInfo, predicateAnd, orderbyLambda, IsAsc);
-            return layPage.ToWxJson();
+            var json= layPage.ToWxJson();
+            Log4netHelper.Info($"hisdata返回数据:{json}");
+            return json;
         }
         /// <summary>
         /// 获取查询条件表达式

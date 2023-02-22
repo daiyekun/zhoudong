@@ -19,7 +19,6 @@ D:\MyCode\Devs\V3.0\SZSKYY\NF.WeiXin.Lib\obj\Release\net5.0\ref\NF.WeiXin.Lib.dl
 D:\MyCode\Devs\V3.0\SZSKYY\NF.WeiXin.Lib\obj\Release\net5.0\NF.WeiXin.Lib.pdb
 E:\Zhoudong\NF.WeiXin.Lib\bin\Release\net5.0\NF.WeiXin.Lib.deps.json
 E:\Zhoudong\NF.WeiXin.Lib\bin\Release\net5.0\NF.WeiXin.Lib.dll
-E:\Zhoudong\NF.WeiXin.Lib\bin\Release\net5.0\ref\NF.WeiXin.Lib.dll
 E:\Zhoudong\NF.WeiXin.Lib\bin\Release\net5.0\NF.WeiXin.Lib.pdb
 E:\Zhoudong\NF.WeiXin.Lib\bin\Release\net5.0\NF.Common.dll
 E:\Zhoudong\NF.WeiXin.Lib\bin\Release\net5.0\NF.Model.dll
@@ -36,3 +35,4 @@ E:\Zhoudong\NF.WeiXin.Lib\obj\Release\net5.0\NF.WeiXin.Lib.csproj.CopyComplete
 E:\Zhoudong\NF.WeiXin.Lib\obj\Release\net5.0\NF.WeiXin.Lib.dll
 E:\Zhoudong\NF.WeiXin.Lib\obj\Release\net5.0\ref\NF.WeiXin.Lib.dll
 E:\Zhoudong\NF.WeiXin.Lib\obj\Release\net5.0\NF.WeiXin.Lib.pdb
+E:\Zhoudong\NF.WeiXin.Lib\obj\Release\net5.0\refint\NF.WeiXin.Lib.dll

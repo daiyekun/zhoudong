@@ -17,7 +17,6 @@ D:\MyCode\Devs\V3.0\SZSKYY\NF.ViewModel\obj\Debug\net5.0\NF.ViewModel.pdb
 D:\MyCode\Devs\V3.0\SZSKYY\NF.ViewModel\obj\Debug\net5.0\NF.ViewModel.csproj.AssemblyReference.cache
 E:\Zhoudong\NF.ViewModel\bin\Debug\net5.0\NF.ViewModel.deps.json
 E:\Zhoudong\NF.ViewModel\bin\Debug\net5.0\NF.ViewModel.dll
-E:\Zhoudong\NF.ViewModel\bin\Debug\net5.0\ref\NF.ViewModel.dll
 E:\Zhoudong\NF.ViewModel\bin\Debug\net5.0\NF.ViewModel.pdb
 E:\Zhoudong\NF.ViewModel\bin\Debug\net5.0\NF.Common.dll
 E:\Zhoudong\NF.ViewModel\bin\Debug\net5.0\NF.Model.dll
@@ -32,3 +31,4 @@ E:\Zhoudong\NF.ViewModel\obj\Debug\net5.0\NF.ViewModel.csproj.CopyComplete
 E:\Zhoudong\NF.ViewModel\obj\Debug\net5.0\NF.ViewModel.dll
 E:\Zhoudong\NF.ViewModel\obj\Debug\net5.0\ref\NF.ViewModel.dll
 E:\Zhoudong\NF.ViewModel\obj\Debug\net5.0\NF.ViewModel.pdb
+E:\Zhoudong\NF.ViewModel\obj\Debug\net5.0\refint\NF.ViewModel.dll

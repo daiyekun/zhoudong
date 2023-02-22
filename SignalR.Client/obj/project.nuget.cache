@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TRRs0NT9o0UZp2lr9CdY0t5UbWLO+b4/gW3pPIKQUJVw7kRtqUmeMoXBOqCRhNCexmbP+XSiZYMU1sqY4RWoFw==",
+  "dgSpecHash": "/ccLaFNn3Wi8c0a4/bvC6m2NwopxHMvairgUIT8Bt/SHtpq6zf9tBNqlPNzYvMFDtnvbiUGEQkKswF8zqYuMeQ==",
   "success": true,
   "projectFilePath": "E:\\Zhoudong\\SignalR.Client\\SignalR.Client.csproj",
   "expectedPackageFiles": [
@@ -19,7 +19,10 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.io.pipelines\\5.0.0\\system.io.pipelines.5.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.channels\\5.0.0\\system.threading.channels.5.0.0.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.channels\\5.0.0\\system.threading.channels.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

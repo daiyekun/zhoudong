@@ -12,7 +12,6 @@ D:\MyCode\Devs\V3.0\SZSKYY\NF.Common\obj\Release\net5.0\ref\NF.Common.dll
 D:\MyCode\Devs\V3.0\SZSKYY\NF.Common\obj\Release\net5.0\NF.Common.pdb
 E:\Zhoudong\NF.Common\bin\Release\net5.0\NF.Common.deps.json
 E:\Zhoudong\NF.Common\bin\Release\net5.0\NF.Common.dll
-E:\Zhoudong\NF.Common\bin\Release\net5.0\ref\NF.Common.dll
 E:\Zhoudong\NF.Common\bin\Release\net5.0\NF.Common.pdb
 E:\Zhoudong\NF.Common\obj\Release\net5.0\NF.Common.csproj.AssemblyReference.cache
 E:\Zhoudong\NF.Common\obj\Release\net5.0\NF.Common.GeneratedMSBuildEditorConfig.editorconfig
@@ -22,3 +21,4 @@ E:\Zhoudong\NF.Common\obj\Release\net5.0\NF.Common.csproj.CoreCompileInputs.cach
 E:\Zhoudong\NF.Common\obj\Release\net5.0\NF.Common.dll
 E:\Zhoudong\NF.Common\obj\Release\net5.0\ref\NF.Common.dll
 E:\Zhoudong\NF.Common\obj\Release\net5.0\NF.Common.pdb
+E:\Zhoudong\NF.Common\obj\Release\net5.0\refint\NF.Common.dll

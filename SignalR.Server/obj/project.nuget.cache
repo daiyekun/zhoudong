@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WUt4ammEciIifmBxs8AO32gv49qvmK5vTzAOHErjexy8zsjG1UVrRRUa61TvRyHZMmiADU/rzYlBSyslMR3Hng==",
+  "dgSpecHash": "n3tn1AwDLX6LtbbhcZOtX30MlrHvml9Bsabw/D+B/q+1cqsjvdZoNOT00VvF74BAAWt/3fn9yKZVLJ1rRw6MVA==",
   "success": true,
   "projectFilePath": "E:\\Zhoudong\\SignalR.Server\\SignalR.Server.csproj",
   "expectedPackageFiles": [
@@ -52,7 +52,10 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.channels\\4.5.0\\system.threading.channels.4.5.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
