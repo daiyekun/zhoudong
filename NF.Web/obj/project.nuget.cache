@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IBUrW4olDmhQTApF1q31l5g+A5hKtzGUOcMjTtXf2+9YfWrlphkBwnwwLlDqVDpyo7HUnlRhP9TNpOTpBYuzsQ==",
+  "dgSpecHash": "RwtTG6piYIERl/mtsu81UbagyCh6sCKjnsuZ0xzZB5EyF1nb43dzAd88hZPvSZmh6wd8weCqfvDHBrK/dnbuEQ==",
   "success": true,
   "projectFilePath": "E:\\Zhoudong\\NF.Web\\NF.Web.csproj",
   "expectedPackageFiles": [
@@ -309,10 +309,10 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\timedjob\\2.0.0\\timedjob.2.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\zkweb.system.drawing\\4.0.1\\zkweb.system.drawing.4.0.1.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }

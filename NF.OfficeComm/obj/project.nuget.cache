@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lsPxyb460rXbcFBa+WooFqQaFIIXnbcfXRtdKNmm7hJXMg/XeYczHm6wgx67xaC52VEjZSDfoXb2Y3tVJFnjug==",
+  "dgSpecHash": "P6fNZCJ4sKTZO9Ot8yfeaPENkBx5PxTB8FU+nBNsEbo8pLkZc+7ZjFDdFd6y5mhNdF5r+6TMTFaDXTGxAb9F4w==",
   "success": true,
   "projectFilePath": "E:\\Zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj",
   "expectedPackageFiles": [
@@ -140,9 +140,9 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.xml.xmldocument\\4.0.1\\system.xml.xmldocument.4.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\zkweb.system.drawing\\4.0.1\\zkweb.system.drawing.4.0.1.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

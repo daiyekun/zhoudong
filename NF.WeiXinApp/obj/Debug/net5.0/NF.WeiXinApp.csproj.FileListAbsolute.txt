@@ -440,3 +440,8 @@ E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\Razor\Views\Company\CustomerAdd.cshtml
 E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\Razor\Views\Company\CustFuWuAdd.cshtml.g.cs
 E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\Razor\Views\Company\DowloadPic.cshtml.g.cs
 E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\refint\NF.WeiXinApp.dll
+E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\staticwebassets\NF.WeiXinApp.StaticWebAssets.Pack.cache
+E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\staticwebassets\msbuild.NF.WeiXinApp.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\staticwebassets\msbuild.build.NF.WeiXinApp.props
+E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.NF.WeiXinApp.props
+E:\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.NF.WeiXinApp.props

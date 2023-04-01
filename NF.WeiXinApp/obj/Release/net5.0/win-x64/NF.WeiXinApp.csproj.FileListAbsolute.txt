@@ -404,3 +404,8 @@ E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\NF.WeiXinApp.pdb
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\NF.WeiXinApp.genruntimeconfig.cache
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\Razor\Views\Company\DowloadPic.cshtml.g.cs
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\refint\NF.WeiXinApp.dll
+E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\staticwebassets\NF.WeiXinApp.StaticWebAssets.Pack.cache
+E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\staticwebassets\msbuild.NF.WeiXinApp.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\staticwebassets\msbuild.build.NF.WeiXinApp.props
+E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\staticwebassets\msbuild.buildMultiTargeting.NF.WeiXinApp.props
+E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\staticwebassets\msbuild.buildTransitive.NF.WeiXinApp.props

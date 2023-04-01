@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7zwmZajf3ISDu+SaCX5EPEDuIk4sJkO0AP01g/Yp0adfxGwg+mBxRJy9leUD9Mg94rNIbif+VP7Ykx2NDSgE8Q==",
+  "dgSpecHash": "X/B1JVmq5UP5bcwSvP3sAV/LMe78i0mFe0nGJIQHxYz6oPKskxJyTp8h5dF5WSmaHV3o4EjlrnRWU7y7G5ebZg==",
   "success": true,
   "projectFilePath": "E:\\Zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj",
   "expectedPackageFiles": [
@@ -155,9 +155,9 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\zkweb.system.drawing\\4.0.1\\zkweb.system.drawing.4.0.1.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
