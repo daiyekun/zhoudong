@@ -1,7 +1,4 @@
-﻿using NF.Common.Utility;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using NF.Common.Utility;
 
 namespace NF.ViewModel.Extend.Enums
 {
@@ -9,17 +6,17 @@ namespace NF.ViewModel.Extend.Enums
     /// 上传下载文件夹枚举
     /// </summary>
     [EnumClass(Max = 50, Min = 0, None = -1)]
-    public  enum UploadAndDownloadFoldersEnum
+    public enum UploadAndDownloadFoldersEnum
     {
         /// <summary>
         /// 客户附件（CustomerFile）：0
         /// </summary>
         [EnumItem(Value = 0, Desc = "CustomerFile")]
-        CustomerFile=0,
+        CustomerFile = 0,
         /// <summary>
         /// 供应商附件（SupplierFile）：1
         /// </summary>
-        [EnumItem(Value = 1, Desc = "SupplierFile")]
+        [EnumItem(Value = 1, Desc = "CustomerVideoFile")]
         SupplierFile = 1,
         /// <summary>
         /// 其他对方附件（OtherFile）：2
@@ -35,7 +32,7 @@ namespace NF.ViewModel.Extend.Enums
         /// 项目附件：ProjectFile
         /// </summary>
         [EnumItem(Value = 4, Desc = "ProjectFile")]
-        ProjectFile=4,
+        ProjectFile = 4,
         /// <summary>
         /// 合同附件：ContractFile
         /// </summary>

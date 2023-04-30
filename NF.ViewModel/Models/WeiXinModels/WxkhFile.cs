@@ -1,8 +1,5 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NF.ViewModel
 {
@@ -10,7 +7,7 @@ namespace NF.ViewModel
     {
         public int Id { get; set; }
         public string FileName { get; set; }
-        public string CategoryName { get; set;}
+        public string CategoryName { get; set; }
         /// <summary>
         /// 提醒时间
         /// </summary>
@@ -29,13 +26,18 @@ namespace NF.ViewModel
         /// </summary>
 
         public IList<PicView> PicData { get; set; }
+        /// <summary>
+        /// 视频集合
+        /// </summary>
+        public IList<VideoView> VideoData { get; set; }
 
 
 
 
     }
+
     /// <summary>
-    /// 图片显示
+    /// 视频显示
     /// </summary>
     public class PicView
     {
@@ -48,11 +50,45 @@ namespace NF.ViewModel
         /// </summary>
         public string PicPath { get; set; }
     }
+    /// <summary>
+    /// 视频显示
+    /// </summary>
+    public class VideoView
+    {
+        /// <summary>
+        /// Id
+        /// </summary>
+        public int Id { get; set; }
+        /// <summary>
+        /// 视频路径
+        /// </summary>
+        public string VideoPath { get; set; }
+        /// <summary>
+        /// 缩略图
+        /// </summary>
+        public string ThumPath { get; set; }
+    }
 
     /// <summary>
     /// 图片对象
     /// </summary>
-    public class PicInfo: PicView
+    public class PicInfo : PicView
+    {
+
+        /// <summary>
+        /// 客户ID
+        /// </summary>
+        public int? CompId { get; set; } = 0;
+        /// <summary>
+        /// 服务ID
+        /// </summary>
+        public int? AttId { get; set; } = 0;
+    }
+
+    /// <summary>
+    /// 视频对象
+    /// </summary>
+    public class VideoInfo : VideoView
     {
 
         /// <summary>

@@ -17,7 +17,6 @@ D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\obj\Debug\net5.0\NF.OfficeComm.pdb
 D:\MyCode\Devs\V3.0\SZSKYY\NF.OfficeComm\obj\Debug\net5.0\NF.OfficeComm.csproj.AssemblyReference.cache
 E:\Zhoudong\NF.OfficeComm\bin\Debug\net5.0\NF.OfficeComm.deps.json
 E:\Zhoudong\NF.OfficeComm\bin\Debug\net5.0\NF.OfficeComm.dll
-E:\Zhoudong\NF.OfficeComm\bin\Debug\net5.0\ref\NF.OfficeComm.dll
 E:\Zhoudong\NF.OfficeComm\bin\Debug\net5.0\NF.OfficeComm.pdb
 E:\Zhoudong\NF.OfficeComm\bin\Debug\net5.0\Interop.Microsoft.Office.Core.dll
 E:\Zhoudong\NF.OfficeComm\bin\Debug\net5.0\Interop.Microsoft.Office.Interop.Word.dll
@@ -32,3 +31,4 @@ E:\Zhoudong\NF.OfficeComm\obj\Debug\net5.0\NF.OfficeComm.csproj.CopyComplete
 E:\Zhoudong\NF.OfficeComm\obj\Debug\net5.0\NF.OfficeComm.dll
 E:\Zhoudong\NF.OfficeComm\obj\Debug\net5.0\ref\NF.OfficeComm.dll
 E:\Zhoudong\NF.OfficeComm\obj\Debug\net5.0\NF.OfficeComm.pdb
+E:\Zhoudong\NF.OfficeComm\obj\Debug\net5.0\refint\NF.OfficeComm.dll

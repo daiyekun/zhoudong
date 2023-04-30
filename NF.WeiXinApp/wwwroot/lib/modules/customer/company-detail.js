@@ -1,4 +1,4 @@
-﻿
+
 
 var ddr = $("#CurrWxUserId").val();
 if (ddr == null || ddr == "") {
@@ -76,6 +76,21 @@ function delcustomerfw(custId) {
 
 
 }
+/**
+ * 播放视频
+ * @param {any} src
+ * @param {any} index
+ */
+function playVideo(src, index) {
+    //var player = videojs('player', {
+    var player = videojs(document.getElementById('myVideo'), {
+        controls: true,
+        autoplay: true,
+        preload: 'auto'
+    });
+    player.src({ type: 'video/mp4', src: src });
+    $('#modal-video').show();
+}
 /***合同文本**/
 function ShowContText(currId) {
 
@@ -136,6 +151,28 @@ function ShowContText(currId) {
                     if (pichtml != "") {
                         //console.log("pichtml==>"+pichtml);
                         resultstr2 += pichtml;
+                    }
+                    var videohtml = "";
+                    var videos = $data.Data[i].VideoData;
+                    if (videos != null && videos.length > 0) {
+                        videohtml += '<div class="weui-form-preview__bd">'
+                        videohtml += '<div class="weui-form-preview__item">'
+                        videohtml += '<ul  id="uploadervideoFiles" style="display: flex; flex-wrap: wrap;">'
+                        //console.log(resultstr2);
+                        for (var j = 0; j < videos.length; j++) {
+                            videohtml += '<li style="display: inline-block;flex: 0 0 100%; " >'
+                            videohtml += '<video style="width:100%;"height="300" controls poster="' + videos[j].ThumPath + '" src="' + videos[j].VideoPath +'"></video>'
+                            videohtml +='</li>'
+                        }
+
+                        videohtml += '</ul>'
+                        videohtml += '</div>'
+                        videohtml += '</div>'
+                    }
+
+                    if (videohtml != "") {
+                        //console.log("pichtml==>"+pichtml);
+                        resultstr2 += videohtml;
                     }
 
                     //+'<li class="weui-uploader__file" style="background-image:url(/Uploads/CustomerFile/3ce02b38-3e8c-4236-9a81-cdd46d641b94.jpeg)"></li>'

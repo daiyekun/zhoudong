@@ -15,7 +15,6 @@ D:\MyCode\Devs\V3.0\SZSKYY\NF.QuartzNet\obj\Debug\net5.0\NF.QuartzNet.pdb
 D:\MyCode\Devs\V3.0\SZSKYY\NF.QuartzNet\obj\Debug\net5.0\NF.QuartzNet.csproj.AssemblyReference.cache
 E:\Zhoudong\NF.QuartzNet\bin\Debug\net5.0\NF.QuartzNet.deps.json
 E:\Zhoudong\NF.QuartzNet\bin\Debug\net5.0\NF.QuartzNet.dll
-E:\Zhoudong\NF.QuartzNet\bin\Debug\net5.0\ref\NF.QuartzNet.dll
 E:\Zhoudong\NF.QuartzNet\bin\Debug\net5.0\NF.QuartzNet.pdb
 E:\Zhoudong\NF.QuartzNet\bin\Debug\net5.0\NF.Common.dll
 E:\Zhoudong\NF.QuartzNet\bin\Debug\net5.0\NF.Common.pdb
@@ -28,3 +27,4 @@ E:\Zhoudong\NF.QuartzNet\obj\Debug\net5.0\NF.QuartzNet.csproj.CopyComplete
 E:\Zhoudong\NF.QuartzNet\obj\Debug\net5.0\NF.QuartzNet.dll
 E:\Zhoudong\NF.QuartzNet\obj\Debug\net5.0\ref\NF.QuartzNet.dll
 E:\Zhoudong\NF.QuartzNet\obj\Debug\net5.0\NF.QuartzNet.pdb
+E:\Zhoudong\NF.QuartzNet\obj\Debug\net5.0\refint\NF.QuartzNet.dll

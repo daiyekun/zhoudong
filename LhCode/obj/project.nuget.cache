@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "BpePAmJSUXWXPFg1hKrPsoqu6CXI/z0oq/a1OJ3erKFV8EfzGOEn88mmd6a2bx/PwRJd/8DToHzLH/VuGX513w==",
+  "dgSpecHash": "frqwoS1kseiUz6MO1W81+irqAhYYDWkDVjtLVgN+lgDRW/Kqs3LLaJ/7uozryfKn9aZdILAAzyO+xeLpDzEGNw==",
   "success": true,
   "projectFilePath": "E:\\Zhoudong\\LhCode\\LhCode.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []

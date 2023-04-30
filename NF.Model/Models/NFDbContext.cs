@@ -779,6 +779,10 @@ namespace NF.Model.Models
 
                 entity.Property(e => e.Extend).HasMaxLength(20);
 
+                entity.Property(e => e.Filde1).HasMaxLength(200);
+
+                entity.Property(e => e.Filde2).HasMaxLength(200);
+
                 entity.Property(e => e.FileName).HasMaxLength(100);
 
                 entity.Property(e => e.FilePath).HasMaxLength(500);
@@ -790,6 +794,8 @@ namespace NF.Model.Models
                 entity.Property(e => e.ModifyDateTime).HasColumnType("datetime");
 
                 entity.Property(e => e.Name).HasMaxLength(100);
+
+                entity.Property(e => e.ThumPath).HasMaxLength(500);
             });
 
             modelBuilder.Entity<ContAttachment>(entity =>

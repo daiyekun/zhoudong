@@ -1,6 +1,7 @@
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\NF.WeiXinApp.exe
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\css\site.css
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\favicon.ico
+E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\huizhang.jpg
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\js\nf-plugs\biccatetree.js
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\js\nf-plugs\pdfjs\build\pdf.js
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\js\nf-plugs\pdfjs\build\pdf.js.map

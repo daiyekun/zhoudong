@@ -21,5 +21,9 @@ namespace NF.Model.Models
         public int ModifyUserId { get; set; }
         public DateTime ModifyDateTime { get; set; }
         public byte IsDelete { get; set; }
+        public string ThumPath { get; set; }
+        public string Filde1 { get; set; }
+        public string Filde2 { get; set; }
+        public int? FileType { get; set; }
     }
 }

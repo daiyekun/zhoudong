@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NF.Common.Models;
 using NF.Common.Utility;
@@ -7,11 +7,7 @@ using NF.ViewModel.Extend.Enums;
 using NF.WeiXin.Lib.Common;
 using NF.WeiXin.Lib.Utility;
 using NF.WeiXinApp.Utility.Common;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace NF.WeiXinApp.Controllers
 {
@@ -35,28 +31,37 @@ namespace NF.WeiXinApp.Controllers
         /// <returns></returns>
         public IActionResult CustomerIndex(string Wxzh, int FinanceType)
         {
-            ViewData["wxzh"] =Wxzh;
-            ViewData["HtTye"] =FinanceType;
+            ViewData["wxzh"] = Wxzh;
+            ViewData["HtTye"] = FinanceType;
             return View();
         }
+        /// <summary>
+        /// 测试   http://localhost:9066/Company/Detail?Id=996&FinanceType=0
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <param name="FinanceType"></param>
+        /// <returns></returns>
         public IActionResult Detail(int Id, int FinanceType)
         {
 
-            if (string.IsNullOrWhiteSpace(HttpContext.Session.GetString("WxUserId")))
-            {
+            //if (string.IsNullOrWhiteSpace(HttpContext.Session.GetString("WxUserId")))
+            //{
 
-                var httpcontext = _accessor.HttpContext;
-                var code = httpcontext.Request.Query["Code"];
+            //    var httpcontext = _accessor.HttpContext;
+            //    var code = httpcontext.Request.Query["Code"];
 
-                var accessToken = WeixinUtiliy.GetAccessTokenStr();
-                var wxUser = WxQYHOAuth2Utility.SetSessionUser(accessToken, code);
+            //    var accessToken = WeixinUtiliy.GetAccessTokenStr();
+            //    var wxUser = WxQYHOAuth2Utility.SetSessionUser(accessToken, code);
 
-                HttpContext.Session.SetString("WxUserId", wxUser.UserId);
-                //var userwx = HttpContext.Session.GetString("WxUserId");
-            }
+            //    HttpContext.Session.SetString("WxUserId", wxUser.UserId);
+            //    //var userwx = HttpContext.Session.GetString("WxUserId");
+            //}
             ViewData["contId"] = Id;
-            var d = HttpContext.Session.GetString("WxUserId"); //"daiyekun"; ////
-            ViewData["WxCurrUserId"] =d;// HttpContext.Session.GetString("WxUserId");
+            //var d = HttpContext.Session.GetString("WxUserId"); //"daiyekun"; ////
+            //测试代码
+
+            var d = "daiyekun";
+            ViewData["WxCurrUserId"] = d;// HttpContext.Session.GetString("WxUserId");
             ViewData["FinanceType"] = FinanceType;
             return View();
         }
@@ -74,7 +79,7 @@ namespace NF.WeiXinApp.Controllers
         /// <param name="Wxzh">账号</param>
         /// <param name="FinanceType"></param>
         /// <returns></returns>
-        public IActionResult CustomerAdd(string Wxzh,int FinanceType,int Id)
+        public IActionResult CustomerAdd(string Wxzh, int FinanceType, int Id)
         {
             ViewData["WxCurrUserId"] = Wxzh;// HttpContext.Session.GetString("WxUserId");
             ViewData["FinanceType"] = FinanceType;
@@ -84,13 +89,14 @@ namespace NF.WeiXinApp.Controllers
         }
         /// <summary>
         /// 新增客户服务
+        /// http://localhost:9066/Company/CustFuWuAdd?Wxzh=daiyekun&compId=996
         /// </summary>
         /// <param name="Wxzh">账号</param>
         /// <param name="compId">客户ID</param>
         /// <returns></returns>
-        public IActionResult CustFuWuAdd(string Wxzh,int compId)
+        public IActionResult CustFuWuAdd(string Wxzh, int compId)
         {
-            ViewData["WxCurrUserId"] =Wxzh;// HttpContext.Session.GetString("WxUserId");
+            ViewData["WxCurrUserId"] = Wxzh;// HttpContext.Session.GetString("WxUserId");
             ViewData["CompanyId"] = compId;
             //清除垃圾数据
             string sqlstr = "delete ContAttacFile where AttId=-188";
@@ -153,11 +159,11 @@ namespace NF.WeiXinApp.Controllers
         /// <param name="compId">客户ID</param>
         /// <param name="acctId">服务ID</param>
         /// <returns></returns>
-        public IActionResult DowloadPic(int compId,int acctId)
+        public IActionResult DowloadPic(int compId, int acctId)
         {
             ViewData["compId"] = compId;// HttpContext.Session.GetString("WxUserId");
             ViewData["acctId"] = acctId;
-           
+
             return View();
 
         }

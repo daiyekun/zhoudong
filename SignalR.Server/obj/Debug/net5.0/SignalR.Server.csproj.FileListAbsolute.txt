@@ -12,7 +12,6 @@ D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Server\obj\Debug\net5.0\SignalR.Server.pdb
 D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Server\obj\Debug\net5.0\SignalR.Server.csproj.AssemblyReference.cache
 E:\Zhoudong\SignalR.Server\bin\Debug\net5.0\SignalR.Server.deps.json
 E:\Zhoudong\SignalR.Server\bin\Debug\net5.0\SignalR.Server.dll
-E:\Zhoudong\SignalR.Server\bin\Debug\net5.0\ref\SignalR.Server.dll
 E:\Zhoudong\SignalR.Server\bin\Debug\net5.0\SignalR.Server.pdb
 E:\Zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.csproj.AssemblyReference.cache
 E:\Zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.GeneratedMSBuildEditorConfig.editorconfig
@@ -22,3 +21,4 @@ E:\Zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.csproj.CoreCompileInp
 E:\Zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.dll
 E:\Zhoudong\SignalR.Server\obj\Debug\net5.0\ref\SignalR.Server.dll
 E:\Zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.pdb
+E:\Zhoudong\SignalR.Server\obj\Debug\net5.0\refint\SignalR.Server.dll
