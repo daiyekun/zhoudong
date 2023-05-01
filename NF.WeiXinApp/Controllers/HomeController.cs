@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NF.Common.Utility;
@@ -7,21 +7,18 @@ using NF.Model.Models;
 using NF.WeiXin.Lib.Common;
 using NF.WeiXin.Lib.Module;
 using NF.WeiXin.Lib.Utility;
-using NF.WeiXinApp.Extend;
 using NF.WeiXinApp.Models;
 using NF.WeiXinApp.Utility;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace NF.WeiXinApp.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private  IAppInstService _IAppInstService;
+        private IAppInstService _IAppInstService;
         private IContractInfoService _IContractInfoService;
         public HomeController(ILogger<HomeController> logger
             , IAppInstService IAppInstService
@@ -38,12 +35,12 @@ namespace NF.WeiXinApp.Controllers
         /// <returns></returns>
         public IActionResult Index()
         {
-            
+
             var usName = HttpContext.Session.GetString("WxUserId");
-            WeiXin.Lib.Utility.Log4netHelper.Info($"登录用户：" + usName);
+            Log4netHelper.Info($"登录用户：" + usName);
             ViewData["WxCurrUserId"] = usName;
 
-          //  ViewData["WxCurrUserId"] = HttpContext.Session.GetString("WxUserId");
+            //  ViewData["WxCurrUserId"] = HttpContext.Session.GetString("WxUserId");
             return View();
         }
         public IActionResult Invo()
@@ -60,8 +57,8 @@ namespace NF.WeiXinApp.Controllers
             // <a href="/WorkFlow/DaiChuLi?wxzh=@ViewData["WxCurrUserId"]" class="weui-cell_access">
             //< a href = "/WorkFlow/BeiDaHui?wxzh=@ViewData["WxCurrUserId"]" class="weui-cell_access">
 
-            var usName =HttpContext.Session.GetString("WxUserId");
-            WeiXin.Lib.Utility.Log4netHelper.Info($"登录用户：" + usName);
+            var usName = HttpContext.Session.GetString("WxUserId");
+            Log4netHelper.Info($"登录用户：" + usName);
             ViewData["WxCurrUserId"] = usName;
             var Dcl = 0;
             var Bdh = 0;
@@ -77,16 +74,16 @@ namespace NF.WeiXinApp.Controllers
                 ViewData["Dcl"] = Dcl;
                 ViewData["Bdh"] = Bdh;
             }
-            
+
             ViewData["Dcl"] = Dcl;
             ViewData["Bdh"] = Bdh;
 
             return View();
         }
-         public int WxDcl(int page, int limit, string keyWord, string Wxzh)
+        public int WxDcl(int page, int limit, string keyWord, string Wxzh)
         {
             var usinfo = _IContractInfoService.Yhinfo(Wxzh);
-            if (usinfo!=null)
+            if (usinfo != null)
             {
                 var UsId = usinfo.Id;
                 var UsDc = usinfo.DepartmentId;
@@ -108,14 +105,14 @@ namespace NF.WeiXinApp.Controllers
             {
                 return 0;
             }
-            
-          
+
+
         }
 
         public int WxBdh(int page, int limit, string keyWord, string Wxzh)
         {
             var usinfo = _IContractInfoService.Yhinfo(Wxzh);
-            if (usinfo!=null)
+            if (usinfo != null)
             {
                 var UsId = usinfo.Id;
                 var UsDc = usinfo.DepartmentId;
@@ -147,7 +144,7 @@ namespace NF.WeiXinApp.Controllers
         public IActionResult WooIndex()
         {
             var usName = HttpContext.Session.GetString("WxUserId");
-            WeiXin.Lib.Utility.Log4netHelper.Info($"登录用户：" + usName);
+            Log4netHelper.Info($"登录用户：" + usName);
             ViewData["WxCurrUserId"] = usName;
             return View();
         }
@@ -170,7 +167,7 @@ namespace NF.WeiXinApp.Controllers
         /// <returns></returns>
         public IActionResult InitMenus()
         {
-            
+
             string AuthUrl = $"{Constant.WxAppBaseURL}/WxRuKou/WxHttpRedirect";
             var listmenu = new List<WxMenus>()
              {
@@ -263,10 +260,10 @@ namespace NF.WeiXinApp.Controllers
         /// <returns></returns>
         public IActionResult InitAppConsole()
         {
-           var data = WxConsoleUtility.GetConsoleData();
-           var str = WeiXin.Lib.Utility.JsonUtility.SerializeObject(data).Replace("\\u0026", "&");
-           var rescode = WxConsoleUtility.SetConsolTemp(str);
-           return new WxResultJson(rescode);
+            var data = WxConsoleUtility.GetConsoleData();
+            var str = WeiXin.Lib.Utility.JsonUtility.SerializeObject(data).Replace("\\u0026", "&");
+            var rescode = WxConsoleUtility.SetConsolTemp(str);
+            return new WxResultJson(rescode);
         }
 
 
@@ -277,7 +274,7 @@ namespace NF.WeiXinApp.Controllers
         /// <returns></returns>
         public IActionResult TempId()
         {
-           
+
             var rescode = WxConsoleUtility.GetConselTemp();
             return new WxResultJson(rescode);
         }
@@ -290,14 +287,14 @@ namespace NF.WeiXinApp.Controllers
 
         public IActionResult TestUserConsol()
         {
-            var dic = new Dictionary<string,string>();
+            var dic = new Dictionary<string, string>();
             dic.Add("待处理", "10");
             dic.Add("我通过", "10");
             dic.Add("我打回", "6");
             // var data = WxConsoleUtility.GetUserConsolData("daiyekun", dic);
             var data = WxConsoleUtility.GetUserConsolData("caolifei", dic);
             var strdata = WeiXin.Lib.Utility.JsonUtility.SerializeObject(data).Replace("\\u0026", "&");
-           var recode= WxConsoleUtility.SubMitConsolData(strdata);
+            var recode = WxConsoleUtility.SubMitConsolData(strdata);
             return new WxResultJson(recode);
         }
 

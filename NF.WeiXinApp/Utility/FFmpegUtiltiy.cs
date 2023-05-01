@@ -2,7 +2,6 @@ using NF.Common.Utility;
 using NF.ViewModel.Extend.Enums;
 using System;
 using System.IO;
-using System.Threading.Tasks;
 
 namespace NF.WeiXinApp.Utility
 {
@@ -40,7 +39,7 @@ namespace NF.WeiXinApp.Utility
         /// 视频生成缩略图
         /// 使用ffmepg
         /// </summary>
-        public async static Task<string> CreateVideoPic(string videoFileName)
+        public static string CreateVideoPic(string videoFileName)
         {
             try
             {

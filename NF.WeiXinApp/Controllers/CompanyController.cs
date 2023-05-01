@@ -44,23 +44,23 @@ namespace NF.WeiXinApp.Controllers
         public IActionResult Detail(int Id, int FinanceType)
         {
 
-            //if (string.IsNullOrWhiteSpace(HttpContext.Session.GetString("WxUserId")))
-            //{
+            if (string.IsNullOrWhiteSpace(HttpContext.Session.GetString("WxUserId")))
+            {
 
-            //    var httpcontext = _accessor.HttpContext;
-            //    var code = httpcontext.Request.Query["Code"];
+                var httpcontext = _accessor.HttpContext;
+                var code = httpcontext.Request.Query["Code"];
 
-            //    var accessToken = WeixinUtiliy.GetAccessTokenStr();
-            //    var wxUser = WxQYHOAuth2Utility.SetSessionUser(accessToken, code);
+                var accessToken = WeixinUtiliy.GetAccessTokenStr();
+                var wxUser = WxQYHOAuth2Utility.SetSessionUser(accessToken, code);
 
-            //    HttpContext.Session.SetString("WxUserId", wxUser.UserId);
-            //    //var userwx = HttpContext.Session.GetString("WxUserId");
-            //}
+                HttpContext.Session.SetString("WxUserId", wxUser.UserId);
+                //var userwx = HttpContext.Session.GetString("WxUserId");
+            }
             ViewData["contId"] = Id;
-            //var d = HttpContext.Session.GetString("WxUserId"); //"daiyekun"; ////
+            var d = HttpContext.Session.GetString("WxUserId"); //"daiyekun"; ////
             //测试代码
 
-            var d = "daiyekun";
+            //var d = "daiyekun";
             ViewData["WxCurrUserId"] = d;// HttpContext.Session.GetString("WxUserId");
             ViewData["FinanceType"] = FinanceType;
             return View();

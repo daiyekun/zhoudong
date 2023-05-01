@@ -1,13 +1,9 @@
-﻿using NF.WeiXin.Lib.Common;
+using NF.Common.Utility;
+using NF.WeiXin.Lib.Common;
 using NF.WeiXin.Lib.Module;
-using NF.WeiXin.Lib.Utility;
 using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Web;
 using Tencent;
 
 namespace NF.WeiXin.Lib.Utility
@@ -24,7 +20,7 @@ namespace NF.WeiXin.Lib.Utility
         /// <returns>
         /// 校验签名以及校验服务器有效性
         ///</returns>
-        
+
         public bool CheckSignature(string Token, string signature, string timestamp, string nonce)
         {
             string[] ArrTmp = { Token, timestamp, nonce };
@@ -35,7 +31,7 @@ namespace NF.WeiXin.Lib.Utility
             //SHA1加密-此处可以用MD5加密完全一致
             tmpStr = Md5Hash(tmpStr);//FormsAuthentication.HashPasswordForStoringInConfigFile(tmpStr, "SHA1");
             tmpStr = tmpStr.ToLower();
-            Log4netHelper.Info("加密后字符串:"+tmpStr);
+            Log4netHelper.Info("加密后字符串:" + tmpStr);
             if (tmpStr.Equals(signature))
             {
                 return true;
@@ -47,23 +43,23 @@ namespace NF.WeiXin.Lib.Utility
 
 
         }
-        public string Auth2(string echoStr,string msg_signature, string timestamp,string nonce)
+        public string Auth2(string echoStr, string msg_signature, string timestamp, string nonce)
         {
             #region 获取关键参数
             string token = Constant.CorpToken;// ConfigurationManager.AppSettings["CorpToken"];//从配置文件获取Token
             if (string.IsNullOrEmpty(token))
             {
-               //LogTextHelper.Error(string.Format("CorpToken 配置项没有配置！"));
+                //LogTextHelper.Error(string.Format("CorpToken 配置项没有配置！"));
             }
             string encodingAESKey = Constant.EncodingAESKey; //ConfigurationManager.AppSettings["EncodingAESKey"];//从配置文件获取EncodingAESKey
             if (string.IsNullOrEmpty(encodingAESKey))
             {
-               // LogTextHelper.Error(string.Format("EncodingAESKey 配置项没有配置！"));
+                // LogTextHelper.Error(string.Format("EncodingAESKey 配置项没有配置！"));
             }
             string corpId = Constant.CorpId; //ConfigurationManager.AppSettings["CorpId"];//从配置文件获取corpId
             if (string.IsNullOrEmpty(corpId))
             {
-               // LogTextHelper.Error(string.Format("CorpId 配置项没有配置！"));
+                // LogTextHelper.Error(string.Format("CorpId 配置项没有配置！"));
             }
             #endregion
 
@@ -83,7 +79,7 @@ namespace NF.WeiXin.Lib.Utility
                 }
 
             }
-            
+
 
             return "";
 
@@ -93,7 +89,7 @@ namespace NF.WeiXin.Lib.Utility
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        private  string Md5Hash(string input)
+        private string Md5Hash(string input)
         {
             MD5CryptoServiceProvider md5Hasher = new MD5CryptoServiceProvider();
             byte[] data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(input));
@@ -104,7 +100,7 @@ namespace NF.WeiXin.Lib.Utility
             }
             return sBuilder.ToString();
         }
-       
+
 
         /// <summary>
         /// 验证企业号签名
@@ -130,7 +126,7 @@ namespace NF.WeiXin.Lib.Utility
 
             return true;
 
-           
+
         }
 
         /// <summary>
@@ -153,8 +149,8 @@ namespace NF.WeiXin.Lib.Utility
         /// <returns></returns>
         public static string GetAccessTokenStr()
         {
-            
-            string wxaccwsssStr =$"{Constant.TokenRedisKeyStart}{Constant.Agentid.ToString()}";
+
+            string wxaccwsssStr = $"{Constant.TokenRedisKeyStart}{Constant.Agentid.ToString()}";
             string Tokenstr = string.Empty;
             var Accesstokenstr = RedisHelper.StringGet(wxaccwsssStr);
             if (string.IsNullOrWhiteSpace(Accesstokenstr))

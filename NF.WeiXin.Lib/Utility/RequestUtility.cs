@@ -1,6 +1,5 @@
-﻿using NF.Common.Models;
+using NF.Common.Utility;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Text;
@@ -10,7 +9,7 @@ namespace NF.WeiXin.Lib.Utility
     /// <summary>
     /// 后台请求工具类
     /// </summary>
-    public  class RequestUtility
+    public class RequestUtility
     {
         /// <summary>
         /// GET 方法
@@ -116,8 +115,8 @@ namespace NF.WeiXin.Lib.Utility
                 Log4netHelper.Error(ex.Message);
                 throw new Exception("文件不存在！");
             }
-            
-            
+
+
         }
 
 

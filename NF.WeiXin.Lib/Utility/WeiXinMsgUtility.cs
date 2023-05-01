@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using NF.Common.Utility;
 using NF.ViewModel.Models;
 using NF.WeiXin.Lib.Common;
 using NF.WeiXin.Lib.Module;
@@ -53,12 +53,12 @@ namespace NF.WeiXin.Lib.Utility
                         strb.Append($"<div class=\"normal\">合同类别：{OBJ_TYPE}</div>");
                         strb.Append($"<div class=\"normal\">合同金额：{OBJ_AMOUNT}</div>");
                         strb.Append($"<div class=\"normal\">执行部门：{wxMsgInfo.JbJg}</div>");
-                        
+
                         if (wxMsgInfo.MsgType == 0)
                         {//审批通过
                             SpTitle = $"您有一份{wxMsgInfo.FinceType}合同审批通过";
                         }
-                        else if(wxMsgInfo.MsgType == 1)
+                        else if (wxMsgInfo.MsgType == 1)
                         {
                             SpTitle = $"您有一份{wxMsgInfo.FinceType}合同被打回";
                             strb.Append($"<div class=\"highlight\">审批人：{wxMsgInfo.AppUser}</div>");
@@ -66,25 +66,25 @@ namespace NF.WeiXin.Lib.Utility
                         }
                         else if (wxMsgInfo.MsgType == 6)
                         {//提醒之前节点
-                            //if (wxMsgInfo.AppUser== wxMsgInfo.StartUser)
-                            //{
-                          
-                                    SpTitle = $"{wxMsgInfo.AppUser}审批了一份{wxMsgInfo.FinceType}合同";
-                                    strb = new StringBuilder();
-                                    var resstr = wxMsgInfo.AppRest == 0 ? "同意" : "不同意";
-                                    strb.Append($"<div class=\"normal\">合同名称：{OBJ_NAME}</div>");
-                                    strb.Append($"<div class=\"normal\">合同编号：{OBJ_NO}</div>");
-                                    strb.Append($"<div class=\"normal\">发起人：{wxMsgInfo.StartUser}</div>");
-                                    strb.Append($"<div class=\"normal\">处理节点：{wxMsgInfo.Node}</div>");
-                                    strb.Append($"<div class=\"normal\">处理意见：{wxMsgInfo.Option}</div>");
-                                    strb.Append($"<div class=\"highlight\">处理结果：{resstr}</div>");
-               
+                         //if (wxMsgInfo.AppUser== wxMsgInfo.StartUser)
+                         //{
+
+                            SpTitle = $"{wxMsgInfo.AppUser}审批了一份{wxMsgInfo.FinceType}合同";
+                            strb = new StringBuilder();
+                            var resstr = wxMsgInfo.AppRest == 0 ? "同意" : "不同意";
+                            strb.Append($"<div class=\"normal\">合同名称：{OBJ_NAME}</div>");
+                            strb.Append($"<div class=\"normal\">合同编号：{OBJ_NO}</div>");
+                            strb.Append($"<div class=\"normal\">发起人：{wxMsgInfo.StartUser}</div>");
+                            strb.Append($"<div class=\"normal\">处理节点：{wxMsgInfo.Node}</div>");
+                            strb.Append($"<div class=\"normal\">处理意见：{wxMsgInfo.Option}</div>");
+                            strb.Append($"<div class=\"highlight\">处理结果：{resstr}</div>");
+
                         }
                         else
                         {
-                        SpTitle = $"您有一份{wxMsgInfo.FinceType}合同需要审批";
+                            SpTitle = $"您有一份{wxMsgInfo.FinceType}合同需要审批";
                         }
-                       // strb.Append($"<div class=\"highlight\">请您处理</div>");//测试
+                        // strb.Append($"<div class=\"highlight\">请您处理</div>");//测试
                         textcard = new TextcardMain()
                         {
                             title = SpTitle,
@@ -196,7 +196,7 @@ namespace NF.WeiXin.Lib.Utility
                         strb.Append($"<div class=\"normal\">客户名称：{OBJ_NAME}</div>");
                         strb.Append($"<div class=\"normal\">客户编号：{OBJ_NO}</div>");
                         strb.Append($"<div class=\"normal\">客户类别：{OBJ_TYPE}</div>");
-                       // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
+                        // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
                         if (wxMsgInfo.MsgType == 0)
                         {//审批通过
                             SpTitle = $"您有一个客户审批通过";
@@ -221,7 +221,7 @@ namespace NF.WeiXin.Lib.Utility
                         {
                             SpTitle = "您有一个客户需要审批";
                         }
-                       
+
                         articleInfo = new article()
                         {
 
@@ -238,7 +238,7 @@ namespace NF.WeiXin.Lib.Utility
                         strb.Append($"<div class=\"normal\">供应商名称：{OBJ_NAME}</div>");
                         strb.Append($"<div class=\"normal\">供应商编号：{OBJ_NO}</div>");
                         strb.Append($"<div class=\"normal\">供应商类别：{OBJ_TYPE}</div>");
-                       // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
+                        // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
                         if (wxMsgInfo.MsgType == 0)
                         {//审批通过
                             SpTitle = $"您有一个供应商审批通过";
@@ -263,7 +263,7 @@ namespace NF.WeiXin.Lib.Utility
                         {
                             SpTitle = "您有一个供应商需要审批";
                         }
-                       
+
                         articleInfo = new article()
                         {
 
@@ -279,9 +279,9 @@ namespace NF.WeiXin.Lib.Utility
                         strb.Append($"<div class=\"normal\">其他对方名称：{OBJ_NAME}</div>");
                         strb.Append($"<div class=\"normal\">其他对方编号：{OBJ_NO}</div>");
                         strb.Append($"<div class=\"normal\">其他对方类别：{OBJ_TYPE}</div>");
-                       // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
-                      
-                        
+                        // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
+
+
                         if (wxMsgInfo.MsgType == 0)
                         {//审批通过
                             SpTitle = $"您有一个其他对方审批通过";
@@ -321,8 +321,8 @@ namespace NF.WeiXin.Lib.Utility
                         strb.Append($"<div class=\"normal\">项目名称：{OBJ_NAME}</div>");
                         strb.Append($"<div class=\"normal\">项目编号：{OBJ_NO}</div>");
                         strb.Append($"<div class=\"normal\">项目类型：{OBJ_TYPE}</div>");
-                       // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
-                       
+                        // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
+
                         if (wxMsgInfo.MsgType == 0)
                         {//审批通过
                             SpTitle = $"您有一个项目审批通过";
@@ -360,8 +360,8 @@ namespace NF.WeiXin.Lib.Utility
                         strb.Append($"<div class=\"normal\">实际金额：{OBJ_AMOUNT}</div>");
                         strb.Append($"<div class=\"normal\">合同名称：{OBJ_NAME}</div>");
                         strb.Append($"<div class=\"normal\">合同编号：{OBJ_NO}</div>");
-                       // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
-                       
+                        // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
+
                         if (wxMsgInfo.MsgType == 0)
                         {//审批通过
                             SpTitle = $"您有一笔付款审批通过";
@@ -401,9 +401,9 @@ namespace NF.WeiXin.Lib.Utility
                         strb.Append($"<div class=\"normal\">合同名称：{OBJ_NAME}</div>");
                         strb.Append($"<div class=\"normal\">合同编号：{OBJ_NO}</div>");
                         strb.Append($"<div class=\"normal\">开票金额：{OBJ_AMOUNT}</div>");
-                       // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
-                      
-                        
+                        // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
+
+
                         if (wxMsgInfo.MsgType == 0)
                         {//审批通过
                             SpTitle = $"您有一笔开票审批通过";
@@ -445,9 +445,9 @@ namespace NF.WeiXin.Lib.Utility
                         strb.Append($"<div class=\"normal\">合同名称：{OBJ_NAME}</div>");
                         strb.Append($"<div class=\"normal\">合同编号：{OBJ_NO}</div>");
                         strb.Append($"<div class=\"normal\">收票金额：{OBJ_AMOUNT}</div>");
-                       // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
+                        // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
 
-                       
+
 
                         if (wxMsgInfo.MsgType == 0)
                         {//审批通过
@@ -568,10 +568,10 @@ namespace NF.WeiXin.Lib.Utility
 
                             wxappmsg.touser = wxMsgInfo.DqHt.WxCode;
                         }
-                        
+
                         break;
                     case 1://到期计划
-                        if (wxMsgInfo.DqPlan!=null)
+                        if (wxMsgInfo.DqPlan != null)
                         {
                             AuthUrl = AuthUrl + "?OBJID=" + (wxMsgInfo.DqPlan != null ? wxMsgInfo.DqPlan.ContId : 0);
                             strb.Append($"<div class=\"gray\">{DateTime.Now.ToString("yyyy年MM月dd日")}</div>");
@@ -585,11 +585,11 @@ namespace NF.WeiXin.Lib.Utility
 
                             wxappmsg.touser = wxMsgInfo.DqPlan.WxCode;
                         }
-                        
+
                         break;
 
                 }
-               // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
+                // strb.Append($"<div class=\"highlight\">请您处理！！！</div>");
                 TextcardMain textcard = null;
                 textcard = new TextcardMain()
                 {
@@ -601,7 +601,7 @@ namespace NF.WeiXin.Lib.Utility
                 };
                 strb.Append(textcard);
                 wxappmsg.textcard = textcard;
-                
+
 
                 var PostData = JsonUtility.SerializeObject(wxappmsg);//.Replace("\\u0026", "&"); 
                 //Log4netHelper.Info(PostData);
@@ -692,16 +692,16 @@ namespace NF.WeiXin.Lib.Utility
         public static string WxZhouDongDaoQi(WxTxTongZhi wxMsgInfo)
         {
 
-          
+
             try
             {
 
                 StringBuilder strb = new StringBuilder();
                 string SpTitle = string.Empty;
 
-                    var Utl = "/Company/Detail?Id=" + wxMsgInfo.Id + "&FinanceType=0&T=6";
-                
-               
+                var Utl = "/Company/Detail?Id=" + wxMsgInfo.Id + "&FinanceType=0&T=6";
+
+
 
                 var urlId = Constant.WxAppBaseURL + Utl;
                 // Constant.WxAppBaseURL + "?OBJID=" + OBJ_ID;
@@ -725,8 +725,8 @@ namespace NF.WeiXin.Lib.Utility
 
                 };
                 _articles.Add(articleInfo);
-               
-               
+
+
                 var _news = new news();
                 _news.articles = _articles;
 

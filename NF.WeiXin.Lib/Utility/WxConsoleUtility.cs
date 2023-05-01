@@ -1,17 +1,15 @@
-﻿using NF.WeiXin.Lib.Common;
+using NF.Common.Utility;
+using NF.WeiXin.Lib.Common;
 using NF.WeiXin.Lib.Module;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NF.WeiXin.Lib.Utility
 {
     /// <summary>
     /// 微信应用控制台
     /// </summary>
-    public  class WxConsoleUtility
+    public class WxConsoleUtility
     {
 
         /// <summary>
@@ -49,7 +47,7 @@ namespace NF.WeiXin.Lib.Utility
                 var TokeInfo = WeixinUtiliy.GetAccessTokenStr();
                 string URL = string.Format("https://qyapi.weixin.qq.com/cgi-bin/agent/get_workbench_template?access_token={0}", TokeInfo);
                 //Log4netHelper.Info("菜单：" + PostMenusData);
-                var postdata = "{\"agentid\":"+ Constant.Agentid + "}";
+                var postdata = "{\"agentid\":" + Constant.Agentid + "}";
                 var rescode = RequestUtility.HttpPost4(URL, postdata);
                 return rescode;
 
@@ -102,13 +100,13 @@ namespace NF.WeiXin.Lib.Utility
             keyData0.jump_url = WxQYHOAuth2Utility.GetAuthorizeURL(Constant.CorpId, AuthUrl, agentid: Constant.Agentid, state: "NFDaiChuLi");
             listdata.Add(keyData0);
 
-             keyData0 = new WxKeyData();
+            keyData0 = new WxKeyData();
             keyData0.key = "我通过";
             keyData0.data = "0";
             keyData0.jump_url = WxQYHOAuth2Utility.GetAuthorizeURL(Constant.CorpId, AuthUrl, agentid: Constant.Agentid, state: "WoTongGuo");
             listdata.Add(keyData0);
 
-             keyData0 = new WxKeyData();
+            keyData0 = new WxKeyData();
             keyData0.key = "我打回";
             keyData0.data = "0";
             keyData0.jump_url = WxQYHOAuth2Utility.GetAuthorizeURL(Constant.CorpId, AuthUrl, agentid: Constant.Agentid, state: "WoDaHui");
@@ -129,7 +127,7 @@ namespace NF.WeiXin.Lib.Utility
         /// <param name="data">数据data</param>
         /// <param name="wxcode">微信账号</param>
         /// <returns></returns>
-        public static UserConsoleInfo GetUserConsolData(string wxcode,Dictionary<string,string> data)
+        public static UserConsoleInfo GetUserConsolData(string wxcode, Dictionary<string, string> data)
         {
             IList<WxKeyData> listdata = new List<WxKeyData>();
             foreach (var key in data.Keys)
@@ -146,7 +144,7 @@ namespace NF.WeiXin.Lib.Utility
             UserConsoleInfo userConsole = new UserConsoleInfo();
             userConsole.userid = wxcode;
             userConsole.keydata = _keydata;
-            userConsole.agentid= Constant.Agentid;
+            userConsole.agentid = Constant.Agentid;
             return userConsole;
 
 

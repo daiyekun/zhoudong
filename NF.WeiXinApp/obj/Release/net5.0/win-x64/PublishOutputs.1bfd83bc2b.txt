@@ -418,6 +418,8 @@ E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\modul
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\modules\customer\company-qtlxr-index.js
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\modules\customer\Customer-index.js
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\modules\customer\Other-index.js
+E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\modules\customer\woocuruoload.js
+E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\modules\customer\wooupload.js
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\modules\Home\home-index.js
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\modules\Home\JavaScript.js
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\win-x64\PubTmp\Out\wwwroot\lib\modules\Invoice\Invoice-detail.js

@@ -1,4 +1,3 @@
-﻿using NF.Common.Utility;
 using NF.ViewModel.Models;
 using NF.WeiXin.Lib.Utility;
 using Quartz;
@@ -27,7 +26,7 @@ namespace NF.WeiXinApp.Utility.Quartz
                 if (opObj != null)
                 {
 
-                    
+
                     WeiXinMsgUtility.WxZhouDongDaoQi(opObj);//客户 消息标记1
                 }
             }

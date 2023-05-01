@@ -1,12 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using NF.Common.Models;
 using NF.Common.Utility;
 using NF.IBLL;
 using NF.Model.Models;
 using NF.ViewModel.Extend.Enums;
 using NF.WeiXinApp.Utility;
+using NF.WeiXinApp.Utility.Common;
+using NF.WeiXinApp.Utility.Filters;
 using System;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace NF.WeiXinApp.Areas.APIData.Controllers
 {
@@ -168,55 +172,25 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             });
         }
 
+
         /// <summary>
-        ///多图片上传
+        /// 上传大文件
         /// </summary>
-        /// <param name="imgbase64">图片信息base64压缩</param>
-        /// /// <param name="commpId">客户ID</param>
-        /// <returns></returns>
+        /// <param name="downLoadAndUploadRequestInfo">上传文件时请求对象</param>
+        /// <returns>返回上传后信息</returns>
         [HttpPost]
-        public IActionResult WxUploadvideo
-            (string imgbase64, int commpId, string video, string compressedVideo)
+        [DisableFormValueModelBinding]
+
+        public async Task<IActionResult> UploadVideoMax(string imgbase64, int commpId, string video, string compressedVideo)
         {
 
-            var fname = $"{Guid.NewGuid().ToString()}";
+
+
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 1));
+            FormValueProvider formModel;
+            //UploadFileInfo uploadFileInfo = new UploadFileInfo();
             string extend = ".mp4";
-
-            // 获取上传的视频文件
-            var videoFile = Request.Form.Files["video"];
-            extend = Path.GetExtension(videoFile.FileName);
-
-            // 获取压缩后的视频文件
-            var compressedVideoFile = Request.Form.Files["compressedVideo"];
-
-            // 获取视频文件名
-            var fileName = videoFile.FileName;
-
-            // 保存视频文件
-            var tempdev4path = Path.Combine(
-                      Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 1)
-                      , $"{fname}{extend}");
-            using (var fileStream = new FileStream(tempdev4path, FileMode.Create))
-            {
-                videoFile.CopyTo(fileStream);
-            }
-            //生成缩略图
-            var repic = FFmpegUtiltiy.CreateVideoPic($"{fname}{extend}");
-
-            //压缩图片保存压缩后的视频文件
-            if (compressedVideoFile != null && compressedVideoFile.Length > 0)
-            {
-                var dev4path = Path.Combine(
-                       Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 1)
-                       , ($"{fname}.png"));
-                using (var fileStream = new FileStream(dev4path, FileMode.Create))
-                {
-                    compressedVideoFile.CopyTo(fileStream);
-                }
-            }
-
-
-
+            var fname = $"{Guid.NewGuid().ToString()}";
             ContAttacFile attacFile = new ContAttacFile();
             attacFile.IsDelete = 0;
             attacFile.FileType = 1;//文件类型，视频
@@ -228,22 +202,187 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             attacFile.AttId = -188;//附件信息
             attacFile.Extend = extend;
             attacFile.GuidFileName = $"{fname}{extend}";
-            attacFile.FileName = fileName;
+            // attacFile.FileName = fileName;
             attacFile.FolderName = EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 1);
             attacFile.FilePath = $"/Uploads/{attacFile.FolderName}/{attacFile.GuidFileName}";
-            attacFile.ThumPath = repic.Result;
-            //var path = Path.Combine(
-            //           Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 1)
-            //           , ($"{fname}{extend}");
-            var info = _IContAttacFileService.Add(attacFile);
+            //attacFile.ThumPath = repic;
+
+            formModel = await Request.StreamFiles_Video(path, attacFile);
+
+            var viewModel = new MyViewModel();
+
+            var bindingSuccessful = await TryUpdateModelAsync(viewModel, prefix: "",
+                valueProvider: formModel);
+
+
+            if (!bindingSuccessful)
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+            }
+            //生成缩略图
+            var repic = FFmpegUtiltiy.CreateVideoPic(attacFile.GuidFileName);
+            attacFile.ThumPath = repic;
+            attacFile.FilePath = $"/Uploads/{attacFile.FolderName}/{attacFile.GuidFileName}";
+
+
+            //return Ok(viewModel);
             return new WxResultJson(new RequstResult()
             {
                 Msg = "上传成功",
                 Code = 0,
-                Data = info
+                Data = attacFile
 
 
             });
+        }
+
+
+        /// <summary>
+        /// 添加客户
+        /// </summary>
+        /// <param name="info">添加客户</param>
+        /// <returns></returns>
+        //[CustomAction2CommitFilter]
+        [HttpPost]
+        public IActionResult AddVedioInfo([FromBody] ContAttacFile attacFile)
+        {
+            try
+            {
+                //保存数据
+
+                attacFile.IsDelete = 0;
+                attacFile.FileType = 1;//文件类型，视频
+                attacFile.CreateDateTime = DateTime.Now;
+                attacFile.CreateUserId = 1;
+                attacFile.ModifyUserId = 1;
+                attacFile.ModifyDateTime = DateTime.Now;
+                attacFile.CompanyId = attacFile.CompanyId;
+                attacFile.AttId = -188;//附件信息
+                attacFile.Extend = attacFile.Extend;
+                attacFile.GuidFileName = attacFile.GuidFileName;
+                // attacFile.FileName = fileName;
+                attacFile.FolderName = EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 1);
+                attacFile.FilePath = attacFile.FilePath;
+                var info = _IContAttacFileService.Add(attacFile);
+
+                return new WxResultJson(new RequstResult()
+                {
+                    Msg = "保存附件信息",
+                    Code = 0,
+                    Data = info
+
+
+                });
+            }
+            catch (Exception ex)
+            {
+                Log4netHelper.Error(ex.Message);
+                return new WxResultJson(new RequstResult()
+                {
+                    Msg = "报错信息失败",
+                    Code = 1,
+
+                });
+            }
+        }
+
+
+        /// <summary>
+        ///视频上传
+        /// </summary>
+        /// <param name="imgbase64">图片信息base64压缩</param>
+        /// /// <param name="commpId">客户ID</param>
+        /// <returns></returns>
+        [HttpPost]
+        public IActionResult WxUploadvideo(string imgbase64, int commpId, string video, string compressedVideo)
+        {
+
+            try
+            {
+                //Log4netHelper.Info("上传视频开始---");
+                var fname = $"{Guid.NewGuid().ToString()}";
+                string extend = ".mp4";
+
+                // 获取上传的视频文件
+                var videoFile = Request.Form.Files["video"];
+                extend = Path.GetExtension(videoFile.FileName);
+
+                // 获取压缩后的视频文件
+                var compressedVideoFile = Request.Form.Files["compressedVideo"];
+
+                // 获取视频文件名
+                var fileName = videoFile.FileName;
+
+                // 保存视频文件
+                var tempdev4path = Path.Combine(
+                          Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 1)
+                          , $"{fname}{extend}");
+                //Log4netHelper.Info($"视频路径---{tempdev4path}");
+                using (var fileStream = new FileStream(tempdev4path, FileMode.Create))
+                {
+                    videoFile.CopyTo(fileStream);
+                }
+                //生成缩略图
+                var repic = FFmpegUtiltiy.CreateVideoPic($"{fname}{extend}");
+
+                //压缩图片保存压缩后的视频文件
+                if (compressedVideoFile != null && compressedVideoFile.Length > 0)
+                {
+                    var dev4path = Path.Combine(
+                           Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 1)
+                           , ($"{fname}.png"));
+                    using (var fileStream = new FileStream(dev4path, FileMode.Create))
+                    {
+                        compressedVideoFile.CopyTo(fileStream);
+                    }
+                }
+
+
+
+                ContAttacFile attacFile = new ContAttacFile();
+                attacFile.IsDelete = 0;
+                attacFile.FileType = 1;//文件类型，视频
+                attacFile.CreateDateTime = DateTime.Now;
+                attacFile.CreateUserId = 1;
+                attacFile.ModifyUserId = 1;
+                attacFile.ModifyDateTime = DateTime.Now;
+                attacFile.CompanyId = commpId;
+                attacFile.AttId = -188;//附件信息
+                attacFile.Extend = extend;
+                attacFile.GuidFileName = $"{fname}{extend}";
+                attacFile.FileName = fileName;
+                attacFile.FolderName = EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 1);
+                attacFile.FilePath = $"/Uploads/{attacFile.FolderName}/{attacFile.GuidFileName}";
+                attacFile.ThumPath = repic;
+                //var path = Path.Combine(
+                //           Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 1)
+                //           , ($"{fname}{extend}");
+                var info = _IContAttacFileService.Add(attacFile);
+                return new WxResultJson(new RequstResult()
+                {
+                    Msg = "上传成功",
+                    Code = 0,
+                    Data = info
+
+
+                });
+            }
+            catch (Exception ex)
+            {
+
+                Log4netHelper.Error(ex.Message);
+                return new WxResultJson(new RequstResult()
+                {
+                    Msg = "上传失败",
+                    Code = 501,
+
+
+
+                });
+            }
         }
 
 

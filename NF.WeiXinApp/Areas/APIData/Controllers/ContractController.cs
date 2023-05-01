@@ -1,4 +1,3 @@
-﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using NF.Common.Models;
 using NF.Common.Utility;
@@ -8,7 +7,6 @@ using NF.ViewModel;
 using NF.ViewModel.Extend.Enums;
 using NF.ViewModel.Models;
 using NF.ViewModel.Models.Common;
-using NF.ViewModel.Models.WeiXinModels;
 using NF.WeiXin.Lib.Common;
 using NF.WeiXin.Lib.Utility;
 using NF.WeiXinApp.Extend;
@@ -17,10 +15,9 @@ using NF.WeiXinApp.Utility.Common;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Linq.Expressions;
 using System.Net;
-using Log4netHelper = NF.WeiXin.Lib.Utility.Log4netHelper;
+
 
 namespace NF.WeiXinApp.Areas.APIData.Controllers
 {
@@ -105,7 +102,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             var predicateOr = PredicateBuilder.False<ContractInfo>();
             predicateAnd = predicateAnd.And(a => a.IsDelete == 0 && a.FinanceType == FinanceType);
             var sd = "";
-            if (FinanceType==0)
+            if (FinanceType == 0)
             {
                 sd = "querycollcontlist";
             }
@@ -171,7 +168,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         {
             //string guidFileName = string.Empty;
             var contText = _IContTextService.Find(Id);
-           
+
             DownLoadAndUploadRequestInfo downLoad = new DownLoadAndUploadRequestInfo();
             downLoad.Id = Id;
             downLoad.folderIndex = 6;
@@ -211,7 +208,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         //    //var downInfo = FileStreamingHelper.Download(pathf);//下载到微信客户端
 
         //    //return File(downInfo.NfFileStream, downInfo.Memi, downInfo.FileName);
-           
+
         //}
         /// <summary>
         /// 文件下载

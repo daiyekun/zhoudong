@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace NF.Common.Models
 {
@@ -53,7 +50,7 @@ namespace NF.Common.Models
         public string FileName { get; set; }
 
     }
-   
+
     /// <summary>
     /// 下载请求对象
     /// </summary>
@@ -80,6 +77,19 @@ namespace NF.Common.Models
         public int DownType { get; set; } = 0;
     }
 
+    /// <summary>
+    /// 上传视频
+    /// </summary>
+    public class Uploaddivdeo
+    {
+        public string imgbase64 { get; set; }
+        public int commpId { get; set; }
+        public string video { get; set; }
+        public string compressedVideo { get; set; }
 
-         
+    }
+
+
+
+
 }

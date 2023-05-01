@@ -1,15 +1,11 @@
-﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using NF.Common.Models;
-using NF.WeiXin.Lib.Utility;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using NF.Common.Utility;
 
 namespace NF.WeiXinApp.Utility.Filters
 {
@@ -17,12 +13,12 @@ namespace NF.WeiXinApp.Utility.Filters
     /// <summary>
     /// 异常处理Filter
     /// </summary>
-    public class CustomExceptionFilterAttribute: ExceptionFilterAttribute
+    public class CustomExceptionFilterAttribute : ExceptionFilterAttribute
     {
         private readonly IWebHostEnvironment _hostingEnvironment;
         private readonly IModelMetadataProvider _modelMetadataProvider;
-      
-        public CustomExceptionFilterAttribute(IWebHostEnvironment hostingEnvironment,IModelMetadataProvider modelMetadataProvider)
+
+        public CustomExceptionFilterAttribute(IWebHostEnvironment hostingEnvironment, IModelMetadataProvider modelMetadataProvider)
         {
             _hostingEnvironment = hostingEnvironment;
             _modelMetadataProvider = modelMetadataProvider;
@@ -34,7 +30,7 @@ namespace NF.WeiXinApp.Utility.Filters
             {
                 string controllerName = (string)filterContext.RouteData.Values["controller"];
                 string actionName = (string)filterContext.RouteData.Values["action"];
-              
+
                 if (this.IsAjaxRequest(filterContext.HttpContext.Request))//检查请求头
                 {
                     filterContext.Result = new JsonResult(
@@ -43,8 +39,8 @@ namespace NF.WeiXinApp.Utility.Filters
                              Result = DoResult.Failed,
                              Msg = "系统出现异常，请联系管理员",
                              DebugMessage = filterContext.Exception.Message,
-                             Code=5
-                            
+                             Code = 5
+
                          }//这个就是返回的结果
                     );
                 }

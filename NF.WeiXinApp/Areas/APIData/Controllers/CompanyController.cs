@@ -1,11 +1,10 @@
-﻿using AutoMapper;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using NF.Common.Models;
 using NF.Common.Utility;
 using NF.IBLL;
 using NF.Model.Models;
 using NF.ViewModel.Extend.Enums;
-using NF.ViewModel.Models;
 using NF.ViewModel.Models.Common;
 using NF.ViewModel.Models.WeiXinModels;
 using NF.WeiXin.Lib.Common;
@@ -15,13 +14,11 @@ using NF.WeiXinApp.Utility;
 using NF.WeiXinApp.Utility.Common;
 using NF.WeiXinApp.Utility.Filters;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Net;
 using System.Threading.Tasks;
-using Log4netHelper = NF.WeiXin.Lib.Utility.Log4netHelper;
+
 
 namespace NF.WeiXinApp.Areas.APIData.Controllers
 {
@@ -104,8 +101,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             if (pageParam.orderType == "asc")
                 IsAsc = true;
             var layPage = _ICompanyService.GetWxCompList(pageInfo, predicateAnd, orderbyLambda, IsAsc);
-            var json= layPage.ToWxJson();
-            Log4netHelper.Info($"hisdata返回数据:{json}");
+            var json = layPage.ToWxJson();
+            //Log4netHelper.Info($"hisdata返回数据:{json}");
             return json;
         }
         /// <summary>
@@ -120,7 +117,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             var predicateOr = PredicateBuilder.False<Model.Models.Company>();
             predicateAnd = predicateAnd.And(a => a.Ctype == FinanceType && a.IsDelete == 0);
             var dt = "";
-            if (FinanceType==0)
+            if (FinanceType == 0)
             {
                 dt = "querycustomerlist";
             }
@@ -135,7 +132,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
 
 
             predicateAnd = predicateAnd.And(_ISysPermissionModelService.GetCmpListPermissionExpression(dt, UsId, UsDc));
-          //  predicateAnd = predicateAnd.And(_ISysPermissionModelService.GetCmpListPermissionExpression(dt, UsId, UsDc));
+            //  predicateAnd = predicateAnd.And(_ISysPermissionModelService.GetCmpListPermissionExpression(dt, UsId, UsDc));
             if (!string.IsNullOrEmpty(keyWord) && keyWord.ToLower() != "undefined")
             {
                 predicateOr = predicateOr.Or(a => a.Name.Contains(keyWord));
@@ -185,7 +182,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         /// <param name="txtId">合同文本ID</param>
         /// <returns></returns>
         [HttpGet("DownLoadFile")]
-        public IActionResult DownLoadFile(int txtId,int loadtype=0)
+        public IActionResult DownLoadFile(int txtId, int loadtype = 0)
         {
             // var txtId = 1;
             var httxinfo = _ICompAttachmentService.Find(txtId);
@@ -207,7 +204,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             {
 
                 string guidFileName = httxinfo.GuidFileName;
-               
+
 
                 if (guidFileName.StartsWith('~'))
                 {
@@ -228,12 +225,12 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                 return File(downInfo.NfFileStream, downInfo.Memi, downInfo.FileName);
 
             }
-           
 
-            
+
+
 
         }
-       
+
 
 
         /// <summary>
@@ -243,13 +240,13 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         /// <returns></returns>
         [CustomAction2CommitFilter]
         [HttpPost("CustomerAdd")]
-        public async Task<string> CustomerAdd([FromBody] WxCustomerInfo info)
+        public string CustomerAdd([FromBody] WxCustomerInfo info)
         {
             try
             {
                 var uinfo = _IUserInforService.GetWxUserById(info.WxCode);
                 var compinfo = new Company();
-                if (info.Id>0)
+                if (info.Id > 0)
                 {
                     compinfo = _ICompanyService.Find(info.Id);
                     compinfo.Code = info.Code;
@@ -258,7 +255,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.FirstContactMobile = info.FirstContactMobile;
                     compinfo.Address = info.Address;
                     compinfo.ModifyDateTime = DateTime.Now;
-                    compinfo.ModifyUserId =uinfo !=null? uinfo.UserId:1;
+                    compinfo.ModifyUserId = uinfo != null ? uinfo.UserId : 1;
                     _ICompanyService.Update(compinfo);
                 }
                 else
@@ -277,8 +274,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.Ctype = 0;//客户
                     _ICompanyService.Add(compinfo);
                 }
-                
-                
+
+
 
                 return new RequestData().ToWxJson();
             }
@@ -358,12 +355,12 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                 if (info.Id > 0)
                 {
                     compinfo = _ICompAttachmentService.Find(info.Id);
-                  
+
                     compinfo.Name = info.Name;
                     compinfo.DownloadTimes = 0;
                     compinfo.FileName = info.Name;
                     compinfo.FolderName = info.FolderName;
-                    compinfo.FwTitle ="";
+                    compinfo.FwTitle = "";
                     compinfo.ModifyDateTime = DateTime.Now;
                     compinfo.ModifyUserId = uinfo != null ? uinfo.UserId : 1;
                     compinfo.GuidFileName = info.GuidFileName;
@@ -371,7 +368,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.TxDate = info.TxDate;
                     compinfo.Remark = info.Remark;
                     compinfo.Path = $"{info.FolderName}/{info.GuidFileName}";
-                    compinfo.CompanyId=info.CompanyId;
+                    compinfo.CompanyId = info.CompanyId;
                     compinfo.CategoryId = 1067;
                     _ICompAttachmentService.Update(compinfo);
                     string sqlstr = $"update ContAttacFile set AttId={compinfo.Id} where AttId=-188";
@@ -380,7 +377,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                 else
                 {
                     compinfo.Name = info.Name;
-                  
+
                     compinfo.DownloadTimes = 0;
                     compinfo.FileName = info.Name;
                     compinfo.FolderName = info.FolderName;
@@ -395,8 +392,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.CompanyId = info.CompanyId;
                     compinfo.CategoryId = 1067;
                     compinfo.CreateDateTime = DateTime.Now;
-                    compinfo.CreateUserId= uinfo != null ? uinfo.UserId : 1;
-                    var reinfo=_ICompAttachmentService.Add(compinfo);
+                    compinfo.CreateUserId = uinfo != null ? uinfo.UserId : 1;
+                    var reinfo = _ICompAttachmentService.Add(compinfo);
                     string sqlstr = $"update ContAttacFile set AttId={reinfo.Id} where AttId=-188";
                     _ICompAttachmentService.ExecuteSqlCommand(sqlstr);
                 }
@@ -453,7 +450,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             }
         }
 
-        
+
 
     }
 }

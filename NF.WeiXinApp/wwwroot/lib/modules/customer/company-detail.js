@@ -161,7 +161,7 @@ function ShowContText(currId) {
                         //console.log(resultstr2);
                         for (var j = 0; j < videos.length; j++) {
                             videohtml += '<li style="display: inline-block;flex: 0 0 100%; " >'
-                            videohtml += '<video style="width:100%;"height="300" controls poster="' + videos[j].ThumPath + '" src="' + videos[j].VideoPath +'"></video>'
+                            videohtml += '<video style="width:100%;"height="300" class="woovideo" playsinline accelerometer controls poster="' + videos[j].ThumPath + '" src="' + videos[j].VideoPath +'"></video>'
                             videohtml +='</li>'
                         }
 
@@ -272,6 +272,18 @@ $(function () {
     var currId = $("#contId").val();//'@ViewData["contId"]'
     LoadMainFormData(currId);
     ShowContText(currId);
+
+    var video = $('.woovideo');
+    window.addEventListener('deviceorientation', function (event) {
+        var beta = event.beta; // 设备顶部与地面的夹角
+        if (beta > 45 || beta < -45) {
+            // 手机垂直时暂停视频
+            video.pause();
+        } else {
+            // 播放视频
+            video.play();
+        }
+    });
 
 
 
