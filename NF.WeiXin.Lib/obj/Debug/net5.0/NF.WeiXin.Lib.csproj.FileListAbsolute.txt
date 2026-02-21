@@ -31,8 +31,8 @@ E:\Zhoudong\NF.WeiXin.Lib\obj\Debug\net5.0\NF.WeiXin.Lib.GeneratedMSBuildEditorC
 E:\Zhoudong\NF.WeiXin.Lib\obj\Debug\net5.0\NF.WeiXin.Lib.AssemblyInfoInputs.cache
 E:\Zhoudong\NF.WeiXin.Lib\obj\Debug\net5.0\NF.WeiXin.Lib.AssemblyInfo.cs
 E:\Zhoudong\NF.WeiXin.Lib\obj\Debug\net5.0\NF.WeiXin.Lib.csproj.CoreCompileInputs.cache
-E:\Zhoudong\NF.WeiXin.Lib\obj\Debug\net5.0\NF.WeiXin.Lib.csproj.CopyComplete
 E:\Zhoudong\NF.WeiXin.Lib\obj\Debug\net5.0\NF.WeiXin.Lib.dll
 E:\Zhoudong\NF.WeiXin.Lib\obj\Debug\net5.0\ref\NF.WeiXin.Lib.dll
 E:\Zhoudong\NF.WeiXin.Lib\obj\Debug\net5.0\NF.WeiXin.Lib.pdb
 E:\Zhoudong\NF.WeiXin.Lib\obj\Debug\net5.0\refint\NF.WeiXin.Lib.dll
+E:\Zhoudong\NF.WeiXin.Lib\obj\Debug\net5.0\NF.WeiXi.9B320F82.Up2Date

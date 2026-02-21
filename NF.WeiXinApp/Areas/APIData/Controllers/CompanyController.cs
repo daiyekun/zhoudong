@@ -242,12 +242,18 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         [HttpPost("CustomerAdd")]
         public string CustomerAdd([FromBody] WxCustomerInfo info)
         {
+            Log4netHelper.Info($"添加客户:{info.Name} 客户代码:{info.Code} 授权码:{info.QxCode}");
+            if (string.IsNullOrEmpty(info.QxCode) || !info.QxCode.Equals("zd198911"))
+            {
+                return new RequestData(code: 1).ToWxJson();
+            }
             try
             {
                 var uinfo = _IUserInforService.GetWxUserById(info.WxCode);
                 var compinfo = new Company();
                 if (info.Id > 0)
                 {
+                    Log4netHelper.Info($"编辑客户:{info.Name} 客户代码:{info.Code} 客户ID:{info.Id}");
                     compinfo = _ICompanyService.Find(info.Id);
                     compinfo.Code = info.Code;
                     compinfo.Name = info.Name;
@@ -260,6 +266,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                 }
                 else
                 {
+                    Log4netHelper.Info($"添加客户:{info.Name} 客户代码:{info.Code}");
                     compinfo.Code = info.Code;
                     compinfo.Name = info.Name;
                     compinfo.FirstContact = info.FirstContact;

@@ -31,8 +31,8 @@ E:\Zhoudong\NF.IBLL\obj\Release\net5.0\NF.IBLL.GeneratedMSBuildEditorConfig.edit
 E:\Zhoudong\NF.IBLL\obj\Release\net5.0\NF.IBLL.AssemblyInfoInputs.cache
 E:\Zhoudong\NF.IBLL\obj\Release\net5.0\NF.IBLL.AssemblyInfo.cs
 E:\Zhoudong\NF.IBLL\obj\Release\net5.0\NF.IBLL.csproj.CoreCompileInputs.cache
-E:\Zhoudong\NF.IBLL\obj\Release\net5.0\NF.IBLL.csproj.CopyComplete
 E:\Zhoudong\NF.IBLL\obj\Release\net5.0\NF.IBLL.dll
 E:\Zhoudong\NF.IBLL\obj\Release\net5.0\ref\NF.IBLL.dll
 E:\Zhoudong\NF.IBLL\obj\Release\net5.0\NF.IBLL.pdb
 E:\Zhoudong\NF.IBLL\obj\Release\net5.0\refint\NF.IBLL.dll
+E:\Zhoudong\NF.IBLL\obj\Release\net5.0\NF.IBLL.csproj.Up2Date

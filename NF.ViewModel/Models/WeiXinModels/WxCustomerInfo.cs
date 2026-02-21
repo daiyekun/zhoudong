@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
 namespace NF.ViewModel.Models.WeiXinModels
 {
@@ -40,6 +36,10 @@ namespace NF.ViewModel.Models.WeiXinModels
         /// </summary>
 
         public string WxCode { get; set; }
+        /// <summary>
+        /// 权限授权码
+        /// </summary>
+        public string QxCode { get; set; }
 
 
     }
@@ -57,7 +57,7 @@ namespace NF.ViewModel.Models.WeiXinModels
         public int CompanyId { get; set; }
         public string Remark { get; set; }
         public string Name { get; set; }
-     
+
 
     }
 

@@ -12,7 +12,6 @@ D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\obj\Release\net5.0\ref\SignalR.Client.
 D:\MyCode\Devs\V3.0\SZSKYY\SignalR.Client\obj\Release\net5.0\SignalR.Client.pdb
 E:\Zhoudong\SignalR.Client\bin\Release\net5.0\SignalR.Client.deps.json
 E:\Zhoudong\SignalR.Client\bin\Release\net5.0\SignalR.Client.dll
-E:\Zhoudong\SignalR.Client\bin\Release\net5.0\ref\SignalR.Client.dll
 E:\Zhoudong\SignalR.Client\bin\Release\net5.0\SignalR.Client.pdb
 E:\Zhoudong\SignalR.Client\obj\Release\net5.0\SignalR.Client.csproj.AssemblyReference.cache
 E:\Zhoudong\SignalR.Client\obj\Release\net5.0\SignalR.Client.GeneratedMSBuildEditorConfig.editorconfig
@@ -22,3 +21,4 @@ E:\Zhoudong\SignalR.Client\obj\Release\net5.0\SignalR.Client.csproj.CoreCompileI
 E:\Zhoudong\SignalR.Client\obj\Release\net5.0\SignalR.Client.dll
 E:\Zhoudong\SignalR.Client\obj\Release\net5.0\ref\SignalR.Client.dll
 E:\Zhoudong\SignalR.Client\obj\Release\net5.0\SignalR.Client.pdb
+E:\Zhoudong\SignalR.Client\obj\Release\net5.0\refint\SignalR.Client.dll

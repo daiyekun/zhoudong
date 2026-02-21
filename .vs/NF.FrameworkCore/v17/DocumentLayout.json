@@ -1,0 +1,281 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Zhoudong\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|e:\\zhoudong\\nf.weixinapp\\areas\\apidata\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|solutionrelative:nf.weixinapp\\areas\\apidata\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|e:\\zhoudong\\nf.weixinapp\\views\\company\\customeradd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|solutionrelative:nf.weixinapp\\views\\company\\customeradd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BA4CF35-4F08-409E-87F1-6CA00969EAC6}|NF.ViewModel\\NF.ViewModel.csproj|e:\\zhoudong\\nf.viewmodel\\models\\weixinmodels\\wxcustomerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BA4CF35-4F08-409E-87F1-6CA00969EAC6}|NF.ViewModel\\NF.ViewModel.csproj|solutionrelative:nf.viewmodel\\models\\weixinmodels\\wxcustomerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|e:\\zhoudong\\nf.weixinapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|solutionrelative:nf.weixinapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|e:\\zhoudong\\nf.weixinapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|solutionrelative:nf.weixinapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|e:\\zhoudong\\nf.weixinapp\\views\\company\\custfuwuadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|solutionrelative:nf.weixinapp\\views\\company\\custfuwuadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|e:\\zhoudong\\nf.weixinapp\\wwwroot\\lib\\modules\\customer\\company-detail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|solutionrelative:nf.weixinapp\\wwwroot\\lib\\modules\\customer\\company-detail.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|e:\\zhoudong\\nf.weixinapp\\utility\\quartz\\wxzhoudongdaoqijob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|solutionrelative:nf.weixinapp\\utility\\quartz\\wxzhoudongdaoqijob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|e:\\zhoudong\\nf.weixinapp\\areas\\apidata\\controllers\\wxfilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|solutionrelative:nf.weixinapp\\areas\\apidata\\controllers\\wxfilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|e:\\zhoudong\\nf.weixinapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|solutionrelative:nf.weixinapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|e:\\zhoudong\\nf.weixinapp\\utility\\common\\multipartrequesthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|solutionrelative:nf.weixinapp\\utility\\common\\multipartrequesthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|e:\\zhoudong\\nf.weixinapp\\utility\\filters\\disableformvaluemodelbindingattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|solutionrelative:nf.weixinapp\\utility\\filters\\disableformvaluemodelbindingattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18367DE-F260-4C25-856F-0B7B50C00523}|NF.BLL\\NF.BLL.csproj|e:\\zhoudong\\nf.bll\\contract\\contattachmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18367DE-F260-4C25-856F-0B7B50C00523}|NF.BLL\\NF.BLL.csproj|solutionrelative:nf.bll\\contract\\contattachmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|e:\\zhoudong\\nf.weixinapp\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{06F219C3-E02A-4F94-9F6E-8B1063126EF3}|NF.WeiXinApp\\NF.WeiXinApp.csproj|solutionrelative:nf.weixinapp\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18367DE-F260-4C25-856F-0B7B50C00523}|NF.BLL\\NF.BLL.csproj|e:\\zhoudong\\nf.bll\\wxservice\\company\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18367DE-F260-4C25-856F-0B7B50C00523}|NF.BLL\\NF.BLL.csproj|solutionrelative:nf.bll\\wxservice\\company\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E18367DE-F260-4C25-856F-0B7B50C00523}|NF.BLL\\NF.BLL.csproj|e:\\zhoudong\\nf.bll\\company\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E18367DE-F260-4C25-856F-0B7B50C00523}|NF.BLL\\NF.BLL.csproj|solutionrelative:nf.bll\\company\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WxCustomerInfo.cs",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.ViewModel\\Models\\WeiXinModels\\WxCustomerInfo.cs",
+              "RelativeDocumentMoniker": "NF.ViewModel\\Models\\WeiXinModels\\WxCustomerInfo.cs",
+              "ToolTip": "E:\\Zhoudong\\NF.ViewModel\\Models\\WeiXinModels\\WxCustomerInfo.cs",
+              "RelativeToolTip": "NF.ViewModel\\Models\\WeiXinModels\\WxCustomerInfo.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAzwCkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T00:03:36.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.WeiXinApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "NF.WeiXinApp\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Zhoudong\\NF.WeiXinApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "NF.WeiXinApp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC8BAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-02T23:56:59.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerAdd.cshtml",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.WeiXinApp\\Views\\Company\\CustomerAdd.cshtml",
+              "RelativeDocumentMoniker": "NF.WeiXinApp\\Views\\Company\\CustomerAdd.cshtml",
+              "ToolTip": "E:\\Zhoudong\\NF.WeiXinApp\\Views\\Company\\CustomerAdd.cshtml",
+              "RelativeToolTip": "NF.WeiXinApp\\Views\\Company\\CustomerAdd.cshtml",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAIwFwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T23:52:48.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CompanyController.cs",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.WeiXinApp\\Areas\\APIData\\Controllers\\CompanyController.cs",
+              "RelativeDocumentMoniker": "NF.WeiXinApp\\Areas\\APIData\\Controllers\\CompanyController.cs",
+              "ToolTip": "E:\\Zhoudong\\NF.WeiXinApp\\Areas\\APIData\\Controllers\\CompanyController.cs",
+              "RelativeToolTip": "NF.WeiXinApp\\Areas\\APIData\\Controllers\\CompanyController.cs",
+              "ViewState": "AgIAAIABAAAAAAAAAAApwPcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-05-01T00:11:06.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WxFileController.cs",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.WeiXinApp\\Areas\\APIData\\Controllers\\WxFileController.cs",
+              "RelativeDocumentMoniker": "NF.WeiXinApp\\Areas\\APIData\\Controllers\\WxFileController.cs",
+              "ToolTip": "E:\\Zhoudong\\NF.WeiXinApp\\Areas\\APIData\\Controllers\\WxFileController.cs",
+              "RelativeToolTip": "NF.WeiXinApp\\Areas\\APIData\\Controllers\\WxFileController.cs",
+              "ViewState": "AgIAAGMBAAAAAAAAAAAcwEIBAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-05-01T00:11:26.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "company-detail.js",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.WeiXinApp\\wwwroot\\lib\\modules\\customer\\company-detail.js",
+              "RelativeDocumentMoniker": "NF.WeiXinApp\\wwwroot\\lib\\modules\\customer\\company-detail.js",
+              "ToolTip": "E:\\Zhoudong\\NF.WeiXinApp\\wwwroot\\lib\\modules\\customer\\company-detail.js",
+              "RelativeToolTip": "NF.WeiXinApp\\wwwroot\\lib\\modules\\customer\\company-detail.js",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAYwKMAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2023-05-01T04:56:09.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.WeiXinApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "NF.WeiXinApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Zhoudong\\NF.WeiXinApp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "NF.WeiXinApp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAABIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-02T23:55:45.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WxZhouDongDaoQiJob.cs",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.WeiXinApp\\Utility\\Quartz\\WxZhouDongDaoQiJob.cs",
+              "RelativeDocumentMoniker": "NF.WeiXinApp\\Utility\\Quartz\\WxZhouDongDaoQiJob.cs",
+              "ToolTip": "E:\\Zhoudong\\NF.WeiXinApp\\Utility\\Quartz\\WxZhouDongDaoQiJob.cs",
+              "RelativeToolTip": "NF.WeiXinApp\\Utility\\Quartz\\WxZhouDongDaoQiJob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-05-01T02:00:05.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MultipartRequestHelper.cs",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.WeiXinApp\\Utility\\Common\\MultipartRequestHelper.cs",
+              "RelativeDocumentMoniker": "NF.WeiXinApp\\Utility\\Common\\MultipartRequestHelper.cs",
+              "ToolTip": "E:\\Zhoudong\\NF.WeiXinApp\\Utility\\Common\\MultipartRequestHelper.cs",
+              "RelativeToolTip": "NF.WeiXinApp\\Utility\\Common\\MultipartRequestHelper.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAIwEMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-05-01T01:21:06.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustFuWuAdd.cshtml",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.WeiXinApp\\Views\\Company\\CustFuWuAdd.cshtml",
+              "RelativeDocumentMoniker": "NF.WeiXinApp\\Views\\Company\\CustFuWuAdd.cshtml",
+              "ToolTip": "E:\\Zhoudong\\NF.WeiXinApp\\Views\\Company\\CustFuWuAdd.cshtml",
+              "RelativeToolTip": "NF.WeiXinApp\\Views\\Company\\CustFuWuAdd.cshtml",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAgwMoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-05-01T00:12:17.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.WeiXinApp\\Program.cs",
+              "RelativeDocumentMoniker": "NF.WeiXinApp\\Program.cs",
+              "ToolTip": "E:\\Zhoudong\\NF.WeiXinApp\\Program.cs",
+              "RelativeToolTip": "NF.WeiXinApp\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAABIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-05-01T02:30:00.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DisableFormValueModelBindingAttribute.cs",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.WeiXinApp\\Utility\\Filters\\DisableFormValueModelBindingAttribute.cs",
+              "RelativeDocumentMoniker": "NF.WeiXinApp\\Utility\\Filters\\DisableFormValueModelBindingAttribute.cs",
+              "ToolTip": "E:\\Zhoudong\\NF.WeiXinApp\\Utility\\Filters\\DisableFormValueModelBindingAttribute.cs",
+              "RelativeToolTip": "NF.WeiXinApp\\Utility\\Filters\\DisableFormValueModelBindingAttribute.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvxEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-05-01T01:19:17.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ContAttachmentService.cs",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.BLL\\Contract\\ContAttachmentService.cs",
+              "RelativeDocumentMoniker": "NF.BLL\\Contract\\ContAttachmentService.cs",
+              "ToolTip": "E:\\Zhoudong\\NF.BLL\\Contract\\ContAttachmentService.cs",
+              "RelativeToolTip": "NF.BLL\\Contract\\ContAttachmentService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-05-01T01:10:56.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "web.config",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.WeiXinApp\\web.config",
+              "RelativeDocumentMoniker": "NF.WeiXinApp\\web.config",
+              "ToolTip": "E:\\Zhoudong\\NF.WeiXinApp\\web.config",
+              "RelativeToolTip": "NF.WeiXinApp\\web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2023-05-01T01:04:33.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CompanyService.cs",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.BLL\\WxService\\Company\\CompanyService.cs",
+              "RelativeDocumentMoniker": "NF.BLL\\WxService\\Company\\CompanyService.cs",
+              "ToolTip": "E:\\Zhoudong\\NF.BLL\\WxService\\Company\\CompanyService.cs",
+              "RelativeToolTip": "NF.BLL\\WxService\\Company\\CompanyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-05-01T00:10:52.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CompanyService.cs",
+              "DocumentMoniker": "E:\\Zhoudong\\NF.BLL\\Company\\CompanyService.cs",
+              "RelativeDocumentMoniker": "NF.BLL\\Company\\CompanyService.cs",
+              "ToolTip": "E:\\Zhoudong\\NF.BLL\\Company\\CompanyService.cs",
+              "RelativeToolTip": "NF.BLL\\Company\\CompanyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-05-01T00:10:38.889Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

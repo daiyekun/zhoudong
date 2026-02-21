@@ -428,7 +428,6 @@ E:\Zhoudong\NF.Web\bin\Release\net5.0\NF.Web.deps.json
 E:\Zhoudong\NF.Web\bin\Release\net5.0\NF.Web.runtimeconfig.json
 E:\Zhoudong\NF.Web\bin\Release\net5.0\NF.Web.runtimeconfig.dev.json
 E:\Zhoudong\NF.Web\bin\Release\net5.0\NF.Web.dll
-E:\Zhoudong\NF.Web\bin\Release\net5.0\ref\NF.Web.dll
 E:\Zhoudong\NF.Web\bin\Release\net5.0\NF.Web.pdb
 E:\Zhoudong\NF.Web\bin\Release\net5.0\NF.Web.Views.dll
 E:\Zhoudong\NF.Web\bin\Release\net5.0\NF.Web.Views.pdb
@@ -819,8 +818,14 @@ E:\Zhoudong\NF.Web\obj\Release\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 E:\Zhoudong\NF.Web\obj\Release\net5.0\NF.Web.RazorTargetAssemblyInfo.cache
 E:\Zhoudong\NF.Web\obj\Release\net5.0\NF.Web.RazorTargetAssemblyInfo.cs
 E:\Zhoudong\NF.Web\obj\Release\net5.0\NF.Web.Views.pdb
-E:\Zhoudong\NF.Web\obj\Release\net5.0\NF.Web.csproj.CopyComplete
 E:\Zhoudong\NF.Web\obj\Release\net5.0\NF.Web.dll
 E:\Zhoudong\NF.Web\obj\Release\net5.0\ref\NF.Web.dll
 E:\Zhoudong\NF.Web\obj\Release\net5.0\NF.Web.pdb
 E:\Zhoudong\NF.Web\obj\Release\net5.0\NF.Web.genruntimeconfig.cache
+E:\Zhoudong\NF.Web\obj\Release\net5.0\staticwebassets\NF.Web.StaticWebAssets.Pack.cache
+E:\Zhoudong\NF.Web\obj\Release\net5.0\staticwebassets\msbuild.NF.Web.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Zhoudong\NF.Web\obj\Release\net5.0\staticwebassets\msbuild.build.NF.Web.props
+E:\Zhoudong\NF.Web\obj\Release\net5.0\staticwebassets\msbuild.buildMultiTargeting.NF.Web.props
+E:\Zhoudong\NF.Web\obj\Release\net5.0\staticwebassets\msbuild.buildTransitive.NF.Web.props
+E:\Zhoudong\NF.Web\obj\Release\net5.0\NF.Web.csproj.Up2Date
+E:\Zhoudong\NF.Web\obj\Release\net5.0\refint\NF.Web.dll

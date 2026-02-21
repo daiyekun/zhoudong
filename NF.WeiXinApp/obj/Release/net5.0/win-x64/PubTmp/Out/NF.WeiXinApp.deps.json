@@ -6190,7 +6190,10 @@
       },
       "LhCode/1.0.0": {
         "runtime": {
-          "LhCode.dll": {}
+          "LhCode.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.AutoMapper/1.0.0": {
@@ -6201,7 +6204,10 @@
           "NF.ViewModel": "1.0.0"
         },
         "runtime": {
-          "NF.AutoMapper.dll": {}
+          "NF.AutoMapper.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.BLL/1.0.0": {
@@ -6214,7 +6220,10 @@
           "NF.ViewModel": "1.0.0"
         },
         "runtime": {
-          "NF.BLL.dll": {}
+          "NF.BLL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.Common/1.0.0": {
@@ -6232,7 +6241,10 @@
           "log4net": "2.0.12"
         },
         "runtime": {
-          "NF.Common.dll": {}
+          "NF.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.IBLL/1.0.0": {
@@ -6242,7 +6254,10 @@
           "NF.ViewModel": "1.0.0"
         },
         "runtime": {
-          "NF.IBLL.dll": {}
+          "NF.IBLL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.Model/1.0.0": {
@@ -6252,7 +6267,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6"
         },
         "runtime": {
-          "NF.Model.dll": {}
+          "NF.Model.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.ViewModel/1.0.0": {
@@ -6262,7 +6280,10 @@
           "NF.Model": "1.0.0"
         },
         "runtime": {
-          "NF.ViewModel.dll": {}
+          "NF.ViewModel.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.WeiXin.Lib/1.0.0": {
@@ -6278,7 +6299,10 @@
           "log4net": "2.0.12"
         },
         "runtime": {
-          "NF.WeiXin.Lib.dll": {}
+          "NF.WeiXin.Lib.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

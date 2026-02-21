@@ -433,7 +433,6 @@ E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\NF.WeiXinApp.RazorTargetAssemblyInfo.cache
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\NF.WeiXinApp.RazorTargetAssemblyInfo.cs
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\NF.WeiXinApp.Views.pdb
-E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\NF.WeiXinApp.csproj.CopyComplete
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\NF.WeiXinApp.dll
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\ref\NF.WeiXinApp.dll
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\NF.WeiXinApp.pdb
@@ -445,3 +444,4 @@ E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\staticwebassets\msbuild.NF.WeiXinApp
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\staticwebassets\msbuild.build.NF.WeiXinApp.props
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\staticwebassets\msbuild.buildMultiTargeting.NF.WeiXinApp.props
 E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\staticwebassets\msbuild.buildTransitive.NF.WeiXinApp.props
+E:\Zhoudong\NF.WeiXinApp\obj\Release\net5.0\NF.WeiXi.B8CDA8E2.Up2Date

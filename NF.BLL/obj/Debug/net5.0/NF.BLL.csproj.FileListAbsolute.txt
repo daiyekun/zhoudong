@@ -48,5 +48,5 @@ E:\Zhoudong\NF.BLL\bin\Debug\net5.0\NF.Common.pdb
 E:\Zhoudong\NF.BLL\bin\Debug\net5.0\NF.IBLL.pdb
 E:\Zhoudong\NF.BLL\bin\Debug\net5.0\NF.Model.pdb
 E:\Zhoudong\NF.BLL\bin\Debug\net5.0\NF.ViewModel.pdb
-E:\Zhoudong\NF.BLL\obj\Debug\net5.0\NF.BLL.csproj.CopyComplete
 E:\Zhoudong\NF.BLL\obj\Debug\net5.0\refint\NF.BLL.dll
+E:\Zhoudong\NF.BLL\obj\Debug\net5.0\NF.BLL.csproj.Up2Date

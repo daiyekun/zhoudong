@@ -1,4 +1,4 @@
-﻿@{
+@{
     ViewData["Title"] = "新增客户";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -63,6 +63,12 @@
                         <input class="weui-input" name="Address" id="Address" />
                     </div>
                 </div>
+                <div class="weui-cell weui-cell_active weui-cell_disabled">
+                    <div class="weui-cell__hd"><label class="weui-label">授权码</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" name="QxCode" id="QxCode" />
+                    </div>
+                </div>
 
             </div>
 
@@ -83,7 +89,8 @@
             Code: $("#Code").val(),
             FirstContact: $("#FirstContact").val(),
             FirstContactMobile: $("#FirstContactMobile").val(),
-            Address: $("#Address").val()
+            Address: $("#Address").val(),
+            QxCode: $("#QxCode").val()
 
 
         };

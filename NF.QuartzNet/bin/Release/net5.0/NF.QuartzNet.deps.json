@@ -1560,7 +1560,10 @@
           "log4net": "2.0.8"
         },
         "runtime": {
-          "NF.Common.dll": {}
+          "NF.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

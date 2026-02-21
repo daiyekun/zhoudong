@@ -8178,7 +8178,10 @@
       },
       "LhCode/1.0.0": {
         "runtime": {
-          "LhCode.dll": {}
+          "LhCode.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.AutoMapper/1.0.0": {
@@ -8189,7 +8192,10 @@
           "NF.ViewModel": "1.0.0"
         },
         "runtime": {
-          "NF.AutoMapper.dll": {}
+          "NF.AutoMapper.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.BLL/1.0.0": {
@@ -8202,7 +8208,10 @@
           "NF.ViewModel": "1.0.0"
         },
         "runtime": {
-          "NF.BLL.dll": {}
+          "NF.BLL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.Common/1.0.0": {
@@ -8220,7 +8229,10 @@
           "log4net": "2.0.8"
         },
         "runtime": {
-          "NF.Common.dll": {}
+          "NF.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.IBLL/1.0.0": {
@@ -8230,7 +8242,10 @@
           "NF.ViewModel": "1.0.0"
         },
         "runtime": {
-          "NF.IBLL.dll": {}
+          "NF.IBLL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.Model/1.0.0": {
@@ -8240,7 +8255,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6"
         },
         "runtime": {
-          "NF.Model.dll": {}
+          "NF.Model.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.OfficeComm/1.0.0": {
@@ -8248,7 +8266,10 @@
           "NF.Common": "1.0.0"
         },
         "runtime": {
-          "NF.OfficeComm.dll": {}
+          "NF.OfficeComm.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.QuartzNet/1.0.0": {
@@ -8257,7 +8278,10 @@
           "Quartz": "3.2.3"
         },
         "runtime": {
-          "NF.QuartzNet.dll": {}
+          "NF.QuartzNet.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.ViewModel/1.0.0": {
@@ -8267,7 +8291,10 @@
           "NF.Model": "1.0.0"
         },
         "runtime": {
-          "NF.ViewModel.dll": {}
+          "NF.ViewModel.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "SignalR.Client/1.0.0": {
@@ -8275,7 +8302,10 @@
           "Microsoft.AspNetCore.SignalR.Client": "5.0.0"
         },
         "runtime": {
-          "SignalR.Client.dll": {}
+          "SignalR.Client.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "SignalR.Server/1.0.0": {
@@ -8283,7 +8313,10 @@
           "Microsoft.AspNetCore.SignalR": "1.1.0"
         },
         "runtime": {
-          "SignalR.Server.dll": {}
+          "SignalR.Server.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Interop.Microsoft.Office.Interop.Word/8.5.0.0": {

@@ -13,7 +13,6 @@ D:\MyCode\Devs\V3.0\SZSKYY\LhCode\obj\Release\net5.0\LhCode.pdb
 E:\Zhoudong\LhCode\bin\Release\net5.0\LhCode.deps.json
 E:\Zhoudong\LhCode\bin\Release\net5.0\LhCode.dll
 E:\Zhoudong\LhCode\bin\Release\net5.0\LhCode.pdb
-E:\Zhoudong\LhCode\obj\Release\net5.0\LhCode.csproj.AssemblyReference.cache
 E:\Zhoudong\LhCode\obj\Release\net5.0\LhCode.GeneratedMSBuildEditorConfig.editorconfig
 E:\Zhoudong\LhCode\obj\Release\net5.0\LhCode.AssemblyInfoInputs.cache
 E:\Zhoudong\LhCode\obj\Release\net5.0\LhCode.AssemblyInfo.cs

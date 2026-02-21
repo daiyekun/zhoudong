@@ -1,0 +1,37 @@
+# .NET 构建输出
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# 发布相关
+[Pp]ub[Tt]mp/
+*.publishsettings
+[Pp]ublishProfiles/
+
+# 生成的代码
+*.g.cs
+*.i.cs
+*_Generated.cs
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Node/npm (如果有前端资源)
+node_modules/
+
+# 其他
+*.log
+*.cache

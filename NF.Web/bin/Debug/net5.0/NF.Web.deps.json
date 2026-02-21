@@ -3806,7 +3806,10 @@
       },
       "LhCode/1.0.0": {
         "runtime": {
-          "LhCode.dll": {}
+          "LhCode.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "LhCode.dll": {}
@@ -3820,7 +3823,10 @@
           "NF.ViewModel": "1.0.0"
         },
         "runtime": {
-          "NF.AutoMapper.dll": {}
+          "NF.AutoMapper.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "NF.AutoMapper.dll": {}
@@ -3836,7 +3842,10 @@
           "NF.ViewModel": "1.0.0"
         },
         "runtime": {
-          "NF.BLL.dll": {}
+          "NF.BLL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "NF.BLL.dll": {}
@@ -3857,7 +3866,10 @@
           "log4net": "2.0.8"
         },
         "runtime": {
-          "NF.Common.dll": {}
+          "NF.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "NF.Common.dll": {}
@@ -3870,7 +3882,10 @@
           "NF.ViewModel": "1.0.0"
         },
         "runtime": {
-          "NF.IBLL.dll": {}
+          "NF.IBLL.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "NF.IBLL.dll": {}
@@ -3883,7 +3898,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6"
         },
         "runtime": {
-          "NF.Model.dll": {}
+          "NF.Model.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "NF.Model.dll": {}
@@ -3894,7 +3912,10 @@
           "NF.Common": "1.0.0"
         },
         "runtime": {
-          "NF.OfficeComm.dll": {}
+          "NF.OfficeComm.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "NF.OfficeComm.dll": {}
@@ -3906,7 +3927,10 @@
           "Quartz": "3.2.3"
         },
         "runtime": {
-          "NF.QuartzNet.dll": {}
+          "NF.QuartzNet.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "NF.QuartzNet.dll": {}
@@ -3919,7 +3943,10 @@
           "NF.Model": "1.0.0"
         },
         "runtime": {
-          "NF.ViewModel.dll": {}
+          "NF.ViewModel.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "NF.ViewModel.dll": {}
@@ -3930,7 +3957,10 @@
           "Microsoft.AspNetCore.SignalR.Client": "5.0.0"
         },
         "runtime": {
-          "SignalR.Client.dll": {}
+          "SignalR.Client.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "SignalR.Client.dll": {}
@@ -3941,7 +3971,10 @@
           "Microsoft.AspNetCore.SignalR": "1.1.0"
         },
         "runtime": {
-          "SignalR.Server.dll": {}
+          "SignalR.Server.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "SignalR.Server.dll": {}

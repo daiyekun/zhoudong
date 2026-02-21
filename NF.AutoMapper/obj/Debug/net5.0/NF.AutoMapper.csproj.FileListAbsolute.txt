@@ -31,8 +31,8 @@ E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\NF.AutoMapper.GeneratedMSBuildEditorC
 E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\NF.AutoMapper.AssemblyInfoInputs.cache
 E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\NF.AutoMapper.AssemblyInfo.cs
 E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\NF.AutoMapper.csproj.CoreCompileInputs.cache
-E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\NF.AutoMapper.csproj.CopyComplete
 E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\NF.AutoMapper.dll
 E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\ref\NF.AutoMapper.dll
 E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\NF.AutoMapper.pdb
 E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\refint\NF.AutoMapper.dll
+E:\Zhoudong\NF.AutoMapper\obj\Debug\net5.0\NF.AutoM.AEDF0930.Up2Date

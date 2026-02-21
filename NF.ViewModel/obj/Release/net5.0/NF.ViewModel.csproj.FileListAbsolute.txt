@@ -27,8 +27,8 @@ E:\Zhoudong\NF.ViewModel\obj\Release\net5.0\NF.ViewModel.GeneratedMSBuildEditorC
 E:\Zhoudong\NF.ViewModel\obj\Release\net5.0\NF.ViewModel.AssemblyInfoInputs.cache
 E:\Zhoudong\NF.ViewModel\obj\Release\net5.0\NF.ViewModel.AssemblyInfo.cs
 E:\Zhoudong\NF.ViewModel\obj\Release\net5.0\NF.ViewModel.csproj.CoreCompileInputs.cache
-E:\Zhoudong\NF.ViewModel\obj\Release\net5.0\NF.ViewModel.csproj.CopyComplete
 E:\Zhoudong\NF.ViewModel\obj\Release\net5.0\NF.ViewModel.dll
 E:\Zhoudong\NF.ViewModel\obj\Release\net5.0\ref\NF.ViewModel.dll
 E:\Zhoudong\NF.ViewModel\obj\Release\net5.0\NF.ViewModel.pdb
 E:\Zhoudong\NF.ViewModel\obj\Release\net5.0\refint\NF.ViewModel.dll
+E:\Zhoudong\NF.ViewModel\obj\Release\net5.0\NF.ViewM.5AB789B8.Up2Date

@@ -1948,7 +1948,10 @@
           "log4net": "2.0.8"
         },
         "runtime": {
-          "NF.Common.dll": {}
+          "NF.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.Model/1.0.0": {
@@ -1958,7 +1961,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.6"
         },
         "runtime": {
-          "NF.Model.dll": {}
+          "NF.Model.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "NF.ViewModel/1.0.0": {
@@ -1968,7 +1974,10 @@
           "NF.Model": "1.0.0"
         },
         "runtime": {
-          "NF.ViewModel.dll": {}
+          "NF.ViewModel.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
