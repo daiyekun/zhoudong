@@ -574,7 +574,19 @@ public partial interface IGroupInfoService : IBaseService<GroupInfo>
     public partial interface ICheckInfoService : IBaseService<CheckInfo>
     {
     }
+    public partial interface ICheckInfoService : IBaseService<CheckInfo>
+    {
+    }
+    public partial interface ICheckFileService : IBaseService<CheckFile>
+    {
+    }
+    public partial interface ICheckFileService : IBaseService<CheckFile>
+    {
+    }
 
-
+    public partial interface IEnterpriseFileService : IBaseService<EnterpriseFile>
+    {
+    }
+    
 }
 

@@ -665,3 +665,4 @@ D:\WooCode\zhoudong\zhoudong\NF.WeiXinApp\obj\Debug\net5.0\refint\NF.WeiXinApp.d
 D:\WooCode\zhoudong\zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.pdb
 D:\WooCode\zhoudong\zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.genruntimeconfig.cache
 D:\WooCode\zhoudong\zhoudong\NF.WeiXinApp\obj\Debug\net5.0\ref\NF.WeiXinApp.dll
+D:\WooCode\zhoudong\zhoudong\NF.WeiXinApp\obj\Debug\net5.0\Razor\Views\Enterprise\EnterpriseAdd.cshtml.g.cs

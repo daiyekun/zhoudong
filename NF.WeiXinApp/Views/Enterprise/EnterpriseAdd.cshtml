@@ -1,0 +1,148 @@
+@{
+    ViewData["Title"] = "新增客户";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page">
+    @* 审批框不用了 用下面的图标 *@
+    @*<div class="page__hd">
+        <div class="weui-btn_primary weui-header hide" id="shenpi">
+        <div class="weui-header-left"> <a class="icon icon-109 f-white"></a>  </div>
+        <h1 class="weui-header-title">审批</h1>
+        <div class="weui-header-right"><a class="icon icon-115 f-white"></a></div>
+        </div>
+        </div>*@
+    <div class="page__bd">
+        @*审批事项用于判断是否有审批按钮*@
+
+        @*合同金额*@
+        <input type="hidden" id="FinanceType" name="FinanceType" value="@ViewData["FinanceType"]" />
+
+        <input hidden id="CurrWxUserId" name="CurrWxUserId" value="@ViewData["WxCurrUserId"]" />
+        <input type="hidden" id="Id" name="Id" value="@ViewData["customerId"]" />
+        @*签约信息----begin*@
+        @*<div class="weui-panel weui-panel_access weui-cells">
+            <span class="right f-orange"><a class="open-popup" href="javascript:;" data-target="#full">审批详情</a></span>
+            </div>*@
+
+        @*签约方信息-----end*@
+        @*基本信息----begin*@
+        <div class="weui-panel weui-panel_access">
+
+            <div class="weui-panel__hd">基本信息</div>
+            <div class="weui-panel__bd">
+                <div class="weui-cell weui-cell_active weui-cell_disabled">
+                    <div class="weui-cell__hd"><label class="weui-label">标题</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" name="Title" id="Title" placeholder="请输入" />
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_active weui-cell_disabled">
+                    <div class="weui-cell__hd"><label class="weui-label">描述</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" name="Remark" id="Remark" />
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_active weui-cell_disabled">
+                    <div class="weui-cell__hd"><label class="weui-label">授权码</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" name="QxCode" id="QxCode" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        @*基本信息----end*@
+        <a href="javascript:;" onclick="savecustomer()" class="weui-btn bg-green"><i class="icon icon-103" id="savecustomer"></i>保存</a>
+    </div>
+
+</div>
+<script type="text/javascript">
+
+        function savecustomer(){
+           // $.toast("我是文本",'text');
+             var otion = {
+            Id: $("#Id").val(),//Id
+            WxCode:$("#CurrWxUserId").val(),//微信账号
+            Name: $("#Title").val(),
+            Address: $("#Remark").val(),
+            QxCode: $("#QxCode").val()
+
+
+        };
+
+         var poststr = JSON.stringify(otion);
+         var $url = woowx.constant.APIBaseURL + "/api/Enterprise/enterpriseAdd";
+               $.ajax({
+            type: 'POST',
+            url: $url,
+            data: poststr,
+            dataType: 'json',
+            contentType: 'application/json;charset=UTF-8',
+            timeout: 10000,
+            success: function (data) {
+                var $data = JSON.parse(data);
+                if ($data.Code === 0) {
+
+                    window.location.href = "/Common/SuccMag";
+
+
+
+                } else {
+                    window.location.href = "/Common/FailMsg";
+                }
+            }, error: function (xhr, type) {
+                var errmsg = "错误类型：" + type + ",xhr.status:" + xhr.status
+                window.location.href = "/Common/FailMsg?errmsg=" + errmsg;
+
+            }
+        });
+        }
+
+       function LoadMainFormData(currId) {
+
+        var $url = woowx.constant.APIBaseURL + "/api/Enterprise/enterpriseView";
+        $.ajax({
+            type: 'GET',
+            url: $url,
+            data:
+            {
+                Id: currId
+            },
+            dataType: 'json',
+            timeout: 10000,
+            success: function (data) {
+                var $data = JSON.parse(data);
+                $wfitems = $data.Data.WfItem;
+                if ($data.Data != null && $data.Data != undefined) {
+
+                    $.each($data.Data, function (key, value) {
+                        $("#" + key).val(value);
+                    });
+                    CheckWflow(currId);
+                    GetOptions(currId);//意见
+                }
+            }, error: function (xhr, type) {
+
+                alert('LoadMainFormData系统异常' + xhr + ":" + type + ":" + xhr.status);
+            }
+        });
+
+
+    }
+
+
+        /***页面加载 */
+        $(function () {
+            var currId=$("#Id").val();
+            if(currId>0){
+            LoadMainFormData(currId);
+            }
+
+
+        });
+
+
+</script>
+

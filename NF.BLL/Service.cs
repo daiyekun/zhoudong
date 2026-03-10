@@ -1606,8 +1606,29 @@ namespace NF.BLL
         public EnterpriseInfoService() { }
     }
 
+    public partial class CheckFileService : BaseService<CheckFile>, ICheckFileService
+    {
+        private DbSet<CheckFile> _CheckFileSet = null;
+        public CheckFileService(DbContext dbContext)
+           : base(dbContext)
+        {
+            _CheckFileSet = base.Db.Set<CheckFile>();
+        }
 
+        public CheckFileService() { }
+    }
 
+    public partial class EnterpriseFileService : BaseService<EnterpriseFile>, IEnterpriseFileService
+    {
+        private DbSet<CheckFile> _CheckFileSet = null;
+        public EnterpriseFileService(DbContext dbContext)
+           : base(dbContext)
+        {
+            _CheckFileSet = base.Db.Set<CheckFile>();
+        }
+
+        public EnterpriseFileService() { }
+    }
 
 
 }

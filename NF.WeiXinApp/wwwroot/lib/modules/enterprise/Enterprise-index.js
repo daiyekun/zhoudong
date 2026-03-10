@@ -3,7 +3,7 @@ if (ddr == null || ddr == "") {
     $("#wxnamenull").click();
 }
 
-var $url = woowx.constant.APIBaseURL + "/api/Company/WooKhlist";
+var $url = woowx.constant.APIBaseURL + "/api/Enterprise/wooenterpriselist";
 var pagesize = woowx.constant.page;//每页数据条数
 var page = 1;
 var maxpage;
@@ -44,45 +44,20 @@ function ajaxpage1(spage) {
                 result += '<div class="weui-cells">'
                     + '<a class="weui-cell  weui-cell_access" href="Detail?Id=' + datas.data[i].Id + "&FinanceType=" + HtType + '">'
                     + '<div class="weui-cell__bd">'
-                    + ' <p>名称</p>'
+                    + ' <p>标题</p>'
                     + '</div>'
-                    + '<div class="weui-cell__ft list-title">' + datas.data[i].Name + '</div>'
+                    + '<div class="weui-cell__ft list-title">' + datas.data[i].Title + '</div>'
                     + '</a>'
                     + '<div class="weui-cell  " >'
-                    + '<div class="weui-cell__bd">'
-                    + '<p>编号</p>'
-                    + '</div>'
-                    + '<div class="weui-cell__ft">' + datas.data[i].Code + '</div>'
-                    + '</div>'
-                    + '<div class="weui-cell  " >'
-                    + '<div class="weui-cell__bd">'
-                    + '<p>联系人</p>'
-                    + '</div>'
-                    + '<div class="weui-cell__ft">' + datas.data[i].FirstContact + '</div>'
-                    + '</div>'
-                    + '<div class="weui-cell  " >'
-                    + '<div class="weui-cell__bd">'
-                    + '<p>联系电话</p>'
-                    + '</div>'
-                    + '<div class="weui-cell__ft">' + datas.data[i].FirstContactMobile + '</div>'
-                    + '</div>'
-                    + '<div class="weui-cell  " >'
-                   
                     + '<div class="weui-cell__bd">'
                     + ' <a href="javascript:;" onclick=upcustomer(' + datas.data[i].Id + ') class="weui-btn weui-btn_mini bg-green"><i class="icon icon-115"></i>修改</a>'
                     + ' &nbsp;&nbsp;<a href="javascript:;" onclick=delcustomer(' + datas.data[i].Id + ') class="weui-btn weui-btn_mini bg-red"><i class="icon icon-115"></i>删除</a>'
                     + '</div>'
                     + '<div class="weui-cell__ft">'
-                    + ' <a href="javascript:;" onclick=addfuwu(' + datas.data[i].Id + ')  class="weui-btn weui-btn_mini bg-blue"><i class="icon icon-115"></i>新增服务记录</a>'
+                    + ' <a href="javascript:;" onclick=addfuwu(' + datas.data[i].Id + ')  class="weui-btn weui-btn_mini bg-blue"><i class="icon icon-115"></i>新增附件</a>'
                     + '</div>'
                     + '</div>'
                    
-                    //+ '<div class="weui-cell  " >'
-                    //+ '<div class="weui-cell__bd">'
-                    //+ ' <p>状态</p>'
-                    //+ '</div>'
-                    //+ '<div class="weui-cell__ft">' + datas.data[i].CstateDic + '</div>'
-                    //+ '</div>'
                     + '</div>'
 
             }
@@ -134,8 +109,7 @@ function addfuwu(custId) {
 
 //删除客户
 function delcustomer(custId) {
-
-    var $url = woowx.constant.APIBaseURL + "/api/company/DeleteCustomer";
+    var $url = woowx.constant.APIBaseURL + "/api/Enterprise/enterpriseDel";
     $.ajax({
         type: 'GET',
         url: $url,
