@@ -15,6 +15,8 @@ using System.Threading.Tasks;
 
 namespace NF.WeiXinApp.Areas.APIData.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class CheckController : Controller
     {
         private ICheckInfoService  _checkInfoService;
@@ -114,8 +116,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         /// <param name="info">添加客户</param>
         /// <returns></returns>
         [CustomAction2CommitFilter]
-        [HttpPost("checkAdd")]
-        public string CustomerAdd([FromBody] WxCheckInfo info)
+        [HttpPost("CheckAddSave")]
+        public string CheckAddSave([FromBody] WxCheckInfo info)
         {
             Log4netHelper.Info($"添加客户:{info.Title}  授权码:{info.QxCode}");
             if (string.IsNullOrEmpty(info.QxCode) || !info.QxCode.Equals("zd198911"))
@@ -133,6 +135,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.ModifyDateTime = DateTime.Now;
                     compinfo.ModifyUserId = uinfo != null ? uinfo.UserId : 1;
                     _checkInfoService.Update(compinfo);
+                    string sqlstr = $"update CheckFile set AttId={compinfo.Id} where AttId=-188";
+                    _checkInfoService.ExecuteSqlCommand(sqlstr);
                 }
                 else
                 {
@@ -143,6 +147,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.CreateUserId = 1;
                     compinfo.CreateUserId = uinfo != null ? uinfo.UserId : 1;
                     _checkInfoService.Add(compinfo);
+                    string sqlstr = $"update CheckFile set AttId={compinfo.Id} where AttId=-188";
+                    _checkInfoService.ExecuteSqlCommand(sqlstr);
                 }
 
 

@@ -97,6 +97,16 @@ namespace NF.ViewModel.Extend.Enums
         /// InvoFile
         /// </summary>
         [EnumItem(Value = 17, Desc = "InvoFile")]
-        InvoFile = 17
+        InvoFile = 17,
+        /// <summary>
+        /// 企业资料
+        /// </summary>
+        [EnumItem(Value = 18, Desc = "QiYeZhiLiao")]
+        QiYeZhiLiao = 18,
+        /// <summary>
+        /// 检测报告
+        /// </summary>
+        [EnumItem(Value = 19, Desc = "JianCeBaoGao")]
+        JianCeBaoGao = 19,
     }
 }

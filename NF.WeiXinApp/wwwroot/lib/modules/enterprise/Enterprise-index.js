@@ -50,11 +50,11 @@ function ajaxpage1(spage) {
                     + '</a>'
                     + '<div class="weui-cell  " >'
                     + '<div class="weui-cell__bd">'
-                    + ' <a href="javascript:;" onclick=upcustomer(' + datas.data[i].Id + ') class="weui-btn weui-btn_mini bg-green"><i class="icon icon-115"></i>修改</a>'
+                  /*  + ' <a href="javascript:;" onclick=upcustomer(' + datas.data[i].Id + ') class="weui-btn weui-btn_mini bg-green"><i class="icon icon-115"></i>修改</a>'*/
                     + ' &nbsp;&nbsp;<a href="javascript:;" onclick=delcustomer(' + datas.data[i].Id + ') class="weui-btn weui-btn_mini bg-red"><i class="icon icon-115"></i>删除</a>'
                     + '</div>'
                     + '<div class="weui-cell__ft">'
-                    + ' <a href="javascript:;" onclick=addfuwu(' + datas.data[i].Id + ')  class="weui-btn weui-btn_mini bg-blue"><i class="icon icon-115"></i>新增附件</a>'
+                   /* + ' <a href="javascript:;" onclick=addfuwu(' + datas.data[i].Id + ')  class="weui-btn weui-btn_mini bg-blue"><i class="icon icon-115"></i>新增附件</a>'*/
                     + '</div>'
                     + '</div>'
                    

@@ -666,3 +666,16 @@ D:\WooCode\zhoudong\zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.pdb
 D:\WooCode\zhoudong\zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.genruntimeconfig.cache
 D:\WooCode\zhoudong\zhoudong\NF.WeiXinApp\obj\Debug\net5.0\ref\NF.WeiXinApp.dll
 D:\WooCode\zhoudong\zhoudong\NF.WeiXinApp\obj\Debug\net5.0\Razor\Views\Enterprise\EnterpriseAdd.cshtml.g.cs
+D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.csproj.AssemblyReference.cache
+D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.AssemblyInfoInputs.cache
+D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.AssemblyInfo.cs
+D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.csproj.CoreCompileInputs.cache
+D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.MvcApplicationPartsAssemblyInfo.cs
+D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.MvcApplicationPartsAssemblyInfo.cache
+D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.RazorAssemblyInfo.cache
+D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.RazorAssemblyInfo.cs
+D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.sourcelink.json
+D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.dll
+D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\refint\NF.WeiXinApp.dll
+D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.pdb

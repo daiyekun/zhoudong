@@ -11186,23 +11186,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\NF.WeiXinApp\\NF.WeiXinApp.csproj",
+      "projectUniqueName": "D:\\woocode\\lhcode\\Zhoudong\\NF.WeiXinApp\\NF.WeiXinApp.csproj",
       "projectName": "NF.WeiXinApp",
-      "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.WeiXinApp\\NF.WeiXinApp.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.WeiXinApp\\obj\\",
+      "projectPath": "D:\\woocode\\lhcode\\Zhoudong\\NF.WeiXinApp\\NF.WeiXinApp.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "D:\\woocode\\lhcode\\Zhoudong\\NF.WeiXinApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11211,26 +11211,27 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\WooCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj"
+            "D:\\woocode\\lhcode\\Zhoudong\\NF.BLL\\NF.BLL.csproj": {
+              "projectPath": "D:\\woocode\\lhcode\\Zhoudong\\NF.BLL\\NF.BLL.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj"
+            "D:\\woocode\\lhcode\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
+              "projectPath": "D:\\woocode\\lhcode\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj"
+            "D:\\woocode\\lhcode\\Zhoudong\\NF.Model\\NF.Model.csproj": {
+              "projectPath": "D:\\woocode\\lhcode\\Zhoudong\\NF.Model\\NF.Model.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
+            "D:\\woocode\\lhcode\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
+              "projectPath": "D:\\woocode\\lhcode\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj"
+            "D:\\woocode\\lhcode\\Zhoudong\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj": {
+              "projectPath": "D:\\woocode\\lhcode\\Zhoudong\\NF.WeiXin.Lib\\NF.WeiXin.Lib.csproj"
             }
           }
         }

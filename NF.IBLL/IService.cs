@@ -580,10 +580,7 @@ public partial interface IGroupInfoService : IBaseService<GroupInfo>
     public partial interface ICheckFileService : IBaseService<CheckFile>
     {
     }
-    public partial interface ICheckFileService : IBaseService<CheckFile>
-    {
-    }
-
+ 
     public partial interface IEnterpriseFileService : IBaseService<EnterpriseFile>
     {
     }

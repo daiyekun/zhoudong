@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NF.WeiXinApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e5cbf1c31f51fdf5e6e0ad5c794e03e9c3a70df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d7aa4d7e764639e1fa4421250174c66fb1cc3b5")]
 [assembly: System.Reflection.AssemblyProductAttribute("NF.WeiXinApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NF.WeiXinApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

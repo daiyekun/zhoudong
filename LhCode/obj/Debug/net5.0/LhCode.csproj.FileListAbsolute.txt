@@ -34,3 +34,15 @@ D:\WooCode\zhoudong\zhoudong\LhCode\obj\Debug\net5.0\LhCode.dll
 D:\WooCode\zhoudong\zhoudong\LhCode\obj\Debug\net5.0\refint\LhCode.dll
 D:\WooCode\zhoudong\zhoudong\LhCode\obj\Debug\net5.0\LhCode.pdb
 D:\WooCode\zhoudong\zhoudong\LhCode\obj\Debug\net5.0\ref\LhCode.dll
+D:\woocode\lhcode\Zhoudong\LhCode\bin\Debug\net5.0\LhCode.deps.json
+D:\woocode\lhcode\Zhoudong\LhCode\bin\Debug\net5.0\LhCode.dll
+D:\woocode\lhcode\Zhoudong\LhCode\bin\Debug\net5.0\LhCode.pdb
+D:\woocode\lhcode\Zhoudong\LhCode\obj\Debug\net5.0\LhCode.GeneratedMSBuildEditorConfig.editorconfig
+D:\woocode\lhcode\Zhoudong\LhCode\obj\Debug\net5.0\LhCode.AssemblyInfoInputs.cache
+D:\woocode\lhcode\Zhoudong\LhCode\obj\Debug\net5.0\LhCode.AssemblyInfo.cs
+D:\woocode\lhcode\Zhoudong\LhCode\obj\Debug\net5.0\LhCode.csproj.CoreCompileInputs.cache
+D:\woocode\lhcode\Zhoudong\LhCode\obj\Debug\net5.0\LhCode.sourcelink.json
+D:\woocode\lhcode\Zhoudong\LhCode\obj\Debug\net5.0\LhCode.dll
+D:\woocode\lhcode\Zhoudong\LhCode\obj\Debug\net5.0\refint\LhCode.dll
+D:\woocode\lhcode\Zhoudong\LhCode\obj\Debug\net5.0\LhCode.pdb
+D:\woocode\lhcode\Zhoudong\LhCode\obj\Debug\net5.0\ref\LhCode.dll

@@ -127,8 +127,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         /// <param name="info">添加客户</param>
         /// <returns></returns>
         [CustomAction2CommitFilter]
-        [HttpPost("enterpriseAdd")]
-        public string CustomerAdd([FromBody] WxEnterpriseInfo info)
+        [HttpPost("EnterpriseAddSave")]
+        public string EnterpriseAddSave([FromBody] WxEnterpriseInfo info)
         {
             Log4netHelper.Info($"添加客户:{info.Title}  授权码:{info.QxCode}");
             if (string.IsNullOrEmpty(info.QxCode) || !info.QxCode.Equals("zd198911"))
@@ -146,6 +146,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.ModifyDateTime = DateTime.Now;
                     compinfo.ModifyUserId = uinfo != null ? uinfo.UserId : 1;
                     _enterpriseInfoService.Update(compinfo);
+                    string sqlstr = $"update EnterpriseFile set AttId={compinfo.Id} where AttId=-188";
+                    _enterpriseInfoService.ExecuteSqlCommand(sqlstr);
                 }
                 else
                 {
@@ -156,6 +158,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.CreateUserId = 1;
                     compinfo.CreateUserId = uinfo != null ? uinfo.UserId : 1;
                     _enterpriseInfoService.Add(compinfo);
+                    string sqlstr = $"update EnterpriseFile set AttId={compinfo.Id} where AttId=-188";
+                    _enterpriseInfoService.ExecuteSqlCommand(sqlstr);
                 }
 
 

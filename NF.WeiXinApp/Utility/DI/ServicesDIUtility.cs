@@ -1,5 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using NF.BLL;
 using NF.Common.Extend;
 using NF.Common.Models;
@@ -253,6 +254,11 @@ namespace NF.WeiXinApp.Utility.DI
             services.AddTransient<IScheduleDetailAttachmentService, ScheduleDetailAttachmentService>();
             #endregion
             services.AddTransient<IContAttacFileService, ContAttacFileService>();
+            services.TryAddSingleton<ICheckFileService, CheckFileService>();
+            services.TryAddSingleton<IEnterpriseFileService, EnterpriseFileService>();
+            services.TryAddSingleton<IEnterpriseInfoService, EnterpriseInfoService>();
+            services.TryAddSingleton<ICheckInfoService, CheckInfoService>();
+
 
 
         }

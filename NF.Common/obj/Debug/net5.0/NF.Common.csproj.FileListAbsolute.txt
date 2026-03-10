@@ -35,3 +35,16 @@ D:\WooCode\zhoudong\zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.dll
 D:\WooCode\zhoudong\zhoudong\NF.Common\obj\Debug\net5.0\refint\NF.Common.dll
 D:\WooCode\zhoudong\zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.pdb
 D:\WooCode\zhoudong\zhoudong\NF.Common\obj\Debug\net5.0\ref\NF.Common.dll
+D:\woocode\lhcode\Zhoudong\NF.Common\bin\Debug\net5.0\NF.Common.deps.json
+D:\woocode\lhcode\Zhoudong\NF.Common\bin\Debug\net5.0\NF.Common.dll
+D:\woocode\lhcode\Zhoudong\NF.Common\bin\Debug\net5.0\NF.Common.pdb
+D:\woocode\lhcode\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.csproj.AssemblyReference.cache
+D:\woocode\lhcode\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\woocode\lhcode\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.AssemblyInfoInputs.cache
+D:\woocode\lhcode\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.AssemblyInfo.cs
+D:\woocode\lhcode\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.csproj.CoreCompileInputs.cache
+D:\woocode\lhcode\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.sourcelink.json
+D:\woocode\lhcode\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.dll
+D:\woocode\lhcode\Zhoudong\NF.Common\obj\Debug\net5.0\refint\NF.Common.dll
+D:\woocode\lhcode\Zhoudong\NF.Common\obj\Debug\net5.0\NF.Common.pdb
+D:\woocode\lhcode\Zhoudong\NF.Common\obj\Debug\net5.0\ref\NF.Common.dll
