@@ -22,3 +22,16 @@ E:\Zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.dll
 E:\Zhoudong\SignalR.Server\obj\Debug\net5.0\ref\SignalR.Server.dll
 E:\Zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.pdb
 E:\Zhoudong\SignalR.Server\obj\Debug\net5.0\refint\SignalR.Server.dll
+D:\WooCode\zhoudong\zhoudong\SignalR.Server\bin\Debug\net5.0\SignalR.Server.deps.json
+D:\WooCode\zhoudong\zhoudong\SignalR.Server\bin\Debug\net5.0\SignalR.Server.dll
+D:\WooCode\zhoudong\zhoudong\SignalR.Server\bin\Debug\net5.0\SignalR.Server.pdb
+D:\WooCode\zhoudong\zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.csproj.AssemblyReference.cache
+D:\WooCode\zhoudong\zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\WooCode\zhoudong\zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.AssemblyInfoInputs.cache
+D:\WooCode\zhoudong\zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.AssemblyInfo.cs
+D:\WooCode\zhoudong\zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.csproj.CoreCompileInputs.cache
+D:\WooCode\zhoudong\zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.sourcelink.json
+D:\WooCode\zhoudong\zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.dll
+D:\WooCode\zhoudong\zhoudong\SignalR.Server\obj\Debug\net5.0\refint\SignalR.Server.dll
+D:\WooCode\zhoudong\zhoudong\SignalR.Server\obj\Debug\net5.0\SignalR.Server.pdb
+D:\WooCode\zhoudong\zhoudong\SignalR.Server\obj\Debug\net5.0\ref\SignalR.Server.dll

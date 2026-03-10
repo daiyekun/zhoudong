@@ -1,4 +1,4 @@
-﻿using NF.IBLL;
+using NF.IBLL;
 using NF.Common.Utility;
 using System;
 using System.Collections.Generic;
@@ -1581,8 +1581,34 @@ namespace NF.BLL
 		
 		public GroupInfoService(){}
     }
-    
-   
-    
+
+    public partial class CheckInfoService : BaseService<CheckInfo>, ICheckInfoService
+    {
+        private DbSet<CheckInfo> _CheckInfoSet = null;
+        public CheckInfoService(DbContext dbContext)
+           : base(dbContext)
+        {
+            _CheckInfoSet = base.Db.Set<CheckInfo>();
+        }
+
+        public CheckInfoService() { }
+    }
+
+    public partial class EnterpriseInfoService : BaseService<EnterpriseInfo>, IEnterpriseInfoService
+    {
+        private DbSet<EnterpriseInfo> _EnterpriseInfoSet = null;
+        public EnterpriseInfoService(DbContext dbContext)
+           : base(dbContext)
+        {
+            _EnterpriseInfoSet = base.Db.Set<EnterpriseInfo>();
+        }
+
+        public EnterpriseInfoService() { }
+    }
+
+
+
+
+
 }
 

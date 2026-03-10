@@ -22,3 +22,15 @@ E:\Zhoudong\LhCode\obj\Debug\net5.0\ref\LhCode.dll
 E:\Zhoudong\LhCode\obj\Debug\net5.0\LhCode.pdb
 E:\Zhoudong\LhCode\obj\Debug\net5.0\LhCode.csproj.AssemblyReference.cache
 E:\Zhoudong\LhCode\obj\Debug\net5.0\refint\LhCode.dll
+D:\WooCode\zhoudong\zhoudong\LhCode\bin\Debug\net5.0\LhCode.deps.json
+D:\WooCode\zhoudong\zhoudong\LhCode\bin\Debug\net5.0\LhCode.dll
+D:\WooCode\zhoudong\zhoudong\LhCode\bin\Debug\net5.0\LhCode.pdb
+D:\WooCode\zhoudong\zhoudong\LhCode\obj\Debug\net5.0\LhCode.GeneratedMSBuildEditorConfig.editorconfig
+D:\WooCode\zhoudong\zhoudong\LhCode\obj\Debug\net5.0\LhCode.AssemblyInfoInputs.cache
+D:\WooCode\zhoudong\zhoudong\LhCode\obj\Debug\net5.0\LhCode.AssemblyInfo.cs
+D:\WooCode\zhoudong\zhoudong\LhCode\obj\Debug\net5.0\LhCode.csproj.CoreCompileInputs.cache
+D:\WooCode\zhoudong\zhoudong\LhCode\obj\Debug\net5.0\LhCode.sourcelink.json
+D:\WooCode\zhoudong\zhoudong\LhCode\obj\Debug\net5.0\LhCode.dll
+D:\WooCode\zhoudong\zhoudong\LhCode\obj\Debug\net5.0\refint\LhCode.dll
+D:\WooCode\zhoudong\zhoudong\LhCode\obj\Debug\net5.0\LhCode.pdb
+D:\WooCode\zhoudong\zhoudong\LhCode\obj\Debug\net5.0\ref\LhCode.dll

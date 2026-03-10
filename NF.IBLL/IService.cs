@@ -1,4 +1,4 @@
-﻿using NF.Model.Models;
+using NF.Model.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -567,8 +567,14 @@ public partial interface IFlowTempNodeInfoHistService : IBaseService<FlowTempNod
      
 public partial interface IGroupInfoService : IBaseService<GroupInfo>
 { }
-    
-   
-    
+
+ public partial interface IEnterpriseInfoService : IBaseService<EnterpriseInfo>
+   { 
+   }
+    public partial interface ICheckInfoService : IBaseService<CheckInfo>
+    {
+    }
+
+
 }
 

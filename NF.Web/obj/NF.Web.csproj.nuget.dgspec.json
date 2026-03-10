@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Zhoudong\\NF.Web\\NF.Web.csproj": {}
+    "D:\\WooCode\\zhoudong\\zhoudong\\NF.Web\\NF.Web.csproj": {}
   },
   "projects": {
-    "E:\\Zhoudong\\LhCode\\LhCode.csproj": {
+    "D:\\WooCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Zhoudong\\LhCode\\LhCode.csproj",
+        "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj",
         "projectName": "LhCode",
-        "projectPath": "E:\\Zhoudong\\LhCode\\LhCode.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Zhoudong\\LhCode\\obj\\",
+        "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\LhCode\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -80,24 +79,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj": {
+    "D:\\WooCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj",
+        "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj",
         "projectName": "NF.AutoMapper",
-        "projectPath": "E:\\Zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Zhoudong\\NF.AutoMapper\\obj\\",
+        "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.AutoMapper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -106,18 +105,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Zhoudong\\NF.Model\\NF.Model.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj"
               },
-              "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
               }
             }
           }
@@ -132,7 +130,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -177,24 +175,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Zhoudong\\NF.BLL\\NF.BLL.csproj": {
+    "D:\\WooCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Zhoudong\\NF.BLL\\NF.BLL.csproj",
+        "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj",
         "projectName": "NF.BLL",
-        "projectPath": "E:\\Zhoudong\\NF.BLL\\NF.BLL.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Zhoudong\\NF.BLL\\obj\\",
+        "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -203,30 +201,29 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Zhoudong\\LhCode\\LhCode.csproj": {
-                "projectPath": "E:\\Zhoudong\\LhCode\\LhCode.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj"
               },
-              "E:\\Zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj"
               },
-              "E:\\Zhoudong\\NF.Common\\NF.Common.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.Common\\NF.Common.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj"
               },
-              "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj"
               },
-              "E:\\Zhoudong\\NF.Model\\NF.Model.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj"
               },
-              "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
               }
             }
           }
@@ -241,7 +238,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -257,43 +254,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Zhoudong\\NF.Common\\NF.Common.csproj": {
+    "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Zhoudong\\NF.Common\\NF.Common.csproj",
+        "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj",
         "projectName": "NF.Common",
-        "projectPath": "E:\\Zhoudong\\NF.Common\\NF.Common.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Zhoudong\\NF.Common\\obj\\",
+        "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -302,7 +285,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -321,7 +303,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -383,43 +365,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
+    "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj",
+        "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj",
         "projectName": "NF.IBLL",
-        "projectPath": "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Zhoudong\\NF.IBLL\\obj\\",
+        "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -428,21 +396,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Zhoudong\\NF.Common\\NF.Common.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.Common\\NF.Common.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj"
               },
-              "E:\\Zhoudong\\NF.Model\\NF.Model.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj"
               },
-              "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
               }
             }
           }
@@ -457,7 +424,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -473,43 +440,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Zhoudong\\NF.Model\\NF.Model.csproj": {
+    "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj",
+        "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj",
         "projectName": "NF.Model",
-        "projectPath": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Zhoudong\\NF.Model\\obj\\",
+        "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -518,7 +471,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -537,7 +489,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -579,43 +531,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj": {
+    "D:\\WooCode\\zhoudong\\zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj",
+        "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj",
         "projectName": "NF.OfficeComm",
-        "projectPath": "E:\\Zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Zhoudong\\NF.OfficeComm\\obj\\",
+        "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.OfficeComm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -624,15 +562,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Zhoudong\\NF.Common\\NF.Common.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.Common\\NF.Common.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj"
               }
             }
           }
@@ -647,7 +584,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -682,24 +619,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj": {
+    "D:\\WooCode\\zhoudong\\zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj",
+        "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj",
         "projectName": "NF.QuartzNet",
-        "projectPath": "E:\\Zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Zhoudong\\NF.QuartzNet\\obj\\",
+        "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.QuartzNet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -708,15 +645,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Zhoudong\\NF.Common\\NF.Common.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.Common\\NF.Common.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj"
               }
             }
           }
@@ -731,7 +667,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -772,24 +708,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
+    "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj",
+        "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj",
         "projectName": "NF.ViewModel",
-        "projectPath": "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Zhoudong\\NF.ViewModel\\obj\\",
+        "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -798,18 +734,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Zhoudong\\NF.Common\\NF.Common.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.Common\\NF.Common.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj"
               },
-              "E:\\Zhoudong\\NF.Model\\NF.Model.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj"
               }
             }
           }
@@ -824,7 +759,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -846,43 +781,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Zhoudong\\NF.Web\\NF.Web.csproj": {
+    "D:\\WooCode\\zhoudong\\zhoudong\\NF.Web\\NF.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Zhoudong\\NF.Web\\NF.Web.csproj",
+        "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Web\\NF.Web.csproj",
         "projectName": "NF.Web",
-        "projectPath": "E:\\Zhoudong\\NF.Web\\NF.Web.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Zhoudong\\NF.Web\\obj\\",
+        "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Web\\NF.Web.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -891,45 +812,44 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\Zhoudong\\LhCode\\LhCode.csproj": {
-                "projectPath": "E:\\Zhoudong\\LhCode\\LhCode.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj"
               },
-              "E:\\Zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj"
               },
-              "E:\\Zhoudong\\NF.BLL\\NF.BLL.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.BLL\\NF.BLL.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj"
               },
-              "E:\\Zhoudong\\NF.Common\\NF.Common.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.Common\\NF.Common.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj"
               },
-              "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.IBLL\\NF.IBLL.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj"
               },
-              "E:\\Zhoudong\\NF.Model\\NF.Model.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.Model\\NF.Model.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj"
               },
-              "E:\\Zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj"
               },
-              "E:\\Zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj"
               },
-              "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
-                "projectPath": "E:\\Zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
               },
-              "E:\\Zhoudong\\SignalR.Client\\SignalR.Client.csproj": {
-                "projectPath": "E:\\Zhoudong\\SignalR.Client\\SignalR.Client.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Client\\SignalR.Client.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Client\\SignalR.Client.csproj"
               },
-              "E:\\Zhoudong\\SignalR.Server\\SignalR.Server.csproj": {
-                "projectPath": "E:\\Zhoudong\\SignalR.Server\\SignalR.Server.csproj"
+              "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Server\\SignalR.Server.csproj": {
+                "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Server\\SignalR.Server.csproj"
               }
             }
           }
@@ -944,7 +864,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -1042,24 +962,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.17, 5.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -1068,24 +970,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Zhoudong\\SignalR.Client\\SignalR.Client.csproj": {
+    "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Client\\SignalR.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Zhoudong\\SignalR.Client\\SignalR.Client.csproj",
+        "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Client\\SignalR.Client.csproj",
         "projectName": "SignalR.Client",
-        "projectPath": "E:\\Zhoudong\\SignalR.Client\\SignalR.Client.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Zhoudong\\SignalR.Client\\obj\\",
+        "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Client\\SignalR.Client.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1094,7 +996,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1113,7 +1014,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -1154,24 +1055,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Zhoudong\\SignalR.Server\\SignalR.Server.csproj": {
+    "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Server\\SignalR.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Zhoudong\\SignalR.Server\\SignalR.Server.csproj",
+        "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Server\\SignalR.Server.csproj",
         "projectName": "SignalR.Server",
-        "projectPath": "E:\\Zhoudong\\SignalR.Server\\SignalR.Server.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\Zhoudong\\SignalR.Server\\obj\\",
+        "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Server\\SignalR.Server.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1180,7 +1081,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1199,7 +1099,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net5.0": {
@@ -1240,7 +1140,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

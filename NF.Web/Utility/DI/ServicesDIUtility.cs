@@ -1,5 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using NF.BLL;
 using NF.Common.Extend;
 using NF.Common.Models;
@@ -253,8 +254,10 @@ namespace NF.Web.Utility.DI
             services.AddTransient<IScheduleDetailAttachmentService, ScheduleDetailAttachmentService>();
             #endregion
 
-            services.AddTransient<IContAttacFileService, ContAttacFileService>();
-            
+            services.TryAddSingleton<ICheckInfoService, CheckInfoService>();
+            services.TryAddSingleton<IEnterpriseInfoService, EnterpriseInfoService>();
+          
+
 
         }
         /// <summary>

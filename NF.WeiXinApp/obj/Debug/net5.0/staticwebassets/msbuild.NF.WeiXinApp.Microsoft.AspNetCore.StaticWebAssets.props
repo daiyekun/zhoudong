@@ -4,7 +4,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>css\site.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -20,7 +20,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>favicon.ico</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -36,7 +36,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>huizhang.jpg</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -52,7 +52,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\biccatetree.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -68,7 +68,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\build\pdf.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -84,7 +84,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\build\pdf.js.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -100,7 +100,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\build\pdf.worker.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -116,7 +116,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\build\pdf.worker.js.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -132,7 +132,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\LICENSE</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -148,7 +148,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\78-EUC-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -164,7 +164,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\78-EUC-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -180,7 +180,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\78-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -196,7 +196,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\78-RKSJ-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -212,7 +212,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\78-RKSJ-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -228,7 +228,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\78-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -244,7 +244,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\78ms-RKSJ-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -260,7 +260,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\78ms-RKSJ-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -276,7 +276,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\83pv-RKSJ-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -292,7 +292,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\90ms-RKSJ-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -308,7 +308,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\90ms-RKSJ-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -324,7 +324,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\90msp-RKSJ-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -340,7 +340,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\90msp-RKSJ-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -356,7 +356,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\90pv-RKSJ-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -372,7 +372,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\90pv-RKSJ-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -388,7 +388,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Add-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -404,7 +404,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Add-RKSJ-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -420,7 +420,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Add-RKSJ-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -436,7 +436,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Add-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -452,7 +452,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-CNS1-0.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -468,7 +468,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-CNS1-1.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -484,7 +484,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-CNS1-2.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -500,7 +500,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-CNS1-3.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -516,7 +516,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-CNS1-4.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -532,7 +532,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-CNS1-5.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -548,7 +548,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-CNS1-6.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -564,7 +564,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-CNS1-UCS2.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -580,7 +580,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-GB1-0.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -596,7 +596,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-GB1-1.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -612,7 +612,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-GB1-2.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -628,7 +628,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-GB1-3.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -644,7 +644,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-GB1-4.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -660,7 +660,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-GB1-5.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -676,7 +676,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-GB1-UCS2.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -692,7 +692,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-Japan1-0.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -708,7 +708,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-Japan1-1.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -724,7 +724,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-Japan1-2.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -740,7 +740,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-Japan1-3.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -756,7 +756,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-Japan1-4.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -772,7 +772,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-Japan1-5.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -788,7 +788,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-Japan1-6.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -804,7 +804,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-Japan1-UCS2.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -820,7 +820,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-Korea1-0.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -836,7 +836,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-Korea1-1.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -852,7 +852,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-Korea1-2.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -868,7 +868,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Adobe-Korea1-UCS2.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -884,7 +884,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\B5-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -900,7 +900,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\B5-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -916,7 +916,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\B5pc-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -932,7 +932,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\B5pc-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -948,7 +948,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\CNS-EUC-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -964,7 +964,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\CNS-EUC-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -980,7 +980,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\CNS1-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -996,7 +996,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\CNS1-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1012,7 +1012,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\CNS2-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1028,7 +1028,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\CNS2-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1044,7 +1044,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\ETen-B5-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1060,7 +1060,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\ETen-B5-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1076,7 +1076,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\ETenms-B5-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1092,7 +1092,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\ETenms-B5-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1108,7 +1108,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\ETHK-B5-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1124,7 +1124,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\ETHK-B5-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1140,7 +1140,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\EUC-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1156,7 +1156,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\EUC-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1172,7 +1172,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Ext-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1188,7 +1188,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Ext-RKSJ-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1204,7 +1204,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Ext-RKSJ-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1220,7 +1220,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Ext-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1236,7 +1236,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GB-EUC-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1252,7 +1252,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GB-EUC-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1268,7 +1268,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GB-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1284,7 +1284,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GB-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1300,7 +1300,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBK-EUC-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1316,7 +1316,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBK-EUC-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1332,7 +1332,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBK2K-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1348,7 +1348,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBK2K-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1364,7 +1364,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBKp-EUC-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1380,7 +1380,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBKp-EUC-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1396,7 +1396,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBpc-EUC-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1412,7 +1412,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBpc-EUC-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1428,7 +1428,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBT-EUC-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1444,7 +1444,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBT-EUC-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1460,7 +1460,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBT-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1476,7 +1476,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBT-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1492,7 +1492,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBTpc-EUC-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1508,7 +1508,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\GBTpc-EUC-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1524,7 +1524,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1540,7 +1540,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Hankaku.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1556,7 +1556,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Hiragana.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1572,7 +1572,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\HKdla-B5-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1588,7 +1588,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\HKdla-B5-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1604,7 +1604,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\HKdlb-B5-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1620,7 +1620,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\HKdlb-B5-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1636,7 +1636,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\HKgccs-B5-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1652,7 +1652,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\HKgccs-B5-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1668,7 +1668,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\HKm314-B5-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1684,7 +1684,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\HKm314-B5-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1700,7 +1700,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\HKm471-B5-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1716,7 +1716,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\HKm471-B5-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1732,7 +1732,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\HKscs-B5-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1748,7 +1748,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\HKscs-B5-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1764,7 +1764,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Katakana.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1780,7 +1780,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\KSC-EUC-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1796,7 +1796,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\KSC-EUC-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1812,7 +1812,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\KSC-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1828,7 +1828,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\KSC-Johab-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1844,7 +1844,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\KSC-Johab-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1860,7 +1860,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\KSC-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1876,7 +1876,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\KSCms-UHC-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1892,7 +1892,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\KSCms-UHC-HW-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1908,7 +1908,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\KSCms-UHC-HW-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1924,7 +1924,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\KSCms-UHC-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1940,7 +1940,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\KSCpc-EUC-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1956,7 +1956,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\KSCpc-EUC-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1972,7 +1972,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\LICENSE</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -1988,7 +1988,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\NWP-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2004,7 +2004,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\NWP-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2020,7 +2020,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\RKSJ-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2036,7 +2036,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\RKSJ-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2052,7 +2052,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\Roman.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2068,7 +2068,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniCNS-UCS2-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2084,7 +2084,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniCNS-UCS2-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2100,7 +2100,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniCNS-UTF16-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2116,7 +2116,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniCNS-UTF16-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2132,7 +2132,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniCNS-UTF32-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2148,7 +2148,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniCNS-UTF32-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2164,7 +2164,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniCNS-UTF8-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2180,7 +2180,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniCNS-UTF8-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2196,7 +2196,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniGB-UCS2-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2212,7 +2212,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniGB-UCS2-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2228,7 +2228,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniGB-UTF16-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2244,7 +2244,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniGB-UTF16-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2260,7 +2260,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniGB-UTF32-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2276,7 +2276,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniGB-UTF32-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2292,7 +2292,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniGB-UTF8-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2308,7 +2308,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniGB-UTF8-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2324,7 +2324,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS-UCS2-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2340,7 +2340,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS-UCS2-HW-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2356,7 +2356,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS-UCS2-HW-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2372,7 +2372,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS-UCS2-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2388,7 +2388,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS-UTF16-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2404,7 +2404,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS-UTF16-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2420,7 +2420,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS-UTF32-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2436,7 +2436,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS-UTF32-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2452,7 +2452,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS-UTF8-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2468,7 +2468,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS-UTF8-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2484,7 +2484,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS2004-UTF16-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2500,7 +2500,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS2004-UTF16-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2516,7 +2516,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS2004-UTF32-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2532,7 +2532,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS2004-UTF32-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2548,7 +2548,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS2004-UTF8-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2564,7 +2564,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJIS2004-UTF8-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2580,7 +2580,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJISPro-UCS2-HW-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2596,7 +2596,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJISPro-UCS2-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2612,7 +2612,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJISPro-UTF8-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2628,7 +2628,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJISX0213-UTF32-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2644,7 +2644,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJISX0213-UTF32-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2660,7 +2660,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJISX02132004-UTF32-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2676,7 +2676,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniJISX02132004-UTF32-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2692,7 +2692,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniKS-UCS2-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2708,7 +2708,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniKS-UCS2-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2724,7 +2724,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniKS-UTF16-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2740,7 +2740,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniKS-UTF16-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2756,7 +2756,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniKS-UTF32-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2772,7 +2772,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniKS-UTF32-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2788,7 +2788,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniKS-UTF8-H.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2804,7 +2804,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\UniKS-UTF8-V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2820,7 +2820,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\V.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2836,7 +2836,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\cmaps\WP-Symbol.bcmap</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2852,7 +2852,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\compressed.tracemonkey-pldi-09.pdf</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2868,7 +2868,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\debugger.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2884,7 +2884,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\annotation-check.svg</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2900,7 +2900,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\annotation-comment.svg</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2916,7 +2916,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\annotation-help.svg</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2932,7 +2932,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\annotation-insert.svg</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2948,7 +2948,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\annotation-key.svg</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2964,7 +2964,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\annotation-newparagraph.svg</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2980,7 +2980,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\annotation-noicon.svg</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -2996,7 +2996,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\annotation-note.svg</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3012,7 +3012,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\annotation-paragraph.svg</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3028,7 +3028,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\findbarButton-next-rtl.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3044,7 +3044,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\findbarButton-next-rtl@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3060,7 +3060,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\findbarButton-next.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3076,7 +3076,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\findbarButton-next@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3092,7 +3092,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\findbarButton-previous-rtl.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3108,7 +3108,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\findbarButton-previous-rtl@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3124,7 +3124,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\findbarButton-previous.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3140,7 +3140,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\findbarButton-previous@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3156,7 +3156,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\grab.cur</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3172,7 +3172,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\grabbing.cur</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3188,7 +3188,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\loading-icon.gif</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3204,7 +3204,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\loading-small.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3220,7 +3220,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\loading-small@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3236,7 +3236,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-documentProperties.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3252,7 +3252,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-documentProperties@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3268,7 +3268,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-firstPage.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3284,7 +3284,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-firstPage@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3300,7 +3300,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-handTool.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3316,7 +3316,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-handTool@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3332,7 +3332,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-lastPage.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3348,7 +3348,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-lastPage@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3364,7 +3364,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-rotateCcw.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3380,7 +3380,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-rotateCcw@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3396,7 +3396,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-rotateCw.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3412,7 +3412,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-rotateCw@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3428,7 +3428,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-scrollHorizontal.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3444,7 +3444,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-scrollHorizontal@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3460,7 +3460,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-scrollVertical.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3476,7 +3476,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-scrollVertical@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3492,7 +3492,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-scrollWrapped.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3508,7 +3508,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-scrollWrapped@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3524,7 +3524,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-selectTool.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3540,7 +3540,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-selectTool@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3556,7 +3556,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-spreadEven.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3572,7 +3572,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-spreadEven@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3588,7 +3588,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-spreadNone.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3604,7 +3604,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-spreadNone@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3620,7 +3620,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-spreadOdd.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3636,7 +3636,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\secondaryToolbarButton-spreadOdd@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3652,7 +3652,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\shadow.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3668,7 +3668,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\texture.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3684,7 +3684,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-bookmark.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3700,7 +3700,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-bookmark@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3716,7 +3716,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-download.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3732,7 +3732,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-download@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3748,7 +3748,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-menuArrows.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3764,7 +3764,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-menuArrows@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3780,7 +3780,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-openFile.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3796,7 +3796,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-openFile@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3812,7 +3812,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-pageDown-rtl.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3828,7 +3828,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-pageDown-rtl@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3844,7 +3844,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-pageDown.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3860,7 +3860,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-pageDown@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3876,7 +3876,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-pageUp-rtl.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3892,7 +3892,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-pageUp-rtl@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3908,7 +3908,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-pageUp.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3924,7 +3924,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-pageUp@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3940,7 +3940,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-presentationMode.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3956,7 +3956,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-presentationMode@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3972,7 +3972,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-print.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -3988,7 +3988,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-print@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4004,7 +4004,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-search.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4020,7 +4020,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-search@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4036,7 +4036,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-secondaryToolbarToggle-rtl.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4052,7 +4052,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-secondaryToolbarToggle-rtl@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4068,7 +4068,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-secondaryToolbarToggle.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4084,7 +4084,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-secondaryToolbarToggle@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4100,7 +4100,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-sidebarToggle-rtl.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4116,7 +4116,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-sidebarToggle-rtl@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4132,7 +4132,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-sidebarToggle.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4148,7 +4148,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-sidebarToggle@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4164,7 +4164,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-viewAttachments.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4180,7 +4180,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-viewAttachments@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4196,7 +4196,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-viewOutline-rtl.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4212,7 +4212,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-viewOutline-rtl@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4228,7 +4228,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-viewOutline.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4244,7 +4244,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-viewOutline@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4260,7 +4260,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-viewThumbnail.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4276,7 +4276,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-viewThumbnail@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4292,7 +4292,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-zoomIn.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4308,7 +4308,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-zoomIn@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4324,7 +4324,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-zoomOut.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4340,7 +4340,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\toolbarButton-zoomOut@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4356,7 +4356,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\treeitem-collapsed-rtl.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4372,7 +4372,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\treeitem-collapsed-rtl@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4388,7 +4388,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\treeitem-collapsed.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4404,7 +4404,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\treeitem-collapsed@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4420,7 +4420,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\treeitem-expanded.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4436,7 +4436,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\images\treeitem-expanded@2x.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4452,7 +4452,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ach\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4468,7 +4468,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\af\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4484,7 +4484,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ak\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4500,7 +4500,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\an\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4516,7 +4516,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ar\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4532,7 +4532,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ast\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4548,7 +4548,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\as\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4564,7 +4564,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\az\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4580,7 +4580,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\be\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4596,7 +4596,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\bg\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4612,7 +4612,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\bn-BD\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4628,7 +4628,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\bn-IN\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4644,7 +4644,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\brx\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4660,7 +4660,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\br\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4676,7 +4676,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\bs\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4692,7 +4692,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\cak\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4708,7 +4708,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ca\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4724,7 +4724,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\crh\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4740,7 +4740,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\csb\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4756,7 +4756,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\cs\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4772,7 +4772,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\cy\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4788,7 +4788,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\da\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4804,7 +4804,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\de\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4820,7 +4820,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\el\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4836,7 +4836,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\en-CA\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4852,7 +4852,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\en-GB\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4868,7 +4868,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\en-US\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4884,7 +4884,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\en-ZA\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4900,7 +4900,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\eo\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4916,7 +4916,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\es-AR\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4932,7 +4932,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\es-CL\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4948,7 +4948,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\es-ES\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4964,7 +4964,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\es-MX\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4980,7 +4980,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\et\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -4996,7 +4996,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\eu\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5012,7 +5012,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\fa\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5028,7 +5028,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ff\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5044,7 +5044,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\fi\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5060,7 +5060,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\fr\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5076,7 +5076,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\fy-NL\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5092,7 +5092,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ga-IE\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5108,7 +5108,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\gd\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5124,7 +5124,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\gl\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5140,7 +5140,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\gn\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5156,7 +5156,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\gu-IN\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5172,7 +5172,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\he\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5188,7 +5188,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\hi-IN\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5204,7 +5204,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\hr\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5220,7 +5220,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\hsb\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5236,7 +5236,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\hto\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5252,7 +5252,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\hu\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5268,7 +5268,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\hy-AM\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5284,7 +5284,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ia\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5300,7 +5300,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\id\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5316,7 +5316,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\is\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5332,7 +5332,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\it\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5348,7 +5348,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ja\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5364,7 +5364,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\kab\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5380,7 +5380,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ka\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5396,7 +5396,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\kk\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5412,7 +5412,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\km\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5428,7 +5428,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\kn\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5444,7 +5444,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\kok\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5460,7 +5460,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ko\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5476,7 +5476,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ks\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5492,7 +5492,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ku\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5508,7 +5508,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\lg\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5524,7 +5524,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\lij\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5540,7 +5540,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\locale.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5556,7 +5556,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\locale.txt</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5572,7 +5572,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\lo\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5588,7 +5588,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ltg\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5604,7 +5604,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\lt\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5620,7 +5620,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\lv\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5636,7 +5636,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\mai\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5652,7 +5652,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\meh\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5668,7 +5668,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\mk\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5684,7 +5684,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ml\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5700,7 +5700,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\mn\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5716,7 +5716,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\mr\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5732,7 +5732,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ms\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5748,7 +5748,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\my\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5764,7 +5764,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\nb-NO\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5780,7 +5780,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ne-NP\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5796,7 +5796,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\nl\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5812,7 +5812,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\nn-NO\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5828,7 +5828,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\nso\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5844,7 +5844,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\oc\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5860,7 +5860,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\or\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5876,7 +5876,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\pa-IN\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5892,7 +5892,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\pl\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5908,7 +5908,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\pt-BR\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5924,7 +5924,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\pt-PT\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5940,7 +5940,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\rm\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5956,7 +5956,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ro\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5972,7 +5972,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ru\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -5988,7 +5988,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\rw\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6004,7 +6004,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\sah\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6020,7 +6020,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\sat\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6036,7 +6036,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\si\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6052,7 +6052,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\sk\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6068,7 +6068,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\sl\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6084,7 +6084,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\son\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6100,7 +6100,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\sq\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6116,7 +6116,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\sr\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6132,7 +6132,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\sv-SE\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6148,7 +6148,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\sw\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6164,7 +6164,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ta-LK\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6180,7 +6180,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ta\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6196,7 +6196,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\te\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6212,7 +6212,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\th\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6228,7 +6228,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\tl\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6244,7 +6244,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\tn\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6260,7 +6260,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\tr\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6276,7 +6276,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\tsz\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6292,7 +6292,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\uk\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6308,7 +6308,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\ur\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6324,7 +6324,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\uz\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6340,7 +6340,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\vi\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6356,7 +6356,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\wo\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6372,7 +6372,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\xh\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6388,7 +6388,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\zam\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6404,7 +6404,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\zh-CN\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6420,7 +6420,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\zh-CN\viewer.txt</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6436,7 +6436,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\zh-TW\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6452,7 +6452,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\locale\zu\viewer.properties</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6468,7 +6468,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\viewer.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6484,7 +6484,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\viewer.html</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6500,7 +6500,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\viewer.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6516,7 +6516,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\nf-plugs\pdfjs\web\viewer.js.map</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6532,7 +6532,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\site.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6548,7 +6548,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>js\woowx.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6564,7 +6564,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\Customer-js\Customer.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6580,7 +6580,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\actualfinance\ActualFinance-detail.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6596,7 +6596,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\actualfinance\actualfinance-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6612,7 +6612,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\contract\contract-detail.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6628,7 +6628,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\contract\contract-sindex.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6644,7 +6644,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\customer\company-detail.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6660,7 +6660,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\customer\company-qtlxr-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6676,7 +6676,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\customer\Customer-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6692,7 +6692,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\customer\Other-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6708,7 +6708,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\customer\woocuruoload.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6724,7 +6724,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\customer\wooupload.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6736,11 +6736,27 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\modules\customer\wooupload.js))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\modules\enterprise\Enterprise-index.js))">
+      <SourceType>Package</SourceType>
+      <SourceId>NF.WeiXinApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>lib\modules\enterprise\Enterprise-index.js</RelativePath>
+      <AssetKind></AssetKind>
+      <AssetMode></AssetMode>
+      <AssetRole></AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\modules\enterprise\Enterprise-index.js))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\modules\Home\home-index.js))">
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\Home\home-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6756,7 +6772,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\Home\JavaScript.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6772,7 +6788,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\Invoice\Invoice-detail.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6788,7 +6804,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\Invoice\Invoice-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6804,7 +6820,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\project\project-detail.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6820,7 +6836,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\project\project-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6836,7 +6852,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\woouser\wxuser-detail.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6852,7 +6868,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\woouser\wxuser-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6868,7 +6884,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\workflow\bdh-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6884,7 +6900,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\workflow\daichuli-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6900,7 +6916,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\workflow\Wdh-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6916,7 +6932,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\workflow\wtg-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6932,7 +6948,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\workflow\ycl-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6948,7 +6964,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\workflow\yfq-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6964,7 +6980,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\modules\workflow\yichuli-index.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6980,7 +6996,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weuix\css\weui.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -6996,7 +7012,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weuix\css\weuix.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7012,7 +7028,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weuix\js\zepto.min.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7028,7 +7044,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weuix\js\zepto.weui.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7044,7 +7060,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weuix\js\zepto.weui.min.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7060,7 +7076,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\css\icon.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7076,7 +7092,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\css\weui.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7092,7 +7108,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\css\weui.min.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7108,7 +7124,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\css\weui2.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7124,7 +7140,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\css\weui3.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7140,7 +7156,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\css\weuix.min.css</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7156,7 +7172,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\add_kh.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7172,7 +7188,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_fkht.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7188,7 +7204,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_gys.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7204,7 +7220,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_home.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7220,7 +7236,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_home1.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7236,7 +7252,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_kf.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7252,7 +7268,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_kp.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7268,7 +7284,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_qtdf.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7284,7 +7300,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_shenpi.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7300,7 +7316,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_shenpi1.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7316,7 +7332,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_sjfk.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7332,7 +7348,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_sjsk.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7348,7 +7364,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_skht.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7364,7 +7380,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_sp.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7380,7 +7396,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_sp1.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7396,7 +7412,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_temp.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7412,7 +7428,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_woo.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7428,7 +7444,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_woo1.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7444,7 +7460,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\images\icon_xm.png</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7460,7 +7476,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\js\iscroll.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7476,7 +7492,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\js\lazyimg.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7492,7 +7508,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\js\lrz.min.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7508,7 +7524,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\js\updown.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7524,7 +7540,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>lib\weui\js\zepto.min.js</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
@@ -7540,7 +7556,7 @@
       <SourceType>Package</SourceType>
       <SourceId>NF.WeiXinApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/NF.WeiXinApp</BasePath>
+      <BasePath>/</BasePath>
       <RelativePath>WW_verify_LUCja19IrqMsXn0S.txt</RelativePath>
       <AssetKind></AssetKind>
       <AssetMode></AssetMode>
