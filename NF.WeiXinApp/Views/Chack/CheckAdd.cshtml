@@ -44,6 +44,18 @@
                         <input class="weui-input" name="Title" id="Title" placeholder="标题" type="text">
                     </div>
                 </div>
+                <div class="weui-cell weui-cell_active weui-cell_disabled">
+                    <div class="weui-cell__hd"><label class="weui-label">客户名称</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" name="CompanyName" id="CompanyName" placeholder="客户名称" type="text">
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_active weui-cell_disabled">
+                    <div class="weui-cell__hd"><label class="weui-label">检测时间</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" name="TxDate" id="TxDate" placeholder="请输入检测时间" type="date">
+                    </div>
+                </div>
 
                 <div class="weui-cell">
                     <div class="weui-cell__bd">
@@ -136,55 +148,7 @@
                 </div>
             </div>
 
-            @*视频*@
-            @*<div class="weui-uploader">
-                <div class="weui-uploader__hd">
-                    <p class="weui-uploader__title">上传视频</p>
-                    <div class="weui-uploader__info"><span id="total">0</span>/9</div>
-                </div>
-                <div class="weui-uploader__bd">
-                    <ul class="weui-uploader__files" id="vdieoList">
-                    </ul>
-                    <div class="weui-uploader__input-box">
-                        <input id="uploadervideoInput" class="weui-uploader__input" type="file" accept="video/*" multiple="">
-                    </div>
-                </div>
-            </div>
-
-            <video id="myVideo" class="video-js vjs-big-play-centered vjs-fluid">
-                <p class="vjs-no-js">
-                    To view this video please enable JavaScript, and consider upgrading to a
-                    web browser that
-                    <a href="https://videojs.com/html5-video-support/" target="_blank">
-                        supports HTML5 video
-                    </a>
-                </p>
-            </video>*@
-            @*视频*@
-
-            @*<div class="weui-cell__bd">
-                <div class="weui-uploader">
-                    <div class="weui-uploader__hd">
-                        <p class="weui-uploader__title">上传视频</p>
-                        <div class="weui-uploader__info">请选择视频文件</div>
-                    </div>
-                    <div class="weui-uploader__bd">
-                        <ul class="weui-uploader__files" id="videoList2">
-                            <!-- 上传成功后，可以在此处显示已上传的视频信息 -->
-                            <li>
-                                <video width="200" height="120" controls poster="http://localhost:9066/Uploads/CustomerVideoFile/test_20230430053950.png" src="http://localhost:9066/Uploads/CustomerVideoFile/c6bee6d9-2440-4bf8-87c5-48c3a420897b.mp4"></video>
-                            </li>
-                        </ul>
-                        <!-- 模板 -->
-                        <template id="videoListItemTemplate">
-                            <li>
-                                <video width="200" height="120" controls poster="" src=""></video>
-                            </li>
-                        </template>
-                        
-                    </div>
-                </div>
-            </div>*@
+      
             <div class="weui-cell__bd">
                 <div class="weui-uploader">
                     <div class="weui-uploader__hd">
@@ -369,13 +333,10 @@
             // GuidFileName: $("#GuidFileName").val(),
             // FolderName: $("#FolderName").val(),
             Title: $("#Title").val(),
-            //CompanyId: $("#CompanyId").val(),
+            CompanyName: $("#CompanyName").val(),
             Remark: $("#Remark").val(),
-            QxCode: $("#QxCode").val()
-             // Name: $("#Name").text()
-
-
-
+            QxCode: $("#QxCode").val(),
+            TxDate: $("#TxDate").text()
 
         };
 

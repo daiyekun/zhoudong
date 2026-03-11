@@ -94,7 +94,7 @@ function playVideo(src, index) {
 /***合同文本**/
 function ShowContText(currId) {
 
-    var $urls = woowx.constant.APIBaseURL + "/api/company/GetcompViwe";
+    var $urls = woowx.constant.APIBaseURL + "/api/Check/checkView";
     $.ajax({///GetCountViwe
         type: 'Get',
         url: $urls,
@@ -118,6 +118,12 @@ function ShowContText(currId) {
                         + '<label class="weui-form-preview__label">标题</label>'
                         + '<em class="weui-form-preview__value">' + $data.Data[i].Title + '</em>'
                         + '</div >'
+
+                        + '<div class="weui-form-preview__hd">'
+                        + '<label class="weui-form-preview__label">客户名称</label>'
+                        + '<span class="weui-form-preview__value">' + $data.Data[i].CompanyName + '</span>'
+                        + '</div>'
+
                         + '<div class="weui-form-preview__hd">'
                         + '<label class="weui-form-preview__label">检测时间</label>'
                         + '<span class="weui-form-preview__value">' + $data.Data[i].TxDate + '</span>'

@@ -100,7 +100,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
 
         // GET api/<UserController>/5
         [HttpGet("enterpriseView")]
-        public string KhView(int id)
+        public string EnterpriseView(int id)
         {
             var Kh = _enterpriseInfoService.ShowView(id);
             return new RequestData(data: Kh).ToWxJson();

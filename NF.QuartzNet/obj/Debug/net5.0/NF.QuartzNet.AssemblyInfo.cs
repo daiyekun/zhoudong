@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NF.QuartzNet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d7aa4d7e764639e1fa4421250174c66fb1cc3b5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffbe23c530d0941ff2a94a4b2b10ed4ebf4a1823")]
 [assembly: System.Reflection.AssemblyProductAttribute("NF.QuartzNet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NF.QuartzNet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

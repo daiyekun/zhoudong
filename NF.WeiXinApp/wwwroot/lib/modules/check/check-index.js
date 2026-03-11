@@ -51,6 +51,20 @@ function ajaxpage1(spage) {
 
                     + '<div class="weui-cell  " >'
                     + '<div class="weui-cell__bd">'
+                    + '<p>客户名称</p>'
+                    + '</div>'
+                    + '<div class="weui-cell__ft">' + datas.data[i].CompanyName + '</div>'
+                    + '</div>'
+
+                    + '<div class="weui-cell  " >'
+                    + '<div class="weui-cell__bd">'
+                    + '<p>检测时间</p>'
+                    + '</div>'
+                    + '<div class="weui-cell__ft">' + datas.data[i].TxDate + '</div>'
+                    + '</div>'
+
+                    + '<div class="weui-cell  " >'
+                    + '<div class="weui-cell__bd">'
                    /* + ' <a href="javascript:;" onclick=upcustomer(' + datas.data[i].Id + ') class="weui-btn weui-btn_mini bg-green"><i class="icon icon-115"></i>修改</a>'*/
                     + ' &nbsp;&nbsp;<a href="javascript:;" onclick=delcustomer(' + datas.data[i].Id + ') class="weui-btn weui-btn_mini bg-red"><i class="icon icon-115"></i>删除</a>'
                     + '</div>'

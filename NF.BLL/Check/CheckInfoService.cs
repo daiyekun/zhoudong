@@ -45,7 +45,9 @@ namespace NF.BLL
                         select new
                         {
                             Id = a.Id,//Wx
-                            Title = a.Title
+                            Title = a.Title,
+                            TxDate = a.TxDate,
+                            CompanyName = a.CompanyName,
 
 
                         };
@@ -53,7 +55,9 @@ namespace NF.BLL
                         select new CheckInfoList
                         {
                             Id = a.Id,
-                            Title = a.Title
+                            Title = a.Title,
+                            TxDate = a.TxDate,
+                            CompanyName = a.CompanyName,
                         };
             return new LayPageInfo<CheckInfoList>()
             {
@@ -77,6 +81,8 @@ namespace NF.BLL
                         {
                             Id = a.Id,//Wx
                             Title = a.Title,
+                            TxDate=a.TxDate,
+                            CompanyName= a.CompanyName,
                             Remark = a.Remark
 
                         };
@@ -86,6 +92,8 @@ namespace NF.BLL
                         {
                             Id = a.Id,//Wx
                             Title = a.Title,
+                            TxDate = a.TxDate,
+                            CompanyName = a.CompanyName,
                             Remark = a.Remark
 
                         };

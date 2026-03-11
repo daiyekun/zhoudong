@@ -8,36 +8,36 @@ if (ddr == null || ddr == "") {
 
 var $wfitems = "";
 
-function LoadMainFormData(currId) {
+//function LoadMainFormData(currId) {
 
-    var $url = woowx.constant.APIBaseURL + "/api/company/KhView";
-    $.ajax({
-        type: 'GET',
-        url: $url,
-        data:
-        {
-            Id: currId
-        },
-        dataType: 'json',
-        timeout: 10000,
-        success: function (data) {
-            var $data = JSON.parse(data);
-            $wfitems = $data.Data.WfItem;
-            if ($data.Data != null && $data.Data != undefined) {
+//    var $url = woowx.constant.APIBaseURL + "/api/Enterprise/EnterpriseView";
+//    $.ajax({
+//        type: 'GET',
+//        url: $url,
+//        data:
+//        {
+//            Id: currId
+//        },
+//        dataType: 'json',
+//        timeout: 10000,
+//        success: function (data) {
+//            var $data = JSON.parse(data);
+//            $wfitems = $data.Data.WfItem;
+//            if ($data.Data != null && $data.Data != undefined) {
 
-                $.each($data.Data, function (key, value) {
-                    $("#" + key).val(value);
-                });
+//                $.each($data.Data, function (key, value) {
+//                    $("#" + key).val(value);
+//                });
 
-            }
-        }, error: function (xhr, type) {
+//            }
+//        }, error: function (xhr, type) {
 
-            alert('LoadMainFormData系统异常' + xhr + ":" + type + ":" + xhr.status);
-        }
-    });
+//            alert('LoadMainFormData系统异常' + xhr + ":" + type + ":" + xhr.status);
+//        }
+//    });
 
 
-}
+//}
 //下载文件
 function downloadtxt(txtId) {
 
@@ -70,7 +70,7 @@ function delcustomerfw(custId) {
 
         }, error: function (xhr, type) {
 
-            alert('LoadMainFormData系统异常' + xhr + ":" + type + ":" + xhr.status);
+            alert('delcustomerfw系统异常' + xhr + ":" + type + ":" + xhr.status);
         }
     });
 
@@ -94,7 +94,7 @@ function playVideo(src, index) {
 /***合同文本**/
 function ShowContText(currId) {
 
-    var $urls = woowx.constant.APIBaseURL + "/api/company/GetcompViwe";
+    var $urls = woowx.constant.APIBaseURL + "/api/Enterprise/EnterpriseView";
     $.ajax({///GetCountViwe
         type: 'Get',
         url: $urls,

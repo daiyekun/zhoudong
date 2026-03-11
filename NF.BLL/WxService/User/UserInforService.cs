@@ -1,4 +1,4 @@
-﻿using NF.ViewModel.Models.WeiXinModels;
+using NF.ViewModel.Models.WeiXinModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,12 +33,12 @@ namespace NF.BLL
                         select new WxUserInfo
                         {
                             UserId = a.UserId,
-                            Uname = a.Uname,
-                            UdisName = a.UdisName,
-                            UdepName = a.UdepName,
-                            Utel = a.Utel,
-                            Umobile = a.Umobile,
-                            Uemail = a.Uemail,
+                            Uname =string.IsNullOrEmpty( a.Uname)?"" : a.Uname,
+                            UdisName =string.IsNullOrEmpty(a.UdisName)?"": a.UdisName,
+                            UdepName = string.IsNullOrEmpty(a.UdepName)?"": a.UdepName,
+                            Utel =string.IsNullOrEmpty( a.Utel)? "": a.Utel,
+                            Umobile =string.IsNullOrEmpty( a.Umobile)? "":  a.Umobile,
+                            Uemail =string.IsNullOrEmpty( a.Uemail)? "": a.Uemail,
                             Sex = a.Sex,
 
                         };

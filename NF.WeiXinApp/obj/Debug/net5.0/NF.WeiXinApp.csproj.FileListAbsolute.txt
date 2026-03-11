@@ -679,3 +679,6 @@ D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.sourcelink
 D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.dll
 D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\refint\NF.WeiXinApp.dll
 D:\woocode\lhcode\Zhoudong\NF.WeiXinApp\obj\Debug\net5.0\NF.WeiXinApp.pdb
+D:\WooCode\zhoudong\zhoudong\NF.WeiXinApp\obj\Debug\net5.0\Razor\Views\Chack\CheckAdd.cshtml.g.cs
+D:\WooCode\zhoudong\zhoudong\NF.WeiXinApp\obj\Debug\net5.0\Razor\Views\Chack\Detail.cshtml.g.cs
+D:\WooCode\zhoudong\zhoudong\NF.WeiXinApp\obj\Debug\net5.0\Razor\Views\Enterprise\Detail.cshtml.g.cs

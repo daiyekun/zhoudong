@@ -89,7 +89,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
 
         // GET api/<UserController>/5
         [HttpGet("checkView")]
-        public string KhView(int id)
+        public string CheckView(int id)
         {
             var Kh = _checkInfoService.ShowView(id);
             return new RequestData(data: Kh).ToWxJson();

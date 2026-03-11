@@ -10,12 +10,16 @@ namespace NF.ViewModel
     {
         public int Id { get; set; }
         public string Title { get; set; }
+        public DateTime? TxDate { get; set; }
+        public string CompanyName { get; set; }
     }
 
     public class CheckInfoView
     {
         public int Id { get; set; }
         public string Title { get; set; }
+        public DateTime? TxDate {  get; set; }
+        public string CompanyName { get; set; }
         public string Remark {  get; set; }
     }
 
