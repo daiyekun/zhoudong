@@ -135,7 +135,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.ModifyDateTime = DateTime.Now;
                     compinfo.ModifyUserId = uinfo != null ? uinfo.UserId : 1;
                     _checkInfoService.Update(compinfo);
-                    string sqlstr = $"update CheckFile set AttId={compinfo.Id} where AttId=-188";
+                    string sqlstr = $"update CheckFile set  AttId={compinfo.Id},CompanyId={compinfo.Id} where AttId=-188";
                     _checkInfoService.ExecuteSqlCommand(sqlstr);
                 }
                 else
@@ -147,7 +147,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.CreateUserId = 1;
                     compinfo.CreateUserId = uinfo != null ? uinfo.UserId : 1;
                     _checkInfoService.Add(compinfo);
-                    string sqlstr = $"update CheckFile set AttId={compinfo.Id} where AttId=-188";
+                    string sqlstr = $"update CheckFile set  AttId={compinfo.Id},CompanyId={compinfo.Id} where AttId=-188";
                     _checkInfoService.ExecuteSqlCommand(sqlstr);
                 }
 

@@ -34,11 +34,6 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             return View();
         }
 
-
-
-
-
-
         /// <summary>
         ///小文件
         /// </summary>
@@ -49,8 +44,6 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         {
             UploadFileInfo uploadFileInfo = new UploadFileInfo();
             var pics = imgbase64.Split(',');
-
-
             // var pics= StringHelper.Strint2ArrayString1(imgbase64);
             var fname = $"{Guid.NewGuid().ToString()}";
             var extend = ".png";
@@ -86,8 +79,6 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             var filebyte = FileBinaryConvertHelper.FromBase64String(pics[1]);
 
             FileBinaryConvertHelper.Bytes2File(filebyte, path);
-
-
             return new WxResultJson(new RequstResult()
             {
                 Msg = "上传成功",
@@ -108,11 +99,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         [HttpPost]
         public IActionResult WxUpload1s(string imgbase64, int commpId)
         {
-
-
             var pics = imgbase64.Split(',');
-
-
             // var pics= StringHelper.Strint2ArrayString1(imgbase64);
             var fname = $"{Guid.NewGuid().ToString()}";
             var extend = ".png";
@@ -144,7 +131,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             attacFile.CreateUserId = 1;
             attacFile.ModifyUserId = 1;
             attacFile.ModifyDateTime = DateTime.Now;
-            attacFile.CompanyId = commpId;
+            attacFile.CompanyId = -188;
             attacFile.AttId = -188;//附件信息
             attacFile.Extend = extend;
             attacFile.GuidFileName = fname;
@@ -155,14 +142,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                        , fname);
 
             var filebyte = FileBinaryConvertHelper.FromBase64String(pics[1]);
-
             FileBinaryConvertHelper.Bytes2File(filebyte, path);
-
-
             var info = _checkFileService.Add(attacFile);
-
-
-
             return new WxResultJson(new RequstResult()
             {
                 Msg = "上传成功",
@@ -172,7 +153,6 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
 
             });
         }
-
 
         /// <summary>
         /// 上传大文件
@@ -184,8 +164,6 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
 
         public async Task<IActionResult> UploadVideoMax(string imgbase64, int commpId, string video, string compressedVideo)
         {
-
-
 
             var path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 19));
             FormValueProvider formModel;
@@ -199,7 +177,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             attacFile.CreateUserId = 1;
             attacFile.ModifyUserId = 1;
             attacFile.ModifyDateTime = DateTime.Now;
-            attacFile.CompanyId = commpId;
+            attacFile.CompanyId = -188;
             attacFile.AttId = -188;//附件信息
             attacFile.Extend = extend;
             attacFile.GuidFileName = $"{fname}{extend}";
@@ -209,12 +187,9 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             //attacFile.ThumPath = repic;
 
             formModel = await Request.StreamFiles_Video(path, attacFile);
-
             var viewModel = new MyViewModel();
-
             var bindingSuccessful = await TryUpdateModelAsync(viewModel, prefix: "",
                 valueProvider: formModel);
-
 
             if (!bindingSuccessful)
             {
@@ -228,19 +203,14 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             attacFile.ThumPath = repic;
             attacFile.FilePath = $"/Uploads/{attacFile.FolderName}/{attacFile.GuidFileName}";
 
-
             //return Ok(viewModel);
             return new WxResultJson(new RequstResult()
             {
                 Msg = "上传成功",
                 Code = 0,
                 Data = attacFile
-
-
             });
         }
-
-
         /// <summary>
         /// 添加客户
         /// </summary>
@@ -253,14 +223,13 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             try
             {
                 //保存数据
-
                 attacFile.IsDelete = 0;
                 attacFile.FileType = 1;//文件类型，视频
                 attacFile.CreateDateTime = DateTime.Now;
                 attacFile.CreateUserId = 1;
                 attacFile.ModifyUserId = 1;
                 attacFile.ModifyDateTime = DateTime.Now;
-                attacFile.CompanyId = attacFile.CompanyId;
+                attacFile.CompanyId = -188; //attacFile.CompanyId;
                 attacFile.AttId = -188;//附件信息
                 attacFile.Extend = attacFile.Extend;
                 attacFile.GuidFileName = attacFile.GuidFileName;
@@ -274,8 +243,6 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     Msg = "保存附件信息",
                     Code = 0,
                     Data = info
-
-
                 });
             }
             catch (Exception ex)
@@ -300,7 +267,6 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         [HttpPost]
         public IActionResult WxUploadvideo(string imgbase64, int commpId, string video, string compressedVideo)
         {
-
             try
             {
                 //Log4netHelper.Info("上传视频开始---");
@@ -341,8 +307,6 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     }
                 }
 
-
-
                 var attacFile = new CheckFile();
                 attacFile.IsDelete = 0;
                 attacFile.FileType = 1;//文件类型，视频
@@ -350,7 +314,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                 attacFile.CreateUserId = 1;
                 attacFile.ModifyUserId = 1;
                 attacFile.ModifyDateTime = DateTime.Now;
-                attacFile.CompanyId = commpId;
+                attacFile.CompanyId = -188;// commpId;
                 attacFile.AttId = -188;//附件信息
                 attacFile.Extend = extend;
                 attacFile.GuidFileName = $"{fname}{extend}";
@@ -367,21 +331,15 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     Msg = "上传成功",
                     Code = 0,
                     Data = info
-
-
                 });
             }
             catch (Exception ex)
             {
-
                 Log4netHelper.Error(ex.Message);
                 return new WxResultJson(new RequstResult()
                 {
                     Msg = "上传失败",
                     Code = 501,
-
-
-
                 });
             }
         }
@@ -393,13 +351,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         /// <returns></returns>
         public IActionResult ClearData()
         {
-
             string sqlstr = $"delete ContAttacFile where AttId={-188}";
-
             _checkFileService.ExecuteSqlCommand(sqlstr);
-
-
-
             return new WxResultJson(new RequstResult()
             {
                 Msg = "上传成功",
@@ -415,13 +368,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         /// <returns></returns>
         public IActionResult DeleteData(int Id)
         {
-
             string sqlstr = $"delete ContAttacFile where Id={Id}";
-
             _checkFileService.ExecuteSqlCommand(sqlstr);
-
-
-
             return new WxResultJson(new RequstResult()
             {
                 Msg = "上传成功",
@@ -430,8 +378,5 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
 
             });
         }
-
-
-
     }
 }

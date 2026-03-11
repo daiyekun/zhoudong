@@ -36,7 +36,7 @@ namespace NF.WeiXinApp.Controllers
         public IActionResult CheckAdd(string Wxzh, int Id)
         {
             ViewData["WxCurrUserId"] = Wxzh;
-            ViewData["customerId"] = Id;
+            ViewData["CompanyId"] = Id;
             return View();
 
         }

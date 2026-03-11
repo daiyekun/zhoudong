@@ -35,7 +35,9 @@ namespace NF.WeiXinApp.Controllers
         public IActionResult EnterpriseAdd(string Wxzh, int Id)
         {
             ViewData["WxCurrUserId"] = Wxzh;// HttpContext.Session.GetString("WxUserId");
-            ViewData["customerId"] = Id;
+            ViewData["CompanyId"] = Id;
+            string sqlstr = "delete EnterpriseFile where AttId=-188";
+            _enterpriseFileService.ExecuteSqlCommand(sqlstr);
             return View();
 
         }
@@ -47,7 +49,7 @@ namespace NF.WeiXinApp.Controllers
         /// <param name="Wxzh">账号</param>
         /// <param name="compId">客户ID</param>
         /// <returns></returns>
-        public IActionResult EnterpriseAttWuAdd(string Wxzh, int compId)
+        public IActionResult EnterpriseAttAdd(string Wxzh, int compId)
         {
             ViewData["WxCurrUserId"] = Wxzh;// HttpContext.Session.GetString("WxUserId");
             ViewData["CompanyId"] = compId;
