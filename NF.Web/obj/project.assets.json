@@ -223,41 +223,20 @@
           }
         }
       },
-      "log4net/2.0.8": {
+      "log4net/2.0.12": {
         "type": "package",
         "dependencies": {
-          "System.AppContext": "4.1.0",
-          "System.Collections.NonGeneric": "4.0.1",
-          "System.Console": "4.0.0",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Diagnostics.Process": "4.1.0",
-          "System.Diagnostics.StackTrace": "4.0.1",
-          "System.Diagnostics.TraceSource": "4.0.0",
-          "System.IO.FileSystem": "4.0.1",
-          "System.IO.FileSystem.Watcher": "4.0.0",
-          "System.Linq": "4.1.0",
-          "System.Net.NameResolution": "4.0.0",
-          "System.Net.Requests": "4.0.11",
-          "System.Net.Sockets": "4.1.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.0.1",
-          "System.Reflection.TypeExtensions": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.InteropServices": "4.1.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0",
-          "System.Runtime.Serialization.Formatters": "4.3.0",
-          "System.Text.RegularExpressions": "4.1.0",
-          "System.Threading": "4.0.11",
-          "System.Threading.Thread": "4.0.0",
-          "System.Threading.Timer": "4.0.1",
-          "System.Xml.ReaderWriter": "4.0.11",
-          "System.Xml.XmlDocument": "4.0.1"
+          "System.Configuration.ConfigurationManager": "4.5.0"
         },
         "compile": {
-          "lib/netstandard1.3/log4net.dll": {}
+          "lib/netstandard2.0/log4net.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard1.3/log4net.dll": {}
+          "lib/netstandard2.0/log4net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "MailKit/2.4.1": {
@@ -3795,35 +3774,6 @@
           }
         }
       },
-      "System.Diagnostics.TraceSource/4.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.0.1",
-          "System.Collections": "4.0.11",
-          "System.Diagnostics.Debug": "4.0.11",
-          "System.Globalization": "4.0.11",
-          "System.Resources.ResourceManager": "4.0.1",
-          "System.Runtime": "4.1.0",
-          "System.Runtime.Extensions": "4.1.0",
-          "System.Threading": "4.0.11",
-          "runtime.native.System": "4.0.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Diagnostics.TraceSource.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard1.3/System.Diagnostics.TraceSource.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/netstandard1.3/System.Diagnostics.TraceSource.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
       "System.Diagnostics.Tracing/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4918,7 +4868,7 @@
           "System.Runtime.Serialization.Primitives": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/System.Runtime.Serialization.Formatters.dll": {}
+          "ref/netstandard1.3/_._": {}
         },
         "runtime": {
           "lib/netstandard1.4/System.Runtime.Serialization.Formatters.dll": {}
@@ -5920,9 +5870,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "EPPlus": "5.5.1",
           "Microsoft.EntityFrameworkCore": "5.0.2",
           "NF.Common": "1.0.0",
-          "NF.Model": "1.0.0"
+          "NF.Model": "1.0.0",
+          "log4net": "2.0.12"
         },
         "compile": {
           "bin/placeholder/NF.ViewModel.dll": {}
@@ -6141,28 +6093,32 @@
         "runtimes/win7-x86/native/libuv.dll"
       ]
     },
-    "log4net/2.0.8": {
-      "sha512": "N41MQGHZImiCfn0cUuSBjZxrcNfIQCuCgQP0rpgB3J/NWponEh3lc1LxJEuIsPAR9Oc1jVvfkNNFCY1C5hf9LA==",
+    "log4net/2.0.12": {
+      "sha512": "9P67BCftJ7KG+B7rNOM1A9KczUwyEDed6zbAddy5Cj/73xVkzi+rEAHeOgUnW5wDqy1JFlY8+oTP0m1PgJ03Tg==",
       "type": "package",
-      "path": "log4net/2.0.8",
+      "path": "log4net/2.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net20-full/log4net.dll",
-        "lib/net20-full/log4net.xml",
+        "lib/net20/log4net.dll",
+        "lib/net20/log4net.xml",
         "lib/net35-client/log4net.dll",
         "lib/net35-client/log4net.xml",
-        "lib/net35-full/log4net.dll",
-        "lib/net35-full/log4net.xml",
+        "lib/net35/log4net.dll",
+        "lib/net35/log4net.xml",
         "lib/net40-client/log4net.dll",
         "lib/net40-client/log4net.xml",
-        "lib/net40-full/log4net.dll",
-        "lib/net40-full/log4net.xml",
-        "lib/net45-full/log4net.dll",
-        "lib/net45-full/log4net.xml",
+        "lib/net40/log4net.dll",
+        "lib/net40/log4net.xml",
+        "lib/net45/log4net.dll",
+        "lib/net45/log4net.xml",
         "lib/netstandard1.3/log4net.dll",
-        "log4net.2.0.8.nupkg.sha512",
-        "log4net.nuspec"
+        "lib/netstandard1.3/log4net.xml",
+        "lib/netstandard2.0/log4net.dll",
+        "lib/netstandard2.0/log4net.xml",
+        "log4net.2.0.12.nupkg.sha512",
+        "log4net.nuspec",
+        "package-icon.png"
       ]
     },
     "MailKit/2.4.1": {
@@ -10656,47 +10612,6 @@
         "ref/xamarinwatchos10/_._",
         "system.diagnostics.tools.4.3.0.nupkg.sha512",
         "system.diagnostics.tools.nuspec"
-      ]
-    },
-    "System.Diagnostics.TraceSource/4.0.0": {
-      "sha512": "6WVCczFZKXwpWpzd/iJkYnsmWTSFFiU24Xx/YdHXBcu+nFI/ehTgeqdJQFbtRPzbrO3KtRNjvkhtj4t5/WwWsA==",
-      "type": "package",
-      "path": "system.diagnostics.tracesource/4.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Diagnostics.TraceSource.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.Diagnostics.TraceSource.dll",
-        "ref/netstandard1.3/System.Diagnostics.TraceSource.dll",
-        "ref/netstandard1.3/System.Diagnostics.TraceSource.xml",
-        "ref/netstandard1.3/de/System.Diagnostics.TraceSource.xml",
-        "ref/netstandard1.3/es/System.Diagnostics.TraceSource.xml",
-        "ref/netstandard1.3/fr/System.Diagnostics.TraceSource.xml",
-        "ref/netstandard1.3/it/System.Diagnostics.TraceSource.xml",
-        "ref/netstandard1.3/ja/System.Diagnostics.TraceSource.xml",
-        "ref/netstandard1.3/ko/System.Diagnostics.TraceSource.xml",
-        "ref/netstandard1.3/ru/System.Diagnostics.TraceSource.xml",
-        "ref/netstandard1.3/zh-hans/System.Diagnostics.TraceSource.xml",
-        "ref/netstandard1.3/zh-hant/System.Diagnostics.TraceSource.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/unix/lib/netstandard1.3/System.Diagnostics.TraceSource.dll",
-        "runtimes/win/lib/net46/System.Diagnostics.TraceSource.dll",
-        "runtimes/win/lib/netstandard1.3/System.Diagnostics.TraceSource.dll",
-        "system.diagnostics.tracesource.4.0.0.nupkg.sha512",
-        "system.diagnostics.tracesource.nuspec"
       ]
     },
     "System.Diagnostics.Tracing/4.3.0": {
@@ -15357,27 +15272,28 @@
       "SignalR.Client >= 1.0.0",
       "SignalR.Server >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3",
-      "TimedJob >= 2.0.0"
+      "TimedJob >= 2.0.0",
+      "log4net >= 2.0.12"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Web\\NF.Web.csproj",
+      "projectUniqueName": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Web\\NF.Web.csproj",
       "projectName": "NF.Web",
-      "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Web\\NF.Web.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Web\\obj\\",
+      "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Web\\NF.Web.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -15386,44 +15302,45 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\WooCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj"
+            "D:\\MyProjectCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj": {
+              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj"
+            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj": {
+              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj"
+            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj": {
+              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj"
+            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj": {
+              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj"
+            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
+              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj"
+            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj": {
+              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj"
+            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj": {
+              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj"
+            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj": {
+              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
+            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
+              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Client\\SignalR.Client.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Client\\SignalR.Client.csproj"
+            "D:\\MyProjectCode\\zhoudong\\zhoudong\\SignalR.Client\\SignalR.Client.csproj": {
+              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\SignalR.Client\\SignalR.Client.csproj"
             },
-            "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Server\\SignalR.Server.csproj": {
-              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Server\\SignalR.Server.csproj"
+            "D:\\MyProjectCode\\zhoudong\\zhoudong\\SignalR.Server\\SignalR.Server.csproj": {
+              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\SignalR.Server\\SignalR.Server.csproj"
             }
           }
         }
@@ -15438,7 +15355,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net5.0": {
@@ -15523,6 +15440,10 @@
           "TimedJob": {
             "target": "Package",
             "version": "[2.0.0, )"
+          },
+          "log4net": {
+            "target": "Package",
+            "version": "[2.0.12, )"
           }
         },
         "imports": [
@@ -15536,6 +15457,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.17, 5.0.17]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -15544,7 +15483,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
