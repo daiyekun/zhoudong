@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NF.WeiXin.Lib.Extend;
 using StackExchange.Redis;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace NF.WeiXin.Lib.Utility
 {
@@ -40,7 +39,7 @@ namespace NF.WeiXin.Lib.Utility
         /// <param name="Value">值</param>
         /// <param name="expireMinutes">有效期秒</param>
         /// <returns></returns>
-        public static bool StringSet(string key, string Value,int expireSeconds)
+        public static bool StringSet(string key, string Value, int expireSeconds)
         {
             if (expireSeconds > 0)
             {
@@ -95,7 +94,15 @@ namespace NF.WeiXin.Lib.Utility
         /// <returns>bool True:存在，False：不存在</returns>
         public static bool KeyExists(string key)
         {
-            return RedisUtility._redisData.KeyExists(key);
+            try
+            {
+                return RedisUtility._redisData.KeyExists(key);
+            }
+            catch (Exception)
+            {
+                return false;
+
+            }
         }
         /// <summary>
         /// 根据字符串获取Key
@@ -390,13 +397,13 @@ namespace NF.WeiXin.Lib.Utility
         /// <param name="value">值</param>
         public static void HashUpdate(RedisKey key, RedisValue hashField, RedisValue value)
         {
-            if(HashHasKey(key, hashField))
+            if (HashHasKey(key, hashField))
             {
                 HashDelete(key, hashField);
             }
-            HashSet(key,hashField,value);
+            HashSet(key, hashField, value);
         }
-       
+
         /// <summary>
         /// 为多个哈希字段分别设置它们的值
         /// </summary>
@@ -449,141 +456,141 @@ namespace NF.WeiXin.Lib.Utility
         #endregion Hash
 
         #region redis 集合（Set）操作
-         /// <summary>
+        /// <summary>
         /// 集合添加元素
         /// </summary>
         /// <param name="key">key</param>
-         /// <param name="value">Value</param>
-         public static void SetAdd(RedisKey key, RedisValue value)
-         {
+        /// <param name="value">Value</param>
+        public static void SetAdd(RedisKey key, RedisValue value)
+        {
             RedisUtility._redisData.SetAdd(key, value);
         }
         /// <summary>
-         /// 集合组合操作
-         /// </summary>
-         /// <param name="point">操作标示：0--并集；1--交集；2--差集</param>
-         /// <param name="firstKey">第一个集合的键值</param>
-         /// <param name="secondKey">第二个集合的键值</param>
-         public static string[] SetCombine(int point, RedisKey firstKey, RedisKey secondKey)
-         {
-             RedisValue[] array;
-             switch (point)
-             {
-                 case 0:
-                     array = RedisUtility._redisData.SetCombine(SetOperation.Union, firstKey, secondKey);
-                     break;
-                 case 1:
+        /// 集合组合操作
+        /// </summary>
+        /// <param name="point">操作标示：0--并集；1--交集；2--差集</param>
+        /// <param name="firstKey">第一个集合的键值</param>
+        /// <param name="secondKey">第二个集合的键值</param>
+        public static string[] SetCombine(int point, RedisKey firstKey, RedisKey secondKey)
+        {
+            RedisValue[] array;
+            switch (point)
+            {
+                case 0:
+                    array = RedisUtility._redisData.SetCombine(SetOperation.Union, firstKey, secondKey);
+                    break;
+                case 1:
                     array = RedisUtility._redisData.SetCombine(SetOperation.Intersect, firstKey, secondKey);
-                     break;
-                 case 2:
-                     array = RedisUtility._redisData.SetCombine(SetOperation.Difference, firstKey, secondKey);
-                     break;
-                 default:
-                     array = new RedisValue[0];
-                     break;
-             }
-             return array.ToStringArray();
+                    break;
+                case 2:
+                    array = RedisUtility._redisData.SetCombine(SetOperation.Difference, firstKey, secondKey);
+                    break;
+                default:
+                    array = new RedisValue[0];
+                    break;
+            }
+            return array.ToStringArray();
         }
 
-         /// <summary>
-         /// 
-         /// </summary>
-         /// <param name="key"></param>
-         /// <param name="value"></param>
-         /// <returns></returns>
-         public static bool SetContains(string key, string value)
-         {
-             return RedisUtility._redisData.SetContains(key, value);
-        }
-         /// <summary>
-         /// 返回对应键值集合的长度
-         /// </summary>
-         /// <param name="key"></param>
-         /// <returns></returns>
-         public static long SetLength(string key)
-         {
-            return RedisUtility._redisData.SetLength(key);
-        }
-         /// <summary>
-         /// 根据键值返回集合中所有的value
-         /// </summary>
-         /// <param name="key"></param>
-         /// <returns></returns>
-         public static string[] SetMembers(string key)
-         {
-             return RedisUtility._redisData.SetMembers(key).ToStringArray();
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static bool SetContains(string key, string value)
+        {
+            return RedisUtility._redisData.SetContains(key, value);
         }
         /// <summary>
-         /// 将成员从源集移动到目标集
-         /// </summary>
-         /// <param name="sourceKey">源集key</param>
-         /// <param name="destinationKey">目标集key</param>
-         /// <param name="value"></param>
-         public static bool SetMove(string sourceKey, string destinationKey, string value)
-         {
+        /// 返回对应键值集合的长度
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public static long SetLength(string key)
+        {
+            return RedisUtility._redisData.SetLength(key);
+        }
+        /// <summary>
+        /// 根据键值返回集合中所有的value
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public static string[] SetMembers(string key)
+        {
+            return RedisUtility._redisData.SetMembers(key).ToStringArray();
+        }
+        /// <summary>
+        /// 将成员从源集移动到目标集
+        /// </summary>
+        /// <param name="sourceKey">源集key</param>
+        /// <param name="destinationKey">目标集key</param>
+        /// <param name="value"></param>
+        public static bool SetMove(string sourceKey, string destinationKey, string value)
+        {
             return RedisUtility._redisData.SetMove(sourceKey, destinationKey, value);
-         }
- 
-         /// <summary>
-        /// 移除集合中指定键值随机元素
-         /// </summary>
-         /// <param name="key"></param>
-         public static string SetPop(string key)
-         {
-            return RedisUtility._redisData.SetPop(key);
-         }
- 
-         /// <summary>
-         /// 返回集合中指定键值随机元素
-         /// </summary>
-         /// <param name="key"></param>
-         /// <returns></returns>
-         public static string SetRandomMember(string key)
-         {
-            return RedisUtility._redisData.SetRandomMember(key);
-         }
+        }
 
-         /// <summary>
-         /// 
-         /// </summary>
-         /// <param name="key"></param>
-         /// <param name="count"></param>
-         public static string[] SetRandomMembers(string key, long count)
-         {
+        /// <summary>
+        /// 移除集合中指定键值随机元素
+        /// </summary>
+        /// <param name="key"></param>
+        public static string SetPop(string key)
+        {
+            return RedisUtility._redisData.SetPop(key);
+        }
+
+        /// <summary>
+        /// 返回集合中指定键值随机元素
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public static string SetRandomMember(string key)
+        {
+            return RedisUtility._redisData.SetRandomMember(key);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="count"></param>
+        public static string[] SetRandomMembers(string key, long count)
+        {
             return RedisUtility._redisData.SetRandomMembers(key, count).ToStringArray();
         }
-        
 
-         /// <summary>
-         /// 移除集合中指定key值和value
-         /// </summary>
-         /// <param name="key"></param>
-         /// <param name="value"></param>
-         public static void SetRemove(string key, string value)
+
+        /// <summary>
+        /// 移除集合中指定key值和value
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        public static void SetRemove(string key, string value)
         {
             RedisUtility._redisData.SetRemove(key, value);
-         }
- 
-         /// <summary>
-         /// 
-         /// </summary>
-         /// <param name="key"></param>
-         public static void SetScan(string key)
-         {
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="key"></param>
+        public static void SetScan(string key)
+        {
             RedisUtility._redisData.SetScan(key);
         }
 
 
-       #endregion
+        #endregion
 
-         #region redis 有序集合（sorted set）操作
- 
-         public static void Method(string key, string value, double score)
-         {
+        #region redis 有序集合（sorted set）操作
+
+        public static void Method(string key, string value, double score)
+        {
             RedisUtility._redisData.SortedSetAdd(key, new SortedSetEntry[] { new SortedSetEntry(value, score) });
-         }
- 
-         #endregion
+        }
+
+        #endregion
 
 
 
@@ -592,6 +599,6 @@ namespace NF.WeiXin.Lib.Utility
 
 
 
-}
+    }
 
 }

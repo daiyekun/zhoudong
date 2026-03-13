@@ -101,7 +101,7 @@ function ShowContText(currId) {
         data:
         {
             // UserId: 1,
-            Id: currId
+            id: currId
         },
 
         dataType: 'json', timeout: 6000,

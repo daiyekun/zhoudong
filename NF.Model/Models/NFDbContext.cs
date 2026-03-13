@@ -36,6 +36,8 @@ namespace NF.Model.Models
         public virtual DbSet<BcInstance> BcInstances { get; set; }
         public virtual DbSet<Bidlabel> Bidlabels { get; set; }
         public virtual DbSet<BusinessCategory> BusinessCategories { get; set; }
+        public virtual DbSet<CheckFile> CheckFiles { get; set; }
+        public virtual DbSet<CheckInfo> CheckInfos { get; set; }
         public virtual DbSet<City> Cities { get; set; }
         public virtual DbSet<CompAttachment> CompAttachments { get; set; }
         public virtual DbSet<CompContact> CompContacts { get; set; }
@@ -72,6 +74,8 @@ namespace NF.Model.Models
         public virtual DbSet<DataDictionary> DataDictionaries { get; set; }
         public virtual DbSet<Department> Departments { get; set; }
         public virtual DbSet<DeptMain> DeptMains { get; set; }
+        public virtual DbSet<EnterpriseFile> EnterpriseFiles { get; set; }
+        public virtual DbSet<EnterpriseInfo> EnterpriseInfos { get; set; }
         public virtual DbSet<FlowTemp> FlowTemps { get; set; }
         public virtual DbSet<FlowTempHist> FlowTempHists { get; set; }
         public virtual DbSet<FlowTempNode> FlowTempNodes { get; set; }
@@ -483,6 +487,54 @@ namespace NF.Model.Models
                 entity.Property(e => e.Code).HasMaxLength(50);
 
                 entity.Property(e => e.Name).HasMaxLength(100);
+            });
+
+            modelBuilder.Entity<CheckFile>(entity =>
+            {
+                entity.ToTable("CheckFile");
+
+                entity.Property(e => e.CreateDateTime).HasColumnType("datetime");
+
+                entity.Property(e => e.Extend).HasMaxLength(20);
+
+                entity.Property(e => e.Filde1)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Filde2)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.FileName).HasMaxLength(200);
+
+                entity.Property(e => e.FilePath).HasMaxLength(500);
+
+                entity.Property(e => e.FolderName).HasMaxLength(50);
+
+                entity.Property(e => e.GuidFileName).HasMaxLength(100);
+
+                entity.Property(e => e.ModifyDateTime).HasColumnType("datetime");
+
+                entity.Property(e => e.Name).HasMaxLength(200);
+
+                entity.Property(e => e.ThumPath).HasMaxLength(500);
+            });
+
+            modelBuilder.Entity<CheckInfo>(entity =>
+            {
+                entity.ToTable("CheckInfo");
+
+                entity.Property(e => e.CompanyName).HasMaxLength(500);
+
+                entity.Property(e => e.CreateDateTime).HasColumnType("datetime");
+
+                entity.Property(e => e.ModifyDateTime).HasColumnType("datetime");
+
+                entity.Property(e => e.Remark).HasMaxLength(1000);
+
+                entity.Property(e => e.Title).HasMaxLength(300);
+
+                entity.Property(e => e.TxDate).HasColumnType("datetime");
             });
 
             modelBuilder.Entity<City>(entity =>
@@ -1798,6 +1850,52 @@ namespace NF.Model.Models
                     .WithMany(p => p.DeptMains)
                     .HasForeignKey(d => d.DeptId)
                     .HasConstraintName("FK_DeptMain_Department");
+            });
+
+            modelBuilder.Entity<EnterpriseFile>(entity =>
+            {
+                entity.ToTable("EnterpriseFile");
+
+                entity.Property(e => e.CreateDateTime).HasColumnType("datetime");
+
+                entity.Property(e => e.Extend).HasMaxLength(20);
+
+                entity.Property(e => e.Filde1)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Filde2)
+                    .HasMaxLength(200)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.FileName).HasMaxLength(200);
+
+                entity.Property(e => e.FilePath).HasMaxLength(500);
+
+                entity.Property(e => e.FolderName).HasMaxLength(50);
+
+                entity.Property(e => e.GuidFileName).HasMaxLength(100);
+
+                entity.Property(e => e.ModifyDateTime).HasColumnType("datetime");
+
+                entity.Property(e => e.Name).HasMaxLength(200);
+
+                entity.Property(e => e.ThumPath).HasMaxLength(500);
+            });
+
+            modelBuilder.Entity<EnterpriseInfo>(entity =>
+            {
+                entity.ToTable("EnterpriseInfo");
+
+                entity.Property(e => e.CreateDateTime).HasColumnType("datetime");
+
+                entity.Property(e => e.ModifyDateTime).HasColumnType("datetime");
+
+                entity.Property(e => e.Remark).HasMaxLength(2000);
+
+                entity.Property(e => e.Title)
+                    .IsRequired()
+                    .HasMaxLength(100);
             });
 
             modelBuilder.Entity<FlowTemp>(entity =>

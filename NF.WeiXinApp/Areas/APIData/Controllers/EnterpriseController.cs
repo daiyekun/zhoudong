@@ -1,23 +1,16 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using NF.BLL;
-using NF.Common.Models;
 using NF.Common.Utility;
 using NF.IBLL;
 using NF.Model.Models;
 using NF.ViewModel;
-using NF.ViewModel.Extend.Enums;
 using NF.ViewModel.Models.Common;
-using NF.ViewModel.Models.WeiXinModels;
-using NF.WeiXin.Lib.Utility;
 using NF.WeiXinApp.Extend;
 using NF.WeiXinApp.Utility;
-using NF.WeiXinApp.Utility.Common;
 using NF.WeiXinApp.Utility.Filters;
 using System;
-using System.IO;
+using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Threading.Tasks;
 
 namespace NF.WeiXinApp.Areas.APIData.Controllers
 {
@@ -37,7 +30,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             , IContractInfoService contractInfoService
             )
         {
-            _enterpriseInfoService=enterpriseInfoService;
+            _enterpriseInfoService = enterpriseInfoService;
             _userInforService = userInforService;
             _IMapper = IMapper;
             _IContractInfoService = contractInfoService;
@@ -50,7 +43,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
 
         // GET: api/<UserController>
         [HttpGet("wooenterpriselist")]
-        public string Get(int page, int limit, string keyWord, string Wxzh, int FinanceType)
+        public string Get(int page, int limit, string keyWord, string Wxzh, int FinanceType = 0)
         {
             PageparamInfo pageParam = new PageparamInfo();
             var usinfo = _IContractInfoService.Yhinfo(Wxzh);
@@ -66,7 +59,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                 case "Title":
                     orderbyLambda = a => a.Title;
 
-                    break;    
+                    break;
                 default:
                     orderbyLambda = a => a.Id;
                     break;
@@ -89,7 +82,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             var predicateAnd = PredicateBuilder.True<Model.Models.EnterpriseInfo>();
             var predicateOr = PredicateBuilder.False<Model.Models.EnterpriseInfo>();
             //predicateAnd = predicateAnd.And(a =>&& a.IsDelete == 0);
-           
+
             if (!string.IsNullOrEmpty(keyWord) && keyWord.ToLower() != "undefined")
             {
                 predicateOr = predicateOr.Or(a => a.Title.Contains(keyWord));
@@ -102,10 +95,12 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         [HttpGet("enterpriseView")]
         public string EnterpriseView(int id)
         {
+            List<EnterpriseInfoView> datas = new();
             var Kh = _enterpriseInfoService.ShowView(id);
-            return new RequestData(data: Kh).ToWxJson();
+            datas.Add(Kh);
+            return new RequestData(data: datas).ToWxJson();
         }
-      
+
 
         ///// <summary>
         /////客户附件列表
@@ -130,7 +125,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         [HttpPost("EnterpriseAddSave")]
         public string EnterpriseAddSave([FromBody] WxEnterpriseInfo info)
         {
-            Log4netHelper.Info($"添加客户:{info.Title}  授权码:{info.QxCode}");
+            Log4netHelper.Info($"添加企业资料:{info.Title}  授权码:{info.QxCode}");
             if (string.IsNullOrEmpty(info.QxCode) || !info.QxCode.Equals("zd198911"))
             {
                 return new RequestData(code: 1).ToWxJson();
@@ -145,6 +140,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.Title = info.Title;
                     compinfo.ModifyDateTime = DateTime.Now;
                     compinfo.ModifyUserId = uinfo != null ? uinfo.UserId : 1;
+                    compinfo.Remark = info.Remark;
                     _enterpriseInfoService.Update(compinfo);
                     string sqlstr = $"update EnterpriseFile set AttId={compinfo.Id},CompanyId={compinfo.Id} where AttId=-188";
                     _enterpriseInfoService.ExecuteSqlCommand(sqlstr);
@@ -157,6 +153,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.CreateDateTime = DateTime.Now;
                     compinfo.CreateUserId = 1;
                     compinfo.CreateUserId = uinfo != null ? uinfo.UserId : 1;
+                    compinfo.Remark = info.Remark;
                     _enterpriseInfoService.Add(compinfo);
                     string sqlstr = $"update EnterpriseFile set  AttId={compinfo.Id},CompanyId={compinfo.Id} where AttId=-188";
                     _enterpriseInfoService.ExecuteSqlCommand(sqlstr);
@@ -178,14 +175,18 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         /// </summary>
         /// <param name="info">删除客户</param>
         /// <returns></returns>
-        [CustomAction2CommitFilter]
-        [HttpPost("enterpriseDel")]
-        public async Task<string> CustomerDel([FromBody] WxEnterpriseInfo info)
+        [HttpGet("enterpriseDel")]
+        public string CustomerDel(string Wxzh, int Id)
         {
             try
             {
-                var uinfo = _userInforService.GetWxUserById(info.WxCode);
-                _enterpriseInfoService.Delete(a => a.Id == info.Id);
+                var uinfo = _userInforService.GetWxUserById(Wxzh);
+                if (uinfo is null)
+                {
+                    Log4netHelper.Error("微信账号查询失败：Wxzh");
+                    return new RequestData(code: 1).ToWxJson();
+                }
+                _enterpriseInfoService.Delete(a => a.Id == Id);
                 return new RequestData().ToWxJson();
             }
             catch (Exception ex)

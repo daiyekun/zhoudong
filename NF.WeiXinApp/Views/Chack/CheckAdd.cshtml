@@ -20,7 +20,7 @@
 
         <input type="hidden" id="CompanyId" name="CompanyId" value="@ViewData["CompanyId"]" />
         <input type="hidden" id="CurrWxUserId" name="CurrWxUserId" value="@ViewData["WxCurrUserId"]" />
-        <input type="hidden" id="GuidFileName" name="GuidFileName" value="ContAttacFile 表" />
+        <input type="hidden" id="GuidFileName" name="GuidFileName" value="ContAttacFile" />
         <input type="hidden" id="Extension" name="Extension" value="" />
         <input type="hidden" id="FolderName" name="FolderName" value="" />
         <input type="hidden" id="Name" name="Name" value="" />
@@ -336,7 +336,7 @@
             CompanyName: $("#CompanyName").val(),
             Remark: $("#Remark").val(),
             QxCode: $("#QxCode").val(),
-            TxDate: $("#TxDate").text()
+            TxDate: $("#TxDate").val()
 
         };
 

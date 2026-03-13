@@ -3,11 +3,11 @@ if (ddr == null || ddr == "") {
     $("#wxnamenull").click();
 }
 
-var $url = woowx.constant.APIBaseURL + "/api/Check/wooenterpriselist";
+var $url = woowx.constant.APIBaseURL + "/api/Check/checklist";
 var pagesize = woowx.constant.page;//每页数据条数
 var page = 1;
 var maxpage;
-var HtType = $("#HtType").val();
+var HtType = 0;// $("#HtType").val();
 var Wxz =$('#Wx').val();
 var flag = true;
 var $kekword = "";
@@ -130,6 +130,7 @@ function delcustomer(custId) {
         url: $url,
         data:
         {
+            Wxzh: Wxz,
             Id: custId
         },
         dataType: 'json',

@@ -1,8 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NF.ViewModel
 {
@@ -18,9 +15,18 @@ namespace NF.ViewModel
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public DateTime? TxDate {  get; set; }
+        public DateTime? TxDate { get; set; }
         public string CompanyName { get; set; }
-        public string Remark {  get; set; }
+        public string Remark { get; set; }
+        /// <summary>
+        /// 图片集合
+        /// </summary>
+
+        public IList<PicView> PicData { get; set; }
+        /// <summary>
+        /// 视频集合
+        /// </summary>
+        public IList<VideoView> VideoData { get; set; }
     }
 
     public class EnterpriseInfoList
@@ -33,7 +39,16 @@ namespace NF.ViewModel
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public string Remark {  get; set; }
+        public string Remark { get; set; }
+        /// <summary>
+        /// 图片集合
+        /// </summary>
+
+        public IList<PicView> PicData { get; set; }
+        /// <summary>
+        /// 视频集合
+        /// </summary>
+        public IList<VideoView> VideoData { get; set; }
     }
 
 
@@ -50,7 +65,7 @@ namespace NF.ViewModel
         /// 名称
         /// </summary>
         public string Title { get; set; }
-        
+
         /// <summary>
         /// 微信账号
         /// </summary>
@@ -61,6 +76,10 @@ namespace NF.ViewModel
         /// </summary>
         public string QxCode { get; set; }
 
+        /// <summary>
+        /// 描述
+        /// </summary>
+        public string Remark { get; set; }
 
     }
 
@@ -87,6 +106,21 @@ namespace NF.ViewModel
         /// 权限授权码
         /// </summary>
         public string QxCode { get; set; }
+
+        /// <summary>
+        /// 客户名称
+        /// </summary>
+        public string CompanyName { get; set; }
+
+        /// <summary>
+        /// 备
+        /// </summary>
+        public string Remark { get; set; }
+
+        /// <summary>
+        /// 时间
+        /// </summary>
+        public DateTime TxDate { get; set; } = DateTime.Now;
 
 
     }

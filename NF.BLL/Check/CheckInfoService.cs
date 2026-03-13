@@ -6,12 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NF.BLL
 {
-    public partial class  CheckInfoService
+    public partial class CheckInfoService
     {
         /// <summary>
         /// 
@@ -55,9 +53,9 @@ namespace NF.BLL
                         select new CheckInfoList
                         {
                             Id = a.Id,
-                            Title = a.Title,
+                            Title = string.IsNullOrEmpty(a.Title) ? "" : a.Title,
                             TxDate = a.TxDate,
-                            CompanyName = a.CompanyName,
+                            CompanyName = string.IsNullOrEmpty(a.CompanyName) ? "" : a.CompanyName,
                         };
             return new LayPageInfo<CheckInfoList>()
             {
@@ -75,14 +73,18 @@ namespace NF.BLL
         /// <returns></returns>
         public CheckInfoView ShowView(int Id)
         {
+            var listfiles = Db.Set<EnterpriseFile>().Where(a => a.CompanyId == Id && (a.FileType ?? 0) == 0)
+             .Select(a => new PicInfo { PicPath = a.FilePath, Id = a.Id, AttId = a.AttId, CompId = a.CompanyId }).ToList();
+            var listvideofiles = Db.Set<EnterpriseFile>().Where(a => a.CompanyId == Id && a.FileType == 1)
+               .Select(a => new VideoInfo { VideoPath = a.FilePath, ThumPath = a.ThumPath, Id = a.Id, AttId = a.AttId, CompId = a.CompanyId }).ToList();
             var query = from a in _CheckInfoSet.AsNoTracking()
                         where a.Id == Id
                         select new
                         {
                             Id = a.Id,//Wx
                             Title = a.Title,
-                            TxDate=a.TxDate,
-                            CompanyName= a.CompanyName,
+                            TxDate = a.TxDate,
+                            CompanyName = a.CompanyName,
                             Remark = a.Remark
 
                         };
@@ -94,10 +96,34 @@ namespace NF.BLL
                             Title = a.Title,
                             TxDate = a.TxDate,
                             CompanyName = a.CompanyName,
-                            Remark = a.Remark
+                            Remark = a.Remark,
+                            PicData = GetPicList(a.Id, listfiles),
+                            VideoData = GetVideoList(a.Id, listvideofiles)
+
 
                         };
             return local.FirstOrDefault();
+
+        }
+
+        /// <summary>
+        /// 根据附件ID，查询实际图片集合
+        /// </summary>
+        /// <param name="attId">附件ID-现在是服务ID</param>
+        /// <param name="picInfos">当前客户得图片集合</param>
+        private IList<PicView> GetPicList(int attId, IList<PicInfo> picInfos)
+        {
+            return picInfos.Where(a => a.AttId == attId).Select(a => new PicView { Id = a.Id, PicPath = a.PicPath }).ToList();
+        }
+
+        /// <summary>
+        /// 根据附件ID，查询实际视频集合
+        /// </summary>
+        /// <param name="attId">附件ID-现在是服务ID</param>
+        /// <param name="videoInfos">当前客户得视频集合</param>
+        private IList<VideoView> GetVideoList(int attId, IList<VideoInfo> videoInfos)
+        {
+            return videoInfos.Where(a => a.AttId == attId).Select(a => new VideoView { Id = a.Id, VideoPath = a.VideoPath, ThumPath = a.ThumPath }).ToList();
         }
     }
 }

@@ -1,16 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using NF.BLL;
 using NF.Common.Extend;
 using NF.Common.Models;
 using NF.IBLL;
 
 using NF.Model.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace NF.WeiXinApp.Utility.DI
 {
@@ -32,12 +27,12 @@ namespace NF.WeiXinApp.Utility.DI
             //用户
             services.AddTransient<IUserInforService, UserInforService>();
             //字典
-            services.AddTransient<IDataDictionaryService,DataDictionaryService>();
+            services.AddTransient<IDataDictionaryService, DataDictionaryService>();
             //部门
             services.AddTransient<IDepartmentService, DepartmentService>();
             //签约主体信息
             services.AddTransient<IDeptMainService, DeptMainService>();
-            
+
             //登录日志
             services.AddTransient<ILoginLogService, LoginLogService>();
             //操作日志
@@ -53,7 +48,7 @@ namespace NF.WeiXinApp.Utility.DI
             //用户菜单分配
             services.AddTransient<IUserModuleService, UserModuleService>();
             //功能点
-            services.AddTransient<ISysFunctionService,SysFunctionService>();
+            services.AddTransient<ISysFunctionService, SysFunctionService>();
             //角色功能权限分配
             services.AddTransient<IRolePermissionService, RolePermissionService>();
             //用户功能权限分配
@@ -74,8 +69,8 @@ namespace NF.WeiXinApp.Utility.DI
             services.AddTransient<ISysEmailService, SysEmailService>();
             //提醒
             services.AddTransient<IRemindService, RemindService>();
-            
-            
+
+
             #endregion
 
             #region 合同对方
@@ -168,7 +163,7 @@ namespace NF.WeiXinApp.Utility.DI
             services.AddTransient<IContTxtTempAndVarStoreRelaService, ContTxtTempAndVarStoreRelaService>();
             //合同模板标的字段
             services.AddTransient<IContTxtTempAndSubFieldService, ContTxtTempAndSubFieldService>();
-            
+
             #endregion
 
             #region 流程
@@ -213,10 +208,10 @@ namespace NF.WeiXinApp.Utility.DI
 
             #endregion
 
-            
+
 
             #region 招标
-            
+
             services.AddTransient<ITenderInforService, TenderInforService>();
             services.AddTransient<ITendererNameLabelService, TendererNameLabelService>();
             services.AddTransient<ITenderAttachmentService, TenderAttachmentService>();
@@ -226,7 +221,7 @@ namespace NF.WeiXinApp.Utility.DI
             services.AddTransient<IInquiryService, InquiryService>();
             services.AddTransient<IWinningItemsService, WinningItemsService>();
             //询价
-            services.AddTransient<IWinningInqService, WinningInqService>(); 
+            services.AddTransient<IWinningInqService, WinningInqService>();
             services.AddTransient<IInquiryAttachmentService, InquiryAttachmentService>();//询价附件
             services.AddTransient<IOpenTenderConditionService, OpenTenderConditionService>();
             services.AddTransient<IInquirerService, InquirerService>();
@@ -254,10 +249,10 @@ namespace NF.WeiXinApp.Utility.DI
             services.AddTransient<IScheduleDetailAttachmentService, ScheduleDetailAttachmentService>();
             #endregion
             services.AddTransient<IContAttacFileService, ContAttacFileService>();
-            services.TryAddSingleton<ICheckFileService, CheckFileService>();
-            services.TryAddSingleton<IEnterpriseFileService, EnterpriseFileService>();
-            services.TryAddSingleton<IEnterpriseInfoService, EnterpriseInfoService>();
-            services.TryAddSingleton<ICheckInfoService, CheckInfoService>();
+            services.AddTransient<ICheckFileService, CheckFileService>();
+            services.AddTransient<IEnterpriseFileService, EnterpriseFileService>();
+            services.AddTransient<IEnterpriseInfoService, EnterpriseInfoService>();
+            services.AddTransient<ICheckInfoService, CheckInfoService>();
 
 
 

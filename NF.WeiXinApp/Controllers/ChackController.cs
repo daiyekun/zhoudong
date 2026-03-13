@@ -19,6 +19,7 @@ namespace NF.WeiXinApp.Controllers
 
         /// <summary>
         /// 检查列表
+        /// http://localhost:5000/Chack/Index?Wxzh=daiyekun
         /// </summary>
         /// <param name="Wxzh"></param>
         /// <returns></returns>
@@ -30,6 +31,7 @@ namespace NF.WeiXinApp.Controllers
 
         /// <summary>
         /// 新增检测
+        /// http://localhost:5000/Chack/CheckAdd?Wxzh=daiyekun&Id=0
         /// </summary>
         /// <param name="Wxzh">账号</param>
         /// <returns></returns>
@@ -47,7 +49,7 @@ namespace NF.WeiXinApp.Controllers
         /// <param name="Id"></param>
         /// <param name="FinanceType"></param>
         /// <returns></returns>
-        public IActionResult Detail(int Id, int FinanceType)
+        public IActionResult Detail(int Id, int FinanceType = 0)
         {
 
             if (string.IsNullOrWhiteSpace(HttpContext.Session.GetString("WxUserId")))

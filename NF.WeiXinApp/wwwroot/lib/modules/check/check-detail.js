@@ -16,7 +16,7 @@ function LoadMainFormData(currId) {
         url: $url,
         data:
         {
-            Id: currId
+            id: currId
         },
         dataType: 'json',
         timeout: 10000,

@@ -9,9 +9,9 @@ using System.Data.Common;
 using System.Linq;
 using NF.Model.Models;
 ///****************************************************
-///ä»£ç è‡ªåŠ¨ç”Ÿæˆ,éœ€è¦ä¿®æ”¹builderé‡Œæ„é€ å‡½æ•°æ•°æ®åº“è¿æ¥å­—ç¬¦ä¸²å³å¯
-///å¦‚æœæœ‰ä¸ªæ€§ä¸šåŠ¡åœ¨å»ºç«‹ä¸€ä¸ªpublic partial interface 
-///å¦‚æœ‰æŠ¥é”™ï¼Œæ·»åŠ å¼•ç”¨NuGet  PetaPoco.NetCore (1.0.1)ã€T4 (2.0.1)
+///´úÂë×Ô¶¯Éú³É,ĞèÒªĞŞ¸ÄbuilderÀï¹¹Ôìº¯ÊıÊı¾İ¿âÁ¬½Ó×Ö·û´®¼´¿É
+///Èç¹ûÓĞ¸öĞÔÒµÎñÔÚ½¨Á¢Ò»¸öpublic partial interface 
+///ÈçÓĞ±¨´í£¬Ìí¼ÓÒıÓÃNuGet  PetaPoco.NetCore (1.0.1)¡¢T4 (2.0.1)
 ///****************************************************
 namespace NF.BLL
 {
@@ -968,6 +968,20 @@ namespace NF.BLL
     
    
      
+ public partial class ContAttacFileService : BaseService<ContAttacFile>, IContAttacFileService
+    {
+        private DbSet<ContAttacFile> _ContAttacFileSet = null;
+        public ContAttacFileService(DbContext dbContext)
+           : base(dbContext)
+        {
+            _ContAttacFileSet = base.Db.Set<ContAttacFile>();
+        }
+		
+		public ContAttacFileService(){}
+    }
+    
+   
+     
  public partial class TempNodeAreaHistService : BaseService<TempNodeAreaHist>, ITempNodeAreaHistService
     {
         private DbSet<TempNodeAreaHist> _TempNodeAreaHistSet = null;
@@ -1206,20 +1220,6 @@ namespace NF.BLL
     
    
      
- public partial class ContAttacFileService : BaseService<ContAttacFile>, IContAttacFileService
-    {
-        private DbSet<ContAttacFile> _ContAttacFileSet = null;
-        public ContAttacFileService(DbContext dbContext)
-           : base(dbContext)
-        {
-            _ContAttacFileSet = base.Db.Set<ContAttacFile>();
-        }
-		
-		public ContAttacFileService(){}
-    }
-    
-   
-     
  public partial class UserRoleService : BaseService<UserRole>, IUserRoleService
     {
         private DbSet<UserRole> _UserRoleSet = null;
@@ -1346,6 +1346,20 @@ namespace NF.BLL
     
    
      
+ public partial class CheckInfoService : BaseService<CheckInfo>, ICheckInfoService
+    {
+        private DbSet<CheckInfo> _CheckInfoSet = null;
+        public CheckInfoService(DbContext dbContext)
+           : base(dbContext)
+        {
+            _CheckInfoSet = base.Db.Set<CheckInfo>();
+        }
+		
+		public CheckInfoService(){}
+    }
+    
+   
+     
  public partial class ContTxtTempAndVarStoreRelaService : BaseService<ContTxtTempAndVarStoreRela>, IContTxtTempAndVarStoreRelaService
     {
         private DbSet<ContTxtTempAndVarStoreRela> _ContTxtTempAndVarStoreRelaSet = null;
@@ -1370,6 +1384,20 @@ namespace NF.BLL
         }
 		
 		public ContTxtTemplateService(){}
+    }
+    
+   
+     
+ public partial class EnterpriseInfoService : BaseService<EnterpriseInfo>, IEnterpriseInfoService
+    {
+        private DbSet<EnterpriseInfo> _EnterpriseInfoSet = null;
+        public EnterpriseInfoService(DbContext dbContext)
+           : base(dbContext)
+        {
+            _EnterpriseInfoSet = base.Db.Set<EnterpriseInfo>();
+        }
+		
+		public EnterpriseInfoService(){}
     }
     
    
@@ -1416,6 +1444,20 @@ namespace NF.BLL
     
    
      
+ public partial class CheckFileService : BaseService<CheckFile>, ICheckFileService
+    {
+        private DbSet<CheckFile> _CheckFileSet = null;
+        public CheckFileService(DbContext dbContext)
+           : base(dbContext)
+        {
+            _CheckFileSet = base.Db.Set<CheckFile>();
+        }
+		
+		public CheckFileService(){}
+    }
+    
+   
+     
  public partial class CurrencyManagerService : BaseService<CurrencyManager>, ICurrencyManagerService
     {
         private DbSet<CurrencyManager> _CurrencyManagerSet = null;
@@ -1426,6 +1468,20 @@ namespace NF.BLL
         }
 		
 		public CurrencyManagerService(){}
+    }
+    
+   
+     
+ public partial class EnterpriseFileService : BaseService<EnterpriseFile>, IEnterpriseFileService
+    {
+        private DbSet<EnterpriseFile> _EnterpriseFileSet = null;
+        public EnterpriseFileService(DbContext dbContext)
+           : base(dbContext)
+        {
+            _EnterpriseFileSet = base.Db.Set<EnterpriseFile>();
+        }
+		
+		public EnterpriseFileService(){}
     }
     
    
@@ -1581,55 +1637,8 @@ namespace NF.BLL
 		
 		public GroupInfoService(){}
     }
-
-    public partial class CheckInfoService : BaseService<CheckInfo>, ICheckInfoService
-    {
-        private DbSet<CheckInfo> _CheckInfoSet = null;
-        public CheckInfoService(DbContext dbContext)
-           : base(dbContext)
-        {
-            _CheckInfoSet = base.Db.Set<CheckInfo>();
-        }
-
-        public CheckInfoService() { }
-    }
-
-    public partial class EnterpriseInfoService : BaseService<EnterpriseInfo>, IEnterpriseInfoService
-    {
-        private DbSet<EnterpriseInfo> _EnterpriseInfoSet = null;
-        public EnterpriseInfoService(DbContext dbContext)
-           : base(dbContext)
-        {
-            _EnterpriseInfoSet = base.Db.Set<EnterpriseInfo>();
-        }
-
-        public EnterpriseInfoService() { }
-    }
-
-    public partial class CheckFileService : BaseService<CheckFile>, ICheckFileService
-    {
-        private DbSet<CheckFile> _CheckFileSet = null;
-        public CheckFileService(DbContext dbContext)
-           : base(dbContext)
-        {
-            _CheckFileSet = base.Db.Set<CheckFile>();
-        }
-
-        public CheckFileService() { }
-    }
-
-    public partial class EnterpriseFileService : BaseService<EnterpriseFile>, IEnterpriseFileService
-    {
-        private DbSet<CheckFile> _CheckFileSet = null;
-        public EnterpriseFileService(DbContext dbContext)
-           : base(dbContext)
-        {
-            _CheckFileSet = base.Db.Set<CheckFile>();
-        }
-
-        public EnterpriseFileService() { }
-    }
-
-
+    
+   
+    
 }
 

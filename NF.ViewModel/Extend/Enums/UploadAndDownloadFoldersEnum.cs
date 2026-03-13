@@ -108,5 +108,15 @@ namespace NF.ViewModel.Extend.Enums
         /// </summary>
         [EnumItem(Value = 19, Desc = "JianCeBaoGao")]
         JianCeBaoGao = 19,
+        /// <summary>
+        /// 检测报告-视频
+        /// </summary>
+        [EnumItem(Value = 21, Desc = "JianCeBaoGaoVideo")]
+        JianCeBaoGaoVideo = 21,
+        /// <summary>
+        /// 资料-视频
+        /// </summary>
+        [EnumItem(Value = 22, Desc = "QiYeZhiLiaoVideo")]
+        QiYeZhiLiaoVideo = 22,
     }
 }

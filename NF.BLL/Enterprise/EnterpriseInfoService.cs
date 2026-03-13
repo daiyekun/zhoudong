@@ -2,13 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using NF.Common.Utility;
 using NF.Model.Models;
 using NF.ViewModel;
-using NF.ViewModel.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NF.BLL
 {
@@ -26,7 +23,7 @@ namespace NF.BLL
         public LayPageInfo<EnterpriseInfoList> GetWxList<s>(PageInfo<EnterpriseInfo> pageInfo, Expression<Func<EnterpriseInfo, bool>> whereLambda,
         Expression<Func<EnterpriseInfo, s>> orderbyLambda, bool isAsc)
         {
-            var tempquery =_EnterpriseInfoSet
+            var tempquery = _EnterpriseInfoSet
                 .Where<EnterpriseInfo>(whereLambda.Compile()).AsQueryable();
             pageInfo.TotalCount = tempquery.Count();
             if (isAsc)
@@ -46,8 +43,8 @@ namespace NF.BLL
                         select new
                         {
                             Id = a.Id,//Wx
-                            Title= a.Title
-                            
+                            Title = a.Title
+
 
                         };
             var local = from a in query.AsEnumerable()
@@ -72,13 +69,17 @@ namespace NF.BLL
         /// <returns></returns>
         public EnterpriseInfoView ShowView(int Id)
         {
+            var listfiles = Db.Set<EnterpriseFile>().Where(a => a.CompanyId == Id && (a.FileType ?? 0) == 0)
+                .Select(a => new PicInfo { PicPath = a.FilePath, Id = a.Id, AttId = a.AttId, CompId = a.CompanyId }).ToList();
+            var listvideofiles = Db.Set<EnterpriseFile>().Where(a => a.CompanyId == Id && a.FileType == 1)
+               .Select(a => new VideoInfo { VideoPath = a.FilePath, ThumPath = a.ThumPath, Id = a.Id, AttId = a.AttId, CompId = a.CompanyId }).ToList();
             var query = from a in _EnterpriseInfoSet.AsNoTracking()
                         where a.Id == Id
                         select new
                         {
                             Id = a.Id,//Wx
                             Title = a.Title,
-                            Remark= a.Remark
+                            Remark = a.Remark
 
                         };
             var local = from a in query.AsEnumerable()
@@ -86,11 +87,36 @@ namespace NF.BLL
                         select new EnterpriseInfoView
                         {
                             Id = a.Id,//Wx
-                            Title = a.Title,
-                            Remark = a.Remark
-                          
+                            Title = string.IsNullOrEmpty(a.Title) ? "" : a.Title,
+                            Remark = string.IsNullOrEmpty(a.Remark) ? "" : a.Remark,
+                            PicData = GetPicList(a.Id, listfiles),
+                            VideoData = GetVideoList(a.Id, listvideofiles)
+
                         };
             return local.FirstOrDefault();
+        }
+
+
+
+
+        /// <summary>
+        /// 根据附件ID，查询实际图片集合
+        /// </summary>
+        /// <param name="attId">附件ID-现在是服务ID</param>
+        /// <param name="picInfos">当前客户得图片集合</param>
+        private IList<PicView> GetPicList(int attId, IList<PicInfo> picInfos)
+        {
+            return picInfos.Where(a => a.AttId == attId).Select(a => new PicView { Id = a.Id, PicPath = a.PicPath }).ToList();
+        }
+
+        /// <summary>
+        /// 根据附件ID，查询实际视频集合
+        /// </summary>
+        /// <param name="attId">附件ID-现在是服务ID</param>
+        /// <param name="videoInfos">当前客户得视频集合</param>
+        private IList<VideoView> GetVideoList(int attId, IList<VideoInfo> videoInfos)
+        {
+            return videoInfos.Where(a => a.AttId == attId).Select(a => new VideoView { Id = a.Id, VideoPath = a.VideoPath, ThumPath = a.ThumPath }).ToList();
         }
     }
 }

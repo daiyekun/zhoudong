@@ -1,6 +1,7 @@
-﻿1：数据库映射实体都生成在Models下面
+工具-->选项-->包管理器
+1：数据库映射实体都生成在Models下面
 2：如果有更改删掉文件夹执行如下脚本,如果是首次生成也是执行如下脚本
-Scaffold-DbContext "Server=.;Database=NFDB;Persist Security Info=True;User ID=sa;password=Sasa123;" Microsoft.EntityFrameworkCore.SqlServer  -OutputDir Models
+Scaffold-DbContext "Server=.;Database=ZHOU_DONG;Persist Security Info=True;User ID=sa;password=Sasa123;" Microsoft.EntityFrameworkCore.SqlServer  -OutputDir Models
 在程序包管理器控制台执行，选择默认项目“NF.Model”.
 如果提示某表名称不存在，说明数据库配置文件有问题，多半数据库名称配置错误
 

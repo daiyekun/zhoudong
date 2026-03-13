@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 ///****************************************************
-///ä»£ç è‡ªåŠ¨ç”Ÿæˆ,éœ€è¦ä¿®æ”¹builderé‡Œæ„é€ å‡½æ•°æ•°æ®åº“è¿æ¥å­—ç¬¦ä¸²å³å¯
-///å¦‚æœæœ‰ä¸ªæ€§ä¸šåŠ¡åœ¨å»ºç«‹ä¸€ä¸ªpublic partial interface 
-///å¦‚æœ‰æŠ¥é”™ï¼Œæ·»åŠ å¼•ç”¨NuGet  PetaPoco.NetCore (1.0.1)ã€T4 (2.0.1)
+///´úÂë×Ô¶¯Éú³É,ĞèÒªĞŞ¸ÄbuilderÀï¹¹Ôìº¯ÊıÊı¾İ¿âÁ¬½Ó×Ö·û´®¼´¿É
+///Èç¹ûÓĞ¸öĞÔÒµÎñÔÚ½¨Á¢Ò»¸öpublic partial interface 
+///ÈçÓĞ±¨´í£¬Ìí¼ÓÒıÓÃNuGet  PetaPoco.NetCore (1.0.1)¡¢T4 (2.0.1)
 ///****************************************************
 namespace NF.IBLL
 {
@@ -350,6 +350,11 @@ public partial interface ITempNodeAreaService : IBaseService<TempNodeArea>
     
    
      
+public partial interface IContAttacFileService : IBaseService<ContAttacFile>
+{ }
+    
+   
+     
 public partial interface ITempNodeAreaHistService : IBaseService<TempNodeAreaHist>
 { }
     
@@ -435,11 +440,6 @@ public partial interface IContTextArchiveService : IBaseService<ContTextArchive>
     
    
      
-public partial interface IContAttacFileService : IBaseService<ContAttacFile>
-{ }
-    
-   
-     
 public partial interface IUserRoleService : IBaseService<UserRole>
 { }
     
@@ -485,12 +485,22 @@ public partial interface IContTxtTempAndSubFieldService : IBaseService<ContTxtTe
     
    
      
+public partial interface ICheckInfoService : IBaseService<CheckInfo>
+{ }
+    
+   
+     
 public partial interface IContTxtTempAndVarStoreRelaService : IBaseService<ContTxtTempAndVarStoreRela>
 { }
     
    
      
 public partial interface IContTxtTemplateService : IBaseService<ContTxtTemplate>
+{ }
+    
+   
+     
+public partial interface IEnterpriseInfoService : IBaseService<EnterpriseInfo>
 { }
     
    
@@ -510,7 +520,17 @@ public partial interface ICountryService : IBaseService<Country>
     
    
      
+public partial interface ICheckFileService : IBaseService<CheckFile>
+{ }
+    
+   
+     
 public partial interface ICurrencyManagerService : IBaseService<CurrencyManager>
+{ }
+    
+   
+     
+public partial interface IEnterpriseFileService : IBaseService<EnterpriseFile>
 { }
     
    
@@ -567,23 +587,8 @@ public partial interface IFlowTempNodeInfoHistService : IBaseService<FlowTempNod
      
 public partial interface IGroupInfoService : IBaseService<GroupInfo>
 { }
-
- public partial interface IEnterpriseInfoService : IBaseService<EnterpriseInfo>
-   { 
-   }
-    public partial interface ICheckInfoService : IBaseService<CheckInfo>
-    {
-    }
-    public partial interface ICheckInfoService : IBaseService<CheckInfo>
-    {
-    }
-    public partial interface ICheckFileService : IBaseService<CheckFile>
-    {
-    }
- 
-    public partial interface IEnterpriseFileService : IBaseService<EnterpriseFile>
-    {
-    }
+    
+   
     
 }
 

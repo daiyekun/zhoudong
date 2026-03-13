@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using NF.BLL;
 using NF.Common.Models;
 using NF.Common.Utility;
 using NF.IBLL;
@@ -23,8 +22,8 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
     [Route("NfCommon/[controller]/[action]")]
     public class WxQyZlFileController : Controller
     {
-        private IEnterpriseFileService  _enterpriseFileService;
-        public WxQyZlFileController(IEnterpriseFileService  enterpriseFileService)
+        private IEnterpriseFileService _enterpriseFileService;
+        public WxQyZlFileController(IEnterpriseFileService enterpriseFileService)
         {
             _enterpriseFileService = enterpriseFileService;
         }
@@ -158,7 +157,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
 
         public async Task<IActionResult> UploadVideoMax(string imgbase64, int commpId, string video, string compressedVideo)
         {
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 18));
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 22));
             FormValueProvider formModel;
             //UploadFileInfo uploadFileInfo = new UploadFileInfo();
             string extend = ".mp4";
@@ -175,7 +174,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             attacFile.Extend = extend;
             attacFile.GuidFileName = $"{fname}{extend}";
             // attacFile.FileName = fileName;
-            attacFile.FolderName = EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 18);
+            attacFile.FolderName = EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 22);
             attacFile.FilePath = $"/Uploads/{attacFile.FolderName}/{attacFile.GuidFileName}";
             //attacFile.ThumPath = repic;
 
@@ -227,7 +226,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                 attacFile.Extend = attacFile.Extend;
                 attacFile.GuidFileName = attacFile.GuidFileName;
                 // attacFile.FileName = fileName;
-                attacFile.FolderName = EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 18);
+                attacFile.FolderName = EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 22);
                 attacFile.FilePath = attacFile.FilePath;
                 var info = _enterpriseFileService.Add(attacFile);
 
@@ -273,7 +272,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                 var fileName = videoFile.FileName;
                 // 保存视频文件
                 var tempdev4path = Path.Combine(
-                          Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 18)
+                          Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 22)
                           , $"{fname}{extend}");
                 //Log4netHelper.Info($"视频路径---{tempdev4path}");
                 using (var fileStream = new FileStream(tempdev4path, FileMode.Create))
@@ -287,7 +286,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                 if (compressedVideoFile != null && compressedVideoFile.Length > 0)
                 {
                     var dev4path = Path.Combine(
-                           Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 18)
+                           Directory.GetCurrentDirectory(), "Uploads", EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 22)
                            , ($"{fname}.png"));
                     using (var fileStream = new FileStream(dev4path, FileMode.Create))
                     {
@@ -307,7 +306,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                 attacFile.Extend = extend;
                 attacFile.GuidFileName = $"{fname}{extend}";
                 attacFile.FileName = fileName;
-                attacFile.FolderName = EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 18);
+                attacFile.FolderName = EmunUtility.GetDesc(typeof(UploadAndDownloadFoldersEnum), 22);
                 attacFile.FilePath = $"/Uploads/{attacFile.FolderName}/{attacFile.GuidFileName}";
                 attacFile.ThumPath = repic;
                 //var path = Path.Combine(

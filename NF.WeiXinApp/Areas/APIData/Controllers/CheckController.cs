@@ -1,6 +1,5 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using NF.BLL;
 using NF.Common.Utility;
 using NF.IBLL;
 using NF.Model.Models;
@@ -10,8 +9,8 @@ using NF.WeiXinApp.Extend;
 using NF.WeiXinApp.Utility;
 using NF.WeiXinApp.Utility.Filters;
 using System;
+using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Threading.Tasks;
 
 namespace NF.WeiXinApp.Areas.APIData.Controllers
 {
@@ -19,13 +18,13 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
     [ApiController]
     public class CheckController : Controller
     {
-        private ICheckInfoService  _checkInfoService;
+        private ICheckInfoService _checkInfoService;
         private IUserInforService _userInforService;
         private IMapper _IMapper;
         private IContractInfoService _IContractInfoService;
         public CheckController(ICheckInfoService checkInfoService,
               IMapper IMapper
-               , IUserInforService  userInforService,
+               , IUserInforService userInforService,
                IContractInfoService iContractInfoService)
         {
             _checkInfoService = checkInfoService;
@@ -91,8 +90,12 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         [HttpGet("checkView")]
         public string CheckView(int id)
         {
+            //var Kh = _checkInfoService.ShowView(id);
+            //return new RequestData(data: Kh).ToWxJson();
+            List<CheckInfoView> datas = new();
             var Kh = _checkInfoService.ShowView(id);
-            return new RequestData(data: Kh).ToWxJson();
+            datas.Add(Kh);
+            return new RequestData(data: datas).ToWxJson();
         }
 
 
@@ -134,6 +137,9 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.Title = info.Title;
                     compinfo.ModifyDateTime = DateTime.Now;
                     compinfo.ModifyUserId = uinfo != null ? uinfo.UserId : 1;
+                    compinfo.Remark = info.Remark;
+                    compinfo.TxDate = info.TxDate;
+                    compinfo.CompanyName = info.CompanyName;
                     _checkInfoService.Update(compinfo);
                     string sqlstr = $"update CheckFile set  AttId={compinfo.Id},CompanyId={compinfo.Id} where AttId=-188";
                     _checkInfoService.ExecuteSqlCommand(sqlstr);
@@ -146,6 +152,9 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.CreateDateTime = DateTime.Now;
                     compinfo.CreateUserId = 1;
                     compinfo.CreateUserId = uinfo != null ? uinfo.UserId : 1;
+                    compinfo.Remark = info.Remark;
+                    compinfo.TxDate = info.TxDate;
+                    compinfo.CompanyName = info.CompanyName;
                     _checkInfoService.Add(compinfo);
                     string sqlstr = $"update CheckFile set  AttId={compinfo.Id},CompanyId={compinfo.Id} where AttId=-188";
                     _checkInfoService.ExecuteSqlCommand(sqlstr);
@@ -165,16 +174,22 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         /// <summary>
         /// 删除客户
         /// </summary>
-        /// <param name="info">删除客户</param>
+        /// <param name="Id">删除ID</param>
+        /// <param name="Wxzh">微信账号</param>
         /// <returns></returns>
-        [CustomAction2CommitFilter]
+
         [HttpPost("checkDel")]
-        public async Task<string> CustomerDel([FromBody] WxCheckInfo info)
+        public string checkDel(string Wxzh, int Id)
         {
             try
             {
-                var uinfo = _userInforService.GetWxUserById(info.WxCode);
-                _checkInfoService.Delete(a => a.Id == info.Id);
+                var uinfo = _userInforService.GetWxUserById(Wxzh);
+                if (uinfo is null)
+                {
+                    Log4netHelper.Error("微信账号查询失败：Wxzh");
+                    return new RequestData(code: 1).ToWxJson();
+                }
+                _checkInfoService.Delete(a => a.Id == Id);
                 return new RequestData().ToWxJson();
             }
             catch (Exception ex)
