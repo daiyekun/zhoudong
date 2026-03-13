@@ -1,4 +1,4 @@
-﻿var ddr = $("#Wxid").val();
-if (ddr == null || ddr == "") {
-    $("#wxnamenull").click();
-}
+//var ddr = $("#Wxid").val();
+//if (ddr == null || ddr == "") {
+//    $("#wxnamenull").click();
+//}
