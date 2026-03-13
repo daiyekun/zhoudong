@@ -17,10 +17,13 @@ var $kekword = "";
  * @param {any} spage 开始页
  */
 function ajaxpage1(spage) {
+    // 调试信息（如需调试可取消注释）
     // alert("page:" + spage + "，limit=" + pagesize + ",keyWord=" + $kekword + ",Wxzh=" + Wxz + ",FinanceType=" + HtType);
+
     $.ajax({
         type: "GET",
         url: $url,
+        // 注意：这里原本传入的是 page 变量，如果 spage 是传入参数，请确认是否需要改为 spage
         data: { "page": page, "limit": pagesize, "keyWord": $kekword, "Wxzh": Wxz, "FinanceType": HtType },
         dataType: 'json',
         contentType: 'application/json;charset=utf-8',
@@ -29,69 +32,76 @@ function ajaxpage1(spage) {
             $('#loading').show();
         },
         success: function (rs) {
-            var datas = JSON.parse(rs);
+            // 兼容处理：如果后端返回的已经是对象，不需要 parse；如果是字符串才 parse
+            var datas = (typeof rs === 'string') ? JSON.parse(rs) : rs;
+
             $('#loading').hide();
-            if (datas.data == null) {
+
+            if (!datas.data || datas.data == null) {
                 $("#getmore").html("没有更多数据了");
-                return false
+                return false;
             }
+
             if (datas.data.length < pagesize) {
-                flag = false//设置没有数据了标记
+                flag = false; // 设置没有数据了标记
                 $("#getmore").html("没有更多数据了");
             }
+
             var result = '';
             for (var i = 0; i < datas.data.length; i++) {
+                var item = datas.data[i];
+
+                // 构建 HTML 字符串
+                // 修改重点：将三个按钮放在同一个 weui-cell__bd 中，并修复 onclick 的引号
                 result += '<div class="weui-cells">'
-                    + '<a class="weui-cell  weui-cell_access" href="Detail?Id=' + datas.data[i].Id + "&FinanceType=" + HtType + '">'
-                    + '<div class="weui-cell__bd">'
-                    + ' <p>名称</p>'
-                    + '</div>'
-                    + '<div class="weui-cell__ft list-title">' + datas.data[i].Name + '</div>'
+                    + '<a class="weui-cell weui-cell_access" href="Detail?Id=' + item.Id + "&FinanceType=" + HtType + '">'
+                    + '<div class="weui-cell__bd"><p>名称</p></div>'
+                    + '<div class="weui-cell__ft list-title">' + item.Name + '</div>'
                     + '</a>'
-                    + '<div class="weui-cell  " >'
-                    + '<div class="weui-cell__bd">'
-                    + '<p>编号</p>'
-                    + '</div>'
-                    + '<div class="weui-cell__ft">' + datas.data[i].Code + '</div>'
-                    + '</div>'
-                    + '<div class="weui-cell  " >'
-                    + '<div class="weui-cell__bd">'
-                    + '<p>联系人</p>'
-                    + '</div>'
-                    + '<div class="weui-cell__ft">' + datas.data[i].FirstContact + '</div>'
-                    + '</div>'
-                    + '<div class="weui-cell  " >'
-                    + '<div class="weui-cell__bd">'
-                    + '<p>联系电话</p>'
-                    + '</div>'
-                    + '<div class="weui-cell__ft">' + datas.data[i].FirstContactMobile + '</div>'
-                    + '</div>'
-                    + '<div class="weui-cell  " >'
 
-                    + '<div class="weui-cell__bd">'
-                    + ' <a href="javascript:;" onclick=upcustomer(' + datas.data[i].Id + ') class="weui-btn weui-btn_mini bg-green"><i class="icon icon-115"></i>修改</a>'
-                    + ' &nbsp;&nbsp;<a href="javascript:;" onclick=delcustomer(' + datas.data[i].Id + ') class="weui-btn weui-btn_mini bg-red"><i class="icon icon-115"></i>删除</a>'
-                    + '</div>'
-                    + '<div class="weui-cell__ft">'
-                    + ' <a href="javascript:;" onclick=addfuwu(' + datas.data[i].Id + ')  class="weui-btn weui-btn_mini bg-blue"><i class="icon icon-115"></i>新增服务记录</a>'
-                    + '</div>'
+                    + '<div class="weui-cell">'
+                    + '<div class="weui-cell__bd"><p>编号</p></div>'
+                    + '<div class="weui-cell__ft">' + item.Code + '</div>'
                     + '</div>'
 
-                    //+ '<div class="weui-cell  " >'
-                    //+ '<div class="weui-cell__bd">'
-                    //+ ' <p>状态</p>'
-                    //+ '</div>'
-                    //+ '<div class="weui-cell__ft">' + datas.data[i].CstateDic + '</div>'
-                    //+ '</div>'
+                    + '<div class="weui-cell">'
+                    + '<div class="weui-cell__bd"><p>联系人</p></div>'
+                    + '<div class="weui-cell__ft">' + item.FirstContact + '</div>'
                     + '</div>'
 
+                    + '<div class="weui-cell">'
+                    + '<div class="weui-cell__bd"><p>联系电话</p></div>'
+                    + '<div class="weui-cell__ft">' + item.FirstContactMobile + '</div>'
+                    + '</div>'
+
+                    // --- 修改后的按钮区域开始 ---
+                    + '<div class="weui-cell">'
+                    + '<div class="weui-cell__bd" style="width: 100%; padding: 5px 0;">'
+                    + '<a href="javascript:;" onclick="upcustomer(' + item.Id + ')" class="weui-btn weui-btn_mini bg-green"><i class="icon icon-115"></i>修改</a>'
+                    + '&nbsp;&nbsp;'
+                    + '<a href="javascript:;" onclick="delcustomer(' + item.Id + ')" class="weui-btn weui-btn_mini bg-red"><i class="icon icon-115"></i>删除</a>'
+                    + '&nbsp;&nbsp;'
+                    + '<a href="javascript:;" onclick="addfuwu(' + item.Id + ')" class="weui-btn weui-btn_mini bg-blue"><i class="icon icon-115"></i>新增服务记录</a>'
+                    + '</div>'
+                    + '</div>'
+                    // --- 修改后的按钮区域结束 ---
+
+                    // 原代码中被注释的状态栏保持不动
+                    // + '<div class="weui-cell  " >'
+                    // + '<div class="weui-cell__bd">'
+                    // + ' <p>状态</p>'
+                    // + '</div>'
+                    // + '<div class="weui-cell__ft">' + item.CstateDic + '</div>'
+                    // + '</div>'
+
+                    + '</div>'; // 结束 weui-cells
             }
+
             $("#rank-list").append(result);
-
-
         },
         error: function (xhr) {
             alert('ajax出错');
+            $('#loading').hide();
         },
     });
 }
