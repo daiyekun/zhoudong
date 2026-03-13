@@ -124,7 +124,7 @@ function addfuwu(custId) {
 
 //删除客户
 function delcustomer(custId) {
-    var $url = woowx.constant.APIBaseURL + "/api/Check/enterpriseDel";
+    var $url = woowx.constant.APIBaseURL + "/api/Check/checkDel";
     $.ajax({
         type: 'GET',
         url: $url,

@@ -186,7 +186,7 @@ function ShowContText(currId) {
 
 
                     resultstr2 += '<div class="weui-form-preview__ft" >'
-                    resultstr2 += '<a class="weui-form-preview__btn weui-form-preview__btn_default" style="color:#FA5151" onclick = delcustomerfw(' + $data.Data[i].Id +')  href = "javascript:" ><i class="icon icon-115"></i> 删除</a>'
+                   // resultstr2 += '<a class="weui-form-preview__btn weui-form-preview__btn_default" style="color:#FA5151" onclick = delcustomerfw(' + $data.Data[i].Id +')  href = "javascript:" ><i class="icon icon-115"></i> 删除</a>'
                    /* resultstr2 += '<a class="weui-form-preview__btn weui-form-preview__btn_primary" onclick=delcustomerfw('+$data.Data[i].Id +')  href="javascript:"><i class="icon icon-115"></i>下载图片</a>'*/
                     resultstr2 += '</div>'
                     resultstr2 += '</div>'

@@ -180,7 +180,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         /// <param name="Wxzh">微信账号</param>
         /// <returns></returns>
 
-        [HttpPost("checkDel")]
+        [HttpGet("checkDel")]
         public string checkDel(string Wxzh, int Id)
         {
             try

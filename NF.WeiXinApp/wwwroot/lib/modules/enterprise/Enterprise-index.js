@@ -115,7 +115,7 @@ function delcustomer(custId) {
         url: $url,
         data:
         {
-            Wxzh=Wxz,
+            Wxzh:Wxz,
             Id: custId
         },
         dataType: 'json',
