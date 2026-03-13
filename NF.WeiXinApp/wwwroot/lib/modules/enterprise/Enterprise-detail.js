@@ -188,7 +188,7 @@ function ShowContText(currId) {
                    
                 }
             } else {
-                resultstr2 += "<span class='f-red'>没有数据</span>";
+               resultstr2 += "<span class='f-red'>没有数据</span>";
 
             }
             //console.log(resultstr2);

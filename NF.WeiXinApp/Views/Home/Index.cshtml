@@ -1,88 +1,311 @@
 @{
-    ViewData["Title"] = "菜单";
+    ViewData["Title"] = "工作台";
     ViewData["MyPage"] = "menuIndex";
 }
-<div class="page index-bg">
-    @*<input type="hidden" id="Usid" />
-    <input type="hidden" id="mypage" value="0" />*@
-    <input type="hidden" id="Wxid" value="@ViewData["WxCurrUserId"]" />
-    <a href="/Home/Eees" type="hidden" id="wxnamenull"></a>
-    <div class="page__hd menu_hd">
-        <h2 class="page__title menu_hd_Title1">欢迎使用CRM管理系统</h2>
-        <p class="page__desc menu_hd_Title2">盘州市康泉净水设备有限公司</p>
-    </div>
-    <div class="page__bd">
 
-        <div class="weui-grids">
-             <a href="/Company/CustomerAdd?wxzh=@ViewData["WxCurrUserId"]&FinanceType=0&Id=0" class="weui-grid index-menubtn">
-                <div class="weui-grid__icon">
-                    <img src="~/lib/weui/images/add_kh.png" alt="新增客户">
-                </div>
-                <p class="weui-grid__label menu_font">新增客户</p>
-            </a>
-            <a href="/Company/CustomerIndex?wxzh=@ViewData["WxCurrUserId"]&FinanceType=0" class="weui-grid index-menubtn">
-                <div class="weui-grid__icon">
-                    <img src="~/lib/weui/images/icon_kf.png" alt="客户列表">
-                </div>
-                <p class="weui-grid__label menu_font">客户列表</p>
-            </a>
-            
-            <a href="/Enterprise/EnterpriseAdd?wxzh=@ViewData["WxCurrUserId"]&Id=0" class="weui-grid index-menubtn">
-                <div class="weui-grid__icon">
-                    <img src="~/lib/weui/images/add_kh.png" alt="新增资料">
-                </div>
-                <p class="weui-grid__label menu_font">新增资料</p>
-            </a>
-            <a href="/Enterprise/Index?wxzh=@ViewData["WxCurrUserId"]" class="weui-grid index-menubtn">
-                <div class="weui-grid__icon">
-                    <img src="~/lib/weui/images/icon_kf.png" alt="资料列表">
-                </div>
-                <p class="weui-grid__label menu_font">资料列表</p>
-            </a>
-
-            <a href="/Chack/CheckAdd?wxzh=@ViewData["WxCurrUserId"]&Id=0" class="weui-grid index-menubtn">
-                <div class="weui-grid__icon">
-                    <img src="~/lib/weui/images/add_kh.png" alt="新增检测">
-                </div>
-                <p class="weui-grid__label menu_font">新增检测</p>
-            </a>
-            <a href="/Chack/Index?wxzh=@ViewData["WxCurrUserId"]" class="weui-grid index-menubtn">
-                <div class="weui-grid__icon">
-                    <img src="~/lib/weui/images/icon_kf.png" alt="检测列表">
-                </div>
-                <p class="weui-grid__label menu_font">检测列表</p>
-            </a>
-
-
-        </div>
-
-    </div>
-
-    <div class="weui-footer weui-footer_fixed-bottom" style="padding-bottom:50px;">
-        <p class="weui-footer__links">
-            <a href="javascript:home();" class="weui-footer__link weui-wa-hotarea">盘州市康泉净水设备有限公司</a>
-        </p>
-        <p class="weui-footer__text"> Copyright © 2022-2027<p>
-            <a href="https://beian.miit.gov.cn/ target=" _blank"" class="page_copyright">
-                备案号：黔ICP备2022006828号-1
-        </a>
-    </div>
-    <div class="weui-footer weui-footer_fixed-bottom">
-    </div>
-</div>
 <style>
-    body{
-        background-color:#ffffff;
+    /* --- 1. 全局基础设置 --- */
+    body {
+        background-color: #f5f7fa;
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .page {
+        max-width: 480px; /* 限制最大宽度，模拟手机效果 */
+        margin: 0 auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background: #fff; /* 增加背景色防止透明 */
+    }
+
+    /* --- 2. 头部区域 --- */
+    .page__hd {
+        background: #ffffff;
+        padding: 40px 20px 30px; /* 增加上下内边距 */
+        text-align: center;
+        /* 移除圆角和阴影，保持简洁，或者保留圆角看需求 */
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+        margin-bottom: 20px;
+        z-index: 10;
+    }
+
+    .menu_hd_Title1 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #1a202c;
+        margin: 0 0 10px 0;
+        letter-spacing: 0.5px;
+    }
+
+    .menu_hd_Title2 {
+        font-size: 14px;
+        color: #718096;
+        margin: 0;
+        font-weight: 400;
+    }
+
+    /* --- 3. 网格布局 (核心修改) --- */
+    .weui-grids {
+        padding: 0 16px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 两列 */
+        gap: 16px; /* 增加间距，让布局更宽松 */
+        flex: 1;
+        align-content: start;
+        margin-bottom: 20px;
+    }
+
+    /* --- 4. 按钮卡片样式 (核心修复) --- */
+    .index-menubtn {
+        background: #ffffff;
+        border-radius: 16px; /* 圆角稍微调小一点，更现代 */
+        padding: 24px 10px; /* 增加上下内边距，让按钮更高更饱满 */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+        transition: all 0.2s ease;
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+        /* 【关键修改】移除 aspect-ratio，使用 min-height 保证最小高度 */
+        min-height: 140px;
+        width: 100%;
+        /* 添加顶部彩色条装饰 */
+        border-top: 4px solid transparent;
+    }
+
+        /* 点击反馈 */
+        .index-menubtn:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            background: #fafafa;
+        }
+
+    /* --- 5. 图标与文字优化 --- */
+    .weui-grid__icon {
+        width: 52px; /* 图标稍微大一点 */
+        height: 52px;
+        margin-bottom: 16px; /* 图标和文字的距离 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        transition: transform 0.2s ease;
+        background: #f0f2f5;
+        flex-shrink: 0;
+    }
+
+    .index-menubtn:active .weui-grid__icon {
+        transform: scale(0.95);
+    }
+
+    .weui-grid__icon img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+    }
+
+    .menu_font {
+        font-size: 15px; /* 字体稍微加大 */
+        color: #2d3748;
+        font-weight: 600;
+        margin: 0;
+        text-align: center;
+        line-height: 1.4;
+        word-break: keep-all;
+        white-space: nowrap; /* 防止换行，保持整洁 */
+    }
+
+    /* --- 6. 颜色主题区分 (保持你的逻辑，微调颜色) --- */
+
+    /* 第一组：客户 (蓝色系) */
+    .index-menubtn:nth-child(1), .index-menubtn:nth-child(2) {
+        border-top-color: #3498db;
+    }
+
+        .index-menubtn:nth-child(1) .weui-grid__icon,
+        .index-menubtn:nth-child(2) .weui-grid__icon {
+            background: linear-gradient(135deg, #ebf5fb 0%, #d6eaf8 100%);
+            color: #3498db;
+        }
+
+    /* 第二组：资料 (紫色系) */
+    .index-menubtn:nth-child(3), .index-menubtn:nth-child(4) {
+        border-top-color: #9b59b6;
+    }
+
+        .index-menubtn:nth-child(3) .weui-grid__icon,
+        .index-menubtn:nth-child(4) .weui-grid__icon {
+            background: linear-gradient(135deg, #f5eef8 0%, #e8daef 100%);
+            color: #9b59b6;
+        }
+
+    /* 第三组：检测 (绿色系) */
+    .index-menubtn:nth-child(5), .index-menubtn:nth-child(6) {
+        border-top-color: #2ecc71;
+    }
+
+        .index-menubtn:nth-child(5) .weui-grid__icon,
+        .index-menubtn:nth-child(6) .weui-grid__icon {
+            background: linear-gradient(135deg, #e8f8f5 0%, #d1f2eb 100%);
+            color: #2ecc71;
+        }
+
+    /* --- 7. 底部版权 --- */
+    .weui-footer_fixed-bottom {
+        background: transparent;
+        padding: 20px 0 40px;
+        text-align: center;
+        margin-top: auto;
+    }
+
+    .weui-footer__links a {
+        color: #a0aec0;
+        font-size: 13px;
+        text-decoration: none;
+    }
+
+    .weui-footer__text {
+        font-size: 12px;
+        color: #cbd5e0;
+        margin-top: 10px;
+        line-height: 1.6;
+    }
+
+    .page_copyright {
+        color: #a0aec0 !important;
+        text-decoration: none;
+    }
+
+    #wxnamenull {
+        display: none;
+    }
+
+    /* --- 8. 极端小屏适配 --- */
+    @@media (max-width: 360px) {
+        .page__hd {
+            padding: 30px 15px 20px;
+        }
+
+        .menu_hd_Title1 {
+            font-size: 20px;
+        }
+
+        .menu_hd_Title2 {
+            font-size: 12px;
+        }
+
+        .weui-grids {
+            gap: 12px;
+            padding: 0 12px;
+        }
+
+        .index-menubtn {
+            padding: 20px 8px;
+            min-height: 120px; /* 小屏稍微矮一点 */
+        }
+
+        .weui-grid__icon {
+            width: 44px;
+            height: 44px;
+            margin-bottom: 12px;
+        }
+
+            .weui-grid__icon img {
+                width: 24px;
+                height: 24px;
+            }
+
+        .menu_font {
+            font-size: 14px;
+        }
     }
 </style>
 
+<div class="page index-bg">
+    <input type="hidden" id="Wxid" value="@ViewData["WxCurrUserId"]" />
+    <a href="/Home/Eees" id="wxnamenull"></a>
+
+    <!-- 头部 -->
+    <div class="page__hd menu_hd">
+        <h2 class="menu_hd_Title1">康泉净水 CRM</h2>
+        <p class="menu_hd_Title2">盘州市康泉净水 · 智能工作台</p>
+    </div>
+
+    <div class="page__bd" style="flex: 1;">
+        <div class="weui-grids">
+            <!-- 1. 新增客户 -->
+            <a href="/Company/CustomerAdd?wxzh=@ViewData["WxCurrUserId"]&FinanceType=0&Id=0" class="weui-grid index-menubtn">
+                <div class="weui-grid__icon">
+                    <!-- 建议：如果没有真实图片，可以用 SVG 或字体图标代替，这里保留你的 img 标签 -->
+                    <img src="~/lib/weui/images/add_kh.png" alt="新增客户" onerror="this.style.display='none'">
+                </div>
+                <p class="menu_font">新增客户</p>
+            </a>
+
+            <!-- 2. 客户列表 -->
+            <a href="/Company/CustomerIndex?wxzh=@ViewData["WxCurrUserId"]&FinanceType=0" class="weui-grid index-menubtn">
+                <div class="weui-grid__icon">
+                    <img src="~/lib/weui/images/icon_kf.png" alt="客户列表" onerror="this.style.display='none'">
+                </div>
+                <p class="menu_font">客户列表</p>
+            </a>
+
+            <!-- 3. 新增资料 -->
+            <a href="/Enterprise/EnterpriseAdd?wxzh=@ViewData["WxCurrUserId"]&Id=0" class="weui-grid index-menubtn">
+                <div class="weui-grid__icon">
+                    <img src="~/lib/weui/images/add_kh.png" alt="新增资料" onerror="this.style.display='none'">
+                </div>
+                <p class="menu_font">新增资料</p>
+            </a>
+
+            <!-- 4. 资料列表 -->
+            <a href="/Enterprise/Index?wxzh=@ViewData["WxCurrUserId"]" class="weui-grid index-menubtn">
+                <div class="weui-grid__icon">
+                    <img src="~/lib/weui/images/icon_kf.png" alt="资料列表" onerror="this.style.display='none'">
+                </div>
+                <p class="menu_font">资料列表</p>
+            </a>
+
+            <!-- 5. 新增检测 -->
+            <a href="/Chack/CheckAdd?wxzh=@ViewData["WxCurrUserId"]&Id=0" class="weui-grid index-menubtn">
+                <div class="weui-grid__icon">
+                    <img src="~/lib/weui/images/add_kh.png" alt="新增检测" onerror="this.style.display='none'">
+                </div>
+                <p class="menu_font">新增检测</p>
+            </a>
+
+            <!-- 6. 检测列表 -->
+            <a href="/Chack/Index?wxzh=@ViewData["WxCurrUserId"]" class="weui-grid index-menubtn">
+                <div class="weui-grid__icon">
+                    <img src="~/lib/weui/images/icon_kf.png" alt="检测列表" onerror="this.style.display='none'">
+                </div>
+                <p class="menu_font">检测列表</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="weui-footer weui-footer_fixed-bottom">
+        <p class="weui-footer__links">
+            <a href="javascript:home();">盘州市康泉净水设备有限公司</a>
+        </p>
+        <p class="weui-footer__text">
+            Copyright © 2022-2027<br>
+            <a href="https://beian.miit.gov.cn/" target="_blank" class="page_copyright">
+                黔ICP备2022006828号-1
+            </a>
+        </p>
+    </div>
+</div>
+
 <script type="text/javascript" src="~/lib/modules/Home/home-index.js"></script>
-
-
-
-
-
-
-
-
-

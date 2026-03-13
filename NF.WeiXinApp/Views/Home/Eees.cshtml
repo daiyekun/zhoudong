@@ -1,27 +1,253 @@
-﻿
 @{
-    ViewData["Title"] = "Eees";
+    ViewData["Title"] = "访问受限";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<style>
+    /* --- 全局背景 --- */
+    body {
+        background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+        min-height: 100vh;
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .page {
+        max-width: 480px;
+        margin: 0 auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-bottom: 80px; /* 为底部留空间 */
+    }
+
+    /* --- 核心内容区：垂直居中 --- */
+    .page__bd {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+        animation: fadeInUp 0.6s ease-out;
+    }
+
+    /* --- 图标容器 --- */
+    .error-icon-box {
+        width: 120px;
+        height: 120px;
+        background: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 10px 30px rgba(52, 152, 219, 0.15);
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+        .error-icon-box svg {
+            width: 64px;
+            height: 64px;
+            color: #e74c3c; /* 警示红 */
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+    /* --- 文字样式 --- */
+    .error-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #2d3748;
+        margin: 0 0 12px 0;
+        text-align: center;
+        letter-spacing: 0.5px;
+    }
+
+    .error-desc {
+        font-size: 15px;
+        color: #718096;
+        margin: 0 0 30px 0;
+        text-align: center;
+        line-height: 1.6;
+        max-width: 85%;
+    }
+
+    /* --- 行动按钮 --- */
+    .btn-home {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 260px;
+        padding: 14px 0;
+        background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 50px;
+        text-decoration: none;
+        box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+        .btn-home:active {
+            transform: scale(0.96);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+        }
+
+        .btn-home svg {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+    /* --- 底部版权优化 --- */
+    .weui-footer_fixed-bottom {
+        background: transparent;
+        padding: 0;
+        text-align: center;
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    .footer-content {
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+
+    .weui-footer__link {
+        color: #3498db;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 6px;
+        transition: color 0.2s;
+    }
+
+        .weui-footer__link:active {
+            color: #2980b9;
+        }
+
+    .weui-footer__text {
+        font-size: 11px;
+        color: #a0aec0;
+        margin: 0;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .page_copyright {
+        color: #a0aec0;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        transition: color 0.2s;
+    }
+
+        .page_copyright:hover {
+            color: #718096;
+        }
+
+        .page_copyright img {
+            width: 14px;
+            height: 14px;
+            vertical-align: middle;
+            opacity: 0.8;
+        }
+
+    /* --- 动画定义 --- */
+    @@keyframes fadeInUp {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+</style>
 
 <div class="page index-bg">
-    
+
     <div class="page__bd">
-        <h1>非法访问请使用企业微信登录！</h1>
+        <!-- 安全盾牌图标 -->
+        <div class="error-icon-box">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M12 8v4"></path>
+                <path d="M12 16h.01"></path>
+                <circle cx="12" cy="12" r="9" style="stroke-dasharray: 4 2; opacity: 0.3;"></circle>
+            </svg>
+        </div>
+
+        <!-- 提示文字 -->
+        <h1 class="error-title">访问受限</h1>
+        <p class="error-desc">
+            检测到非法访问或未登录状态。<br>
+            请使用 <strong>企业微信</strong> 登录后再试。
+        </p>
+
+        <!-- 返回首页按钮 -->
+        <a href="javascript:home();" class="btn-home">
+            <svg viewBox="0 0 24 24">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            返回工作台
+        </a>
     </div>
 
-    <div class="weui-footer weui-footer_fixed-bottom" style="padding-bottom:50px;">
-        <p class="weui-footer__links">
-            <a href="javascript:home();" class="weui-footer__link weui-wa-hotarea">盘州市康泉净水设备有限公司</a>
-        </p>
-        <p class="weui-footer__text"> Copyright © 2022-2027<p>
-            <a href="https://beian.miit.gov.cn/ target=" _blank"" class="page_copyright">
-                <img src="/huizhang.jpg" />备案号：黔ICP备2022006828号-1
-            </a>
-        
-    </div>
+    <!-- 底部版权 (悬浮胶囊样式) -->
     <div class="weui-footer weui-footer_fixed-bottom">
+        <div class="footer-content">
+            <a href="javascript:home();" class="weui-footer__link">
+                盘州市康泉净水设备有限公司
+            </a>
+            <p class="weui-footer__text">
+                Copyright © 2022-2027
+                <a href="https://beian.miit.gov.cn/" target="_blank" class="page_copyright">
+                    <img src="/huizhang.jpg" alt="备案图标" onerror="this.style.display='none'">
+                    黔ICP备2022006828号-1
+                </a>
+            </p>
+        </div>
     </div>
 </div>
 
+<script>
+    // 确保 home() 函数存在，如果 _Layout 中未定义，这里做个兜底
+    function home() {
+        window.location.href = "/Home/Index"; // 默认跳转首页，可根据实际修改
+    }
+</script>

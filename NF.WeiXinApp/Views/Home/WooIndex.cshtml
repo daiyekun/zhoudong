@@ -1,65 +1,310 @@
-﻿
 @{
     ViewData["Title"] = "个人信息";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<style>
+    /* --- 全局背景 --- */
+    body {
+        background: #f5f6fa; /* 柔和的灰白背景 */
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .page {
+        padding: 20px 16px;
+        min-height: 100vh;
+        box-sizing: border-box;
+    }
+
+    /* --- 顶部欢迎卡片 --- */
+    .profile-header {
+        background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+        border-radius: 20px;
+        padding: 30px 20px;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 25px;
+        box-shadow: 0 10px 20px rgba(52, 152, 219, 0.25);
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* 装饰圆圈 */
+    .profile-header::before {
+        content: '';
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        width: 150px;
+        height: 150px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 50%;
+    }
+
+    .profile-avatar {
+        width: 70px;
+        height: 70px;
+        background: rgba(255,255,255,0.2);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 12px;
+        font-size: 32px;
+        backdrop-filter: blur(5px);
+        border: 2px solid rgba(255,255,255,0.3);
+    }
+
+    .profile-name {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 0 5px 0;
+        letter-spacing: 1px;
+    }
+
+    .profile-dept {
+        font-size: 13px;
+        opacity: 0.85;
+        font-weight: 400;
+    }
+
+    /* --- 信息卡片容器 --- */
+    .info-card {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 20px 16px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 15px;
+        font-weight: 600;
+        color: #2c3e50;
+        margin: 0 0 15px 0;
+        padding-left: 10px;
+        border-left: 4px solid #3498db;
+        line-height: 1;
+    }
+
+    /* --- 自定义行样式 (替代 weui-cell) --- */
+    .info-row {
+        display: flex;
+        align-items: center;
+        padding: 14px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .info-row:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    /* 左侧图标区域 */
+    .info-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 12px;
+        flex-shrink: 0;
+        font-size: 18px;
+    }
+
+    /* 不同字段的图标颜色 */
+    .icon-user { background: #e3f2fd; color: #2196f3; }
+    .icon-badge { background: #f3e5f5; color: #9c27b0; }
+    .icon-building { background: #e8f5e9; color: #4caf50; }
+    .icon-phone { background: #fff3e0; color: #ff9800; }
+    .icon-mobile { background: #ffebee; color: #f44336; }
+    .icon-email { background: #e0f7fa; color: #00bcd4; }
+
+    /* 右侧内容区域 */
+    .info-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .info-label {
+        font-size: 12px;
+        color: #95a5a6;
+        margin-bottom: 4px;
+    }
+
+    .info-value {
+        font-size: 15px;
+        color: #2c3e50;
+        font-weight: 500;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* 隐藏原有的 WeUI 结构，但保留逻辑 */
+    .weui-form, .weui-cells__title, .weui-cell {
+        display: none !important;
+    }
+
+    /* 确保输入框在视觉上不可见，但值能被JS读取填充 */
+    input.weui-input {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* 底部版权微调 */
+    .weui-footer_fixed-bottom {
+        padding-bottom: 20px;
+    }
+</style>
+
 <div class="page">
     <input type="hidden" id="mypage" value="2" />
     <input type="hidden" id="Wxid" value="@ViewData["WxCurrUserId"]" />
     <a href="/Home/Eees" type="hidden" id="wxnamenull"></a>
-    <div class="weui-form">
-        <div class="weui-form__control-area">
-            <div class="weui-cells__group weui-cells__group_form">
-                <div class="weui-cells__title">个人信息</div>
-                <div class="weui-cells weui-cells_form">
-                    <div class="weui-cell weui-cell_active weui-cell_readonly">
-                        <div class="weui-cell__hd"><label class="weui-label">用户名</label></div>
-                        <div class="weui-cell__bd">
-                            <input class="weui-input" name="Uname" id="Uname" readonly />
-                        </div>
-                    </div>
-                    <div class="weui-cell weui-cell_active weui-cell_disabled">
-                        <div class="weui-cell__hd"><label class="weui-label">显示名称</label></div>
-                        <div class="weui-cell__bd">
-                            <input class="weui-input" name="UdisName" id="UdisName" disabled />
-                        </div>
-                    </div>
-                    <div class="weui-cell weui-cell_active weui-cell_disabled">
-                        <div class="weui-cell__hd"><label class="weui-label">所属机构</label></div>
-                        <div class="weui-cell__bd">
-                            <input class="weui-input" name="UdepName" id="UdepName" disabled />
-                        </div>
-                    </div>
-                    <div class="weui-cell weui-cell_active weui-cell_disabled">
-                        <div class="weui-cell__hd"><label class="weui-label">办公电话</label></div>
-                        <div class="weui-cell__bd">
-                            <input class="weui-input" name="Utel" id="Utel" disabled />
-                        </div>
-                    </div>
-                    <div class="weui-cell weui-cell_active weui-cell_disabled">
-                        <div class="weui-cell__hd"><label class="weui-label">移动电话</label></div>
-                        <div class="weui-cell__bd">
-                            <input class="weui-input" name="Umobile" id="Umobile" disabled />
-                        </div>
-                    </div>
-                    <div class="weui-cell weui-cell_active weui-cell_disabled">
-                        <div class="weui-cell__hd"><label class="weui-label">Email</label></div>
-                        <div class="weui-cell__bd">
-                            <input class="weui-input" name="Uemail" id="Uemail" disabled />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
+    <!-- 顶部个人形象区 -->
+    <div class="profile-header">
+        <div class="profile-avatar">👤</div>
+        <h2 class="profile-name" id="headerName">加载中...</h2>
+        <p class="profile-dept" id="headerDept">所属机构信息</p>
     </div>
 
+    <!-- 详细信息卡片 -->
+    <div class="info-card">
+        <h3 class="card-title">详细资料</h3>
+
+        <!-- 用户名 -->
+        <div class="info-row">
+            <div class="info-icon icon-user">👤</div>
+            <div class="info-content">
+                <span class="info-label">登录账号</span>
+                <span class="info-value" id="disp_Uname">-</span>
+            </div>
+            <!-- 保留原 input 供 JS 填充 -->
+            <input class="weui-input" name="Uname" id="Uname" readonly />
+        </div>
+
+        <!-- 显示名称 -->
+        <div class="info-row">
+            <div class="info-icon icon-badge">🏷️</div>
+            <div class="info-content">
+                <span class="info-label">显示名称</span>
+                <span class="info-value" id="disp_UdisName">-</span>
+            </div>
+            <input class="weui-input" name="UdisName" id="UdisName" disabled />
+        </div>
+
+        <!-- 所属机构 -->
+        <div class="info-row">
+            <div class="info-icon icon-building">🏢</div>
+            <div class="info-content">
+                <span class="info-label">所属机构</span>
+                <span class="info-value" id="disp_UdepName">-</span>
+            </div>
+            <input class="weui-input" name="UdepName" id="UdepName" disabled />
+        </div>
+
+        <!-- 办公电话 -->
+        <div class="info-row">
+            <div class="info-icon icon-phone">☎️</div>
+            <div class="info-content">
+                <span class="info-label">办公电话</span>
+                <span class="info-value" id="disp_Utel">-</span>
+            </div>
+            <input class="weui-input" name="Utel" id="Utel" disabled />
+        </div>
+
+        <!-- 移动电话 -->
+        <div class="info-row">
+            <div class="info-icon icon-mobile">📱</div>
+            <div class="info-content">
+                <span class="info-label">移动电话</span>
+                <span class="info-value" id="disp_Umobile">-</span>
+            </div>
+            <input class="weui-input" name="Umobile" id="Umobile" disabled />
+        </div>
+
+        <!-- Email -->
+        <div class="info-row">
+            <div class="info-icon icon-email">✉️</div>
+            <div class="info-content">
+                <span class="info-label">电子邮箱</span>
+                <span class="info-value" id="disp_Uemail">-</span>
+            </div>
+            <input class="weui-input" name="Uemail" id="Uemail" disabled />
+        </div>
+    </div>
+
+    <!-- 底部版权 (如果 Layout 中已有可忽略，这里为了完整性保留结构) -->
+    <div class="weui-footer weui-footer_fixed-bottom">
+        <p class="weui-footer__text" style="font-size:11px; color:#cbd5e0;">
+            康泉净水 CRM · 安全中心
+        </p>
+    </div>
 </div>
+
+<!-- 脚本逻辑：将原 input 的值同步到新的展示 span 中 -->
+<script>
+    // 等待 DOM 加载完成
+    document.addEventListener("DOMContentLoaded", function() {
+        // 模拟原有 JS 加载数据后的同步逻辑
+        // 假设原有的 wxuser-detail.js 会填充 input 的值
+        // 我们使用 MutationObserver 或者定时器来监听 input 值的变化并同步到 span
+
+        function syncValue(inputId, spanId, isHeaderName, isHeaderDept) {
+            var input = document.getElementById(inputId);
+            var span = document.getElementById(spanId);
+            if (input && span) {
+                var val = input.value;
+                if (!val) val = "-";
+                span.innerText = val;
+
+                // 特殊处理头部信息
+                if (isHeaderName) {
+                    document.getElementById('headerName').innerText = val === "-" ? "用户" : val;
+                }
+                if (isHeaderDept) {
+                    document.getElementById('headerDept').innerText = val === "-" ? "暂无部门" : val;
+                }
+            }
+        }
+
+        // 由于原有的 js 是异步加载数据的，我们设置一个简短的轮询或延迟执行
+        // 更好的方式是在原有 js 加载完成后调用，但为了兼容不修改原 js，这里用延迟
+        setTimeout(function() {
+            syncValue('Uname', 'disp_Uname', true, false);
+            syncValue('UdisName', 'disp_UdisName', false, false);
+            syncValue('UdepName', 'disp_UdepName', false, true);
+            syncValue('Utel', 'disp_Utel', false, false);
+            syncValue('Umobile', 'disp_Umobile', false, false);
+            syncValue('Uemail', 'disp_Uemail', false, false);
+        }, 300); // 延迟 300ms 确保原 JS 有机会执行
+
+        // 如果原 JS 执行较慢，可以加一个观察者
+        var observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === "attributes" && mutation.attributeName === "value") {
+                    var target = mutation.target;
+                    if(target.id === 'Uname') syncValue('Uname', 'disp_Uname', true, false);
+                    if(target.id === 'UdepName') syncValue('UdepName', 'disp_UdepName', false, true);
+                    // 其他字段同理...
+                }
+            });
+        });
+
+        ['Uname', 'UdisName', 'UdepName', 'Utel', 'Umobile', 'Uemail'].forEach(function(id) {
+            var el = document.getElementById(id);
+            if(el) observer.observe(el, { attributes: true });
+        });
+    });
+</script>
+
 <script src="~/lib/modules/woouser/wxuser-detail.js"></script>
 <script type="text/javascript" src="~/lib/modules/Home/home-index.js"></script>
-
-
-
-
-
