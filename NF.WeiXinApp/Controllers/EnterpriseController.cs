@@ -34,7 +34,7 @@ namespace NF.WeiXinApp.Controllers
         /// <param name="Wxzh">账号</param>
         /// <param name="FinanceType"></param>
         /// <returns></returns>
-        public IActionResult EnterpriseDelete(string Wxzh, int Id)
+        public IActionResult EnterpriseAdd(string Wxzh, int Id)
         {
             if (string.IsNullOrEmpty(Wxzh))
             {

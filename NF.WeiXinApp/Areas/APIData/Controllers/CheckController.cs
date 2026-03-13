@@ -81,6 +81,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             if (!string.IsNullOrEmpty(keyWord) && keyWord.ToLower() != "undefined")
             {
                 predicateOr = predicateOr.Or(a => a.Title.Contains(keyWord));
+                predicateOr = predicateOr.Or(a => a.CompanyName.Contains(keyWord));
                 predicateAnd = predicateAnd.And(predicateOr);
             }
             return predicateAnd;
@@ -122,7 +123,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
         [HttpPost("CheckAddSave")]
         public string CheckAddSave([FromBody] WxCheckInfo info)
         {
-            Log4netHelper.Info($"添加客户:{info.Title}  授权码:{info.QxCode}");
+            Log4netHelper.Info($"添加检查资料CheckAddSave:{info.Title}  授权码:{info.QxCode}");
             if (string.IsNullOrEmpty(info.QxCode) || !info.QxCode.Equals("zd198911"))
             {
                 return new RequestData(code: 1).ToWxJson();
@@ -155,6 +156,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
                     compinfo.Remark = info.Remark;
                     compinfo.TxDate = info.TxDate;
                     compinfo.CompanyName = info.CompanyName;
+                    Log4netHelper.Info("===执行保存CheckAddSave新增===");
                     _checkInfoService.Add(compinfo);
                     string sqlstr = $"update CheckFile set  AttId={compinfo.Id},CompanyId={compinfo.Id} where AttId=-188";
                     _checkInfoService.ExecuteSqlCommand(sqlstr);
@@ -166,7 +168,7 @@ namespace NF.WeiXinApp.Areas.APIData.Controllers
             }
             catch (Exception ex)
             {
-                Log4netHelper.Error(ex.Message);
+                Log4netHelper.Error($"保存CheckAddSave报错：{ex.Message}");
                 return new RequestData(code: 1).ToWxJson();
             }
         }
