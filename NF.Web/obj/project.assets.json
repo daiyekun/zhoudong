@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net5.0": {
       "Autofac/6.0.0": {
@@ -15277,23 +15277,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Web\\NF.Web.csproj",
+      "projectUniqueName": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Web\\NF.Web.csproj",
       "projectName": "NF.Web",
-      "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Web\\NF.Web.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Web\\obj\\",
+      "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Web\\NF.Web.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -15302,45 +15302,45 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
+          "framework": "net5.0",
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\MyProjectCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj": {
-              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj"
+            "D:\\WooCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj": {
+              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\LhCode\\LhCode.csproj"
             },
-            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj": {
-              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj"
+            "D:\\WooCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj": {
+              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.AutoMapper\\NF.AutoMapper.csproj"
             },
-            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj": {
-              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj"
+            "D:\\WooCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj": {
+              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.BLL\\NF.BLL.csproj"
             },
-            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj": {
-              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj"
+            "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj": {
+              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Common\\NF.Common.csproj"
             },
-            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
-              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj"
+            "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj": {
+              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.IBLL\\NF.IBLL.csproj"
             },
-            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj": {
-              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj"
+            "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj": {
+              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.Model\\NF.Model.csproj"
             },
-            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj": {
-              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj"
+            "D:\\WooCode\\zhoudong\\zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj": {
+              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.OfficeComm\\NF.OfficeComm.csproj"
             },
-            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj": {
-              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj"
+            "D:\\WooCode\\zhoudong\\zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj": {
+              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.QuartzNet\\NF.QuartzNet.csproj"
             },
-            "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
-              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
+            "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj": {
+              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\NF.ViewModel\\NF.ViewModel.csproj"
             },
-            "D:\\MyProjectCode\\zhoudong\\zhoudong\\SignalR.Client\\SignalR.Client.csproj": {
-              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\SignalR.Client\\SignalR.Client.csproj"
+            "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Client\\SignalR.Client.csproj": {
+              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Client\\SignalR.Client.csproj"
             },
-            "D:\\MyProjectCode\\zhoudong\\zhoudong\\SignalR.Server\\SignalR.Server.csproj": {
-              "projectPath": "D:\\MyProjectCode\\zhoudong\\zhoudong\\SignalR.Server\\SignalR.Server.csproj"
+            "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Server\\SignalR.Server.csproj": {
+              "projectPath": "D:\\WooCode\\zhoudong\\zhoudong\\SignalR.Server\\SignalR.Server.csproj"
             }
           }
         }
@@ -15355,10 +15355,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net5.0": {
+        "framework": "net5.0",
         "targetAlias": "net5.0",
         "dependencies": {
           "Autofac.Configuration": {
@@ -15457,24 +15458,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.17, 5.0.17]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -15483,7 +15466,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using NF.Common.Utility;
 using NF.Model.Models;
 using System;
@@ -129,7 +129,7 @@ namespace NF.BLL
         /// <returns></returns>
         public IQueryable<T> GetQueryable(Expression<Func<T, bool>> whereLambda)
         {
-            return Db.Set<T>().Where(whereLambda.Compile()).AsQueryable();
+            return Db.Set<T>().AsTracking().Where(whereLambda.Compile()).AsQueryable();
         }
 
        

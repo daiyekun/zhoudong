@@ -9,7 +9,7 @@ namespace NF.WeiXinApp.Utility
     {
         private static double GetVideoDuration(string videoFilePath)
         {
-            var process = new System.Diagnostics.Process();
+            using var process = new System.Diagnostics.Process();
             process.StartInfo.FileName = @"C:\\ffmpeg\\ffmpeg\\bin\\ffprobe";
             //var escapedPath = videoFilePath.Replace(@"\", @"\\");
             process.StartInfo.Arguments = $"-v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 {videoFilePath}";
@@ -69,7 +69,7 @@ namespace NF.WeiXinApp.Utility
                 }
 
                 // 使用 FFmpeg 查询视频信息并生成缩略图
-                var process = new System.Diagnostics.Process();
+                using var process = new System.Diagnostics.Process();
                 process.StartInfo.FileName = @"C:\\ffmpeg\\ffmpeg\\bin\\ffmpeg";
                 process.StartInfo.Arguments = $"-ss {position:hh\\:mm\\:ss\\.fff} -i {videoFilePath} -vframes 1 -filter:v scale=-2:120 -q:v 2 {thumbnailFilePath}";
                 process.StartInfo.UseShellExecute = false;

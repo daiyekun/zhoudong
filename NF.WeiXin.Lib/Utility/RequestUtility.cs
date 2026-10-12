@@ -22,12 +22,10 @@ namespace NF.WeiXin.Lib.Utility
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Url + (postDataStr == "" ? "" : "?") + postDataStr);
             request.Method = "GET";
             request.ContentType = "text/html;charset=UTF-8";
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            Stream myResponseStream = response.GetResponseStream();
-            StreamReader myStreamReader = new StreamReader(myResponseStream, Encoding.GetEncoding("utf-8"));
+            using HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            using Stream myResponseStream = response.GetResponseStream();
+           using StreamReader myStreamReader = new(myResponseStream, Encoding.GetEncoding("utf-8"));
             string retString = myStreamReader.ReadToEnd();
-            myStreamReader.Close();
-            myResponseStream.Close();
             return retString;
         }
 
@@ -37,45 +35,62 @@ namespace NF.WeiXin.Lib.Utility
         /// <param name="URL"></param>
         /// <param name="postdata"></param>
         /// <returns></returns>
+        //public static string HttpPost4(string URL, string postdata)
+        //{
+        //    // Create a request using a URL that can receive a post. 
+        //    WebRequest request = WebRequest.Create(URL);
+        //    // Set the Method property of the request to POST.
+        //    request.Method = "POST";
+        //    // Create POST data and convert it to a byte array.
+        //    string postData = postdata;//"This is a test that posts this string to a Web server.";
+        //    byte[] byteArray = Encoding.UTF8.GetBytes(postData);
+        //    // Set the ContentType property of the WebRequest.
+        //    request.ContentType = "application/x-www-form-urlencoded";
+        //    // Set the ContentLength property of the WebRequest.
+        //    request.ContentLength = byteArray.Length;
+        //    // Get the request stream.
+        //    Stream dataStream = request.GetRequestStream();
+        //    // Write the data to the request stream.
+        //    dataStream.Write(byteArray, 0, byteArray.Length);
+        //    // Close the Stream object.
+        //    dataStream.Close();
+        //    // Get the response.
+        //    WebResponse response = request.GetResponse();
+        //    // Display the status.
+        //    Console.WriteLine(((HttpWebResponse)response).StatusDescription);
+        //    // Get the stream containing content returned by the server.
+        //    dataStream = response.GetResponseStream();
+        //    // Open the stream using a StreamReader for easy access.
+        //    StreamReader reader = new StreamReader(dataStream);
+        //    // Read the content.
+        //    string responseFromServer = reader.ReadToEnd();
+        //    // Display the content.
+        //    //Console.WriteLine(responseFromServer);
+        //    // Clean up the streams.
+        //    reader.Close();
+        //    dataStream.Close();
+        //    response.Close();
+        //    return responseFromServer;
+
+        //}
         public static string HttpPost4(string URL, string postdata)
         {
-            // Create a request using a URL that can receive a post. 
-            WebRequest request = WebRequest.Create(URL);
-            // Set the Method property of the request to POST.
+            var request = WebRequest.Create(URL);
             request.Method = "POST";
-            // Create POST data and convert it to a byte array.
-            string postData = postdata;//"This is a test that posts this string to a Web server.";
-            byte[] byteArray = Encoding.UTF8.GetBytes(postData);
-            // Set the ContentType property of the WebRequest.
+            byte[] byteArray = Encoding.UTF8.GetBytes(postdata);
             request.ContentType = "application/x-www-form-urlencoded";
-            // Set the ContentLength property of the WebRequest.
             request.ContentLength = byteArray.Length;
-            // Get the request stream.
-            Stream dataStream = request.GetRequestStream();
-            // Write the data to the request stream.
-            dataStream.Write(byteArray, 0, byteArray.Length);
-            // Close the Stream object.
-            dataStream.Close();
-            // Get the response.
-            WebResponse response = request.GetResponse();
-            // Display the status.
-            Console.WriteLine(((HttpWebResponse)response).StatusDescription);
-            // Get the stream containing content returned by the server.
-            dataStream = response.GetResponseStream();
-            // Open the stream using a StreamReader for easy access.
-            StreamReader reader = new StreamReader(dataStream);
-            // Read the content.
-            string responseFromServer = reader.ReadToEnd();
-            // Display the content.
-            //Console.WriteLine(responseFromServer);
-            // Clean up the streams.
-            reader.Close();
-            dataStream.Close();
-            response.Close();
-            return responseFromServer;
-
+            using (var dataStream = request.GetRequestStream())
+            {
+                dataStream.Write(byteArray, 0, byteArray.Length);
+            }
+            using (var response = request.GetResponse())
+            using (var dataStream = response.GetResponseStream())
+            using (var reader = new StreamReader(dataStream))
+            {
+                return reader.ReadToEnd();
+            }
         }
-
 
         /// <summary>
         /// 从服务器下载文件到本地保存

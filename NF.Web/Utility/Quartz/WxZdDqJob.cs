@@ -1,4 +1,4 @@
-﻿using NF.Common.Models;
+using NF.Common.Models;
 using NF.Common.Utility;
 using Quartz;
 using System;
@@ -25,7 +25,7 @@ namespace NF.Web.Utility.Quartz
             {
                 string dqhturl = $"{AppsetsInfo.MsgReqBaseURL}/WeiXin/DaoQi/WxZhouDongTx";
                 NF.Common.Utility.Log4netHelper.Info("周东到期提醒:" + dqhturl);
-                WebClient client = new WebClient();
+                using WebClient client = new();
                 string desc = client.DownloadString(dqhturl);
             }
             catch (Exception ex)
